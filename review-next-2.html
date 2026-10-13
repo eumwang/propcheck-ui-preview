@@ -78,7 +78,7 @@ function setupReviewDetails(doc){
  doc.querySelectorAll('.featured-card.af-ready').forEach(card=>{
   const button=card.querySelector('button.af-toggle');if(!button)return;
   button.disabled=false;button.addEventListener('click',()=>{
-   const open=card.classList.toggle('af-open');button.setAttribute('aria-expanded',String(open));
+   const open=card.classList.toggle('af-open');button.setAttribute('aria-expanded',String(open));button.textContent=open?'評価の詳細 ⌃':'評価の詳細 ⌄';
   });
  });
  doc.querySelectorAll('#comparison-body tr[data-company-id][data-fold-ready]').forEach(row=>{
