@@ -13,19 +13,22 @@
   .changes{display:flex;flex-wrap:wrap;gap:8px;padding:12px 16px;justify-content:center}
   button{font:inherit;cursor:pointer;color:#155b4c;background:white;border:1px solid #78a89c;border-radius:7px;padding:8px 11px}
   button:hover,button:focus-visible{background:#d9f0e9}
+  button[aria-pressed="true"]{background:#155b4c;color:white}
   .controls{display:flex;align-items:center;gap:8px;justify-content:center;padding:0 16px 12px;flex-wrap:wrap}
-  .frames{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 12px 20px}
-  .panel{background:white;border-radius:10px;overflow:auto;box-shadow:0 1px 9px #15352d28}
+  .frames{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 12px 20px}
+  .panel{min-width:0;background:white;border-radius:10px;overflow:hidden;box-shadow:0 1px 9px #15352d28}
   .panel h2{position:sticky;left:0;top:0;z-index:1;background:#fff;margin:0;padding:11px 14px;font-size:16px;border-bottom:1px solid #d7e7e1}
   .panel p{position:sticky;left:0;margin:0;padding:0 14px 9px;font-size:12px;color:#47645c}
-  iframe{display:block;border:0;width:390px;height:750px;background:white}
-  #status{text-align:center;font-size:12px;min-height:20px}
-  @media(max-width:810px){.frames{grid-template-columns:1fr}.panel{width:100%}iframe{height:650px}}
+  .preview-viewport{position:relative;height:min(72vh,780px);min-height:480px;overflow:hidden;background:white}
+  iframe{position:absolute;left:0;top:0;display:block;border:0;width:390px;height:750px;transform-origin:top left;background:white}
+  #status,#scale-status{text-align:center;font-size:12px;min-height:20px}
+  @media(max-width:810px){.frames{grid-template-columns:1fr}.panel{width:100%}.preview-viewport{height:min(68vh,620px);min-height:420px}}
 </style>
 <header>
   <h1>PROP CHECK 改善候補・現行版との比較</h1>
   <p>現行版の承認済み表示を基準に、実画面で確認できた表示・操作だけを提案しています。採点値・収集・送信・本番サイトには変更ありません。</p>
   <p class="scope-note"><strong>会社名リンクについて：</strong>候補版で30社名を開けなくしたのは、会社詳細がこのレビューに未収録のためです。本番の会社詳細への導線が完成したことを意味しません。収録済みのFundedHiveだけ候補内で開きます。</p>
+  <p>PC幅は「枠に収める」で両画面の全幅を表示できます。細部は単独表示か「原寸・横スクロール」で確認してください。狭い画面では変更前、変更後の順に縦に並びます。</p>
   <nav><a href="index.html">現行版を単独で開く</a><a href="review-next.html">候補版を単独で開く</a></nav>
 </header>
 <div class="changes">
@@ -34,14 +37,32 @@
   <button data-target="reviewed-list-period-controls">3. 期間表示を730日に一致</button>
   <button data-target="featured-grid">4. 詳細を開閉できるようにする</button>
 </div>
-<div class="controls"><span>両画面の幅：</span><button data-width="390">スマホ 390px</button><button data-width="768">中間 768px</button><button data-width="1280">PC 1280px</button></div>
+<div class="controls"><span>両画面の幅：</span><button data-width="390" aria-pressed="true">スマホ 390px</button><button data-width="768" aria-pressed="false">中間 768px</button><button data-width="1280" aria-pressed="false">PC 1280px</button></div>
+<div class="controls"><span>表示方法：</span><button data-mode="fit" aria-pressed="true">両枠に収める</button><button data-mode="original" aria-pressed="false">原寸・各枠を横スクロール</button></div>
+<div id="scale-status" role="status"></div>
 <div id="status" role="status">読み込み中…</div>
 <div class="frames">
-  <section class="panel"><h2>現行版（変更前）</h2><p>公開中の index.html ／復元点 ec75cd3</p><iframe id="before" title="現行版" sandbox="allow-same-origin"></iframe></section>
-  <section class="panel"><h2>改善候補（変更後）</h2><p>独立した review-next.html ／未採用の提案</p><iframe id="after" title="改善候補" sandbox="allow-same-origin"></iframe></section>
+  <section class="panel" id="before-panel"><h2>現行版（変更前）</h2><p>公開中の index.html ／復元点 ec75cd3</p><div class="preview-viewport"><iframe id="before" title="現行版" sandbox="allow-same-origin"></iframe></div></section>
+  <section class="panel" id="after-panel"><h2>改善候補（変更後）</h2><p>独立した review-next.html ／未採用の提案</p><div class="preview-viewport"><iframe id="after" title="改善候補" sandbox="allow-same-origin"></iframe></div></section>
 </div>
 <script>
 const frames=[document.getElementById('before'),document.getElementById('after')];
+let previewWidth=390,fitToPanel=true;
+function adjustFrames(){
+  const ratios=frames.map(frame=>{
+    const viewport=frame.parentElement;
+    const ratio=fitToPanel?Math.min(1,viewport.clientWidth/previewWidth):1;
+    frame.style.width=previewWidth+'px';
+    frame.style.height=Math.ceil(viewport.clientHeight/ratio)+'px';
+    frame.style.transform=`scale(${ratio})`;
+    viewport.style.overflowX=fitToPanel?'hidden':'auto';
+    viewport.scrollLeft=0;
+    return ratio;
+  });
+  document.getElementById('scale-status').textContent=fitToPanel
+    ?`${previewWidth}px幅を各枠に収めて表示中（約${Math.round(Math.min(...ratios)*100)}%）。各画面の中を縦スクロールできます。`
+    :`${previewWidth}px幅を原寸で表示中。左右の枠をそれぞれ横スクロールできます。`;
+}
 frames[1].addEventListener('load',()=>{
   const doc=frames[1].contentDocument;
   if(!doc)return;
@@ -82,9 +103,20 @@ function jump(target){
   });
 }
 document.querySelectorAll('[data-target]').forEach(button=>button.onclick=()=>jump(button.dataset.target));
-document.querySelectorAll('[data-width]').forEach(button=>button.onclick=()=>frames.forEach(frame=>frame.style.width=button.dataset.width+'px'));
+document.querySelectorAll('[data-width]').forEach(button=>button.onclick=()=>{
+  previewWidth=Number(button.dataset.width);
+  document.querySelectorAll('[data-width]').forEach(peer=>peer.setAttribute('aria-pressed',String(peer===button)));
+  adjustFrames();
+});
+document.querySelectorAll('[data-mode]').forEach(button=>button.onclick=()=>{
+  fitToPanel=button.dataset.mode==='fit';
+  document.querySelectorAll('[data-mode]').forEach(peer=>peer.setAttribute('aria-pressed',String(peer===button)));
+  adjustFrames();
+});
+window.addEventListener('resize',adjustFrames);
 Promise.all([load('index.html'),load('review-next.html')]).then(markup=>{
   frames.forEach((frame,i)=>{frame.srcdoc=markup[i];});
+  adjustFrames();
   document.getElementById('status').textContent='左右ともトップページを読み込みました。';
 }).catch(error=>{document.getElementById('status').textContent='比較の読み込みに失敗しました：'+error.message});
 </script>
