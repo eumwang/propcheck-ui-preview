@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>PROP CHECK 基準版・第1候補・第2候補の比較</title>
+<style>
+  :root{font-family:Arial,"Meiryo",sans-serif;color:#173b35;background:#edf3f0}
+  body{margin:0}header{background:white;padding:16px max(16px,calc((100vw - 1200px)/2));box-shadow:0 2px 8px #163b3520}
+  h1{font-size:22px;margin:0 0 8px}p{line-height:1.5;margin:7px 0}a{color:#087867}
+  nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+  .scope-note{background:#fff6df;border-left:4px solid #cc9418;padding:9px 12px}
+  .summary{max-width:1200px;margin:14px auto;padding:0 12px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  .summary article{background:white;border:1px solid #d5e3dd;border-radius:9px;padding:12px 14px}
+  .summary h2{margin:0 0 6px;font-size:16px}.summary p{font-size:13px}
+  button{font:inherit;cursor:pointer;color:#155b4c;background:white;border:1px solid #78a89c;border-radius:7px;padding:8px 11px}
+  button:hover,button:focus-visible{background:#d9f0e9}button[aria-pressed="true"]{background:#155b4c;color:white}
+  .controls{display:flex;align-items:center;gap:8px;justify-content:center;padding:0 16px 10px;flex-wrap:wrap}
+  #status,#scale-status{text-align:center;font-size:12px;min-height:20px}
+  .frames{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 12px 20px}
+  .panel{min-width:0;background:white;border-radius:10px;overflow:hidden;box-shadow:0 1px 9px #15352d28}
+  .panel h2{background:white;margin:0;padding:11px 14px;font-size:16px;border-bottom:1px solid #d7e7e1}
+  .panel p{margin:0;padding:0 14px 9px;font-size:12px;color:#47645c}
+  .viewport{position:relative;height:min(72vh,780px);min-height:480px;overflow:hidden;background:white}
+  iframe{position:absolute;left:0;top:0;display:block;border:0;width:390px;height:750px;transform-origin:top left;background:white}
+  @media(max-width:810px){.summary{grid-template-columns:1fr}.frames{grid-template-columns:1fr}.viewport{height:min(68vh,620px);min-height:420px}}
+</style>
+<header>
+  <h1>PROP CHECK：基準版・第1候補・第2候補</h1>
+  <p>承認済みの表示を残し、レビュー専用の小さな修正を段階ごとに比較します。採点値・収集・送信・Netlify本番は変えていません。</p>
+  <p class="scope-note">第1・第2候補で30社の会社詳細を開けないのは、この静的レビューに詳細ページが未収録だからです。本番の導線が完成した意味ではありません。収録済みのFundedHive詳細は単独候補版で開けます。</p>
+  <p>比較枠はトップ画面の見た目を並べます。ヒーローの導線・リンク・開閉の実操作は各単独版で確認してください。静的レビューの期間選択は操作できず、表示は収録済み730日集計に合わせています。</p>
+  <nav><a href="index.html">基準版を開く</a><a href="review-next.html">第1候補を開く</a><a href="review-next-2.html">第2候補を開く</a></nav>
+</header>
+<div class="summary">
+  <article><h2>基準版</h2><p>承認済みの12ページ。復元点 <code>ec75cd3</code>。</p></article>
+  <article><h2>第1候補の4差分</h2><p>会社名のlocalhostリンク、注目4社の名前・ロゴ、730日表示、レビュー内の詳細開閉を修正。固定コミット <code>6e5da62</code>。</p></article>
+  <article><h2>第2候補の追加差分</h2><p>「数字の読み方」の導線を開いて移動。未収録30社は比較欄の案内1件で説明し、押せない詳細ボタンを隠す。スマホの収録済み詳細リンクを押しやすくし、開閉印を状態に合わせる。未採用の提案です。</p></article>
+</div>
+<div class="controls"><span>比較する版：</span><button data-pair="0-1" aria-pressed="false">基準 ↔ 第1</button><button data-pair="1-2" aria-pressed="true">第1 ↔ 第2</button><button data-pair="0-2" aria-pressed="false">基準 ↔ 第2</button></div>
+<div class="controls"><span>確認箇所：</span><button data-target="featured-grid">注目4社</button><button data-target="comparison">31社比較</button><button data-target="reading">数字の読み方</button></div>
+<div class="controls"><span>画面幅：</span><button data-width="390" aria-pressed="true">スマホ390px</button><button data-width="768" aria-pressed="false">中間768px</button><button data-width="1280" aria-pressed="false">PC1280px</button></div>
+<div class="controls"><span>表示方法：</span><button data-mode="fit" aria-pressed="true">枠に収める</button><button data-mode="original" aria-pressed="false">原寸・独立横スクロール</button></div>
+<div id="scale-status" role="status"></div><div id="status" role="status">読み込み中…</div>
+<div class="frames">
+  <section class="panel" id="left-panel"><h2>第1候補</h2><p>変更前</p><div class="viewport"><iframe id="left" title="比較の左側" sandbox="allow-same-origin"></iframe></div></section>
+  <section class="panel" id="right-panel"><h2>第2候補</h2><p>変更後</p><div class="viewport"><iframe id="right" title="比較の右側" sandbox="allow-same-origin"></iframe></div></section>
+</div>
+<script>
+const versions=[
+  {file:'index.html',name:'基準版',detail:'承認済み index.html ／復元点 ec75cd3'},
+  {file:'review-next.html',name:'第1候補',detail:'固定した4差分 ／ commit 6e5da62'},
+  {file:'review-next-2.html',name:'第2候補',detail:'追加の小案 ／ 未採用'}
+];
+const frames=[document.getElementById('left'),document.getElementById('right')];
+let homeMarkup=[],pair=[1,2],previewWidth=390,fitToPanel=true;
+function enableDetails(doc){
+  doc.querySelectorAll('.featured-card.af-ready').forEach(card=>{
+    const button=card.querySelector('button.af-toggle');if(!button)return;
+    button.disabled=false;button.addEventListener('click',()=>{
+      const open=card.classList.toggle('af-open');button.setAttribute('aria-expanded',String(open));
+      if(doc.body.classList.contains('review-second-compare'))button.textContent=open?'評価の詳細 ⌃':'評価の詳細 ⌄';
+    });
+  });
+  doc.querySelectorAll('#comparison-body tr[data-company-id][data-fold-ready]').forEach(row=>{
+    const buttons=[...row.querySelectorAll('button.mc-toggle')];
+    if(row.nextElementSibling?.classList.contains('fold-footer'))buttons.push(...row.nextElementSibling.querySelectorAll('button.fold-toggle'));
+    buttons.forEach(button=>{button.disabled=false;button.addEventListener('click',()=>{
+      const open=row.classList.toggle('fold-open');
+      buttons.forEach(peer=>peer.setAttribute('aria-expanded',String(open)));
+    });});
+  });
+}
+frames.forEach((frame,slot)=>frame.addEventListener('load',()=>{
+  const doc=frame.contentDocument;if(!doc)return;
+  if(pair[slot]>0)enableDetails(doc);
+  if(pair[slot]===2){
+    doc.body.classList.add('review-second-compare');
+    doc.addEventListener('click',event=>{
+      const link=event.target.closest('.hp-hero-actions a[data-review-anchor="reading"]');
+      if(!link)return;
+      event.preventDefault();
+      const target=doc.getElementById('reading');
+      const disclosure=target?.closest('details');
+      if(disclosure)disclosure.open=true;
+      requestAnimationFrame(()=>target?.scrollIntoView());
+    });
+  }
+}));
+async function load(file){
+  const response=await fetch(file,{cache:'no-store'});if(!response.ok)throw Error(file+' を読めません');
+  const source=await response.text(),match=source.match(/atob\("([A-Za-z0-9+/=]+)"\)/);
+  if(!match)throw Error(file+' のデータを読めません');
+  const bytes=Uint8Array.from(atob(match[1]),c=>c.charCodeAt(0));
+  const data=JSON.parse(await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).text());
+  const home=data.pages.find(page=>page.path==='/');if(!home)throw Error(file+' にトップがありません');
+  return home.html.replace(/__PC_ASSET_(\d+)__/g,(_,n)=>data.assets[+n]);
+}
+function adjust(){
+  const ratios=frames.map(frame=>{
+    const viewport=frame.parentElement,scale=fitToPanel?Math.min(1,viewport.clientWidth/previewWidth):1;
+    frame.style.width=previewWidth+'px';frame.style.height=Math.ceil(viewport.clientHeight/scale)+'px';
+    frame.style.transform=`scale(${scale})`;viewport.style.overflowX=fitToPanel?'hidden':'auto';viewport.scrollLeft=0;
+    return scale;
+  });
+  document.getElementById('scale-status').textContent=fitToPanel
+    ?`${previewWidth}px幅を各枠に収めて表示中（約${Math.round(Math.min(...ratios)*100)}%）。各枠の中を縦スクロールできます。`
+    :`${previewWidth}px幅を原寸で表示中。左右の枠を独立して横スクロールできます。`;
+}
+function renderPair(){
+  frames.forEach((frame,slot)=>{
+    const version=versions[pair[slot]],panel=frame.closest('.panel');
+    panel.querySelector('h2').textContent=version.name+(slot===0?'（左）':'（右）');
+    panel.querySelector('p').textContent=version.detail;
+    frame.srcdoc=homeMarkup[pair[slot]];
+  });
+  adjust();
+  document.getElementById('status').textContent=`${versions[pair[0]].name}と${versions[pair[1]].name}を表示中。`;
+}
+document.querySelectorAll('[data-pair]').forEach(button=>button.onclick=()=>{
+  pair=button.dataset.pair.split('-').map(Number);
+  document.querySelectorAll('[data-pair]').forEach(peer=>peer.setAttribute('aria-pressed',String(peer===button)));
+  renderPair();
+});
+document.querySelectorAll('[data-target]').forEach(button=>button.onclick=()=>frames.forEach(frame=>{
+  const doc=frame.contentDocument;
+  const target=button.dataset.target==='reading'?doc?.querySelector('details.ux183-guide>summary'):doc?.getElementById(button.dataset.target);
+  target?.scrollIntoView({block:'start'});
+}));
+document.querySelectorAll('[data-width]').forEach(button=>button.onclick=()=>{
+  previewWidth=Number(button.dataset.width);
+  document.querySelectorAll('[data-width]').forEach(peer=>peer.setAttribute('aria-pressed',String(peer===button)));
+  adjust();
+});
+document.querySelectorAll('[data-mode]').forEach(button=>button.onclick=()=>{
+  fitToPanel=button.dataset.mode==='fit';
+  document.querySelectorAll('[data-mode]').forEach(peer=>peer.setAttribute('aria-pressed',String(peer===button)));
+  adjust();
+});
+window.addEventListener('resize',adjust);
+Promise.all(versions.map(version=>load(version.file))).then(markup=>{homeMarkup=markup;renderPair()}).catch(error=>{
+  document.getElementById('status').textContent='比較を読み込めませんでした：'+error.message;
+});
+</script>
+</html>
