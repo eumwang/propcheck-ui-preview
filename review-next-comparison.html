@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>PROP CHECK 改善候補｜現行版との比較</title>
+<style>
+  :root{font-family:Arial,"Meiryo",sans-serif;color:#173b35;background:#edf3f0}
+  body{margin:0}header{background:#fff;padding:16px max(16px,calc((100vw - 1200px)/2));box-shadow:0 2px 8px #163b3520}
+  h1{font-size:22px;margin:0 0 8px}p{line-height:1.5;margin:7px 0}
+  a{color:#087867}nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+  .changes{display:flex;flex-wrap:wrap;gap:8px;padding:12px 16px;justify-content:center}
+  button{font:inherit;cursor:pointer;color:#155b4c;background:white;border:1px solid #78a89c;border-radius:7px;padding:8px 11px}
+  button:hover,button:focus-visible{background:#d9f0e9}
+  .controls{display:flex;align-items:center;gap:8px;justify-content:center;padding:0 16px 12px;flex-wrap:wrap}
+  .frames{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 12px 20px}
+  .panel{background:white;border-radius:10px;overflow:auto;box-shadow:0 1px 9px #15352d28}
+  .panel h2{position:sticky;left:0;top:0;z-index:1;background:#fff;margin:0;padding:11px 14px;font-size:16px;border-bottom:1px solid #d7e7e1}
+  .panel p{position:sticky;left:0;margin:0;padding:0 14px 9px;font-size:12px;color:#47645c}
+  iframe{display:block;border:0;width:390px;height:750px;background:white}
+  #status{text-align:center;font-size:12px;min-height:20px}
+  @media(max-width:810px){.frames{grid-template-columns:1fr}.panel{width:100%}iframe{height:650px}}
+</style>
+<header>
+  <h1>PROP CHECK 改善候補・現行版との比較</h1>
+  <p>現行版の承認済み表示を基準に、実画面で確認できた表示・操作だけを提案しています。採点値・収集・送信・本番サイトには変更ありません。</p>
+  <nav><a href="index.html">現行版を単独で開く</a><a href="review-next.html">候補版を単独で開く</a></nav>
+</header>
+<div class="changes">
+  <button data-target="comparison-body">1. 会社名のローカルリンクを修正</button>
+  <button data-target="featured-grid">2. 注目4社の名前とロゴを表示</button>
+  <button data-target="reviewed-list-period-controls">3. 期間表示を730日に一致</button>
+  <button data-target="featured-grid">4. 詳細を開閉できるようにする</button>
+</div>
+<div class="controls"><span>両画面の幅：</span><button data-width="390">スマホ 390px</button><button data-width="768">中間 768px</button><button data-width="1280">PC 1280px</button></div>
+<div id="status" role="status">読み込み中…</div>
+<div class="frames">
+  <section class="panel"><h2>現行版（変更前）</h2><p>公開中の index.html ／復元点 ec75cd3</p><iframe id="before" title="現行版" sandbox="allow-same-origin"></iframe></section>
+  <section class="panel"><h2>改善候補（変更後）</h2><p>独立した review-next.html ／未採用の提案</p><iframe id="after" title="改善候補" sandbox="allow-same-origin"></iframe></section>
+</div>
+<script>
+const frames=[document.getElementById('before'),document.getElementById('after')];
+frames[1].addEventListener('load',()=>{
+  const doc=frames[1].contentDocument;
+  if(!doc)return;
+  doc.querySelectorAll('.featured-card.af-ready').forEach(card=>{
+    const button=card.querySelector('button.af-toggle');if(!button)return;
+    button.disabled=false;button.addEventListener('click',()=>{
+      const open=card.classList.toggle('af-open');button.setAttribute('aria-expanded',String(open));
+    });
+  });
+  doc.querySelectorAll('#comparison-body tr[data-company-id][data-fold-ready]').forEach(row=>{
+    const buttons=[...row.querySelectorAll('button.mc-toggle')];
+    if(row.nextElementSibling?.classList.contains('fold-footer'))buttons.push(...row.nextElementSibling.querySelectorAll('button.fold-toggle'));
+    buttons.forEach(button=>{button.disabled=false;button.addEventListener('click',()=>{
+      const open=row.classList.toggle('fold-open');
+      buttons.forEach(peer=>{
+        peer.setAttribute('aria-expanded',String(open));
+        if(peer.classList.contains('fold-toggle'))peer.textContent=open?'比較データを閉じる ▴':'比較データを開く ▾';
+        if(peer.classList.contains('mc-toggle'))peer.setAttribute('aria-label',peer.querySelector('.mc-name')?.textContent+' — 詳細を'+(open?'閉じる':'開く'));
+      });
+    });});
+  });
+});
+async function load(file){
+  const source=await (await fetch(file,{cache:'no-store'})).text();
+  const match=source.match(/atob\("([A-Za-z0-9+/=]+)"\)/);
+  if(!match)throw Error(file+' のデータを読めません');
+  const bytes=Uint8Array.from(atob(match[1]),c=>c.charCodeAt(0));
+  const data=JSON.parse(await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).text());
+  const home=data.pages.find(page=>page.path==='/');
+  if(!home)throw Error(file+' にトップページがありません');
+  return home.html.replace(/__PC_ASSET_(\d+)__/g,(_,n)=>data.assets[+n]);
+}
+function jump(target){
+  frames.forEach(frame=>{
+    const doc=frame.contentDocument;
+    const item=doc?.getElementById(target)||doc?.querySelector('.'+target);
+    item?.scrollIntoView({block:'start'});
+  });
+}
+document.querySelectorAll('[data-target]').forEach(button=>button.onclick=()=>jump(button.dataset.target));
+document.querySelectorAll('[data-width]').forEach(button=>button.onclick=()=>frames.forEach(frame=>frame.style.width=button.dataset.width+'px'));
+Promise.all([load('index.html'),load('review-next.html')]).then(markup=>{
+  frames.forEach((frame,i)=>{frame.srcdoc=markup[i];});
+  document.getElementById('status').textContent='左右ともトップページを読み込みました。';
+}).catch(error=>{document.getElementById('status').textContent='比較の読み込みに失敗しました：'+error.message});
+</script>
+</html>
