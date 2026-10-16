@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PROP CHECK｜運営基盤4項目の表示比較 A・B・C</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#203d34;background:#f6f8f6}
+    *{box-sizing:border-box}
+    body{margin:0;padding:32px 16px 60px}
+    .page{max-width:1040px;margin:auto}
+    .intro{margin:0 0 24px}
+    .intro h1{font-size:22px;line-height:1.4;margin:0 0 8px;color:#173c31}
+    .intro p{margin:0;color:#536b5e;font-size:14px;line-height:1.7}
+    .intro a{color:#006a52}
+    .variant{background:#fff;border:1px solid #dce8df;border-radius:12px;padding:24px;margin:0 0 24px;box-shadow:0 2px 10px rgba(32,61,52,.035)}
+    .variant-label{margin:0 0 18px;display:flex;align-items:baseline;gap:9px;color:#193e33}
+    .variant-label .letter{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:8px;background:#e8f2eb;font-weight:800;font-size:16px}
+    .variant-label .name{font-size:17px;font-weight:750}
+    .variant-label .state{margin-left:auto;color:#697b70;font-size:12px;font-weight:500}
+    .preview{border-top:1px solid #dce8df;padding-top:18px}
+    .preview h2{font-size:20px;line-height:1.5;margin:0 0 20px;color:#123b30}
+    .preview h3{font-size:16px;line-height:1.5;margin:0 0 14px;color:#183e33}
+    .preview h3::before{content:"▪";margin-right:6px;color:#162921}
+    .points{list-style:none;margin:0;padding:0}
+    .item-name{font-size:14px;font-weight:650;line-height:1.45;color:#25443a}
+    .item-score{font-size:25px;font-weight:750;line-height:1;color:#007957;font-variant-numeric:tabular-nums}
+    .scope-note{margin:15px 0 0;font-size:13px;line-height:1.7;color:#40574c}
+
+    .layout-a{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .layout-a li{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:70px;padding:14px 18px;background:#eff6f1;border:1px solid #d7e7db;border-radius:9px}
+
+    .layout-b{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+    .layout-b li{display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;gap:8px;min-width:0;min-height:112px;padding:16px 8px 13px;background:#edf5ef;border:1px solid #d1e3d5;border-radius:9px}
+    .layout-b .item-name{min-height:2.9em}
+
+    .layout-c{border-top:1px solid #dce8df}
+    .layout-c li{display:grid;grid-template-columns:minmax(0,1fr) 56px;align-items:center;gap:12px;min-height:49px;padding:8px 10px;border-bottom:1px solid #dce8df}
+    .layout-c li:nth-child(even){background:#f7faf7}
+    .layout-c .item-score{font-size:20px;text-align:right}
+
+    @media(max-width:600px){
+      body{padding:16px 10px 40px}
+      .intro h1{font-size:18px}
+      .variant{padding:16px 14px;margin-bottom:16px}
+      .variant-label{gap:7px;margin-bottom:14px}
+      .variant-label .name{font-size:15px}
+      .variant-label .state{font-size:11px}
+      .preview{padding-top:14px}
+      .preview h2{font-size:18px;margin-bottom:16px}
+      .preview h3{font-size:15px;margin-bottom:12px}
+      .layout-a{gap:8px}
+      .layout-a li{min-height:75px;padding:10px}
+      .layout-a .item-score{font-size:22px}
+      .layout-b{gap:5px}
+      .layout-b li{min-height:105px;padding:10px 3px 8px}
+      .layout-b .item-name{font-size:12px;line-height:1.35}
+      .layout-b .item-score{font-size:20px}
+      .scope-note{font-size:12px}
+    }
+    @media(max-width:350px){
+      .variant{padding:14px 10px}
+      .layout-a li{padding:9px}
+      .layout-a .item-name{font-size:13px}
+      .layout-b .item-name{font-size:11px}
+      .layout-b .item-score{font-size:18px}
+    }
+  </style>
+</head>
+<body>
+<main class="page">
+  <div class="intro">
+    <h1>運営基盤｜4項目の表示比較</h1>
+    <p>A・B・Cは未採用の表示案です。語句・配点・説明は現行と同じです。<a href="methodology-layout-comparison-20261015.html#page=%2Fmethodology%2F">評価方法の固定レビュー版</a></p>
+  </div>
+
+  <section class="variant" id="option-a" aria-labelledby="option-a-label">
+    <div class="variant-label" id="option-a-label"><span class="letter">A</span><span class="name">2×2カード</span><span class="state">表示案・未採用</span></div>
+    <article class="preview" aria-label="2×2カード表示案">
+      <h2>4. 運営基盤</h2><h3>採点する4項目</h3>
+      <ul class="points layout-a">
+        <li><span class="item-name">出金の仕組み</span><span class="item-score">25</span></li>
+        <li><span class="item-name">公開収支</span><span class="item-score">25</span></li>
+        <li><span class="item-name">運営体制</span><span class="item-score">30</span></li>
+        <li><span class="item-name">支援元の規模</span><span class="item-score">20</span></li>
+      </ul>
+      <p class="scope-note">確認済み問題の減点Pを別に反映し、総合点の30%に使います。</p>
+    </article>
+  </section>
+
+  <section class="variant" id="option-b" aria-labelledby="option-b-label">
+    <div class="variant-label" id="option-b-label"><span class="letter">B</span><span class="name">横並び4カード</span><span class="state">表示案・未採用</span></div>
+    <article class="preview" aria-label="横並び4カード表示案">
+      <h2>4. 運営基盤</h2><h3>採点する4項目</h3>
+      <ul class="points layout-b">
+        <li><span class="item-name">出金の仕組み</span><span class="item-score">25</span></li>
+        <li><span class="item-name">公開収支</span><span class="item-score">25</span></li>
+        <li><span class="item-name">運営体制</span><span class="item-score">30</span></li>
+        <li><span class="item-name">支援元の規模</span><span class="item-score">20</span></li>
+      </ul>
+      <p class="scope-note">確認済み問題の減点Pを別に反映し、総合点の30%に使います。</p>
+    </article>
+  </section>
+
+  <section class="variant" id="option-c" aria-labelledby="option-c-label">
+    <div class="variant-label" id="option-c-label"><span class="letter">C</span><span class="name">項目と配点の整列一覧</span><span class="state">表示案・未採用</span></div>
+    <article class="preview" aria-label="整列一覧表示案">
+      <h2>4. 運営基盤</h2><h3>採点する4項目</h3>
+      <ul class="points layout-c">
+        <li><span class="item-name">出金の仕組み</span><span class="item-score">25</span></li>
+        <li><span class="item-name">公開収支</span><span class="item-score">25</span></li>
+        <li><span class="item-name">運営体制</span><span class="item-score">30</span></li>
+        <li><span class="item-name">支援元の規模</span><span class="item-score">20</span></li>
+      </ul>
+      <p class="scope-note">確認済み問題の減点Pを別に反映し、総合点の30%に使います。</p>
+    </article>
+  </section>
+</main>
+</body>
+</html>
