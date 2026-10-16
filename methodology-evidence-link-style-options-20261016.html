@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<title>31社根拠リンクの見え方｜PROP CHECK レビュー候補</title>
+<style>
+:root{--ink:#18332f;--green:#087867;--line:#d4e2dc;--bg:#f5f7f8;--soft:#eaf4ef}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.65 "Yu Gothic UI",Meiryo,system-ui,sans-serif}
+.sheet{max-width:1120px;margin:auto;padding:30px 24px 36px}
+.eyebrow{margin:0 0 6px;color:var(--green);font-size:12px;font-weight:750;letter-spacing:.09em}
+h1{font-size:26px;line-height:1.4;margin:0 0 7px;letter-spacing:-.01em}
+.intro{margin:0 0 24px;color:#536963;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.option{min-width:0;background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 22px 17px}
+.label{margin:0 0 13px;color:var(--green);font-size:14px;font-weight:750}
+.label span{display:inline-block;min-width:26px;margin-right:7px;padding:2px 7px;border-radius:4px;background:var(--soft);text-align:center}
+.context{border-top:1px solid var(--line);padding-top:17px;min-width:0}
+.context h2{color:#111;font-size:18px;font-weight:750;line-height:1.45;margin:0 0 11px}
+.context .link-row{margin:0 0 15px;min-height:36px;display:flex;align-items:center}
+.context .caution{color:#111;font-size:15px;line-height:1.75;margin:0}
+a{color:var(--green);font-size:15px;line-height:1.75;text-underline-offset:3px}
+a:focus-visible{outline:3px solid #d7a93c;outline-offset:3px}
+.a a{color:#111;text-decoration:underline;text-decoration-thickness:1px}
+.b a{text-decoration:underline;text-decoration-thickness:1px;font-weight:650}
+.b a::after{content:"→";display:inline-block;margin-left:6px;text-decoration:none}
+.c a{display:inline-flex;align-items:center;min-height:38px;padding:5px 13px;border:1px solid #75b6a5;border-radius:7px;text-decoration:none;font-weight:650;background:#fff}
+.d a{display:inline-flex;align-items:center;min-height:38px;padding:5px 13px;border-radius:7px;text-decoration:none;font-weight:650;background:var(--soft)}
+.d a::after{content:"→";display:inline-block;margin-left:8px}
+.foot{margin:17px 1px 0;color:#536963;font-size:12px}
+@media(max-width:760px){.sheet{padding:20px 14px 28px}h1{font-size:22px}.grid{grid-template-columns:1fr;gap:13px}.option{padding:16px}.context h2{font-size:17px}.context .caution,a{font-size:14px}}
+</style>
+</head>
+<body>
+<main class="sheet">
+<p class="eyebrow">PROP CHECK · REVIEW OPTIONS</p>
+<h1>31社の根拠リンク：表示案 A〜D</h1>
+<p class="intro">評価方法ページの「会社別の根拠」直下を想定した比較です。４案は同じ公開ページへ移動します。表示案は未選択です。</p>
+<div class="grid">
+  <section class="option a" aria-labelledby="option-a"><p class="label" id="option-a"><span>A</span>常時下線</p><div class="context"><h2>会社別の根拠</h2><p class="link-row"><a href="https://propchecklab.com/assessment/" target="_blank" rel="noopener noreferrer">31社の項目別根拠はこちら</a></p><p class="caution">資料が足りない項目の加点なしは、数値ゼロや不存在の断定ではありません。P0は未点検で、問題なしの認定ではありません。</p></div></section>
+  <section class="option b" aria-labelledby="option-b"><p class="label" id="option-b"><span>B</span>下線＋右矢印</p><div class="context"><h2>会社別の根拠</h2><p class="link-row"><a href="https://propchecklab.com/assessment/" target="_blank" rel="noopener noreferrer">31社の項目別根拠はこちら</a></p><p class="caution">資料が足りない項目の加点なしは、数値ゼロや不存在の断定ではありません。P0は未点検で、問題なしの認定ではありません。</p></div></section>
+  <section class="option c" aria-labelledby="option-c"><p class="label" id="option-c"><span>C</span>控えめなアウトライン</p><div class="context"><h2>会社別の根拠</h2><p class="link-row"><a href="https://propchecklab.com/assessment/" target="_blank" rel="noopener noreferrer">31社の項目別根拠はこちら</a></p><p class="caution">資料が足りない項目の加点なしは、数値ゼロや不存在の断定ではありません。P0は未点検で、問題なしの認定ではありません。</p></div></section>
+  <section class="option d" aria-labelledby="option-d"><p class="label" id="option-d"><span>D</span>淡い背景＋矢印</p><div class="context"><h2>会社別の根拠</h2><p class="link-row"><a href="https://propchecklab.com/assessment/" target="_blank" rel="noopener noreferrer">31社の項目別根拠はこちら</a></p><p class="caution">資料が足りない項目の加点なしは、数値ゼロや不存在の断定ではありません。P0は未点検で、問題なしの認定ではありません。</p></div></section>
+</div>
+<p class="foot">比較画像は、この HTML/CSS をブラウザで表示して撮影したものです。固定レビュー版のリンクデザインは変更していません。</p>
+</main>
+</body>
+</html>
