@@ -1,8 +1,4 @@
-/* Private 6-7 proposal: homepage footer only; header and destinations untouched. */
-body.home-route footer {
-  background: #fff;
-  border-top: 1px solid #e3ebe7;
-}
+/* Review footer: adopted background restored; approved 7 link behavior retained. */
 body.home-route footer .homepage-footer-group a {
   color: var(--ink);
   text-decoration: none;
