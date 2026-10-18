@@ -1,0 +1,17 @@
+/* Review footer: adopted background restored; approved 7 link behavior retained. */
+body.home-route footer .homepage-footer-group a {
+  color: var(--ink);
+  text-decoration: none;
+  text-underline-offset: 4px;
+}
+@media (hover: hover) and (pointer: fine) {
+  body.home-route footer .homepage-footer-group a:hover {
+    text-decoration: underline;
+  }
+}
+body.home-route footer .homepage-footer-group a:focus-visible {
+  text-decoration: underline;
+  outline: 3px solid rgba(20, 114, 96, .7);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
