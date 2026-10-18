@@ -23,10 +23,8 @@ html[lang=en] .tile,html[lang=ko] .tile{min-width:0}
 @media(max-width:1000px){.pc-guide-disclosure{padding-left:24px;padding-right:24px}}
 @media(max-width:620px){.pc-guide-disclosure{margin-top:25px;padding:16px 19px 23px}}
 
-/* Review 20261019: readable disclosure, same weight on every sentence. List page sits inside main.wrap so its text starts with the body. */
-.pc-guide-disclosure .pc-disclosure-note{margin:0 0 12px;padding:14px 0 2px;border-top:1px solid var(--line);background:#eef6f2;color:var(--ink);font-size:14px;font-weight:400;font-style:normal;line-height:1.85}
-.pc-guide-disclosure .pc-disclosure-note p{margin:0 0 12px;font-weight:400;font-style:normal}
-.pc-guide-disclosure .pc-disclosure-note p:last-child{margin-bottom:0}
-main.wrap > .pc-guide-disclosure{box-sizing:border-box;width:auto;max-width:none;margin:28px 0 8px;padding:14px 0 2px;border-top:1px solid var(--line);background:#eef6f2;color:var(--ink);font-size:14px;font-weight:400;font-style:normal;line-height:1.85}
-main.wrap > .pc-guide-disclosure p{margin:0 0 12px;font-weight:400;font-style:normal}
-main.wrap > .pc-guide-disclosure p:last-child{margin-bottom:0}
+/* Review 20261019: same type as the original disclosure (muted, 12px, weight 400). No frame, wash, or ink color. List page stays inside main.wrap and starts flush with the content above. */
+.pc-guide-disclosure .pc-disclosure-note{margin:0 0 12px;padding:0;border:0;background:transparent;color:var(--muted);font-size:12px;font-weight:400;font-style:normal;line-height:1.9}
+.pc-guide-disclosure .pc-disclosure-note p{margin:6px 0;font-weight:400;font-style:normal;color:var(--muted)}
+main.wrap > .pc-guide-disclosure{box-sizing:border-box;width:auto;max-width:none;margin:28px 0 8px;padding:0;border:0;background:transparent;color:var(--muted);font-size:12px;font-weight:400;font-style:normal;line-height:1.9}
+main.wrap > .pc-guide-disclosure p{margin:6px 0;font-weight:400;font-style:normal;color:var(--muted)}

@@ -132,14 +132,28 @@ for marker in ["確認中の事項を含む暫定版です", "［公開前に確
         print("NG privacy still has", marker)
     else:
         print("OK privacy absent", marker)
-if privacy.count(">5.1 クッキーポリシー<") != 1 or privacy.count(">5.1 クッキーポリシー</a>") != 1:
-    # heading and toc
-    print("heading", privacy.count(">5.1 クッキーポリシー<"), "toc", privacy.count(">5.1 クッキーポリシー</a>"))
-if ">5.1 クッキーポリシー<" in privacy and ">5.1 クッキーポリシー</a>" in privacy:
-    print("OK 5.1 in heading and TOC")
+if "5.1 クッキーポリシー" in privacy or "目次" in privacy or "pc-privacy-toc" in privacy:
+    fails.append("privacy toc")
+    print("NG privacy toc still present")
 else:
-    fails.append("5.1 structure")
-    print("NG 5.1 structure")
+    print("OK 5.1 and 目次 absent")
+COOKIE = [
+    "当サイトには分析タグや広告タグを組み込んでいません。現在の日本語の記事一覧では、外部記事へのリンクを表示し、NOTE記事の外部サムネイルは表示していません。一部の英語・韓国語の紹介ページでは、会社サイトのアイコンをGoogleの画像配信元から読み込む場合があります。",
+    "NOTE、公式HP、紹介先など外部リンクの移動先では、各提供者のCookie方針が適用されます。",
+    "本番で解析や広告を導入する場合は、用途、提供元、保存期間、選択手段を確認して本ページを更新します。",
+]
+for n, para in enumerate(COOKIE, 1):
+    count = privacy.count(para)
+    if count == 1:
+        print(f"OK cookie {n} once")
+    else:
+        fails.append(f"cookie {n}")
+        print(f"NG cookie {n} count={count}")
+if ">クッキーポリシー</h1>" not in privacy:
+    fails.append("cookie heading")
+    print("NG cookie heading")
+else:
+    print("OK cookie heading")
 
 # ⑦ wording unchanged
 def editorial_text(html):
