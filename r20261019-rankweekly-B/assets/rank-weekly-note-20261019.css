@@ -1,0 +1,4 @@
+/* ja top #comparison only: weekly rank note, option B (chip beside sort order). Existing tokens only. */
+#comparison .pc-rank-weekly--chip{display:inline-flex;align-items:center;gap:5px;align-self:center;padding:4px 11px;border:1px solid #deebe5;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:700;line-height:1.4;white-space:nowrap}
+#comparison .pc-rank-weekly--chip .pc-rank-weekly-icon{flex:0 0 14px}
+@media (max-width:760px){#comparison .pc-rank-weekly--chip{white-space:normal}}
