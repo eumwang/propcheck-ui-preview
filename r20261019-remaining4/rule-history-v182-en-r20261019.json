@@ -1,0 +1,167 @@
+{
+ "reviewed_on": "2026-10-19",
+ "companies": [
+  {
+   "service_id": "fundingpips-fx-cfd",
+   "company": "FundingPips",
+   "category": "transition",
+   "label": "Major concern: rules applied after purchase",
+   "heading": "Forced migration of existing accounts (old 10% target plan, PRIME)",
+   "evidence_label": "Basis: official materials and the firm’s response (press)",
+   "text": "The official help article on legacy rules says that, as the 2 Step Standard 10% target plan was discontinued, existing accounts were reset as 2 Step Flex (85% split). A 22 September 2026 report says the firm moved about 70% of PRIME users to new accounts on a mandatory basis and turned pending payouts into the starting balance of the new accounts. The firm denies that this was a deferral of payouts. We have not found cases of past trades being disqualified retroactively.",
+   "sources": [
+    {
+     "kind": "official",
+     "url": "https://help.fundingpips.com/hc/en-us/articles/51307058233361-FundingPips-Legacy-Rules"
+    },
+    {
+     "kind": "official",
+     "url": "https://help.fundingpips.com/hc/en-us/articles/34447308895889-Prime-Account"
+    },
+    {
+     "kind": "report",
+     "url": "https://www.financemagnates.com/forex/fundingpips-invited-traders-into-prime-the-tcs-made-it-mandatory/"
+    }
+   ]
+  },
+  {
+   "service_id": "goat-fx-cfd",
+   "company": "Goat Funded Trader",
+   "category": "current",
+   "label": "Major concern: rules applied after purchase",
+   "heading": "VPN/VPS ban also applied to existing accounts (from 6 October 2026)",
+   "evidence_label": "Basis: official materials (a user claim also exists; unconfirmed)",
+   "text": "The official FAQ says that from 6 October 2026, VPNs, VPSs, proxies and similar tools are banned on all accounts, and detection during trading is treated as an account violation. The August revision exempted accounts bought before 12 August, but the October revision removed this exception. A user also claims the rule was applied to an older account and a payout was refused, but we have not been able to confirm this.",
+   "sources": [
+    {
+     "kind": "official",
+     "url": "https://help.goatfundedtrader.com/en/articles/10742103-ip-address-and-account-access-policy"
+    },
+    {
+     "kind": "claim",
+     "url": "https://www.reddit.com/r/PropFirmTester/comments/1w779zj/goat_funded_trder_payout_denial/"
+    }
+   ]
+  },
+  {
+   "service_id": "tradingcult-fx-cfd",
+   "company": "TradingCult",
+   "category": "response",
+   "label": "Major concern: rules applied after purchase",
+   "heading": "HFT ban applied to accounts already purchased; claims about a news-rule change",
+   "evidence_label": "Basis: official announcement and the firm’s response",
+   "text": "An official announcement (March 2026) says that from 15 March, HFT (high-frequency trading) robots can no longer be used, even on accounts bought before that date. In December 2025, replying to a post saying the news-trading rules changed after purchase, the firm acknowledged the rule update and said an email was sent in advance and a warning was given after the breach. We have not seen the individual emails.",
+   "sources": [
+    {
+     "kind": "official",
+     "url": "https://www.linkedin.com/posts/tradingcultofficial_trading-proptrading-forextrading-activity-7437167386308378624-QmNX"
+    },
+    {
+     "kind": "response",
+     "url": "https://www.trustpilot.com/review/tradingcult.com"
+    }
+   ]
+  },
+  {
+   "service_id": "fundedelite-fx-cfd",
+   "company": "FundedElite",
+   "category": "version",
+   "label": "Major concern: Japanese and English rules differ; violation found after a payout request",
+   "heading": "Japanese and English FAQs differ with no explanation; evaluation trades ruled a violation at payout request and cut to 30%",
+   "evidence_label": "Basis: official FAQs (Japanese and English) and one user’s own records",
+   "text": "The Japanese FAQ says that for a suspicious pass that is not a clear violation, such as passing with a single trade, the funded account is moved to “evaluation” status (leverage lowered, restored at the 3rd payout). The English FAQ treats a first instance of gambling-style trading as a soft breach and pays that payout at a 30% split, but the Japanese FAQ has no such treatment and there is no explanation that the two differ. In October 2026, a user in Japan posted that after requesting a payout of about ¥1 million, trades made during the evaluation were ruled a violation, and they received 30% of the requested amount (with proof of payment), an account reset and individual trading conditions. The treatment matches the English FAQ and the user admits overlooking the rule, but we have not confirmed the firm’s explanation beyond the images in the posts.",
+   "sources": [
+    {
+     "kind": "official",
+     "url": "https://faq.fundedelite.com/ja/articles/13750961"
+    },
+    {
+     "kind": "official",
+     "url": "https://faq.fundedelite.com/en/articles/17437420"
+    },
+    {
+     "kind": "official",
+     "url": "https://faq.fundedelite.com/en/articles/17437339"
+    },
+    {
+     "kind": "official",
+     "url": "https://faq.fundedelite.com/en/articles/17437388"
+    },
+    {
+     "kind": "official",
+     "url": "https://faq.fundedelite.com/en/articles/17437398"
+    },
+    {
+     "kind": "claim",
+     "url": "https://x.com/nick_friedman/status/2108540564430057881"
+    },
+    {
+     "kind": "claim",
+     "url": "https://x.com/nick_friedman/status/2111445738823753846"
+    },
+    {
+     "kind": "claim",
+     "url": "https://x.com/nick_friedman/status/2111475894745436189"
+    },
+    {
+     "kind": "claim",
+     "url": "https://x.com/nick_friedman/status/2111488017391354156"
+    },
+    {
+     "kind": "claim",
+     "url": "https://x.com/nick_friedman/status/2111605145983123901"
+    },
+    {
+     "kind": "claim",
+     "url": "https://x.com/nick_friedman/status/2111781190428758315"
+    }
+   ]
+  },
+  {
+   "service_id": "blueberry-fx-cfd",
+   "company": "Blueberry Funded",
+   "category": "transition",
+   "label": "Major concern: rules applied after purchase",
+   "heading": "EA conditions and new synthetic-account rules also applied to existing accounts",
+   "evidence_label": "Basis: official materials",
+   "text": "The official help center says the conditions for automated trading (EAs) — only your own EAs, with prior disclosure and approval — apply to all accounts regardless of purchase date. For synthetic accounts, the 8 October 2026 changes (profits from trades under 5 minutes excluded from payouts, grid and martingale banned, and more) also apply to existing accounts: during evaluation from the next phase pass, and after passing from after the next payout.",
+   "sources": [
+    {
+     "kind": "official",
+     "url": "https://help.blueberryfunded.com/en/articles/9550892-do-you-allow-bots-and-ea-expert-advisor-trading"
+    },
+    {
+     "kind": "official",
+     "url": "https://help.blueberryfunded.com/en/articles/9714626-prohibited-strategies-after-march-12-2026"
+    },
+    {
+     "kind": "official",
+     "url": "https://help.blueberryfunded.com/en/articles/16969211-what-is-changing-on-our-synthetic-plans-from-8-october-2026"
+    }
+   ]
+  },
+  {
+   "service_id": "alpha-fx-cfd",
+   "company": "Alpha Capital",
+   "category": "claim",
+   "label": "Major concern: account closures and payout refusals without stated grounds",
+   "heading": "Reports continue of account closures and payout refusals based on matching device IDs (CID)",
+   "evidence_label": "Basis: user claims (4 people, unconfirmed) and press",
+   "text": "On 15–16 October 2026 there were posts saying accounts were closed and payouts stopped because their device ID (CID) matched other users: 3 on Trustpilot (according to a press report) and 1 on X. The basis for the match was not shown, and the press report also says the claims are unconfirmed. One of the three says the account remained and only new purchases were banned, so the treatment varies from person to person. We have not confirmed the firm’s explanation.",
+   "sources": [
+    {
+     "kind": "report",
+     "url": "https://davefinances.com/alpha-capital-trader-disputes-255-device-ids-linked-to-153-users-as-cid-complaints-grow/"
+    },
+    {
+     "kind": "claim",
+     "url": "https://www.trustpilot.com/review/alphacapitalgroup.uk"
+    },
+    {
+     "kind": "claim",
+     "url": "https://x.com/sbbhtrader/status/2110630124152565956"
+    }
+   ]
+  }
+ ]
+}
