@@ -43,7 +43,7 @@
     const rows=entries.map(({url,labels})=>{
       const stamp=sourceDate(url),day=stamp?(new Date(Date.parse(stamp)+32400000).toISOString()).slice(0,10).replaceAll('-','/'):'—';
       const typeText=[...labels].map(id=>t.types[id]||id);
-      const badges=labels.size?[...labels].map(id=>`<span class="fundedelite-evidence-type${['profit_reduced','refused','reentry_banned','account_closed','delayed'].includes(id)?' problem':''}">${esc(t.types[id]||id)}</span>`).join(''):`<span class="fundedelite-evidence-type">${esc(lang==='ja'?'種別未対応':lang==='ko'?'종류 미확인':'Type not mapped')}</span>`;
+      const badges=labels.size?[...labels].map(id=>`<span class="fundedelite-evidence-type${['profit_reduced','refused','reentry_banned','account_closed','delayed'].includes(id)?' problem':''}">${esc(t.types[id]||id)}</span>`).join(''):`<span class="fundedelite-evidence-type">${esc(lang==='ja'?'種別未対応':lang==='ko'?'종류 미확인':'Type not specified')}</span>`;
       const text=retainedPosts[idOf(url)]?.text||'';
       const aria=[...typeText,day,t.link].join(' · ');
       return `<div class="fundedelite-evidence-source" data-source-id="${esc(idOf(url))}"><div class="fundedelite-evidence-meta"><time datetime="${esc(stamp)}" title="${esc(stamp)}">${esc(t.posted)} ${esc(day)}</time><div class="fundedelite-evidence-types">${badges}</div></div><div class="fundedelite-evidence-body">${excerptMarkup(text,t)}</div><a class="fundedelite-evidence-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(aria)}">${esc(t.link)}</a></div>`;
