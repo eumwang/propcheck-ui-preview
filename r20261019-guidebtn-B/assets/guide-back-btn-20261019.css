@@ -1,0 +1,8 @@
+/* 2026-10-19 案B：ja 各社紹介ページ「4社ガイド」リンクを緑の塗りボタンに（各社ページだけが読み込む）。
+   既存ボタン（.btn／.af-register）と同じ緑・角丸8px・太字700・14px、ホバーは .button159 と同じ明度下げ。 */
+a.pc-guide-back{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:9px 16px;box-sizing:border-box;background:#087362;color:#fff;border:1px solid #087362;border-radius:8px;font-size:14px;font-weight:700;line-height:1.45;text-decoration:none;vertical-align:middle;transition:filter .15s}
+a.pc-guide-back::before{content:"←"/"";font-weight:700}
+a.pc-guide-back:hover{color:#fff;filter:brightness(.94)}
+.crumb a.pc-guide-back{margin-right:6px}
+.pc-guide-disclosure a.pc-guide-back{margin-top:6px}
+@media(prefers-reduced-motion:reduce){a.pc-guide-back{transition:none}}
