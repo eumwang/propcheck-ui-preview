@@ -1,2 +1,0 @@
-/* r20261020 perf3: company page CLS fix. Reserve space while #detail-root is still empty (JS fills it later). */
-#detail-root:not(:has(> :not(.af-cta))){min-height:100vh}

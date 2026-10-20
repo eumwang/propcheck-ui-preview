@@ -1,8 +1,0 @@
-const guideLang=document.documentElement.lang;const guideI18n={ja:['定価を入力してください','金額を確認してください',n=>n+'回'],en:['Enter a list price','Check the amount',n=>n+' purchases'],ko:['정가를 입력하세요','금액을 확인하세요',n=>n+'회']}[guideLang]||null;
-
-const money=n=>'$'+Number(n).toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:2});
-const size=document.querySelector('#hantec-size');
-if(size){const a=[29,59,109,189,299,499],b=[59,99,219,359,599,1169];function update(){const i=+size.value;document.querySelector('#endurance-price').textContent=money(a[i]);document.querySelector('#enhanced-price').textContent=money(b[i]);document.querySelector('#price-saving').textContent=(100*(1-a[i]/b[i])).toFixed(1)+'%';document.querySelector('#endurance-bar').style.width=(a[i]/b[i]*100)+'%';}size.addEventListener('change',update);update();}
-
-const calc=document.querySelector('#coin-calculator');
-if(calc){function update(){const first=+document.querySelector('#coin-first-price').value,price=+document.querySelector('#coin-price').value,out=document.querySelector('#coin-output');const ids=['first-cash','coin-award','cash-per','coin-per','coin-rest'];if(!Number.isFinite(first)||first<=0||!Number.isFinite(price)||price<=0){out.textContent=guideI18n[0];ids.forEach(id=>document.querySelector('#'+id).textContent='—');return;}const paid=Math.round(first*80)/100,award=Math.round(paid*200)/100,use=Math.round(price*30)/100,cash=Math.round(price*50)/100;if(use<=0){out.textContent=guideI18n[1];return;}const count=Math.floor((award+1e-8)/use),rest=Math.max(0,award-count*use);out.textContent=guideI18n[2](count);const values=[paid,award,cash,use,rest];ids.forEach((id,i)=>document.querySelector('#'+id).textContent=money(values[i]));}calc.addEventListener('input',update);update();}
