@@ -1,8 +1,0 @@
-/* 2026-10-19 案C：ja 各社紹介ページ「4社ガイド」リンクを丸い小さめのボタン（ピル型）に（各社ページだけが読み込む）。
-   既存のタグ（.tag）と同じ薄緑の枠・丸角、文字は緑・太字700、ホバーは .detail-tabs button と同じ。スマホでは高さ44px。 */
-a.pc-guide-back{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:6px 16px;box-sizing:border-box;background:#fff;color:var(--green,#087867);border:1px solid #c9dfd5;border-radius:999px;font-size:13px;font-weight:700;line-height:1.45;text-decoration:none;vertical-align:middle;transition:background-color .15s,border-color .15s,color .15s}
-a.pc-guide-back:hover{background:#f7fbf9;border-color:#80b9a3;color:#034f43}
-.crumb a.pc-guide-back{margin-right:6px}
-.pc-guide-disclosure a.pc-guide-back{margin-top:6px}
-@media(max-width:620px){a.pc-guide-back{min-height:44px;padding:9px 18px}}
-@media(prefers-reduced-motion:reduce){a.pc-guide-back{transition:none}}
