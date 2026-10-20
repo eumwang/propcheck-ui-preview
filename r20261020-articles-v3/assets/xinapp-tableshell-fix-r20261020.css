@@ -1,0 +1,2 @@
+/* JA top: stop the comparison list box (.table-shell) from becoming an inner vertical scroller on phones (X in-app browser). YAMAAN 2026-10-20 00:42 JST */
+@media(max-width:650px){.table-shell{overflow-x:hidden;overflow-x:clip;overflow-y:visible}}
