@@ -45,7 +45,7 @@ window.FOUNDATION194_COPY={
     source:'출처',originalRule:'',criteria:'기준',unknown:'확인할 수 있는 자료가 없어 가점하지 않았습니다.',
     scope:'',
     penalty:'감점: 미확인',
-    method:'산정 방법',date:'',
+    method:'평가 방법',date:'',
     generic:'확인할 수 있는 자료가 없어 가점하지 않았습니다.',
     g:{
       'ftmo-fx-cfd':'모회사 그룹 OMHC의 2025년 감사 연결 자기자본을 확인.',
