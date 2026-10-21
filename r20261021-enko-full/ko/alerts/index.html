@@ -1,0 +1,117 @@
+<!doctype html><html lang="ko"><head><meta name="robots" content="noindex,nofollow"><script id="pc-preview-guard">(()=>{const root='/propcheck-ui-preview/r20261021-enko-full/';const map=u=>{if(typeof u==='string'&&u.startsWith(location.origin+'/'))u=u.slice(location.origin.length);if(typeof u!=='string'||!u.startsWith('/')||u.startsWith('//')||u.startsWith('/propcheck-ui-preview/'))return u;return root+u.slice(1);};const nf=window.fetch.bind(window);window.fetch=(i,o)=>{const m=(o?.method||((i instanceof Request)&&i.method)||'GET').toUpperCase();if(m!=='GET'&&m!=='HEAD')return Promise.reject(new Error('Preview: submissions disabled'));return nf(typeof i==='string'?map(i):(i instanceof URL?map(i.href):(i instanceof Request&&map(i.url)!==i.url?new Request(map(i.url),i):i)),o);};const xo=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(m,u,...r){if(!['GET','HEAD'].includes(String(m).toUpperCase()))throw new Error('Preview: submissions disabled');return xo.call(this,m,map(u instanceof URL?u.href:u),...r);};try{navigator.sendBeacon=()=>false}catch(_e){}document.addEventListener('submit',e=>{e.preventDefault();e.stopImmediatePropagation();},true);const fix=n=>{if(n.nodeType!==1)return;for(const it of [n,...n.querySelectorAll('a[href],img[src],source[src],link[href],script[src]')])for(const k of ['href','src']){const v=it.getAttribute(k);if(v&&map(v)!==v)it.setAttribute(k,map(v));}};new MutationObserver(es=>{for(const e of es){if(e.type==='attributes')fix(e.target);else for(const n of e.addedNodes)fix(n);}}).observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:['href','src']});const si=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,'src');Object.defineProperty(HTMLImageElement.prototype,'src',{get(){return si.get.call(this)},set(v){si.set.call(this,map(String(v)))},configurable:true});document.addEventListener('DOMContentLoaded',()=>{for(const f of document.forms){f.removeAttribute('data-netlify');f.method='get';f.action='#';}fix(document.body);});})();</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6QHP92GKS1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-6QHP92GKS1');</script><script src="/propcheck-ui-preview/r20261021-enko-full/perf-data/adba1d9cd08665a7ef831260.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/propcheck-ui-preview/r20261021-enko-full/styles.css"><style>.ops-page{max-width:860px;margin:40px auto;padding:0 20px}.ops-box{background:white;border:1px solid #d6e4df;border-radius:18px;padding:26px;margin:20px 0}.ops-badge{display:inline-block;background:#e6f3ee;border-radius:30px;padding:5px 12px;color:#076758}.ops-page h1{font-size:clamp(28px,5vw,40px)}.ops-page p{line-height:1.8}.ops-button{display:inline-block;background:#087665;color:white;padding:12px 20px;border-radius:9px;text-decoration:none}.ops-page a{overflow-wrap:anywhere}</style><style>html[lang="ko"] body{word-break:keep-all}.ops-page{overflow-wrap:anywhere}.ops-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.ops-actions a{white-space:nowrap}</style><meta name="robots" content="noindex"><title>PROP CHECK 소식</title><link rel="stylesheet" href="/propcheck-ui-preview/r20261021-enko-full/preview-v217.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261021-enko-full/preview-v217-r2.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261021-enko-full/assets/header-x-link-20261017.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261021-enko-full/assets/footer-reference-20261018.css"><link rel="icon" href="/propcheck-ui-preview/r20261021-enko-full/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/propcheck-ui-preview/r20261021-enko-full/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/propcheck-ui-preview/r20261021-enko-full/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="/propcheck-ui-preview/r20261021-enko-full/apple-touch-icon.png"><style id="alerts-shared-site-header">.site-header{background:#fff!important}.site-header .header-row{max-width:1180px;margin:0 auto;padding:6px 20px!important;min-height:0!important;gap:24px!important;align-items:center!important}.site-header .site-brand-logo{width:108px!important;min-width:108px!important;flex:0 0 108px!important;padding:0!important;margin:0!important}.site-header .site-brand-logo img{display:block!important;width:108px!important;height:72px!important;object-fit:contain!important}.site-header nav{gap:14px!important;align-items:center!important}.current-method h2{margin-top:1.6em}.current-method .tag-guide-card{margin:20px 0;padding:18px;border:1px solid #d6e5df;border-radius:12px}.current-method p{line-height:1.8}@media(max-width:700px){.site-header .header-row{padding:5px 12px!important;gap:8px!important;flex-wrap:wrap!important;justify-content:space-between!important}.site-header .site-brand-logo{width:84px!important;min-width:84px!important;flex-basis:84px!important}.site-header .site-brand-logo img{width:84px!important;height:56px!important}.site-header nav{display:flex!important;flex-wrap:wrap!important;gap:8px 12px!important;font-size:11px!important;justify-content:flex-start!important;max-width:100%}}
+/* Homepage only: preserve detail-page warnings. */
+#comparison-table .ux183-warning,#comparison-table .fold-warning{display:none!important}
+
+#comparison-table .ux183-warning,#comparison-table .fold-warning{display:none!important}
+
+
+:root{--pc-header-height:84px}html{scroll-padding-top:calc(var(--pc-header-height) + 12px)}
+.site-header{position:sticky!important;top:0!important;z-index:1000!important;background:#fff!important;overflow:visible!important;border-bottom:1px solid #e3ebe7}
+.site-header .header-row{max-width:1240px!important;flex-wrap:nowrap!important}
+.site-header nav{display:flex!important;flex-wrap:nowrap!important;gap:18px!important;overflow:visible!important}
+.site-header nav>a{white-space:nowrap;text-decoration:none;font-size:13px}
+.site-header .language-menu{position:relative;margin:0!important}
+.site-header .language-menu-list{position:absolute;right:0;left:auto;z-index:1100;min-width:160px;background:#fff}
+.w7-hero{margin:0;background:#f7f7ef}.w7-hero picture,.w7-hero img{display:block;width:100%;height:auto}
+.w7-caption{text-align:center;padding:18px 20px 24px;color:#205344}.w7-caption h1{font-size:clamp(18px,2vw,27px);margin:0 0 8px;font-weight:600}.w7-caption p{margin:0;font-size:15px}
+@media(max-width:700px){
+.site-header .header-row{padding:5px 10px!important;gap:10px!important}
+.site-header .site-brand-logo{width:66px!important;min-width:66px!important;flex:0 0 66px!important}
+.site-header .site-brand-logo img{width:66px!important;height:48px!important}
+.site-header nav{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px 5px!important;flex:1;align-items:center!important;justify-items:center}
+.site-header nav>a{font-size:10px!important;line-height:1.3;padding:7px 0!important;text-align:center}
+.site-header .language-menu summary{padding:3px 8px!important;min-height:26px}
+.w7-caption{padding:12px 18px 20px}.w7-caption p{font-size:12px}
+}
+
+@media(max-width:700px){.site-header .header-row{display:flex!important;flex-direction:row!important;align-items:center!important}.site-header nav{width:auto!important;min-width:0!important;align-self:center!important}.site-header nav>a{font-size:11px!important}}
+
+.site-header{position:fixed!important;left:0!important;right:0!important;width:100%!important}body{padding-top:var(--pc-header-height)!important}
+</style><style id="review-alerts-headings-1">.ops-page .ops-box>h1,.ops-page .ops-box>h2{font-size:clamp(20px,4vw,28px);text-wrap:balance}</style><style id="review-alerts-icons-c">.ops-status-icon{display:inline-flex;width:20px;height:20px;margin-right:8px;vertical-align:-4px;flex:none}.ops-status-icon svg{width:20px;height:20px}.ops-status-icon svg path,.ops-status-icon svg circle{stroke:#0b8f57;stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round}</style><style id="review-alerts-desktop-fit">/* ① Desktop-only review layout. All copy and links stay in the DOM. */
+@media (min-width: 1050px) {
+  .ops-page {
+    box-sizing: border-box;
+    max-width: 1260px;
+    margin: 12px auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: minmax(0, 0.97fr) minmax(0, 1.03fr);
+    grid-template-rows: auto auto;
+    gap: 10px 14px;
+    align-items: start;
+  }
+  .ops-page > .ops-box {
+    min-width: 0;
+    margin: 0;
+    padding: 16px 20px;
+  }
+  .ops-page > .ops-box:first-child { grid-row: 1 / 3; }
+  .ops-page > .ops-box:first-child h1 {
+    font-size: 30px;
+    line-height: 1.25;
+    margin: 12px 0;
+  }
+  .ops-page > .ops-box:first-child p {
+    line-height: 1.55;
+    margin: 10px 0;
+  }
+  .ops-page > .ops-box:first-child p:last-child { margin-bottom: 0; }
+  .ops-page .ops-button { padding: 10px 16px; }
+  .ops-page > .ops-box:nth-child(2) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 6px 14px;
+  }
+  .ops-page > .ops-box:nth-child(2) h2 {
+    grid-column: 1 / -1;
+    font-size: 21px;
+    line-height: 1.3;
+    margin: 0 0 3px;
+  }
+  .ops-page > .ops-box:nth-child(2) p {
+    line-height: 1.5;
+    margin: 0;
+  }
+  .ops-page > .ops-box:nth-child(2) p:last-child { grid-column: 1 / -1; }
+  .ops-page > .ops-box:nth-child(3) h2 {
+    font-size: 21px;
+    line-height: 1.3;
+    margin: 0 0 5px;
+  }
+  .ops-page > .ops-box:nth-child(3) p {
+    line-height: 1.5;
+    margin: 0 0 8px;
+  }
+}
+/* Tall desktop: the one-column, centered three-card layout in the Slack reference. */
+@media (min-width: 1050px) and (min-height: 850px) {
+  .ops-page {
+    display: block;
+    max-width: 900px;
+    margin: 12px auto;
+    padding: 0 20px;
+  }
+  .ops-page > .ops-box {
+    margin: 0 0 12px;
+    padding: 16px 22px;
+  }
+  .ops-page > .ops-box:nth-child(2) { display: block; }
+  .ops-page > .ops-box:nth-child(2) h2 {
+    margin: 0 0 10px;
+  }
+  .ops-page > .ops-box:nth-child(2) p {
+    margin: 5px 0;
+    line-height: 1.5;
+  }
+  .ops-page > .ops-box:nth-child(2) p:last-child { margin-top: 12px; }
+  .ops-page > .ops-box:nth-child(3) h2 { margin: 0 0 8px; }
+  .ops-page > .ops-box:nth-child(3) p { margin: 0 0 10px; }
+}
+
+/* Keep the reference's three centered cards; reduce surplus bottom space on tall PCs. */
+@media (min-width:1050px) and (min-height:850px) {
+  .ops-page > .ops-box {
+    padding-block:clamp(19px, calc(20vh - 151px), 34px);
+  }
+}
+</style></head><body><header class="site-header"><div class="header-row"><a class="site-brand site-brand-logo" href="/propcheck-ui-preview/r20261021-enko-full/ko/"><img src="/propcheck-ui-preview/r20261021-enko-full/assets/propcheck-logo-r20261020.webp" alt="PROP CHECK"></a><nav aria-label="사이트 메뉴"><a href="/propcheck-ui-preview/r20261021-enko-full/ko/#featured">주목할 4개사</a><a href="/propcheck-ui-preview/r20261021-enko-full/ko/#comparison">30개사 비교</a><a href="/propcheck-ui-preview/r20261021-enko-full/ko/report/">제보센터</a><a href="/propcheck-ui-preview/r20261021-enko-full/ko/guides/" title="소개 글 목록" hreflang="ko">소개 글</a><a href="/propcheck-ui-preview/r20261021-enko-full/ko/articles/">기사</a><a href="/propcheck-ui-preview/r20261021-enko-full/ko/methodology/">평가 방법</a><a class="pc-x-link" href="https://x.com/XS4N62dvqf32385" target="_blank" rel="noopener noreferrer" aria-label="PROP CHECK 공식 X 계정(새 탭에서 열림)"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><details class="language-menu" data-language-menu><summary aria-label="언어 선택(현재: 한국어)" aria-expanded="false"><svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="6" fill="#bc002d"/></svg><span class="language-menu-chevron" aria-hidden="true">⌄</span><span class="visually-hidden">한국어</span></summary><div class="language-menu-list" role="menu"><a href="/propcheck-ui-preview/r20261021-enko-full/alerts/" role="menuitem"><svg class="language-flag" viewbox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"></rect><circle cx="15" cy="10" r="6" fill="#bc002d"></circle></svg><span>日本語</span></a><a role="menuitem" href="/propcheck-ui-preview/r20261021-enko-full/en/alerts/"><svg class="language-flag" viewbox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#012169"></rect><path d="M0 0l30 20M30 0L0 20" stroke="#fff" stroke-width="5"></path><path d="M0 0l30 20M30 0L0 20" stroke="#c8102e" stroke-width="2"></path><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6"></path><path d="M15 0v20M0 10h30" stroke="#c8102e" stroke-width="3"></path></svg><span>English</span></a><a role="menuitem" href="/propcheck-ui-preview/r20261021-enko-full/ko/alerts/"><svg class="language-flag" viewbox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"></rect><path d="M10 10a5 5 0 0 1 10 0z" fill="#cd2e3a"></path><path d="M10 10a5 5 0 0 0 10 0z" fill="#0047a0"></path><path d="M5 5l4-2M5.8 7l4-2M21 15l4-2M20.2 13l4-2" stroke="#111" stroke-width="1"></path></svg><span>한국어</span></a></div></details></nav></div></header><main class="ops-page"><section class="ops-box"><span class="ops-badge">TELEGRAM · 공지 전용</span><h1>업체의 움직임과 그 이후까지.</h1><p>규칙의 중요한 변경, 출금·계정 관련 보고, 해결이나 정정을 모아 전해 드립니다.</p><p><strong>운영자의 공지 전용입니다.</strong><br>정보를 정리·확인한 뒤 운영자가 게시합니다. 독자 게시 그룹이 아닙니다.</p><p><a class="ops-button" href="https://t.me/PropCheckNewsBot" target="_blank" rel="noopener noreferrer">Telegram으로 받기 ↗</a></p><p>Telegram에서 ‘시작’(/start)을 누르면 초기 설정이 시작됩니다.</p></section><section class="ops-box"><h2>확인 상황을 나누어 전해 드립니다</h2><p><strong>공식 발표</strong> — 업체가 공표한 내용과 원문 링크.</p><p><strong>이용자 보고</strong> — 게시자의 주장과 아직 확인하지 못한 점을 명기.</p><p><strong>근거를 대조한 사례</strong> — 확인한 자료와 판단할 수 있는 범위를 명기.</p><p><strong>해결·정정</strong> — 입금이나 해결 등의 후속 소식도 게재.</p><p>AI의 정리 결과만으로 사실로 인정하지 않습니다. 개인정보나 비공개를 희망한 게시물을 그대로 전송하지 않습니다.</p></section><section class="ops-box"><h2>경험을 전하고 싶은 분께</h2><p>출금 거절·감액·계정 정지 등의 경험이나 그 이후의 해결을 제보센터에 보내 주세요.</p><a class="ops-button" href="/propcheck-ui-preview/r20261021-enko-full/ko/report/">제보센터에 정보 보내기 →</a></section></main><footer class="pc-site-footer"><nav class="pc-footer-layout" aria-label="하단 메뉴"><a class="pc-footer-brand" href="/propcheck-ui-preview/r20261021-enko-full/ko/" aria-label="PROP CHECK 홈"><img src="/propcheck-ui-preview/r20261021-enko-full/assets/propcheck-logo-r20261020.webp" alt="PROP CHECK"></a><div class="pc-footer-group" aria-labelledby="pc-footer-heading-1"><h2 id="pc-footer-heading-1">연락·요청</h2><a href="/propcheck-ui-preview/r20261021-enko-full/ko/report/">출금 거부·BAN 제보</a><a href="/propcheck-ui-preview/r20261021-enko-full/ko/request-listing/">미게재 업체 요청</a><a href="/propcheck-ui-preview/r20261021-enko-full/report-error/" hreflang="ja">정보 오류 제보(일본어)</a><a href="/propcheck-ui-preview/r20261021-enko-full/ko/contact/">문의</a></div><div class="pc-footer-group" aria-labelledby="pc-footer-heading-2"><h2 id="pc-footer-heading-2">운영과 투명성</h2><a href="/propcheck-ui-preview/r20261021-enko-full/ko/guides/">소개 글</a><a href="/propcheck-ui-preview/r20261021-enko-full/ko/articles/">기사</a><a href="/propcheck-ui-preview/r20261021-enko-full/ko/methodology/">평가 방법</a><a href="/propcheck-ui-preview/r20261021-enko-full/ko/about/">운영자 정보</a><a href="/propcheck-ui-preview/r20261021-enko-full/ko/policy/">편집 방침·면책 사항</a><a href="/propcheck-ui-preview/r20261021-enko-full/ko/advertising/">광고·추천 링크 방침</a></div><div class="pc-footer-group" aria-labelledby="pc-footer-heading-3"><h2 id="pc-footer-heading-3">이용 조건</h2><a href="/propcheck-ui-preview/r20261021-enko-full/ko/terms/">이용약관</a><a href="/propcheck-ui-preview/r20261021-enko-full/ko/privacy/">개인정보 처리방침</a></div></nav><p class="pc-footer-copyright">© 2026 PROP CHECK</p></footer><script defer src="/propcheck-ui-preview/r20261021-enko-full/preview-v217.js?perf=e5d9d214514c5c55&cb=20261021cv2"></script><script defer src="/propcheck-ui-preview/r20261021-enko-full/preview-v217-r6-enko-r20261019.js"></script><script defer src="/propcheck-ui-preview/r20261021-enko-full/ko/language-menu.js"></script></body></html>
