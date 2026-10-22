@@ -1,0 +1,12 @@
+/* Approved preparing state; preserve existing banner placement and mobile layout. */
+.alerts159.pc-alert-preparing{background:#edf5f0;border-color:#d4e3db}
+.pc-alert-preparing .pc-preparing-status{display:inline-block;align-self:flex-start;background:#f3e4b8;color:#5f4818;padding:6px 11px;font-size:12px;font-weight:700;border-radius:4px;margin:0 0 12px;letter-spacing:.06em}
+.pc-alert-preparing .pc-alert-release{display:block;font-size:12px;color:#62776e;line-height:1.7;margin:18px 0 0;cursor:default}
+.pc-alert-preparing .notification-art159 img{width:100%;height:auto;transform:none;border-radius:10px}
+.pc-alert-preparing .notification-art159 small{opacity:1;color:#657f70}
+@media(max-width:700px){.pc-alert-preparing .pc-preparing-status{font-size:10px;padding:4px 6px;letter-spacing:0;margin-bottom:8px}.pc-alert-preparing .pc-alert-release{font-size:10px;line-height:1.6;margin-top:0}}
+
+/* Owner-requested adjacent English teaser. */
+.pc-alert-preparing .pc-preparing-status:has(.pc-coming-soon){display:inline-flex;align-items:center;flex-wrap:wrap;column-gap:10px;row-gap:3px}
+.pc-alert-preparing .pc-coming-soon{font-family:Georgia,"Times New Roman",serif;font-size:16px;font-style:italic;font-weight:400;letter-spacing:.045em;white-space:nowrap;color:#74602f}
+@media(max-width:700px){.pc-alert-preparing .pc-preparing-status:has(.pc-coming-soon){column-gap:5px;font-size:9px;padding:4px 5px}.pc-alert-preparing .pc-coming-soon{font-size:11px;letter-spacing:.01em}}
