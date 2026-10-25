@@ -1,0 +1,167 @@
+{
+ "reviewed_on": "2026-10-19",
+ "companies": [
+  {
+   "service_id": "fundingpips-fx-cfd",
+   "company": "FundingPips",
+   "category": "transition",
+   "label": "重大な懸念事項：ルールの後からの適用",
+   "heading": "既存口座の強制移行（旧10%目標プラン・PRIME）",
+   "evidence_label": "根拠：公式資料・会社の回答（報道）",
+   "text": "公式ヘルプの旧ルール記事は、2 Step Standard の10%目標プランの提供終了に伴い、既存口座を2 Step Flex（配分85%）としてリセットしたと説明しています。2026年9月22日の報道では、会社がPRIME利用者の約70%を新しい口座へ必須で移し、保留中の出金を新口座の初期残高に変えたと説明しています。会社は出金の先延ばしではないと反論しています。過去の取引をさかのぼって失格にした例は確認していません。",
+   "sources": [
+    {
+     "kind": "official",
+     "url": "https://help.fundingpips.com/hc/en-us/articles/51307058233361-FundingPips-Legacy-Rules"
+    },
+    {
+     "kind": "official",
+     "url": "https://help.fundingpips.com/hc/en-us/articles/34447308895889-Prime-Account"
+    },
+    {
+     "kind": "report",
+     "url": "https://www.financemagnates.com/forex/fundingpips-invited-traders-into-prime-the-tcs-made-it-mandatory/"
+    }
+   ]
+  },
+  {
+   "service_id": "goat-fx-cfd",
+   "company": "Goat Funded Trader",
+   "category": "current",
+   "label": "重大な懸念事項：ルールの後からの適用",
+   "heading": "VPN・VPSの禁止を既存口座にも適用（2026年10月6日から）",
+   "evidence_label": "根拠：公式資料（利用者の申告もあり・未確認）",
+   "text": "公式FAQは、2026年10月6日からVPN・VPS・プロキシなどの利用を全口座で禁止し、取引中に検出されると口座違反として扱うとしています。8月の改定では8月12日より前に購入した口座は対象外でしたが、10月の改定でこの例外はなくなりました。旧口座にも適用されて出金を拒否されたという利用者の申告もありますが、内容は確認できていません。",
+   "sources": [
+    {
+     "kind": "official",
+     "url": "https://help.goatfundedtrader.com/en/articles/10742103-ip-address-and-account-access-policy"
+    },
+    {
+     "kind": "claim",
+     "url": "https://www.reddit.com/r/PropFirmTester/comments/1w779zj/goat_funded_trder_payout_denial/"
+    }
+   ]
+  },
+  {
+   "service_id": "tradingcult-fx-cfd",
+   "company": "TradingCult",
+   "category": "response",
+   "label": "重大な懸念事項：ルールの後からの適用",
+   "heading": "HFT禁止を購入済みの口座にも適用・ニュース規則の変更を巡る申告",
+   "evidence_label": "根拠：公式の告知・会社の回答",
+   "text": "公式の告知（2026年3月）は、3月15日以降、それより前に購入した口座でもHFT（高頻度取引）ロボットを使えなくするとしています。2025年12月には、購入後にニュース取引の規則が変わったという投稿に対し、会社が規則の更新を認め、事前のメールと違反後の警告があったと回答しています。個別のメールは確認できていません。",
+   "sources": [
+    {
+     "kind": "official",
+     "url": "https://www.linkedin.com/posts/tradingcultofficial_trading-proptrading-forextrading-activity-7437167386308378624-QmNX"
+    },
+    {
+     "kind": "response",
+     "url": "https://www.trustpilot.com/review/tradingcult.com"
+    }
+   ]
+  },
+  {
+   "service_id": "fundedelite-fx-cfd",
+   "company": "FundedElite",
+   "category": "version",
+   "label": "重大な懸念事項：日英のルールの違い・出金時の後からの違反認定",
+   "heading": "日英FAQで処置が違い説明なし／出金申請時に評価中の取引を違反とし30%に減額",
+   "evidence_label": "根拠：C 本人の記録1人（会社の通知・出金証明の画像、取引画面）＋A 公式FAQ（英語・日本語）。違反の対象は本人の説明",
+   "text": "日本語FAQは、1回の取引での合格など明確な違反ではない不審な合格について、ファンデッド口座を「評価」ステータスに移す（レバレッジを下げ、3回目の出金で戻す）としています。英語FAQは、初回のギャンブル的な取引をソフトブリーチとし、その回の出金を取り分30%で支払うとしていますが、日本語FAQにこの処置はなく、日英で違うという説明もありません。日本の利用者1人が公開した画面によると、この利用者は2026年8月から9月にかけて評価（チャレンジ）用の口座を複数持ち、それぞれ1回から数時間の大きな取引で約2%の利益を出して合格していました。8月に合格した口座では、9月に出金が承認されています。10月、別の2,000万円口座から約100万円の出金を申請したところ、会社は審査で違反を指摘し、本来は全額不承認となるところを申請額の30%を支払って解決すること、口座を初期残高に戻すこと、今後の取引条件を示しました（利用者が公開した会社の通知の画像による）。条件には、損切り注文の設定や「評価アカウントを複数購入し、大きなポジションで合否を決める取引を行わないこと」が含まれています。本人によると、違反とされたのは1か月以上前の評価段階の取引で、それまで指摘はなかったといいます。ただし通知の公開部分には、違反とされた取引や口座は書かれておらず、確認できていません。英語FAQにはギャンブル的な取引を出金審査でソフトブリーチとし取り分30%で支払う定めがありますが、日本語FAQにはこの処置がありません。運営の本件についての説明は見つかっていません。",
+   "sources": [
+    {
+     "kind": "official",
+     "url": "https://faq.fundedelite.com/ja/articles/13750961"
+    },
+    {
+     "kind": "official",
+     "url": "https://faq.fundedelite.com/en/articles/17437420"
+    },
+    {
+     "kind": "official",
+     "url": "https://faq.fundedelite.com/en/articles/17437339"
+    },
+    {
+     "kind": "official",
+     "url": "https://faq.fundedelite.com/en/articles/17437388"
+    },
+    {
+     "kind": "official",
+     "url": "https://faq.fundedelite.com/en/articles/17437398"
+    },
+    {
+     "kind": "claim",
+     "url": "https://x.com/nick_friedman/status/2108540564430057881"
+    },
+    {
+     "kind": "claim",
+     "url": "https://x.com/nick_friedman/status/2111445738823753846"
+    },
+    {
+     "kind": "claim",
+     "url": "https://x.com/nick_friedman/status/2111475894745436189"
+    },
+    {
+     "kind": "claim",
+     "url": "https://x.com/nick_friedman/status/2111488017391354156"
+    },
+    {
+     "kind": "claim",
+     "url": "https://x.com/nick_friedman/status/2111605145983123901"
+    },
+    {
+     "kind": "claim",
+     "url": "https://x.com/nick_friedman/status/2111781190428758315"
+    }
+   ]
+  },
+  {
+   "service_id": "blueberry-fx-cfd",
+   "company": "Blueberry Funded",
+   "category": "transition",
+   "label": "重大な懸念事項：ルールの後からの適用",
+   "heading": "EAの条件と、シンセティック口座の新ルールを既存口座にも適用",
+   "evidence_label": "根拠：公式資料",
+   "text": "公式ヘルプは、自動売買（EA）の条件（自作EAのみ・事前の開示と承認）を購入日に関係なく全口座に適用するとしています。シンセティック口座では、2026年10月8日の変更（5分未満の取引の利益を出金額から除く、グリッド・マーチンゲールの禁止など）を、既存口座にも評価中はフェーズ合格時、合格後は次回の出金の後から適用するとしています。",
+   "sources": [
+    {
+     "kind": "official",
+     "url": "https://help.blueberryfunded.com/en/articles/9550892-do-you-allow-bots-and-ea-expert-advisor-trading"
+    },
+    {
+     "kind": "official",
+     "url": "https://help.blueberryfunded.com/en/articles/9714626-prohibited-strategies-after-march-12-2026"
+    },
+    {
+     "kind": "official",
+     "url": "https://help.blueberryfunded.com/en/articles/16969211-what-is-changing-on-our-synthetic-plans-from-8-october-2026"
+    }
+   ]
+  },
+  {
+   "service_id": "alpha-fx-cfd",
+   "company": "Alpha Capital",
+   "category": "claim",
+   "label": "重大な懸念事項：根拠が示されない口座閉鎖・出金拒否",
+   "heading": "デバイスID（CID）の一致を理由とする口座閉鎖・出金拒否の報告が続く",
+   "evidence_label": "根拠：利用者の申告（4人・未確認）・報道",
+   "text": "2026年10月15〜16日に、デバイスID（CID）が他の利用者と一致したことを理由に口座を閉鎖され、出金を止められたという投稿が、Trustpilotで3件（報道による）、Xで1件ありました。照合の根拠は示されておらず、報道も主張は未確認だと伝えています。3件のうち1件は、口座は残り新規購入だけを禁止されたとしており、処置は人によって異なります。会社側の説明は確認できていません。",
+   "sources": [
+    {
+     "kind": "report",
+     "url": "https://davefinances.com/alpha-capital-trader-disputes-255-device-ids-linked-to-153-users-as-cid-complaints-grow/"
+    },
+    {
+     "kind": "claim",
+     "url": "https://www.trustpilot.com/review/alphacapitalgroup.uk"
+    },
+    {
+     "kind": "claim",
+     "url": "https://x.com/sbbhtrader/status/2110630124152565956"
+    }
+   ]
+  }
+ ]
+}
