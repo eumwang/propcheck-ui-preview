@@ -3,7 +3,7 @@
  if(window.__tgbR20261019)return;window.__tgbR20261019=true;
  const root=document.documentElement;root.classList.add('tgb-js');
  const hide=document.createElement('style');hide.textContent='html.tgb-js .alerts159.pc-alert-preparing{visibility:hidden}';document.head.appendChild(hide);
- const css=document.createElement('link');css.rel='stylesheet';css.href='/assets/tg-banner-ja-r20261019.css';document.head.appendChild(css);
+ const css=document.createElement('link');css.rel='stylesheet';css.href='/propcheck-ui-preview/r20261026-weekly1025c/assets/tg-banner-ja-r20261019.css';document.head.appendChild(css);
  const unhide=()=>root.classList.remove('tgb-js');
  const BOT='https://t.me/PropCheckNewsBot';
  const IMG={rule:'/assets/tg-sample-rule-ja-r20261019.png',ban:'/assets/tg-sample-ban-ja-r20261019.png',coupon:'/assets/tg-sample-coupon-ja-r20261019.png'};
