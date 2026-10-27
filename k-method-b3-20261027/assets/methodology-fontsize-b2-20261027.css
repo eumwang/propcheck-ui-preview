@@ -1,0 +1,14 @@
+/* k-method-b2-20261027: 評価方法JA 見出し以外の文字を本文と同じ14pxに統一（見出し・点数の大きな数字は対象外） */
+main .home-kicker,
+main .mj-eq-item>span,
+main .mj-note-warn>strong,
+main .mj-gloss-list dd,
+main .mj-weight-list dt,
+main .mj-sub,
+main .mj-tag-common p,
+main .mj-flow>li>span,
+main .mj-flow>li>strong,
+main .mj-review-steps>li>strong,
+main .signal-tag,
+main .mj-point,
+main .mjb-name{font-size:14px!important}
