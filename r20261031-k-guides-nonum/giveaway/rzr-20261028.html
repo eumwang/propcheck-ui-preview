@@ -1,0 +1,88 @@
+<meta name="robots" content="noindex,nofollow"><script id="pc-preview-guard">(()=>{const root='/propcheck-ui-preview/r20261031-k-guides-nonum/';const map=u=>{if(typeof u==='string'&&u.startsWith(location.origin+'/'))u=u.slice(location.origin.length);if(typeof u!=='string'||!u.startsWith('/')||u.startsWith('//')||u.startsWith('/propcheck-ui-preview/'))return u;return root+u.slice(1);};const nf=window.fetch.bind(window);window.fetch=(i,o)=>{const m=(o?.method||((i instanceof Request)&&i.method)||'GET').toUpperCase();if(m!=='GET'&&m!=='HEAD')return Promise.reject(new Error('Preview: submissions disabled'));return nf(typeof i==='string'?map(i):(i instanceof URL?map(i.href):(i instanceof Request&&map(i.url)!==i.url?new Request(map(i.url),i):i)),o);};const xo=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(m,u,...r){if(!['GET','HEAD'].includes(String(m).toUpperCase()))throw new Error('Preview: submissions disabled');return xo.call(this,m,map(u instanceof URL?u.href:u),...r);};try{navigator.sendBeacon=()=>false}catch(_e){}document.addEventListener('submit',e=>{e.preventDefault();e.stopImmediatePropagation();},true);const fix=n=>{if(n.nodeType!==1)return;for(const it of [n,...n.querySelectorAll('a[href],img[src],source[src],link[href],script[src]')])for(const k of ['href','src']){const v=it.getAttribute(k);if(v&&map(v)!==v)it.setAttribute(k,map(v));}};new MutationObserver(es=>{for(const e of es){if(e.type==='attributes')fix(e.target);else for(const n of e.addedNodes)fix(n);}}).observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:['href','src']});const si=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,'src');Object.defineProperty(HTMLImageElement.prototype,'src',{get(){return si.get.call(this)},set(v){si.set.call(this,map(String(v)))},configurable:true});document.addEventListener('DOMContentLoaded',()=>{for(const f of document.forms){f.removeAttribute('data-netlify');f.method='get';f.action='#';}fix(document.body);});})();</script><!doctype html><html lang="ja"><meta charset="utf-8"><title>RZR NEW ERA ギブアウェイ レース</title>
+<style>body{margin:0;background:#0b0b10;color:#fff;font-family:sans-serif}#top{width:1280px;margin:auto;padding:6px 0;font-size:14px}
+#top input{width:150px;font-size:16px}#top button{font-size:15px;padding:3px 14px}.src{border:1px solid #888;padding:1px 8px;font-size:13px}canvas{display:block;margin:auto}code{color:#aaa;font-size:12px}</style>
+<div id="top"><div style="font-size:17px;margin-bottom:5px">22:00（日本時間）に確定するGOLD終値を入れると、誰が入れても同じ順位になります</div>
+<div style="margin-bottom:5px"><span class="src">出典：RZR Funded のチャート XAUUSD 1時間足・21時の足（22時に確定する終値）</span></div>
+GOLD終値: <input id="rate" placeholder="例 4012.35"> <button id="go">スタート</button> <button id="snd">🔇 音オフ</button>
+　<span id="used"></span>　応募者 <b id="n"></b>名　リストsha256: <code id="lh"></code></div>
+<canvas id="c" width="1280" height="720"></canvas>
+<script>
+const H=["_clear_777", "aa11kk30", "aiharahi", "amzk275903", "angel_of_pips", "anna002025", "aranamifx", "batabatasandesu", "bcat_ea_trader", "botchan0712", "cb6hcsz5vc36741", "explosionnami", "ferry_trader", "fire88165075762", "fmfm7575", "focuslight_fx", "futomichi_prop", "fx_shabasu", "fxmqltrader", "gensosijin", "gpttapmdj", "gunzogorogoro", "hacchi_fx", "hempdelic", "higashi0128", "horixon18516247", "kanade_3220", "kaniesousai", "ldtuat0yiobv8rb", "li2tnmrkb8aonuc", "natsuki_no_tree", "nendy71", "ninomasa_kohaku", "oaoaoa0425", "panda_satotaro", "panmimi510", "pc6bxkf8zl98lqa", "pico_trader", "relax_kj3", "saradaaburafx", "skystar3323", "theo_chann", "tteka_kyun", "usdjpyeurgbp", "yanyan55yanyan", "yu_kabutry"], LH="b883c7fbeb3b41caae93553a8e6293f7d90c1b4c3ad2766216bded14977412fa", N=H.length;
+const c=document.getElementById('c'),x=c.getContext('2d');document.getElementById('n').textContent=N;
+async function sha(s){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return [...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
+(async()=>{const h=await sha(H.map(v=>v+'\n').join(''));document.getElementById('lh').textContent=h+(h===LH?' ✓':' ✗不一致')})();
+function normRate(v){v=String(v).replace(/[\uFF10-\uFF19\uFF0E]/g,ch=>String.fromCharCode(ch.charCodeAt(0)-0xFEE0)).replace(/[\s,\uFF0C]/g,'');const m=/^(\d+)(?:\.(\d*))?$/.exec(v);if(!m)return null;
+ const f=(m[2]||'')+'000';let n=(BigInt(m[1]+f.slice(0,2))+(f[2]>='5'?1n:0n)).toString().padStart(3,'0');return BigInt(n.slice(0,-2)).toString()+'.'+n.slice(-2)}
+async function ranking(seed){const rem=[...H],out=[];for(let k=0;k<N;k++){const m=k==0?seed+'\n'+LH:seed+'\n'+LH+'\n'+k;const d=await sha(m);out.push(rem.splice(Number(BigInt('0x'+d)%BigInt(rem.length)),1)[0])}return out}
+// ---------- 以下は見た目だけ（順位は上の ranking() の結果をそのまま使う） ----------
+const TOP=70,BOT=690,LANE=(BOT-TOP)/N,X0=150,X1=1170,ICON=['🏇','🐎','🦄','🐆','🐕','🐇','🦖','🐢','🐫','🦓'];
+let R=null,rankOf={},ph=[],state='idle',cdStart=0,vt=0,last=0,flash=0,conf=[],ticker=[],nextTick=2,prevOrder=null,prevPos={},sound=false,ac=null,zoom=1,camX=640,camY=380,shownWin=false;
+function beep(f,d,v=0.15){if(!sound)return;ac=ac||new AudioContext();const o=ac.createOscillator(),g=ac.createGain();o.frequency.value=f;g.gain.value=v;o.connect(g);g.connect(ac.destination);o.start();g.gain.exponentialRampToValueAtTime(0.001,ac.currentTime+d);o.stop(ac.currentTime+d)}
+document.getElementById('snd').onclick=e=>{sound=!sound;e.target.textContent=sound?'🔊 音オン':'🔇 音オフ'};
+// candles (decoration)
+const candles=[];{let p=100;for(let i=0;i<400;i++){const o=p,cl=o+(Math.random()-0.48)*6,h=Math.max(o,cl)+Math.random()*3,l=Math.min(o,cl)-Math.random()*3;candles.push([o,h,l,cl]);p=cl}}
+function finT(h){return 40+rankOf[h]*0.4}
+function prog(i,t){const T=finT(H[i]);if(t>=T)return 1+(t-T)*0.02;const u=t/T,p=ph[i];
+ const wob=Math.sin(Math.PI*u)*(0.10*Math.sin(p[0]+t*p[1])+0.06*Math.sin(p[2]+t*p[3]));return Math.max(0,u*u*(3-2*u)*0.15+u*0.85+wob)}
+function say(s){ticker.push({s,t:performance.now()});if(ticker.length>3)ticker.shift()}
+function commentary(pr){const order=[...H.keys()].sort((a,b)=>pr[b]-pr[a]);const pos={};order.forEach((i,k)=>pos[i]=k);
+ if(prevOrder){if(order[0]!==prevOrder[0])say('@'+H[order[0]]+' が先頭に立った！');
+  else{let best=-1,g=0;for(const i of order.slice(0,15)){const d=(prevPos[i]??99)-pos[i];if(d>g){g=d;best=i}}
+   if(best>=0&&g>=3)say((best>N*0.7?'大外から ':'')+'@'+H[best]+' が猛追！ '+(pos[best]+1)+'番手まで上がってきた！');
+   else if(pr[order[0]]-pr[order[1]]<0.01)say('@'+H[order[0]]+' と @'+H[order[1]]+' の激しい競り合い！');
+   else say('先頭は @'+H[order[0]]+'、2番手 @'+H[order[1]]+'、3番手 @'+H[order[2]]);}}
+ else say('各馬いっせいにスタート！');
+ prevOrder=order;prevPos=pos;return order}
+function drawCandles(t){x.save();x.globalAlpha=0.13;const w=14,off=(t*25)%w,base=Math.floor(t*25/w);
+ const vis=candles.slice(base%300,base%300+100);let mn=1e9,mx=-1e9;vis.forEach(k=>{mn=Math.min(mn,k[2]);mx=Math.max(mx,k[1])});
+ vis.forEach((k,j)=>{const X=j*w-off,Y=v=>TOP+(mx-v)/(mx-mn+1e-9)*(BOT-TOP);x.strokeStyle=x.fillStyle=k[3]>=k[0]?'#4cff7a':'#ff4c4c';
+  x.beginPath();x.moveTo(X+w/2,Y(k[1]));x.lineTo(X+w/2,Y(k[2]));x.stroke();x.fillRect(X+2,Math.min(Y(k[0]),Y(k[3])),w-4,Math.max(1,Math.abs(Y(k[0])-Y(k[3]))))});x.restore()}
+function frame(now){const dt=Math.min(0.05,(now-(last||now))/1000);last=now;
+ let pr=H.map(()=>0),order=[...H.keys()];
+ if(state==='race'||state==='done'){
+  const lead=Math.max(...H.map((_,i)=>prog(i,vt)));const top3done=R&&vt>=finT(R[2])+0.8;
+  const slow=lead>0.86&&!top3done;vt+=dt*(slow?0.4:1);
+  pr=H.map((_,i)=>prog(i,vt));order=[...H.keys()].sort((a,b)=>pr[b]-pr[a]);
+  if(vt>nextTick&&state==='race'&&!shownWin){commentary(pr);nextTick=vt+(slow?1.2:3)}
+  const tz=slow||(!top3done&&lead>0.86)?1.7:1;zoom+=(tz-zoom)*0.04;
+  const tops=order.slice(0,4).map(i=>TOP+i*LANE+LANE/2);const hw=640/zoom,hh=380/zoom;let ty=zoom>1.05?tops[0]:380,tx=zoom>1.05?X0+Math.min(pr[order[0]],1)*(X1-X0)-80:640;tx=Math.min(Math.max(tx,hw),1280-hw);ty=Math.min(Math.max(ty,hh),760-hh);
+  camX+=(tx-camX)*0.06;camY+=(ty-camY)*0.06;
+  if(R&&pr[H.indexOf(R[0])]>=1&&!shownWin){shownWin=true;flash=1;say('ゴール！！ 1着は @'+R[0]+'！');beep(523,0.2);setTimeout(()=>beep(659,0.2),150);setTimeout(()=>beep(784,0.5),300);
+   for(let k=0;k<220;k++)conf.push({x:640,y:330,vx:(Math.random()-0.5)*16,vy:-Math.random()*14-2,c:`hsl(${Math.random()*360},90%,60%)`,r:Math.random()*6.28})}
+  if(R&&vt>finT(R[N-1])+1)state='done'}
+ // background
+ x.setTransform(1,0,0,1,0,0);x.fillStyle='#0f3d14';x.fillRect(0,0,1280,720);drawCandles(vt);
+ x.save();x.translate(640,380);x.scale(zoom,zoom);x.translate(-camX,-camY);
+ for(let i=0;i<N;i++){const y=TOP+i*LANE;x.fillStyle=i%2?'rgba(40,120,45,.55)':'rgba(30,100,35,.55)';x.fillRect(-2000,y,5000,LANE);
+  x.fillStyle='#fff';x.font=Math.min(12,LANE-2)+'px sans-serif';x.textAlign='right';x.fillText('@'+H[i],X0-6,y+LANE-3);
+  const px=X0+Math.min(pr[i],1.03)*(X1-X0);x.font=(LANE+1)+'px serif';x.textAlign='center';x.save();x.translate(px,0);x.scale(-1,1);x.fillText(ICON[i%ICON.length],0,y+LANE-2);x.restore();
+  if(zoom>1.2&&order.indexOf(i)<6&&pr[i]<1){x.fillStyle='#ffd400';x.font='bold 9px sans-serif';x.textAlign='right';x.fillText('@'+H[i],px-LANE*0.7,y+LANE-4)}
+  if(R&&pr[i]>=1){x.fillStyle='#ffd400';x.font='bold '+Math.min(12,LANE-2)+'px sans-serif';x.textAlign='left';x.fillText(rankOf[H[i]]+1+'着',X1+30,y+LANE-3)}}
+ x.fillStyle='#fff';x.fillRect(X1+20,TOP,4,BOT-TOP);for(let k=0;k<(BOT-TOP)/8;k++){x.fillStyle=k%2?'#000':'#fff';x.fillRect(X1+24,TOP+k*8,6,8)}
+ x.restore();
+ // HUD
+ x.fillStyle='rgba(0,0,0,.55)';x.fillRect(0,0,1280,60);x.fillStyle='#fff';x.font='bold 26px sans-serif';x.textAlign='left';x.fillText('RZR NEW ERA ギブアウェイ レース',20,38);
+ if(state==='race'||state==='done'){x.font='16px sans-serif';x.textAlign='right';x.fillText((zoom>1.3?'🎥 スローモーション  ':'')+'先頭: @'+H[order[0]],1260,36);
+  const fin=R.filter(h=>pr[H.indexOf(h)]>=1);if(fin.length&&!shownWin===false&&flash<0.05&&conf.length<1){}
+  if(fin.length){x.fillStyle='rgba(0,0,0,.7)';x.fillRect(1040,66,230,Math.min(8,fin.length)*20+12);x.font='bold 14px sans-serif';x.textAlign='left';fin.slice(0,8).forEach((h,k)=>{x.fillStyle=k?'#fff':'#ffd400';x.fillText((k+1)+'着 @'+h,1050,84+k*20)})}}
+ // ticker
+ if(ticker.length){x.fillStyle='rgba(180,0,0,.85)';x.fillRect(0,690,1280,30);x.fillStyle='#fff';x.font='bold 18px sans-serif';x.textAlign='left';x.fillText('📣 '+ticker[ticker.length-1].s,14,712)}
+ // countdown
+ if(state==='cd'){const e=(now-cdStart)/1000,k=Math.floor(e),lbl=['3','2','1','GO!'][k];
+  if(lbl){x.fillStyle='rgba(0,0,0,.45)';x.fillRect(0,0,1280,720);x.fillStyle=k==3?'#4cff7a':'#ffd400';x.font='bold '+(200-(e%1)*60)+'px sans-serif';x.textAlign='center';x.fillText(lbl,640,440)}
+  if(k>=4){state='race';last=now}}
+ // finish overlay
+ if(shownWin){x.fillStyle='rgba(0,0,0,.78)';x.fillRect(290,250,700,200);x.textAlign='center';x.fillStyle='#ffd400';x.font='bold 54px sans-serif';x.fillText('🏆 当選 @'+R[0],640,330);
+  x.fillStyle='#fff';x.font='bold 24px sans-serif';x.fillText('2位 @'+R[1]+'　　3位 @'+R[2]+'（繰り下げ用）',640,380);
+  x.font='15px sans-serif';x.fillStyle='#ccc';x.fillText('※ @RZRFunded のフォローを確認して確定。未フォローの場合は2位→3位…へ繰り下げ',640,420)}
+ conf.forEach(p=>{p.vy+=0.35;p.x+=p.vx;p.y+=p.vy;p.r+=0.2;x.save();x.translate(p.x,p.y);x.rotate(p.r);x.fillStyle=p.c;x.fillRect(-4,-2,8,4);x.restore()});conf=conf.filter(p=>p.y<760);
+ if(flash>0){x.fillStyle=`rgba(255,255,255,${flash})`;x.fillRect(0,0,1280,720);flash-=0.03}
+ requestAnimationFrame(frame)}
+requestAnimationFrame(frame);
+document.getElementById('go').onclick=async()=>{const s=normRate(document.getElementById('rate').value);if(!s){alert('GOLD終値を数字で入力してください（例 4012.35）');return}
+ document.getElementById('rate').value=s;document.getElementById('used').textContent='使用した値: '+s;
+ R=await ranking(s);rankOf={};R.forEach((h,k)=>rankOf[h]=k);const hs=await sha(s);
+ ph=H.map((_,i)=>{const b=parseInt(hs.substr((i*2)%56,8),16);return[b%628/100,0.3+(b>>8)%100/120,(b>>16)%628/100,0.7+(b>>4)%100/90]});
+ vt=0;nextTick=2;prevOrder=null;ticker=[];conf=[];flash=0;zoom=1;camX=640;camY=380;shownWin=false;state='cd';cdStart=performance.now();
+ [0,1000,2000].forEach(d=>setTimeout(()=>beep(440,0.15),d));setTimeout(()=>beep(880,0.4),3000);console.log('順位',R)};
+</script></html>
