@@ -1,0 +1,5 @@
+/* v2: B案ピルを2リンクのみに適用（戻るリンク・運営基盤欄の評価方法） */
+html body.company-route .company-back-link a,
+html body.company-route #transparency p > a[href="/methodology/"]{display:inline-block!important;color:#147260!important;font-size:12px!important;font-weight:700!important;line-height:1.4!important;text-decoration:none!important;padding:4px 11px!important;border:1px solid #b9d8cc!important;border-radius:999px!important;background:#f1f8f4!important;white-space:nowrap;transition:background .15s,border-color .15s}
+html body.company-route .company-back-link a:is(:hover,:focus-visible),
+html body.company-route #transparency p > a[href="/methodology/"]:is(:hover,:focus-visible){background:#e2f1ea!important;border-color:#8bb9aa!important;color:#0e5a4b!important}
