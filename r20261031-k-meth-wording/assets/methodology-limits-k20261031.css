@@ -1,0 +1,2 @@
+/* 2026-10-31 【K】PROPCHECK：確認・保証できないこと の2つ目の段落の前に、既存の段落間隔（10px）と同じ余白 */
+.mj-limits > .mj-note > ul + p { margin-top: 10px; }
