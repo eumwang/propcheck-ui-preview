@@ -1,0 +1,8 @@
+/* 業者一覧のクーポンチップ：1行・はみ出しは省略。色・角丸は既存の .market-chip のまま */
+.comparison-table .pc-coupon-chip{display:inline-block;vertical-align:middle;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;line-height:1.4}
+.comparison-table .table-score:has(> .pc-coupon-chip){position:relative}
+/* PC：行の高さを変えないよう、点数の行の右端（同じ列の中）に置く */
+.comparison-table .table-score .pc-coupon-chip{position:absolute;right:-12px;top:50%;transform:translateY(-50%);max-width:110px;font-size:10px;padding:1px 4px;letter-spacing:0}
+.comparison-table .mc-meta .pc-coupon-chip{max-width:100%;font-size:11px;margin-left:6px;padding-top:0;padding-bottom:0}
+.comparison-table .pc-coupon-chip code{font:inherit;letter-spacing:0;font-weight:700;user-select:all}
+.comparison-table .pc-coupon-chip.pc-chip-nofit{visibility:hidden}
