@@ -1,7 +1,7 @@
 /* Isolated private UI preview. Business data and scores remain in the r3 files. */
 .home-hero-v3 .hero-v3-grid{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);min-height:620px;background:#f2f6ed!important;overflow:hidden}
 .home-hero-v3 .hero-v3-copy{position:relative;z-index:2;min-width:0;padding:clamp(40px,5vw,76px) 20px clamp(42px,5vw,70px) max(28px,calc((100vw - 1220px)/2));align-self:center}
-.home-hero-v3 .hero-v3-scene{min-width:0;min-height:590px;position:relative;background:#f2f6ed url('/propcheck-ui-preview/r20261031-payability-meth/assets/hero-mosaic-v158.png') 82% center/auto 100% no-repeat!important}
+.home-hero-v3 .hero-v3-scene{min-width:0;min-height:590px;position:relative;background:#f2f6ed url('/propcheck-ui-preview/r20261031-payability-meth2/assets/hero-mosaic-v158.png') 82% center/auto 100% no-repeat!important}
 .home-hero-v3 .hero-v3-scene .slogan-sr160,.home-hero-v3 .hero-v3-scene .preview-hero-slogan{position:absolute!important;z-index:2;top:8%;right:7%;left:auto;width:min(72%,390px);height:auto;margin:0;padding:0;color:#25554d;font-size:clamp(16px,1.7vw,27px);line-height:1.4;font-weight:700;text-align:right;clip:auto!important;clip-path:none!important;overflow:visible!important;white-space:normal!important;opacity:1!important;transform:none!important}
 .home-hero-v3 .hero-v3-scene .slogan-sr160 span{display:block}
 .home-hero-v3 .hero-v3-points i{display:inline-flex;align-items:center;justify-content:center}
