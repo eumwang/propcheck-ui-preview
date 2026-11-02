@@ -3,7 +3,7 @@
   "timezone": "Asia/Tokyo",
   "review_cutoff": "2026-11-01",
   "review_cutoff_exclusive_at": "2026-11-01T07:29:00+09:00",
-  "score_as_of": "2026-10-18",
+  "score_as_of": "2026-11-01",
   "report_period": {
     "start": "2024-09-23",
     "end": "2026-10-10",
@@ -17,7 +17,7 @@
     "end": "2026-10-17"
   },
   "held_companies": [],
-  "reflected_at": "2026-10-19",
+  "reflected_at": "2026-11-02",
   "generated_at": "2026-10-19T16:54:45+09:00",
   "source": {
     "run": "current-production-6ad5a5f614cf72bcc877e77d",
@@ -28,7 +28,7 @@
     "review_cutoff": "run data cutoff (weekly scope end / plan until_exclusive)",
     "report_period": "normal-report-ratios-v143.json snapshot_period_utc.start_inclusive / max(snapshot_period_utc.end_exclusive, companies[].collection_end_exclusive_utc) - 1 day",
     "score_as_of": "overall-reference-v194.json as_of",
-    "overall_reference_as_of_in_file": "2026-10-18",
+    "overall_reference_as_of_in_file": "2026-11-01",
     "foundation_basis_date": "overall-reference-v194.json foundation_model_trial_date",
     "plans_checked": "ja-v204/plan-options-v168.json checked_on (min/max)"
   }
