@@ -1,0 +1,4 @@
+/* k-method-b3-20261027: 評価方法JAだけ 期間バッジ（全期間・直近の一定期間（固定））を薄い緑に */
+#method-payout .mj-box-title .mj-badge,#method-reviews .mj-box-title .mj-badge{background:#e9f3ee;color:#0f5a4b;border:1px solid #b9dccd}
+/* 口コミ内訳の見方：最初の文を本文と同じ太さ・大きさに */
+#method-reviews .mjb3-lead{font-weight:400;font-size:14px}
