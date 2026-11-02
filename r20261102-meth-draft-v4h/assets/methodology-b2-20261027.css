@@ -1,0 +1,5 @@
+/* k-method-b2-20261027: 評価方法JA 文字つまり対策（箇条書き化） */
+.mjb2-line{display:block}
+.mjb2-line+.mjb2-line{margin-top:4px}
+.mj-sub.mj-dot-list{padding-left:1.4em}
+.mj-dot-list+.mj-dot-list{margin-top:6px}
