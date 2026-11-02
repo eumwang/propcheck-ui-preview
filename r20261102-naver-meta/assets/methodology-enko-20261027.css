@@ -1,0 +1,30 @@
+/* k-method-enko-20261027: 評価方法EN/KOだけで読み込む。JA b/b2/b3 と同じ指定（methodology-foundation-b / b2 / fontsize-b2 / badge-b3 の内容をそのまま並べたもの） */
+/* methodology #method-foundation: 4項目（説明＋観点）を1つのアコーディオンに統合（k-method-b-20261027） */
+.mjb-merged .mj-criteria>summary{align-items:flex-start}
+.mjb-merged .mj-criteria>summary::before{margin-top:1px}
+.mjb-head{display:flex;flex-direction:column;gap:4px;min-width:0}
+.mjb-name{font-weight:700;color:var(--accent);font-size:15px;line-height:1.5}
+.mjb-desc{font-weight:400;color:var(--ink);font-size:14px;line-height:1.75}
+/* k-method-b2-20261027: 評価方法JA 文字つまり対策（箇条書き化） */
+.mjb2-line{display:block}
+.mjb2-line+.mjb2-line{margin-top:4px}
+.mj-sub.mj-dot-list{padding-left:1.4em}
+.mj-dot-list+.mj-dot-list{margin-top:6px}
+/* k-method-b2-20261027: 評価方法JA 見出し以外の文字を本文と同じ14pxに統一（見出し・点数の大きな数字は対象外） */
+main .home-kicker,
+main .mj-eq-item>span,
+main .mj-note-warn>strong,
+main .mj-gloss-list dd,
+main .mj-weight-list dt,
+main .mj-sub,
+main .mj-tag-common p,
+main .mj-flow>li>span,
+main .mj-flow>li>strong,
+main .mj-review-steps>li>strong,
+main .signal-tag,
+main .mj-point,
+main .mjb-name{font-size:14px!important}
+/* k-method-b3-20261027: 評価方法JAだけ 期間バッジ（全期間・直近の一定期間（固定））を薄い緑に */
+#method-payout .mj-box-title .mj-badge,#method-reviews .mj-box-title .mj-badge{background:#e9f3ee;color:#0f5a4b;border:1px solid #b9dccd}
+/* 口コミ内訳の見方：最初の文を本文と同じ太さ・大きさに */
+#method-reviews .mjb3-lead{font-weight:400;font-size:14px}
