@@ -1,0 +1,5 @@
+/* ギブアウェイ部分削除後の広告枠の最小調整（2026-10-31）。画像列をなくし、スマホでも登録ボタンを表示。 */
+#advertising-slot.pc-ad-rzr{grid-template-columns:minmax(0,1fr);grid-template-areas:"label" "body";grid-template-rows:auto 1fr}
+@media (max-width:767.98px){#advertising-slot.pc-ad-rzr .pc-ad-rzr-actions .pc-ad-rzr-register{display:inline-flex;width:100%;justify-content:center;box-sizing:border-box}}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-logo{display:block;width:100%;max-width:320px;height:auto;margin:6px 0 4px}
+@media (max-width:767.98px){#advertising-slot.pc-ad-rzr .pc-ad-rzr-logo{max-width:220px;margin:2px auto 4px}}

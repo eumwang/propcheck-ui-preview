@@ -1,0 +1,7 @@
+/* EN/KO only: let the review-tag column fit its (longer) label so it never overlaps the description. JA is unaffected (file not loaded there). */
+@media (min-width:721px){.mj-tag-row{grid-template-columns:minmax(160px,max-content) minmax(0,1fr)}}
+/* EN/KO: same pill as JA company-links-b2 for the 評価方法 link (JA selector matches only href="/methodology/") */
+html body.company-route #transparency p > a:is([href="/en/methodology/"],[href="/ko/methodology/"]){display:inline-block!important;color:#147260!important;font-size:12px!important;font-weight:700!important;line-height:1.4!important;text-decoration:none!important;padding:4px 11px!important;border:1px solid #b9d8cc!important;border-radius:999px!important;background:#f1f8f4!important;white-space:nowrap;transition:background .15s,border-color .15s}
+html body.company-route #transparency p > a:is([href="/en/methodology/"],[href="/ko/methodology/"]):is(:hover,:focus-visible){background:#e2f1ea!important;border-color:#8bb9aa!important;color:#0e5a4b!important}
+/* EN/KO header at phone width: longer menu labels wrap inside their grid cell instead of running into the next one */
+@media (max-width:720px){html:is([lang=en],[lang=ko]) .site-header nav>a{white-space:normal!important;min-width:0;max-width:100%;overflow-wrap:normal;word-break:keep-all}}
