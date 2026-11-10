@@ -1,4 +1,0 @@
-/* ja top #comparison only: weekly rank note, option A (band under heading). Existing tokens only. */
-#comparison .pc-rank-weekly--band{display:flex;align-items:center;gap:8px;width:fit-content;max-width:100%;margin:10px 0 2px;padding:8px 14px;border:1px solid #deebe5;border-left:4px solid var(--accent);border-radius:10px;background:var(--accent-soft);color:var(--ink);font-size:13px;font-weight:700;line-height:1.5}
-#comparison .pc-rank-weekly--band .pc-rank-weekly-icon{flex:0 0 16px;color:var(--accent)}
-@media (max-width:760px){#comparison .pc-rank-weekly--band{width:auto;font-size:12.5px;padding:8px 12px}}
