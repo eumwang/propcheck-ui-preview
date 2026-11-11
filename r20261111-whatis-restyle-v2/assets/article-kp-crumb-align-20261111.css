@@ -1,0 +1,10 @@
+/* 2026-11-11: align borrowed-prop back button with the article column.
+   The crumb is a direct child of main.kp-page, while the title lives in
+   .kp-article (max-width:44rem; margin:0 auto). Without this, .crumb is
+   full-viewport and the button sits at the left edge. Existing CSS is
+   not edited. pitfalls / launch already place .crumb inside .wrap.pc-a-wrap. */
+main.kp-page > .crumb {
+  max-width: 44rem;
+  margin-left: auto;
+  margin-right: auto;
+}
