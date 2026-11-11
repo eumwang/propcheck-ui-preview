@@ -1,0 +1,339 @@
+<!doctype html><html lang="ja"><head><meta name="robots" content="noindex,nofollow"><script id="pc-preview-guard">(()=>{const root='/propcheck-ui-preview/r20261111-whatis-restyle/';const map=u=>{if(typeof u==='string'&&u.startsWith(location.origin+'/'))u=u.slice(location.origin.length);if(typeof u!=='string'||!u.startsWith('/')||u.startsWith('//')||u.startsWith('/propcheck-ui-preview/'))return u;return root+u.slice(1);};const nf=window.fetch.bind(window);window.fetch=(i,o)=>{const m=(o?.method||((i instanceof Request)&&i.method)||'GET').toUpperCase();if(m!=='GET'&&m!=='HEAD')return Promise.reject(new Error('Preview: submissions disabled'));return nf(typeof i==='string'?map(i):(i instanceof URL?map(i.href):(i instanceof Request&&map(i.url)!==i.url?new Request(map(i.url),i):i)),o);};const xo=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(m,u,...r){if(!['GET','HEAD'].includes(String(m).toUpperCase()))throw new Error('Preview: submissions disabled');return xo.call(this,m,map(u instanceof URL?u.href:u),...r);};try{navigator.sendBeacon=()=>false}catch(_e){}document.addEventListener('submit',e=>{e.preventDefault();e.stopImmediatePropagation();},true);const fix=n=>{if(n.nodeType!==1)return;for(const it of [n,...n.querySelectorAll('a[href],img[src],source[src],link[href],script[src]')])for(const k of ['href','src']){const v=it.getAttribute(k);if(v&&map(v)!==v)it.setAttribute(k,map(v));}};new MutationObserver(es=>{for(const e of es){if(e.type==='attributes')fix(e.target);else for(const n of e.addedNodes)fix(n);}}).observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:['href','src']});const si=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,'src');Object.defineProperty(HTMLImageElement.prototype,'src',{get(){return si.get.call(this)},set(v){si.set.call(this,map(String(v)))},configurable:true});document.addEventListener('DOMContentLoaded',()=>{for(const f of document.forms){f.removeAttribute('data-netlify');f.method='get';f.action='#';}fix(document.body);});})();</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6QHP92GKS1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-6QHP92GKS1');</script><script src="/propcheck-ui-preview/r20261111-whatis-restyle/perf-data/d63e313d4c1f85d0fb8d86d8.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="index,follow"><title>プロップファームって何？その仕組みと基本的なルールまとめ — PROP CHECK</title><meta name="description" content="プロップファームは、評価費用を払って試験を受け、合格したら利益の一部を受け取る仕組みです。ただ、その口座の多くはデモやシミュレーションです。この記事では、PROP CHECKが各社のルールを比べるときに使っている項目に沿って、基本だけを整理します。"><link rel="canonical" href="https://propchecklab.com/articles/what-is-a-prop-firm/"><link rel="alternate" hreflang="ja" href="https://propchecklab.com/articles/what-is-a-prop-firm/"><link rel="alternate" hreflang="en" href="https://propchecklab.com/en/articles/what-is-a-prop-firm/"><link rel="alternate" hreflang="ko" href="https://propchecklab.com/ko/articles/what-is-a-prop-firm/"><link rel="alternate" hreflang="x-default" href="https://propchecklab.com/articles/what-is-a-prop-firm/"><meta property="og:type" content="article"><meta property="og:locale" content="ja_JP"><meta property="og:site_name" content="PROP CHECK"><meta property="og:title" content="プロップファームって何？その仕組みと基本的なルールまとめ — PROP CHECK"><meta property="og:description" content="プロップファームは、評価費用を払って試験を受け、合格したら利益の一部を受け取る仕組みです。ただ、その口座の多くはデモやシミュレーションです。この記事では、PROP CHECKが各社のルールを比べるときに使っている項目に沿って、基本だけを整理します。"><meta property="og:url" content="https://propchecklab.com/articles/what-is-a-prop-firm/"><meta property="og:image" content="https://propchecklab.com/assets/og/propcheck-og-ja-20261020.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="PROP CHECK"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="プロップファームって何？その仕組みと基本的なルールまとめ — PROP CHECK"><meta name="twitter:description" content="プロップファームは、評価費用を払って試験を受け、合格したら利益の一部を受け取る仕組みです。ただ、その口座の多くはデモやシミュレーションです。この記事では、PROP CHECKが各社のルールを比べるときに使っている項目に沿って、基本だけを整理します。"><meta name="twitter:image" content="https://propchecklab.com/assets/og/propcheck-og-ja-20261020.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"プロップファームって何？その仕組みと基本的なルールまとめ","description":"プロップファームは、評価費用を払って試験を受け、合格したら利益の一部を受け取る仕組みです。ただ、その口座の多くはデモやシミュレーションです。この記事では、PROP CHECKが各社のルールを比べるときに使っている項目に沿って、基本だけを整理します。","url":"https://propchecklab.com/articles/what-is-a-prop-firm/","inLanguage":"ja","datePublished":"2026-10-22","author":{"@type":"Person","name":"ぽんちゃい"},"publisher":{"@type":"Organization","name":"PROP CHECK","logo":{"@type":"ImageObject","url":"https://propchecklab.com/assets/propcheck-logo-r20261020.webp"}}}</script><link rel="stylesheet" href="/propcheck-ui-preview/r20261111-whatis-restyle/w7-header.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261111-whatis-restyle/assets/header-x-link-20261017.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261111-whatis-restyle/assets/footer-reference-20261018.css"><link rel="icon" href="/propcheck-ui-preview/r20261111-whatis-restyle/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/propcheck-ui-preview/r20261111-whatis-restyle/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/propcheck-ui-preview/r20261111-whatis-restyle/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="/propcheck-ui-preview/r20261111-whatis-restyle/apple-touch-icon.png">
+<style>/* 記事ページのみ: 本番ヘッダーを390pxで本番と同じく折り返す */@media(max-width:700px){.site-header nav>a{white-space:normal!important;font-size:11px!important;line-height:1.25!important;text-align:center}.site-header nav{gap:4px 8px!important}}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@700&display=swap"><link rel="stylesheet" href="/propcheck-ui-preview/r20261111-whatis-restyle/assets/guide-back-btn-20261019.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261111-whatis-restyle/assets/article-crumb-back-20261111.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261111-whatis-restyle/assets/article-kp-crumb-align-20261111.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261111-whatis-restyle/assets/article-kp-whatis-20261111.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261111-whatis-restyle/assets/article-chrome-20261111.css"></head><body><header class="site-header"><div class="header-row"><a class="site-brand site-brand-logo" href="../../"><img src="/propcheck-ui-preview/r20261111-whatis-restyle/assets/propcheck-logo-r20261020.webp" alt="PROP CHECK"></a><nav aria-label="サイトメニュー"><a href="/propcheck-ui-preview/r20261111-whatis-restyle/#featured">注目4社</a><a href="/propcheck-ui-preview/r20261111-whatis-restyle/#comparison">30社比較</a><a href="/propcheck-ui-preview/r20261111-whatis-restyle/report/">供養所</a><a href="/propcheck-ui-preview/r20261111-whatis-restyle/guides/" title="紹介記事一覧" hreflang="ja">紹介記事</a><a href="/propcheck-ui-preview/r20261111-whatis-restyle/articles/">記事</a><a href="/propcheck-ui-preview/r20261111-whatis-restyle/methodology/">評価方法</a><a class="pc-x-link" href="https://x.com/XS4N62dvqf32385" target="_blank" rel="noopener noreferrer" aria-label="PROP CHECK公式Xアカウント（新しいタブで開く）"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><details class="language-menu" data-language-menu><summary aria-label="言語を選択（現在：日本語）" aria-expanded="false"><svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="6" fill="#bc002d"/></svg><span class="language-menu-chevron" aria-hidden="true">⌄</span><span class="visually-hidden">日本語</span></summary><div class="language-menu-list" role="menu"><a href="/propcheck-ui-preview/r20261111-whatis-restyle/articles/what-is-a-prop-firm/" role="menuitem" aria-current="page"><svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="6" fill="#bc002d"/></svg><span>日本語</span></a><a href="/propcheck-ui-preview/r20261111-whatis-restyle/en/articles/what-is-a-prop-firm/" role="menuitem"><svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#012169"/><path d="M0 0l30 20M30 0L0 20" stroke="#fff" stroke-width="5"/><path d="M0 0l30 20M30 0L0 20" stroke="#c8102e" stroke-width="2"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6"/><path d="M15 0v20M0 10h30" stroke="#c8102e" stroke-width="3"/></svg><span>English</span></a><a href="/propcheck-ui-preview/r20261111-whatis-restyle/ko/articles/what-is-a-prop-firm/" role="menuitem"><svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><path d="M10 10a5 5 0 0 1 10 0z" fill="#cd2e3a"/><path d="M10 10a5 5 0 0 0 10 0z" fill="#0047a0"/><path d="M5 5l4-2M5.8 7l4-2M21 15l4-2M20.2 13l4-2" stroke="#111" stroke-width="1"/></svg><span>한국어</span></a></div></details></nav></div></header><main class="kp-page"><div class="crumb"><a class="pc-guide-back" href="/propcheck-ui-preview/r20261111-whatis-restyle/articles/">← 記事一覧</a></div><article class="kp-article" lang="ja">
+<h1>プロップファームって何？その仕組みと基本的なルールまとめ</h1>
+<p class="kp-byline"><time datetime="2026-11-11">2026年11月11日</time> · ぽんちゃい（<a href="https://propchecklab.com/">PROP CHECK</a>）</p>
+<p class="kp-lead">プロップファームは、評価費用を払って試験を受け、合格したら利益の一部を受け取る仕組みです。<strong>ただ、その口座の多くはデモやシミュレーションです。</strong>この記事では、PROP CHECKが各社のルールを比べるときに使っている項目に沿って、基本だけを整理します。</p>
+
+<h2 id="s1">プロップファームは評価に受かった人に取引の枠を渡す事業者</h2>
+<p>もともとプロップ取引という言葉は、金融機関が顧客の資金ではなく自己資金で売買することを指していました。<strong>いま個人向けに広告されているプロップファームを、私は「評価プログラムを売るサービス」として見ています。</strong></p>
+
+<h2 id="s2">チャレンジから利益分配までの流れ</h2>
+<figure class="fig"><div class="fig-scroll" tabindex="0"><svg viewBox="0 0 760 256" role="img" aria-label="チャレンジから利益分配までの流れ" font-size="12" xmlns="http://www.w3.org/2000/svg">
+<text x="24" y="30" text-anchor="start" font-size="15" font-weight="600" fill="var(--ink, #16202b)">チャレンジから利益分配までの流れ</text>
+<defs><marker id="fl-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--quiet, #5a6675)"/></marker></defs>
+<rect x="24" y="52" width="160" height="128" rx="10" fill="none" fill-opacity="1" stroke="var(--edge, #b4bcc7)" stroke-width="1.25"/>
+<circle cx="48" cy="78" r="13" fill="var(--accent, #1f6fd6)"/><text x="48" y="83" text-anchor="middle" font-size="13" font-weight="700" fill="var(--on-accent, #ffffff)">1</text>
+<text x="68" y="83" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">評価費用を払う</text>
+<text x="104.0" y="128" text-anchor="middle" font-size="11.5" fill="var(--quiet, #5a6675)">チャレンジ口座を</text><text x="104.0" y="148" text-anchor="middle" font-size="11.5" fill="var(--quiet, #5a6675)">受け取る</text>
+<path d="M187 116H207" stroke="var(--quiet, #5a6675)" stroke-width="1.5" marker-end="url(#fl-arrow)"/>
+<rect x="210" y="52" width="160" height="128" rx="10" fill="none" fill-opacity="1" stroke="var(--edge, #b4bcc7)" stroke-width="1.25"/>
+<circle cx="234" cy="78" r="13" fill="var(--accent, #1f6fd6)"/><text x="234" y="83" text-anchor="middle" font-size="13" font-weight="700" fill="var(--on-accent, #ffffff)">2</text>
+<text x="254" y="83" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">評価（チャレンジ）</text>
+<text x="290.0" y="128" text-anchor="middle" font-size="11.5" fill="var(--quiet, #5a6675)">利益目標を達成し</text><text x="290.0" y="148" text-anchor="middle" font-size="11.5" fill="var(--quiet, #5a6675)">損失ルールを守る</text>
+<path d="M373 116H393" stroke="var(--quiet, #5a6675)" stroke-width="1.5" marker-end="url(#fl-arrow)"/>
+<rect x="396" y="52" width="160" height="128" rx="10" fill="none" fill-opacity="1" stroke="var(--edge, #b4bcc7)" stroke-width="1.25"/>
+<circle cx="420" cy="78" r="13" fill="var(--accent, #1f6fd6)"/><text x="420" y="83" text-anchor="middle" font-size="13" font-weight="700" fill="var(--on-accent, #ffffff)">3</text>
+<text x="440" y="83" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">資金提供口座</text>
+<text x="476.0" y="128" text-anchor="middle" font-size="11.5" fill="var(--quiet, #5a6675)">多くはシミュレーション</text><text x="476.0" y="148" text-anchor="middle" font-size="11.5" fill="var(--quiet, #5a6675)">口座で取引を続ける</text>
+<path d="M559 116H579" stroke="var(--quiet, #5a6675)" stroke-width="1.5" marker-end="url(#fl-arrow)"/>
+<rect x="582" y="52" width="160" height="128" rx="10" fill="var(--accent, #1f6fd6)" fill-opacity="0.12" stroke="var(--accent, #1f6fd6)" stroke-width="2"/>
+<circle cx="606" cy="78" r="13" fill="var(--accent, #1f6fd6)"/><text x="606" y="83" text-anchor="middle" font-size="13" font-weight="700" fill="var(--on-accent, #ffffff)">4</text>
+<text x="626" y="83" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">利益分配</text>
+<text x="662.0" y="128" text-anchor="middle" font-size="11.5" fill="var(--quiet, #5a6675)">出金条件を満たして</text><text x="662.0" y="148" text-anchor="middle" font-size="11.5" fill="var(--quiet, #5a6675)">申請・受け取り</text>
+<rect x="24" y="198" width="712" height="40" rx="8" fill="var(--minus, #d9534f)" fill-opacity="0.08" stroke="var(--minus, #d9534f)" stroke-width="1"/>
+<text x="380" y="223" text-anchor="middle" font-size="12" fill="var(--ink, #16202b)">ルール違反があれば、どの段階でも口座は終了（失格）になる。合格したあとも、出金には条件がある</text>
+</svg></div><figcaption>チャレンジから利益分配までの流れ</figcaption></figure>
+<p>まず評価費用を払って、チャレンジ口座を受け取ります。評価では、会社が決めたルールの中で取引しながら利益目標の達成を目指します。<strong>合格すると資金提供口座に移り、そこで出た利益について出金を申請して、決められた割合を受け取る流れです。</strong></p>
+
+<h2 id="s3">1STEP・2STEP・3STEP・INSTANT・合格後払い（ペイアフター）の違い</h2>
+<p>PROP CHECKでは、プランを評価の段階数と、評価費用を払うタイミングで分けています。合格後払い（ペイアフター）は、その支払いのタイミングで分けた型です。名前はファームごとにばらばらでも、たいていは次のどれかに当てはまります。</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead><tr><th>型</th><th>評価の流れ</th><th>一般的な傾向</th><th>向いている人</th></tr></thead>
+<tbody>
+<tr><td>1STEP</td><td>評価1回で合格</td><td>早く終わるが、DDが狭めで計算法も厳しめなことが多い</td><td>ルール管理に慣れた人</td></tr>
+<tr><td>2STEP</td><td>2段階を順に突破</td><td>時間はかかるが、DDに余裕があり固定DDも多い</td><td>落ち着いて試したい初心者</td></tr>
+<tr><td>3STEP</td><td>3段階を順に突破</td><td>1段階ごとの目標は低めで、費用も抑えめな傾向</td><td>少額から段階的に試したい人</td></tr>
+<tr><td>INSTANT（即時資金型）</td><td>評価なしで資金提供口座から開始</td><td>費用が高め、DDが狭め、出金条件が細かい傾向</td><td>評価を飛ばしたい経験者</td></tr>
+<tr><td>合格後払い<br>（ペイアフター）</td><td>評価費用の一部を合格時に払う</td><td>受験時の支払いは軽いが、合格時の費用を総額に含めて比べる必要がある</td><td>初期費用を抑えたい人</td></tr>
+</tbody></table></div>
+<div class="kp-box is-mine"><span class="kp-box-label">私なら</span><p><strong>私なら、最初の1回は、他のプランよりも比較的ルールの制約が甘い2STEPか3STEPの小さめの口座を選びます。</strong>早く合格するより、ルールの中で取引する感覚を安く体験しながら、安全に慣れていけるからです。</p></div>
+
+<h2 id="s4">よく出てくるルール項目の早見表</h2>
+<p>PROP CHECKの各社比較で使っている項目を、初心者向けにまとめました。数字は第三者の比較サイト（10万ドル口座16プログラム）で見られた幅で、特定ファームの条件ではありません。</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead><tr><th>項目</th><th>ひとことで言うと</th><th>一般的に見られる幅（参考）</th></tr></thead>
+<tbody>
+<tr><td>費用（掲載価格）</td><td>評価を受ける受験料</td><td>10万ドル口座で約280〜580ドル程度</td></tr>
+<tr><td>利益目標（評価）</td><td>合格に必要な利益</td><td>6〜10%程度。2段階目は4〜6%程度</td></tr>
+<tr><td>最大DD・計算法</td><td>口座全体の損失上限</td><td>3〜10%程度。固定か追従型かで難しさが変わる</td></tr>
+<tr><td>日次DD・計算法</td><td>1日の損失上限</td><td>なし〜5%程度</td></tr>
+<tr><td>最低利益日</td><td>一定以上の利益が出た日数の条件</td><td>なし〜数日程度</td></tr>
+<tr><td>一貫性ルール</td><td>1日の利益が全体に占める上限</td><td>ある場合は35〜55%程度</td></tr>
+<tr><td>利益分配</td><td>利益のうち受け取れる割合</td><td>基本80%程度が多く、追加料金で上げられる例もある</td></tr>
+<tr><td>出金の申請間隔</td><td>出金申請ができる頻度</td><td>随時〜14日ごと程度</td></tr>
+<tr><td>出金限度額・最低額</td><td>1回の出金の上限・下限</td><td>プランごとに差が大きい</td></tr>
+<tr><td>購入費用の返金（合格後）</td><td>評価費用が戻るか</td><td>初回出金時に返金、返金なしなど様々</td></tr>
+<tr><td>合格後の利益目標</td><td>資金提供口座での追加目標</td><td>ないことが多いが、ある型もある</td></tr>
+<tr><td>最大Lot・レバレッジ</td><td>取引量や倍率の上限</td><td>プランや銘柄によって設定が違う</td></tr>
+<tr><td>EA・自動売買／コピー取引</td><td>自動売買や他口座コピーの可否</td><td>条件付き許可から禁止まで様々</td></tr>
+<tr><td>VPS制限・IPルール</td><td>取引環境や接続元の制限</td><td>共有環境・同一IPに条件があることが多い</td></tr>
+</tbody></table></div>
+<p>ここからは、初心者がまず押さえておきたい項目を順に見ていきます。</p>
+
+<h2 id="s5">最大DDが実際に負けられる上限になる</h2>
+<p>最初に見てほしいのは、口座の大きさより最大DDです。<strong>最大DDは、その口座で実際に負けられる金額の上限になります。</strong></p>
+<div class="table-scroll" tabindex="0"><table>
+<thead><tr><th>例</th><th>口座サイズ</th><th>最大DD</th><th>実際に負けられる額</th></tr></thead>
+<tbody>
+<tr><td>A</td><td>20万ドル</td><td>4%</td><td>8,000ドル</td></tr>
+<tr><td>B</td><td>10万ドル</td><td>10%</td><td>10,000ドル</td></tr>
+<tr><td>C</td><td>5万ドル</td><td>10%</td><td>5,000ドル</td></tr>
+</tbody></table></div>
+<p class="kp-fine">※数値は説明用の例で、特定ファームの条件ではありません。</p>
+<figure class="fig"><div class="fig-scroll" tabindex="0"><svg viewBox="0 0 760 256" role="img" aria-label="口座サイズ×最大DDで並べ直した、負けられる額の比較" font-size="12" xmlns="http://www.w3.org/2000/svg">
+<text x="24" y="30" text-anchor="start" font-size="15" font-weight="600" fill="var(--ink, #16202b)">口座サイズではなく、実際に負けられる額で並べる（数値は説明用の例）</text>
+<text x="24" y="84" text-anchor="start" font-size="15" font-weight="700" fill="var(--ink, #16202b)">A</text><text x="52" y="84" text-anchor="start" font-size="13" fill="var(--quiet, #5a6675)">20万ドル × 4%</text>
+<rect x="230" y="64" width="336.0" height="30" rx="5" fill="var(--accent, #1f6fd6)" fill-opacity="0.45"/>
+<text x="576.0" y="84" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">8,000ドル</text>
+<text x="24" y="138" text-anchor="start" font-size="15" font-weight="700" fill="var(--ink, #16202b)">B</text><text x="52" y="138" text-anchor="start" font-size="13" fill="var(--quiet, #5a6675)">10万ドル × 10%</text>
+<rect x="230" y="118" width="420.0" height="30" rx="5" fill="var(--accent, #1f6fd6)" fill-opacity="1"/>
+<text x="660.0" y="138" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">10,000ドル</text>
+<text x="24" y="192" text-anchor="start" font-size="15" font-weight="700" fill="var(--ink, #16202b)">C</text><text x="52" y="192" text-anchor="start" font-size="13" fill="var(--quiet, #5a6675)">5万ドル × 10%</text>
+<rect x="230" y="172" width="210.0" height="30" rx="5" fill="var(--accent, #1f6fd6)" fill-opacity="0.45"/>
+<text x="450.0" y="192" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">5,000ドル</text>
+<text x="24" y="238" text-anchor="start" font-size="12" fill="var(--quiet, #5a6675)">Aは口座がBの2倍でも、負けられる額はBの方が2,000ドル多い</text>
+</svg></div><figcaption>口座サイズ×最大DDで並べ直した、実際に負けられる額（説明用の例）</figcaption></figure>
+<p>AはBより口座が2倍大きいのに、負けられる額はBの方が2,000ドル多くなっています。口座サイズが大きいほど有利に見えますが、<strong>取引で使える余裕を決めているのは最大DDの金額</strong>なわけです。<strong>プランを比べるときは、口座サイズ×最大DDの金額で並べ直すと見え方が変わります。</strong></p>
+
+<h2 id="s6">最大DDと利益目標の比率＝合格難易度</h2>
+<p>利益目標は、評価を通過するのに必要な利益で、口座の何%という形で決められています。目標の数字だけを見ても、合格しやすさはわかりません。<strong>最大DDに対して利益目標がどれくらい大きいかを見ると、難しさを比べやすくなります。</strong></p>
+<div class="table-scroll" tabindex="0"><table>
+<thead><tr><th>例</th><th>利益目標</th><th>最大DD</th><th>利益目標÷最大DD</th><th>難しさの目安</th></tr></thead>
+<tbody>
+<tr><td>A</td><td>8%</td><td>10%</td><td>0.8</td><td>易しめ</td></tr>
+<tr><td>B</td><td>10%</td><td>10%</td><td>1.0</td><td>ふつう</td></tr>
+<tr><td>C</td><td>10%</td><td>6%</td><td>約1.67</td><td>難しめ</td></tr>
+<tr><td>D</td><td>6%</td><td>3%</td><td>2.0</td><td>難しい</td></tr>
+</tbody></table></div>
+<p class="kp-fine">※数値は説明用の例です。比率が小さいほど、負けられる幅に対して稼ぐ額が少なくて済みます。</p>
+<figure class="fig"><div class="fig-scroll" tabindex="0"><svg viewBox="0 0 760 292" role="img" aria-label="利益目標÷最大DDの比率で見た難しさ" font-size="12" xmlns="http://www.w3.org/2000/svg">
+<text x="24" y="30" text-anchor="start" font-size="15" font-weight="600" fill="var(--ink, #16202b)">利益目標 ÷ 最大DD（数値は説明用の例）</text>
+<text x="24" y="76" text-anchor="start" font-size="15" font-weight="700" fill="var(--ink, #16202b)">A</text><text x="52" y="76" text-anchor="start" font-size="13" fill="var(--quiet, #5a6675)">8% ÷ 10%</text>
+<rect x="200" y="58" width="160.0" height="26" rx="5" fill="var(--accent, #1f6fd6)" fill-opacity="0.45"/>
+<text x="370.0" y="76" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">0.8</text><text x="422.0" y="76" text-anchor="start" font-size="12" fill="var(--quiet, #5a6675)">易しめ</text>
+<text x="24" y="122" text-anchor="start" font-size="15" font-weight="700" fill="var(--ink, #16202b)">B</text><text x="52" y="122" text-anchor="start" font-size="13" fill="var(--quiet, #5a6675)">10% ÷ 10%</text>
+<rect x="200" y="104" width="200.0" height="26" rx="5" fill="var(--accent, #1f6fd6)" fill-opacity="0.73"/>
+<text x="410.0" y="122" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">1.0</text><text x="462.0" y="122" text-anchor="start" font-size="12" fill="var(--quiet, #5a6675)">ふつう</text>
+<text x="24" y="168" text-anchor="start" font-size="15" font-weight="700" fill="var(--ink, #16202b)">C</text><text x="52" y="168" text-anchor="start" font-size="13" fill="var(--quiet, #5a6675)">10% ÷ 6%</text>
+<rect x="200" y="150" width="334.0" height="26" rx="5" fill="var(--minus, #d9534f)" fill-opacity="0.55"/>
+<text x="544.0" y="168" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">約1.67</text><text x="596.0" y="168" text-anchor="start" font-size="12" fill="var(--quiet, #5a6675)">難しめ</text>
+<text x="24" y="214" text-anchor="start" font-size="15" font-weight="700" fill="var(--ink, #16202b)">D</text><text x="52" y="214" text-anchor="start" font-size="13" fill="var(--quiet, #5a6675)">6% ÷ 3%</text>
+<rect x="200" y="196" width="400.0" height="26" rx="5" fill="var(--minus, #d9534f)" fill-opacity="1.00"/>
+<text x="610.0" y="214" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">2.0</text><text x="662.0" y="214" text-anchor="start" font-size="12" fill="var(--quiet, #5a6675)">難しい</text>
+<path d="M400.0 50V236" stroke="var(--quiet, #5a6675)" stroke-width="1" stroke-dasharray="3 3"/><text x="400.0" y="252" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">1.0</text>
+<text x="24" y="276" text-anchor="start" font-size="11.5" fill="var(--quiet, #5a6675)">目標が一番低いDが、比率では一番厳しい。比率が小さいほど、負けられる幅に対して稼ぐ額が少なくて済む</text>
+</svg></div><figcaption>利益目標÷最大DDの比率で見た難しさ（説明用の例）</figcaption></figure>
+<p>Dは目標が6%と一番低いのに、比率で見ると一番厳しくなります。<strong>目標の低さだけで選ぶと、かえって通りにくいプランを選ぶこともあります。</strong></p>
+<p>もう一歩進めて、DDから1回の取引のリスクを決め、利益目標がそのリスクの何倍かで考える方法もあります。私が使っている計算を、10万ドル口座の例で示します。</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead><tr><th>項目（例：10万ドル口座）</th><th>1STEP</th><th>2STEP</th></tr></thead>
+<tbody>
+<tr><td>【例】日次DD／最大DD</td><td>3%／6%</td><td>5%／10%</td></tr>
+<tr><td>1回のリスク</td><td>0.30%（300ドル）</td><td>0.50%（500ドル）</td></tr>
+<tr><td>許容1日負け倍数（日次DD÷1回のリスク）</td><td>10.0</td><td>10.0</td></tr>
+<tr><td>許容最大負け倍数（最大DD÷1回のリスク）</td><td>20.0</td><td>20.0</td></tr>
+<tr><td>利益目標</td><td>10%</td><td>13%（8%＋5%の合算）</td></tr>
+<tr><td>必要利益</td><td>10,000ドル</td><td>13,000ドル</td></tr>
+<tr><td>必要勝利倍数（必要利益÷1回のリスク）</td><td>33.3</td><td>26.0</td></tr>
+<tr><td>目標日数</td><td>10日</td><td>10日</td></tr>
+<tr><td>1日目標倍数（必要勝利倍数÷目標日数）</td><td>3.33</td><td>2.60</td></tr>
+</tbody></table></div>
+<p class="kp-fine">※数値はすべて説明用の例で、特定ファームの条件ではありません。2STEPは2段階の利益目標を足して計算しています。</p>
+<p>どちらも、1日に10回、全体で20回負けるまで耐えられるようにリスクをそろえています。そのうえで比べると、<strong>この例では2STEPの方が必要な勝利倍数が少なく、早く合格できる可能性が高い結果になりました。</strong>目標の%が高くても、2STEPは1回のリスクを大きく取れる分だけ楽になります。</p>
+
+<h2 id="s7">最大DDは計算法で難しさが大きく変わる</h2>
+<p>最大DD（最大ドローダウン）は、一度でもこの線を割ると失格になる下限です。<strong>数字が同じ8%でも、計算法によって難しさはかなり変わります。</strong></p>
+<figure class="fig"><div class="fig-scroll" tabindex="0"><svg viewBox="0 0 760 364" role="img" aria-label="固定DDとトレーリングDDの比較（例）" font-size="12" xmlns="http://www.w3.org/2000/svg">
+<text x="24" y="30" text-anchor="start" font-size="15" font-weight="600" fill="var(--ink, #16202b)">初期資金10万ドル・最大DD 8%の場合（数値は説明用の例）</text>
+<text x="24" y="62" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">固定（静的）DD：下限は動かない</text>
+<path d="M70 288.4H340" stroke="var(--rule, #dde2e9)" stroke-width="1"/><text x="62" y="292.44444444444446" text-anchor="end" font-size="10.5" fill="var(--quiet, #5a6675)">90</text>
+<path d="M70 230.7H340" stroke="var(--rule, #dde2e9)" stroke-width="1"/><text x="62" y="234.66666666666669" text-anchor="end" font-size="10.5" fill="var(--quiet, #5a6675)">95</text>
+<path d="M70 172.9H340" stroke="var(--rule, #dde2e9)" stroke-width="1"/><text x="62" y="176.88888888888889" text-anchor="end" font-size="10.5" fill="var(--quiet, #5a6675)">100</text>
+<path d="M70 115.1H340" stroke="var(--rule, #dde2e9)" stroke-width="1"/><text x="62" y="119.11111111111111" text-anchor="end" font-size="10.5" fill="var(--quiet, #5a6675)">105</text>
+<text x="70.0" y="318" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">0日</text>
+<text x="124.0" y="318" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">2日</text>
+<text x="178.0" y="318" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">4日</text>
+<text x="232.0" y="318" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">6日</text>
+<text x="286.0" y="318" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">8日</text>
+<text x="340.0" y="318" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">10日</text>
+<polygon points="70.0,172.9 97.0,149.8 124.0,126.7 151.0,115.1 178.0,138.2 205.0,161.3 232.0,178.7 259.0,196.0 286.0,207.6 313.0,201.8 340.0,213.3 340.0,265.3 313.0,265.3 286.0,265.3 259.0,265.3 232.0,265.3 205.0,265.3 178.0,265.3 151.0,265.3 124.0,265.3 97.0,265.3 70.0,265.3" fill="var(--accent, #1f6fd6)" fill-opacity="0.08"/>
+<polyline points="70.0,265.3 97.0,265.3 124.0,265.3 151.0,265.3 178.0,265.3 205.0,265.3 232.0,265.3 259.0,265.3 286.0,265.3 313.0,265.3 340.0,265.3" fill="none" stroke="var(--minus, #d9534f)" stroke-width="2" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<polyline points="70.0,172.9 97.0,149.8 124.0,126.7 151.0,115.1 178.0,138.2 205.0,161.3 232.0,178.7 259.0,196.0 286.0,207.6 313.0,201.8 340.0,213.3" fill="none" stroke="var(--accent, #1f6fd6)" stroke-width="2.25" stroke-linejoin="round"/>
+<circle cx="70.0" cy="172.9" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="97.0" cy="149.8" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="124.0" cy="126.7" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="151.0" cy="115.1" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="178.0" cy="138.2" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="205.0" cy="161.3" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="232.0" cy="178.7" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="259.0" cy="196.0" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="286.0" cy="207.6" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="313.0" cy="201.8" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="340.0" cy="213.3" r="3" fill="var(--accent, #1f6fd6)"/>
+<rect x="76" y="78" width="258" height="26" rx="6" fill="var(--surface, #ffffff)" fill-opacity="1" stroke="var(--edge, #b4bcc7)" stroke-width="1"/><text x="205" y="95" text-anchor="middle" font-size="11.5" font-weight="600" fill="var(--ink, #16202b)">10日目の残り余裕：約4.5千ドル</text>
+<text x="384" y="62" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">トレーリングDD：下限が最高残高に追従</text>
+<path d="M430 288.4H700" stroke="var(--rule, #dde2e9)" stroke-width="1"/><text x="422" y="292.44444444444446" text-anchor="end" font-size="10.5" fill="var(--quiet, #5a6675)">90</text>
+<path d="M430 230.7H700" stroke="var(--rule, #dde2e9)" stroke-width="1"/><text x="422" y="234.66666666666669" text-anchor="end" font-size="10.5" fill="var(--quiet, #5a6675)">95</text>
+<path d="M430 172.9H700" stroke="var(--rule, #dde2e9)" stroke-width="1"/><text x="422" y="176.88888888888889" text-anchor="end" font-size="10.5" fill="var(--quiet, #5a6675)">100</text>
+<path d="M430 115.1H700" stroke="var(--rule, #dde2e9)" stroke-width="1"/><text x="422" y="119.11111111111111" text-anchor="end" font-size="10.5" fill="var(--quiet, #5a6675)">105</text>
+<text x="430.0" y="318" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">0日</text>
+<text x="484.0" y="318" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">2日</text>
+<text x="538.0" y="318" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">4日</text>
+<text x="592.0" y="318" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">6日</text>
+<text x="646.0" y="318" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">8日</text>
+<text x="700.0" y="318" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">10日</text>
+<polygon points="430.0,172.9 457.0,149.8 484.0,126.7 511.0,115.1 538.0,138.2 565.0,161.3 592.0,178.7 619.0,196.0 646.0,207.6 673.0,201.8 700.0,213.3 700.0,207.6 673.0,207.6 646.0,207.6 619.0,207.6 592.0,207.6 565.0,207.6 538.0,207.6 511.0,207.6 484.0,219.1 457.0,242.2 430.0,265.3" fill="var(--accent, #1f6fd6)" fill-opacity="0.08"/>
+<polyline points="430.0,265.3 457.0,242.2 484.0,219.1 511.0,207.6 538.0,207.6 565.0,207.6 592.0,207.6 619.0,207.6 646.0,207.6 673.0,207.6 700.0,207.6" fill="none" stroke="var(--minus, #d9534f)" stroke-width="2" stroke-dasharray="6 4" stroke-linejoin="round"/>
+<polyline points="430.0,172.9 457.0,149.8 484.0,126.7 511.0,115.1 538.0,138.2 565.0,161.3 592.0,178.7 619.0,196.0 646.0,207.6 673.0,201.8 700.0,213.3" fill="none" stroke="var(--accent, #1f6fd6)" stroke-width="2.25" stroke-linejoin="round"/>
+<circle cx="430.0" cy="172.9" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="457.0" cy="149.8" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="484.0" cy="126.7" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="511.0" cy="115.1" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="538.0" cy="138.2" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="565.0" cy="161.3" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="592.0" cy="178.7" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="619.0" cy="196.0" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="646.0" cy="207.6" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="673.0" cy="201.8" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="700.0" cy="213.3" r="3" fill="var(--accent, #1f6fd6)"/>
+<circle cx="700.0" cy="213.3" r="8" fill="none" stroke="var(--minus, #d9534f)" stroke-width="2"/>
+<rect x="436" y="78" width="258" height="26" rx="6" fill="var(--minus, #d9534f)" fill-opacity="0.1" stroke="var(--minus, #d9534f)" stroke-width="1"/><text x="565" y="95" text-anchor="middle" font-size="11.5" font-weight="600" fill="var(--ink, #16202b)">10日目：失格ラインを下回り失格</text>
+<path d="M70 344h24" stroke="var(--accent, #1f6fd6)" stroke-width="2.25"/><text x="100" y="348" text-anchor="start" font-size="11.5" fill="var(--quiet, #5a6675)">口座残高（例）</text>
+<path d="M210 344h24" stroke="var(--minus, #d9534f)" stroke-width="2" stroke-dasharray="6 4"/><text x="240" y="348" text-anchor="start" font-size="11.5" fill="var(--quiet, #5a6675)">失格ライン（例）</text>
+<text x="14" y="200" text-anchor="start" font-size="10.5" fill="var(--quiet, #5a6675)">千ドル</text>
+</svg></div><figcaption>固定DDとトレーリングDDの比較（例）</figcaption></figure>
+<p>左の固定（静的）DDでは、初期資金から測った下限がずっと動きません。右のトレーリングDDでは、最高残高に合わせて下限が上がっていきます。<strong>同じ値動きなのに、右は一度伸ばした利益を吐き出しただけで失格になっています。</strong></p>
+<p>トレーリングDDはさらに、下限をいつ引き上げるかで二つに分かれます。1日の終わりの残高（終値）で追うEOD型と、取引中の含み益を含めた最高値で追うHWM型です。</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead><tr><th>型</th><th>下限が上がるタイミング</th><th>例：その日の動き</th><th>その日の終わりの下限（例）</th><th>難しさ</th></tr></thead>
+<tbody>
+<tr><td>固定（静的）DD</td><td>上がらない</td><td>含み益＋2,000ドルまで伸び、＋500ドルで決済</td><td>97,000ドルのまま（余裕3,500ドル）</td><td>普通</td></tr>
+<tr><td>トレーリング（EOD・終値型）</td><td>日の終わりの残高が最高を更新したとき</td><td>同上</td><td>97,500ドル（余裕3,000ドル）</td><td>難しい</td></tr>
+<tr><td>トレーリング（HWM・最高含み益型）</td><td>取引中の含み益が最高を更新したとき</td><td>同上</td><td>99,000ドル（余裕1,500ドル）</td><td>最難関</td></tr>
+</tbody></table></div>
+<p class="kp-fine">※例：初期資金10万ドル、最大DD 3,000ドルの場合。数値は説明用の例です。</p>
+<figure class="fig"><div class="fig-scroll" tabindex="0"><svg viewBox="0 0 760 256" role="img" aria-label="計算法ごとのその日の終わりの余裕" font-size="12" xmlns="http://www.w3.org/2000/svg">
+<text x="24" y="30" text-anchor="start" font-size="15" font-weight="600" fill="var(--ink, #16202b)">同じ日の動きでも、計算法で残る余裕が変わる（数値は説明用の例）</text>
+<text x="24" y="72" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">固定（静的）DD</text><text x="24" y="90" text-anchor="start" font-size="11.5" fill="var(--quiet, #5a6675)">下限 97,000ドルのまま</text>
+<rect x="250" y="60" width="320.0" height="28" rx="5" fill="var(--accent, #1f6fd6)" fill-opacity="1"/>
+<text x="580.0" y="79" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">余裕 3,500ドル</text><text x="682.0" y="79" text-anchor="start" font-size="12" fill="var(--quiet, #5a6675)">普通</text>
+<text x="24" y="128" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">トレーリング（EOD）</text><text x="24" y="146" text-anchor="start" font-size="11.5" fill="var(--quiet, #5a6675)">下限 97,500ドル</text>
+<rect x="250" y="116" width="274.3" height="28" rx="5" fill="var(--minus, #d9534f)" fill-opacity="0.55"/>
+<text x="534.2857142857142" y="135" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">余裕 3,000ドル</text><text x="636.2857142857142" y="135" text-anchor="start" font-size="12" fill="var(--quiet, #5a6675)">難しい</text>
+<text x="24" y="184" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">トレーリング（HWM）</text><text x="24" y="202" text-anchor="start" font-size="11.5" fill="var(--quiet, #5a6675)">下限 99,000ドル</text>
+<rect x="250" y="172" width="137.1" height="28" rx="5" fill="var(--minus, #d9534f)" fill-opacity="1"/>
+<text x="397.1428571428571" y="191" text-anchor="start" font-size="13" font-weight="600" fill="var(--ink, #16202b)">余裕 1,500ドル</text><text x="499.1428571428571" y="191" text-anchor="start" font-size="12" fill="var(--quiet, #5a6675)">最難関</text>
+<text x="24" y="238" text-anchor="start" font-size="11.5" fill="var(--quiet, #5a6675)">初期資金10万ドル・最大DD 3,000ドル。含み益＋2,000ドルまで伸び、＋500ドルで決済した日の終わり</text>
+</svg></div><figcaption>計算法ごとの、その日の終わりに残る余裕（上の表の例）</figcaption></figure>
+<p><strong>HWM型では、含み益が出たあとに戻されただけでも下限が上がってしまいます。</strong>追従型の多くは、下限が初期資金の水準まで上がったところで止まります。ルール表を見るときは、「最大DD・計算法」の欄まで読んでおきたいところです。</p>
+
+<h2 id="s8">日次DDは毎日引き直される損失上限</h2>
+<p><strong>日次DDは、その日に負けてよい額の上限で、毎日その日の起点から引き直されます。</strong></p>
+<figure class="fig"><div class="fig-scroll" tabindex="0"><svg viewBox="0 0 760 338" role="img" aria-label="日次DDと最大DDの違い（例）" font-size="12" xmlns="http://www.w3.org/2000/svg">
+<text x="24" y="30" text-anchor="start" font-size="15" font-weight="600" fill="var(--ink, #16202b)">日次DDの線は、その日の開始残高から測る（数値は説明用の例）</text>
+<path d="M80 271.3H600" stroke="var(--rule, #dde2e9)" stroke-width="1"/><text x="72" y="275.29411764705884" text-anchor="end" font-size="10.5" fill="var(--quiet, #5a6675)">88</text>
+<path d="M80 213.9H600" stroke="var(--rule, #dde2e9)" stroke-width="1"/><text x="72" y="217.88235294117646" text-anchor="end" font-size="10.5" fill="var(--quiet, #5a6675)">92</text>
+<path d="M80 156.5H600" stroke="var(--rule, #dde2e9)" stroke-width="1"/><text x="72" y="160.47058823529412" text-anchor="end" font-size="10.5" fill="var(--quiet, #5a6675)">96</text>
+<path d="M80 99.1H600" stroke="var(--rule, #dde2e9)" stroke-width="1"/><text x="72" y="103.05882352941177" text-anchor="end" font-size="10.5" fill="var(--quiet, #5a6675)">100</text>
+<text x="80.0" y="320" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">0時間</text>
+<text x="210.0" y="320" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">2時間</text>
+<text x="340.0" y="320" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">4時間</text>
+<text x="470.0" y="320" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">6時間</text>
+<text x="600.0" y="320" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">8時間</text>
+<text x="14" y="46" text-anchor="start" font-size="10.5" fill="var(--quiet, #5a6675)">千ドル</text>
+<path d="M80 84.7H600" stroke="var(--quiet, #5a6675)" stroke-width="1.5" stroke-dasharray="2 4"/>
+<path d="M80 156.5H600" stroke="var(--minus, #d9534f)" stroke-width="2" stroke-dasharray="7 4"/>
+<path d="M80 213.9H600" stroke="var(--ink, #16202b)" stroke-width="2" stroke-dasharray="10 4 2 4"/>
+<polyline points="80.0,84.7 112.5,82.6 145.0,83.0 177.5,89.0 210.0,98.3 242.5,107.0 275.0,112.3 307.5,112.7 340.0,109.8 379.0,107.0 405.0,108.8 437.5,114.8 470.0,119.9 535.0,130.6 600.0,141.4" fill="none" stroke="var(--accent, #1f6fd6)" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="614" y="88.70588235294119" text-anchor="start" font-size="11.5" fill="var(--quiet, #5a6675)">開始残高 10.1万ドル</text>
+<text x="379.0" y="94.95294117647055" text-anchor="middle" font-size="11.5" font-weight="600" fill="var(--accent, #1f6fd6)">その日の有効証拠金</text>
+<text x="614" y="160.47058823529412" text-anchor="start" font-size="12" font-weight="600" fill="var(--minus, #d9534f)">日次DDライン</text><text x="614" y="176.47058823529412" text-anchor="start" font-size="11" fill="var(--quiet, #5a6675)">開始残高−5千ドル</text>
+<text x="614" y="217.88235294117646" text-anchor="start" font-size="12" font-weight="600" fill="var(--ink, #16202b)">最大DDライン</text><text x="614" y="233.88235294117646" text-anchor="start" font-size="11" fill="var(--quiet, #5a6675)">初期資金−8千ドル</text>
+</svg></div><figcaption>日次DDと最大DDの違い（例）</figcaption></figure>
+<p>この例では、最大DDまではまだ余裕があります。ただ、日次DDのラインはその日の開始残高から測るので、ずっと上の位置にあります。<strong>極端な話、口座全体では勝っていても、1日の負けだけで失格になることもあります。</strong></p>
+<p>私なら、起点が前日終了時の残高なのか、含み損益込みの有効証拠金なのかも確認します。リセットされる時刻がサーバー時間の何時なのかも、ファームによってまちまちです。</p>
+
+<h2 id="s9">最低利益日と一貫性ルールは稼ぎ方への条件</h2>
+<p>最低利益日は、一定以上の利益が出た日を何日つくるかという条件です。中には、利益に関係なく取引した日数だけを数えるプランもあります。</p>
+<p><strong>一貫性ルールは、1日の利益が合計利益の何%までなら認めるかを決めたものです。</strong>一発の大勝ちで合格や出金まで持っていく取引を抑える狙いがあります。</p>
+<figure class="fig"><div class="fig-scroll" tabindex="0"><svg viewBox="0 0 760 356" role="img" aria-label="一貫性ルールの例" font-size="12" xmlns="http://www.w3.org/2000/svg">
+<text x="24" y="30" text-anchor="start" font-size="14" font-weight="600" fill="var(--ink, #16202b)">一貫性ルールの上限が「1日の利益は合計の50%まで」の場合（数値は説明用の例）</text>
+<text x="40" y="66" text-anchor="start" font-size="12.5" font-weight="600" fill="var(--ink, #16202b)">条件クリア：最大の日 600 ÷ 合計 2,000 ＝ 30%</text>
+<path d="M40 264.4H360" stroke="var(--edge, #b4bcc7)" stroke-width="1"/>
+<rect x="50.0" y="223.3" width="44.0" height="41.0" rx="3" fill="var(--accent, #1f6fd6)" fill-opacity="0.45"/>
+<text x="72.0" y="217.33333333333334" text-anchor="middle" font-size="11.5" fill="var(--ink, #16202b)">+400</text>
+<text x="72.0" y="310" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">1日目</text>
+<rect x="114.0" y="202.8" width="44.0" height="61.5" rx="3" fill="var(--accent, #1f6fd6)" fill-opacity="1"/>
+<text x="136.0" y="196.82051282051282" text-anchor="middle" font-size="11.5" font-weight="600" fill="var(--ink, #16202b)">+600</text>
+<text x="136.0" y="310" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">2日目</text>
+<rect x="178.0" y="213.1" width="44.0" height="51.3" rx="3" fill="var(--accent, #1f6fd6)" fill-opacity="0.45"/>
+<text x="200.0" y="207.07692307692307" text-anchor="middle" font-size="11.5" fill="var(--ink, #16202b)">+500</text>
+<text x="200.0" y="310" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">3日目</text>
+<rect x="242.0" y="264.4" width="44.0" height="10.3" rx="3" fill="var(--quiet, #5a6675)" fill-opacity="0.5"/>
+<text x="264.0" y="288.61538461538464" text-anchor="middle" font-size="11.5" fill="var(--ink, #16202b)">-100</text>
+<text x="264.0" y="310" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">4日目</text>
+<rect x="306.0" y="202.8" width="44.0" height="61.5" rx="3" fill="var(--accent, #1f6fd6)" fill-opacity="1"/>
+<text x="328.0" y="196.82051282051282" text-anchor="middle" font-size="11.5" font-weight="600" fill="var(--ink, #16202b)">+600</text>
+<text x="328.0" y="310" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">5日目</text>
+<text x="410" y="66" text-anchor="start" font-size="12.5" font-weight="600" fill="var(--minus, #d9534f)">条件未達：最大の日 1,500 ÷ 合計 2,300 ＝ 約65%</text>
+<path d="M410 264.4H730" stroke="var(--edge, #b4bcc7)" stroke-width="1"/>
+<rect x="420.0" y="233.6" width="44.0" height="30.8" rx="3" fill="var(--accent, #1f6fd6)" fill-opacity="0.45"/>
+<text x="442.0" y="227.5897435897436" text-anchor="middle" font-size="11.5" fill="var(--ink, #16202b)">+300</text>
+<text x="442.0" y="310" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">1日目</text>
+<rect x="484.0" y="110.5" width="44.0" height="153.8" rx="3" fill="var(--minus, #d9534f)" fill-opacity="1"/>
+<text x="506.0" y="104.5128205128205" text-anchor="middle" font-size="11.5" font-weight="600" fill="var(--ink, #16202b)">+1,500</text>
+<text x="506.0" y="310" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">2日目</text>
+<rect x="548.0" y="243.8" width="44.0" height="20.5" rx="3" fill="var(--accent, #1f6fd6)" fill-opacity="0.45"/>
+<text x="570.0" y="237.84615384615384" text-anchor="middle" font-size="11.5" fill="var(--ink, #16202b)">+200</text>
+<text x="570.0" y="310" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">3日目</text>
+<rect x="612.0" y="264.4" width="44.0" height="10.3" rx="3" fill="var(--quiet, #5a6675)" fill-opacity="0.5"/>
+<text x="634.0" y="288.61538461538464" text-anchor="middle" font-size="11.5" fill="var(--ink, #16202b)">-100</text>
+<text x="634.0" y="310" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">4日目</text>
+<rect x="676.0" y="223.3" width="44.0" height="41.0" rx="3" fill="var(--accent, #1f6fd6)" fill-opacity="0.45"/>
+<text x="698.0" y="217.33333333333334" text-anchor="middle" font-size="11.5" fill="var(--ink, #16202b)">+400</text>
+<text x="698.0" y="310" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">5日目</text>
+<text x="380" y="340" text-anchor="middle" font-size="12" fill="var(--quiet, #5a6675)">右の例は、ほかの日の利益を足して合計3,000ドル以上にすると条件を満たす</text>
+</svg></div><figcaption>一貫性ルールの例</figcaption></figure>
+<p>上限が50%の場合で考えます。左の例は、合計2,000ドルのうち最大の日が600ドルで30%なので、条件を満たしています。右の例は、合計2,300ドルのうち最大の日が1,500ドルで約65%あり、条件を満たしていません。</p>
+<p>右の例で条件を満たすには、合計利益を3,000ドル以上まで積み上げる必要があります。ほかの日で利益を足して、1,500ドルが合計の50%以下になるまで続けることになります。<strong>このルールを評価中に見るか、出金時に見るかはプランによって違います。</strong></p>
+
+<h2 id="s10">利益分配で決まる受け取りの割合</h2>
+<p>利益分配は、資金提供口座で出た利益のうち、トレーダーが受け取れる割合です。</p>
+<figure class="fig"><div class="fig-scroll" tabindex="0"><svg viewBox="0 0 760 176" role="img" aria-label="利益分配の例" font-size="12" xmlns="http://www.w3.org/2000/svg">
+<text x="24" y="30" text-anchor="start" font-size="15" font-weight="600" fill="var(--ink, #16202b)">資金提供口座の利益1,000ドル・利益分配80%の場合（例）</text>
+<rect x="24" y="56" width="569.6" height="72" rx="8" fill="var(--accent, #1f6fd6)"/><text x="308.8" y="98" text-anchor="middle" font-size="15" font-weight="700" fill="var(--on-accent, #ffffff)">トレーダーの受け取り 800ドル（80%）</text>
+<rect x="597.6" y="56" width="138.4" height="72" rx="8" fill="var(--tint, #eef1f5)" stroke="var(--edge, #b4bcc7)"/><text x="666.8" y="90" text-anchor="middle" font-size="13" font-weight="600" fill="var(--ink, #16202b)">ファーム</text><text x="666.8" y="110" text-anchor="middle" font-size="13" fill="var(--ink, #16202b)">200ドル</text>
+<path d="M24.0 136v6" stroke="var(--edge, #b4bcc7)"/><text x="24.0" y="158" text-anchor="start" font-size="10.5" fill="var(--quiet, #5a6675)">0</text>
+<path d="M166.4 136v6" stroke="var(--edge, #b4bcc7)"/><text x="166.4" y="158" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">200</text>
+<path d="M308.8 136v6" stroke="var(--edge, #b4bcc7)"/><text x="308.8" y="158" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">400</text>
+<path d="M451.2 136v6" stroke="var(--edge, #b4bcc7)"/><text x="451.2" y="158" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">600</text>
+<path d="M593.6 136v6" stroke="var(--edge, #b4bcc7)"/><text x="593.6" y="158" text-anchor="middle" font-size="10.5" fill="var(--quiet, #5a6675)">800</text>
+<path d="M736.0 136v6" stroke="var(--edge, #b4bcc7)"/><text x="736.0" y="158" text-anchor="end" font-size="10.5" fill="var(--quiet, #5a6675)">1,000</text>
+</svg></div><figcaption>利益分配の例</figcaption></figure>
+<p>図の例では、利益1,000ドルに対して分配率が80%なので、受け取りは800ドルです。分配率は80%前後のプランが多く、追加料金で90%以上に上げられるプランもあります。</p>
+
+<h2 id="s11">最大Lot・レバレッジ・EA・コピー・VPS・IPのルール</h2>
+<p>最大Lotやレバレッジは、1回に取引できる量や倍率の上限です。同じ口座サイズでも、ファームや銘柄によって設定がばらばらです。</p>
+<p>EA・自動売買やコピー取引は、条件付きで許可されていることが多い項目です。<strong>使えるかどうかに加えて、どこまで使えるかを読んでおく必要があります。</strong>VPS制限やIPルールは、他人と同じ環境で取引していないかを確かめるためのものです。家族で同じ回線を使ったり、複数の場所で取引する場合は、申し込む前に規約を確認してください。</p>
+<p>このほか、ニュース取引や週末保有の制限、短時間取引の禁止といった特殊ルールもあります。<strong>失格や利益の取り消しにつながりやすい</strong>ので、<a href="/propcheck-ui-preview/r20261111-whatis-restyle/articles/prop-rule-pitfalls/">次の記事</a>でまとめて扱います。</p>
+
+<h2 id="s12">ファームの収入は評価費用が中心</h2>
+<p>ほとんどの業者は、トレーダーの取引を実際の市場に流したり、ヘッジ取引をしたりはしていません。そもそも、それができる取引環境を持っていません。その場合、業者の利益はチャレンジの売上から出金で支払った額を引いた残りになります。</p>
+<div class="kp-box is-warn"><p><strong>この形だと、出金が増えるほど業者の手元の資金は減っていきます。だからこそ、業者にどれだけ資金力があるか、破綻しやすい傾向がないかが大事になってきます。</strong></p></div>
+<p>PROP CHECKの注目4社のガイドでは、こうした点も含めて各社を掘り下げています。取り上げているのは、大手ブローカーが運営を支えるRZR Funded、売上や支払額、準備金をダッシュボードで公開しているPropr、スマートコントラクトの仕組みを使うFundedHiveとHypernovaです。気になる会社があれば、<a href="https://propchecklab.com/guides/">注目4社のガイド</a>から読んでみてください。</p>
+
+<h2 id="s13">最初の1回で予算を使い切らない</h2>
+<p>プロップファームを使えば、少ない費用で大きな口座サイズの取引を体験できます。一方で、口座の多くはシミュレーションで、合格してから出金するまでにも条件があります。<strong>評価費用は戻ってこないものとして考えておく方が現実的です。</strong></p>
+<div class="kp-box is-mine"><p><strong>予算は2〜3回分に分けて、最初の1回で使い切らないようにするのがおすすめです。</strong>申し込む前には、早見表のうち最大DDと日次DDの計算法、出金の申請間隔だけは必ず書き出しておきます。あわせて、日次DDの半分くらい負けたらその日は取引をやめる、と自分で決めておきます。</p></div>
+<p>特殊ルールやルールの変更、規約の奥に書かれた条件、運営が続かない業者のリスクについては、<a href="/propcheck-ui-preview/r20261111-whatis-restyle/articles/prop-rule-pitfalls/">次の記事</a>で解説します。</p>
+
+<p class="kp-note">PROP CHECKには、一部のプロップファームへの紹介リンクがあり、申し込みがあると運営者に報酬が入る場合があります。紹介報酬は点数の計算に含めていません。</p>
+<h2 id="s14">出典</h2>
+<ul class="kp-sources">
+<li><p>FX Handbook「Prop Firm Rules Compared: Drawdown, Targets, Fees and Payouts」（2026年11月2日更新） <a target="_blank" rel="noopener noreferrer" href="https://fxhandbook.com/prop-firms/rules">https://fxhandbook.com/prop-firms/rules</a></p></li>
+<li><p>Investopedia「Proprietary Trading: What It Is, How It Works, and Benefits」 <a target="_blank" rel="noopener noreferrer" href="https://www.investopedia.com/terms/p/proprietarytrading.asp">https://www.investopedia.com/terms/p/proprietarytrading.asp</a></p></li>
+<li><p>ルール項目名とプランの型：PROP CHECK（propchecklab.com）の各社比較で使っている項目</p></li>
+</ul>
+<p class="kp-note">確認日：2026-11-11</p>
+</article></main><footer class="pc-site-footer"><nav class="pc-footer-layout" aria-label="フッターメニュー"><a class="pc-footer-brand" href="/propcheck-ui-preview/r20261111-whatis-restyle/" aria-label="PROP CHECK トップページ"><img src="/propcheck-ui-preview/r20261111-whatis-restyle/assets/propcheck-logo-r20261020.webp" alt="PROP CHECK"></a><div class="pc-footer-group" aria-labelledby="pc-footer-heading-1"><h2 id="pc-footer-heading-1">連絡・依頼</h2><a href="/propcheck-ui-preview/r20261111-whatis-restyle/report/">出金拒否・BANを報告</a><a href="/propcheck-ui-preview/r20261111-whatis-restyle/ja/request-listing/">未掲載業者をリクエスト</a><a href="/propcheck-ui-preview/r20261111-whatis-restyle/report-error/">情報の誤りを報告</a><a href="/propcheck-ui-preview/r20261111-whatis-restyle/ja/contact/">お問い合わせ</a></div><div class="pc-footer-group" aria-labelledby="pc-footer-heading-2"><h2 id="pc-footer-heading-2">運営と透明性</h2><a href="/propcheck-ui-preview/r20261111-whatis-restyle/guides/">紹介記事</a><a href="/propcheck-ui-preview/r20261111-whatis-restyle/methodology/">評価方法</a><a href="/propcheck-ui-preview/r20261111-whatis-restyle/about/">運営者情報</a><a href="/propcheck-ui-preview/r20261111-whatis-restyle/policy/">編集方針・免責事項</a><a href="/propcheck-ui-preview/r20261111-whatis-restyle/advertising/">広告・紹介リンクの方針</a></div><div class="pc-footer-group" aria-labelledby="pc-footer-heading-3"><h2 id="pc-footer-heading-3">利用条件</h2><a href="/propcheck-ui-preview/r20261111-whatis-restyle/terms/">利用規約</a><a href="/propcheck-ui-preview/r20261111-whatis-restyle/privacy/">プライバシーポリシー</a></div></nav><p class="pc-footer-copyright">© 2026 PROP CHECK</p></footer><script defer src="/propcheck-ui-preview/r20261111-whatis-restyle/w7-header.js?perf=fe0f3f24066304eb"></script><script src="/propcheck-ui-preview/r20261111-whatis-restyle/language-menu.js?perf=8cf084e5a93ffaae" defer></script></body></html>
