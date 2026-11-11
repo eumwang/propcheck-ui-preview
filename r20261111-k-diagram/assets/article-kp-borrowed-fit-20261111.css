@@ -1,0 +1,37 @@
+/* Mobile-only layout for /articles/borrowed-prop/ (JA/EN/KO).
+   Desktop (681px and up) is unchanged. Do not edit existing CSS files. */
+
+@media (max-width: 680px) {
+  .kp-article h1,
+  .kp-article h2,
+  .kp-article h3 {
+    text-wrap: wrap;
+  }
+
+  .kp-article .fig-scroll--wide {
+    display: none;
+  }
+
+  .kp-article .fig-mobile {
+    display: block;
+    background: var(--surface, #ffffff);
+    border: 1px solid var(--rule, #dde2e9);
+    border-radius: 10px;
+    padding: 6px 0;
+  }
+
+  .kp-article .fig-mobile svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    max-width: 100%;
+    font-family: var(--font-body);
+  }
+}
+
+@media (min-width: 681px) {
+  .kp-article .fig-mobile {
+    display: none;
+  }
+}
