@@ -1,0 +1,69 @@
+/* 2026-11-11: typography and kp-box/kp-fine for the restyled what-is-a-prop-firm pages.
+   Typography copied from production borrowed-prop / article-kp-pitfalls-20261111.css (not edited in place).
+   kp-box and .kp-fine from the approved JA manuscript extra.css. */
+
+/* Layout: one reading column (about 40 Japanese characters wide); figures and tables scroll sideways inside their own frame on phones. */
+:root{
+  --bg:#fbfcfd; --surface:#ffffff; --ink:#16202b; --quiet:#5a6675; --edge:#b4bcc7; --rule:#dde2e9;
+  --accent:#1f6fd6; --on-accent:#ffffff; --tint:#eef1f5; --muted:#c2c7cf; --minus:#d9534f; --marker:#ffe27a;
+  --font-body:"Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+  --font-head:"Zen Kaku Gothic New","Noto Sans JP","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+  --font-mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#10151b; --surface:#161c24; --ink:#e8edf2; --quiet:#9ba7b4; --edge:#4c5866; --rule:#2a333e;
+  --accent:#62a6f7; --on-accent:#0d1218; --tint:#1c242e; --muted:#5d6774; --minus:#ee7b76; --marker:#6b5a12; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#10151b; --surface:#161c24; --ink:#e8edf2; --quiet:#9ba7b4; --edge:#4c5866; --rule:#2a333e;
+  --accent:#62a6f7; --on-accent:#0d1218; --tint:#1c242e; --muted:#5d6774; --minus:#ee7b76; --marker:#6b5a12; color-scheme:dark }
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.9;padding:0;}
+.kp-article{max-width:44rem;margin:0 auto;display:flex;flex-direction:column;gap:1.35rem;min-width:0}
+.kp-article > *{margin:0;min-width:0}
+.kp-article h1{font-family:var(--font-head);font-weight:700;font-size:clamp(1.55rem,4.6vw,2.15rem);line-height:1.45;text-wrap:balance;letter-spacing:.01em}
+.kp-article h2{font-family:var(--font-head);font-weight:700;font-size:clamp(1.2rem,3.4vw,1.45rem);line-height:1.5;text-wrap:balance;
+  margin-top:1.9rem;padding-bottom:.55rem;border-bottom:2px solid var(--ink)}
+.kp-byline{color:var(--quiet);font-size:.875rem;font-variant-numeric:tabular-nums}
+.kp-lead{font-size:1.06rem}
+.kp-article strong{font-weight:700;background:linear-gradient(transparent 62%, var(--marker) 62%)}
+.kp-article a{color:var(--accent);text-underline-offset:.2em}
+.kp-article a:focus-visible,.fig-scroll:focus-visible,.table-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.kp-article code{font-family:var(--font-mono);font-size:.9em;background:var(--tint);border:1px solid var(--rule);border-radius:4px;padding:.08em .38em}
+.kp-article h3{font-family:var(--font-head);font-weight:700;font-size:1.08rem;line-height:1.5;margin:1.8rem 0 .6rem}
+.kp-steps{list-style:none;padding:0;counter-reset:step;display:flex;flex-direction:column;gap:.7rem}
+.kp-steps li{counter-increment:step;display:grid;grid-template-columns:2rem 1fr;gap:.75rem;align-items:start}
+.kp-steps li::before{content:counter(step);width:2rem;height:2rem;border-radius:50%;background:var(--accent);color:var(--on-accent);
+  font-weight:700;display:grid;place-items:center;line-height:1;font-variant-numeric:tabular-nums}
+.kp-steps p{margin:0;min-width:0}
+.kp-list{padding-left:1.3em;display:flex;flex-direction:column;gap:.3rem}
+.kp-list p{margin:0}
+.fig{display:flex;flex-direction:column;gap:.5rem}
+.fig-scroll{overflow-x:auto;background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:6px 0}
+.fig-scroll svg{display:block;width:100%;min-width:620px;height:auto;font-family:var(--font-body)}
+.fig figcaption{color:var(--quiet);font-size:.8125rem;line-height:1.6}
+.table-scroll{overflow-x:auto}
+.kp-article table{border-collapse:collapse;width:100%;min-width:560px;font-size:.9rem;line-height:1.7}
+.kp-article th,.kp-article td{text-align:left;vertical-align:top;padding:.7rem .8rem;border-bottom:1px solid var(--rule)}
+.kp-article thead th{font-weight:700;border-bottom:2px solid var(--ink);white-space:nowrap}
+.kp-article tbody td:first-child{font-weight:600}
+.kp-note{color:var(--quiet);font-size:.875rem;border-top:1px solid var(--rule);padding-top:1rem}
+.kp-sources{font-size:.875rem;line-height:1.7;padding-left:1.3em;display:flex;flex-direction:column;gap:.35rem;overflow-wrap:anywhere}
+.kp-sources p{margin:0}
+
+/* site chrome around the manuscript (do not change .kp-article typography) */
+body{margin:0;padding:0;background:var(--bg,#fbfcfd);color:var(--ink,#16202b);font-family:var(--font-body,"Noto Sans JP",sans-serif);}
+main.kp-page{padding-block:24px 72px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));background:var(--bg);color:var(--ink);}
+.kp-crumb{max-width:44rem;margin:0 auto 1.1rem;font-size:.8125rem;}
+.kp-crumb a{color:var(--accent,#1f6fd6);text-underline-offset:.2em;}
+
+/* 追加（この記事用）：本番の「結論／破るとどうなる？／私なら／実例」の囲みを、03と同じ変数で表示する */
+.kp-box{border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:8px;background:var(--surface);padding:.85rem 1rem;display:flex;flex-direction:column;gap:.35rem}
+.kp-box p{margin:0}
+.kp-box-label{font-size:.8125rem;font-weight:700;color:var(--accent);letter-spacing:.02em}
+.kp-box.is-warn{border-left-color:var(--minus)}
+.kp-box.is-warn .kp-box-label{color:var(--minus)}
+.kp-box.is-mine{background:var(--tint)}
+.kp-box.is-example{border-left-color:var(--edge)}
+.kp-box.is-example .kp-box-label{color:var(--quiet)}
+
+/* 追加（what-is-a-prop-firm 用）：「※数値は説明用の例」の注記を小さく */
+.kp-fine{color:var(--quiet);font-size:.8125rem;line-height:1.7}

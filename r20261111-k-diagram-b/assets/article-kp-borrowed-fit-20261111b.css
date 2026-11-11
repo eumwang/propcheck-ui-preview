@@ -1,0 +1,24 @@
+/* Mobile-only for /articles/borrowed-prop/ (JA/EN/KO).
+   Keep original figure SVGs; scale them to the column width below 681px.
+   Also keep heading text-wrap:wrap so titles use the full column.
+   Desktop (681px and up) is unchanged. Do not edit existing CSS files. */
+
+@media (max-width: 680px) {
+  .kp-article h1,
+  .kp-article h2,
+  .kp-article h3 {
+    text-wrap: wrap;
+  }
+
+  .kp-article .fig-scroll {
+    overflow-x: hidden;
+  }
+
+  .kp-article .fig-scroll svg {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+  }
+}
