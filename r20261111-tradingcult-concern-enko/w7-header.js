@@ -1,0 +1,1 @@
+(()=>{const h=document.querySelector('.site-header');if(h)new ResizeObserver(()=>document.documentElement.style.setProperty('--pc-header-height',h.getBoundingClientRect().height+'px')).observe(h)})();
