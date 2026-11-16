@@ -38,8 +38,7 @@ function isoBox(){const t=document.querySelector('#comparison-table');const sh=t
  const ul=document.createElement('ul');
  ISO.forEach(row=>{const li=document.createElement('li');const a=document.createElement('a');
   const path=(L==='en'?'/en':L==='ko'?'/ko':'')+'/companies/'+row.service_id+'/';
-  a.href=path;a.textContent=row.name;li.appendChild(a);li.append(': ');
-  li.appendChild(document.createTextNode(row.wording[L]));ul.appendChild(li)});
+  a.href=path;a.textContent=row.name;li.appendChild(a);const _w=row.wording[L]||'';const _pfx=[row.name+'：',row.name+': ',row.name+':'].find(p=>_w.startsWith(p));if(_pfx){li.append(_pfx.endsWith('：')?'：':': ');li.appendChild(document.createTextNode(_w.slice(_pfx.length)));}else{li.append(': ');li.appendChild(document.createTextNode(_w));}ul.appendChild(li)});
  box.appendChild(ul);sh.after(box)}
 function hideIsolated(){document.querySelectorAll('#comparison-table tr[data-company-id], .mobile-comparison [data-company-id]').forEach(tr=>{if(ISO.some(x=>x.service_id===tr.dataset.companyId))tr.remove()})}
 function apply(){if(busy)return;busy=true;try{note();hideIsolated();isoBox();
