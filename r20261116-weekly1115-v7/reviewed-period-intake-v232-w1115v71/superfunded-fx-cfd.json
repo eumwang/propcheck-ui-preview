@@ -1209,6 +1209,19 @@
    "topic_review_status": "original_text_reviewed",
    "overall_review_status": "original_text_keep",
    "source_url": "https://x.com/i/status/1844242500565012903"
+  },
+  "1926075814212198611": {
+   "original_text": "",
+   "original_text_sha256": null,
+   "post_date_utc": "2025-05-24",
+   "display_in_sentiment_list": true,
+   "display_topic_proposals": [],
+   "polar_topic_proposals": [],
+   "topic_review_status": "weekly_20261108_stub_missing_body",
+   "overall_review_status": "weekly_20261108_stub_missing_body",
+   "source_url": "https://x.com/i/status/1926075814212198611",
+   "preview_note_ja": "正本review_detailに本文なし（索引のみ）。点数・採否は不変。",
+   "v7_1_note_ja": "採点の基礎（baseline）で採用済み（原文 sha256 aa5340c8…、点検理由「本人が常用するSuperFundedのダッシュボードとTradeLockerの使いやすさを他社比較で肯定」）。X では削除済み（2026-11-16 23:4x JST に確認）で本文を取り直せない。11/8 本番 intake w1108f と同じ控え。"
   }
  },
  "weekly_update": "2026-11-01（一覧 reviewed-period-index-v237-w1031 と同じ投稿）"
