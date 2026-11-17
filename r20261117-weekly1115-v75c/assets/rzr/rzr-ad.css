@@ -1,0 +1,76 @@
+/* PROP CHECK × RZR Funded 広告枠（stage1 coming soon / stage3 giveaway）。すべて #advertising-slot.pc-ad-rzr 配下だけに効く。 */
+#advertising-slot.pc-ad-rzr{--rzr-black:#0F0F0F;--rzr-white:#FAFAFA;--rzr-gold:#FFB400;margin:28px 0;padding:24px;border:1px solid #3a2e12;border-radius:16px;background:radial-gradient(120% 140% at 0% 0%,rgba(255,180,0,.22) 0%,rgba(255,180,0,0) 55%),var(--rzr-black);color:var(--rzr-white);display:grid;grid-template-columns:260px minmax(0,1fr);grid-template-areas:"media label" "media body";grid-template-rows:auto 1fr;column-gap:32px;row-gap:10px;align-items:start;box-sizing:border-box;max-width:100%;overflow:hidden;font-family:"Source Sans 3",system-ui,-apple-system,"Hiragino Sans","Noto Sans JP","Noto Sans KR",sans-serif}
+#advertising-slot.pc-ad-rzr *{box-sizing:border-box}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-label{grid-area:label;display:block;margin:2px 0 0;font-size:11px;letter-spacing:.12em;color:rgba(250,250,250,.72);font-weight:600}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-media{grid-area:media;position:relative;display:block;width:260px;aspect-ratio:1/1;border-radius:14px;overflow:hidden;background:var(--rzr-black);border:1px solid rgba(255,180,0,.35);text-decoration:none}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-media picture,#advertising-slot.pc-ad-rzr .pc-ad-rzr-media picture img{display:block;width:100%;height:100%}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-media picture img{object-fit:cover}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-body{grid-area:body;display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-width:0}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-cobrand{display:block;margin:0;font-size:14px;letter-spacing:.06em;font-weight:700;color:var(--rzr-gold)}
+#advertising-slot.pc-ad-rzr h2{margin:0;font-size:24px;line-height:1.45;font-weight:700;color:var(--rzr-white);text-wrap:balance;overflow-wrap:anywhere}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-lead{margin:0;font-size:15px;line-height:1.7;color:rgba(250,250,250,.88)}
+.pc-ad-rzr-nw{display:inline-block;max-width:100%}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-note{margin:0;font-size:12px;line-height:1.8;color:rgba(250,250,250,.7)}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-note a{color:var(--rzr-white);text-decoration:underline;text-underline-offset:2px;font-weight:600}
+#advertising-slot.pc-ad-rzr a:focus-visible,#advertising-slot.pc-ad-rzr button:focus-visible{outline:3px solid var(--rzr-gold);outline-offset:3px}
+/* coming soon visual */
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-soonvis{background:var(--rzr-black) center/cover no-repeat;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:24px}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-soonvis::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,15,15,.55),rgba(15,15,15,.25) 50%,rgba(15,15,15,.7))}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-soonvis>*{position:relative}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-logo{display:block;width:200px;min-width:120px;max-width:none;height:auto;aspect-ratio:1004.7/387.2;object-fit:contain;flex:none}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-soontag{display:inline-block;padding:8px 16px;border:2px solid var(--rzr-gold);border-radius:999px;color:var(--rzr-gold);font-weight:800;font-size:17px;letter-spacing:.12em;line-height:1;white-space:nowrap;background:rgba(15,15,15,.6)}
+#advertising-slot.pc-ad-rzr--soon .pc-ad-rzr-body{align-self:center}
+#advertising-slot.pc-ad-rzr--soon h2{font-size:26px}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-soonline{margin:0;font-weight:800;font-size:22px;letter-spacing:.08em;color:var(--rzr-gold)}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-soonline span{color:var(--rzr-white);font-weight:600;letter-spacing:.04em;font-size:16px;margin-left:8px}
+/* stage3 conditions */
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-cond{margin:0;padding:14px 16px;border:1px solid rgba(250,250,250,.16);border-radius:10px;background:rgba(250,250,250,.04);width:100%}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-cond h3,.rzr-modal h3{margin:0 0 6px;font-size:13px;letter-spacing:.06em;color:var(--rzr-gold,#FFB400);font-weight:700}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-cond ol,.rzr-modal ol{margin:0;padding-left:1.4em;font-size:14px;line-height:1.75}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-cond a,.rzr-modal ol a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-actions{display:flex;gap:12px;flex-wrap:wrap}
+.pc-ad-rzr-cta{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:46px;padding:12px 26px;border:0;border-radius:8px;background:#FFB400;color:#0F0F0F;font:700 15px/1.2 "Source Sans 3",system-ui,"Hiragino Sans","Noto Sans JP","Noto Sans KR",sans-serif;text-decoration:none;cursor:pointer}
+.pc-ad-rzr-cta:hover{background:#ffc533}
+.pc-ad-rzr-more{display:none}
+@media (max-width:767.98px){
+  #advertising-slot.pc-ad-rzr{display:flex;flex-direction:column;align-items:stretch;gap:12px;padding:18px}
+  #advertising-slot.pc-ad-rzr .pc-ad-rzr-label{margin:0}
+  #advertising-slot.pc-ad-rzr .pc-ad-rzr-media{width:100%;max-width:520px;margin:0 auto}
+  #advertising-slot.pc-ad-rzr--soon .pc-ad-rzr-media{aspect-ratio:16/10}
+  #advertising-slot.pc-ad-rzr .pc-ad-rzr-body{align-items:stretch;gap:10px}
+  #advertising-slot.pc-ad-rzr h2,#advertising-slot.pc-ad-rzr--soon h2{font-size:20px}
+  #advertising-slot.pc-ad-rzr .pc-ad-rzr-cond,#advertising-slot.pc-ad-rzr .pc-ad-rzr-actions .pc-ad-rzr-register{display:none}
+  #advertising-slot.pc-ad-rzr .pc-ad-rzr-more{display:inline-flex;width:100%}
+  #advertising-slot.pc-ad-rzr .pc-ad-rzr-actions{display:block;width:100%}
+  #advertising-slot.pc-ad-rzr .pc-ad-rzr-main>div{align-items:stretch}
+}
+/* modal (stage3, mobile) */
+.rzr-modal[hidden]{display:none}
+.rzr-modal{position:fixed;inset:0;z-index:2147483000;display:flex;align-items:flex-end;justify-content:center}
+.rzr-modal-backdrop{position:absolute;inset:0;background:rgba(15,15,15,.72)}
+.rzr-modal-panel{position:relative;width:min(560px,100%);max-height:calc(100dvh - 24px);overflow:auto;margin:0;padding:22px 20px 24px;border-radius:16px 16px 0 0;background:#0F0F0F;color:#FAFAFA;border:1px solid rgba(255,180,0,.4);font-family:"Source Sans 3",system-ui,"Hiragino Sans","Noto Sans JP","Noto Sans KR",sans-serif;box-sizing:border-box}
+.rzr-modal-panel *{box-sizing:border-box}
+.rzr-modal-panel .rzr-modal-label{display:block;font-size:11px;letter-spacing:.12em;color:rgba(250,250,250,.72);margin:0 44px 8px 0}
+.rzr-modal-panel h2{margin:0 0 6px;font-size:19px;line-height:1.45;padding-right:40px}
+.rzr-modal-panel .rzr-modal-cobrand{display:block;font-size:13px;color:#FFB400;font-weight:700;letter-spacing:.06em}
+.rzr-modal-panel .rzr-modal-lead{margin:0 0 14px;font-size:14px;line-height:1.7;color:rgba(250,250,250,.88)}
+.rzr-modal-panel .pc-ad-rzr-cta{width:100%;margin-top:16px}
+.rzr-modal-panel .rzr-modal-note{margin:12px 0 0;font-size:12px;line-height:1.7;color:rgba(250,250,250,.7)}
+.rzr-modal-close{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:999px;border:1px solid rgba(250,250,250,.3);background:transparent;color:#FAFAFA;font-size:22px;line-height:1;cursor:pointer}
+.rzr-modal-close:focus-visible,.rzr-modal-panel a:focus-visible{outline:3px solid #FFB400;outline-offset:2px}
+@media (min-width:768px){.rzr-modal{align-items:center}.rzr-modal-panel{border-radius:16px}}
+html.rzr-modal-open,html.rzr-modal-open body{overflow:hidden}
+/* 本日のクーポン（stage3、データがある日だけ表示） */
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-main{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;width:100%}
+#advertising-slot.pc-ad-rzr.has-offer .pc-ad-rzr-main{grid-template-columns:minmax(0,1.25fr) minmax(220px,1fr)}
+#advertising-slot.pc-ad-rzr .pc-ad-rzr-main>div{min-width:0;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.rzr-offer[hidden]{display:none!important}
+.rzr-offer{padding:14px 16px;border:1px dashed #FFB400;border-radius:10px;background:rgba(255,180,0,.08);color:#FAFAFA;width:100%}
+.rzr-offer h3{margin:0 0 8px;font-size:13px;letter-spacing:.06em;color:#FFB400;font-weight:700}
+.rzr-offer .rzr-offer-img{display:block;width:100%;height:auto;border-radius:8px;margin:0 0 8px}
+.rzr-offer .rzr-offer-desc{margin:0 0 8px;font-size:13px;line-height:1.6}
+.rzr-offer .rzr-offer-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.rzr-offer .rzr-offer-code{font:700 18px/1.2 "Source Sans 3",ui-monospace,monospace;letter-spacing:.08em;padding:6px 10px;border-radius:6px;background:#0F0F0F;border:1px solid rgba(250,250,250,.25);overflow-wrap:anywhere}
+.rzr-offer .rzr-offer-copy{min-height:36px;padding:6px 14px;border-radius:6px;border:1px solid #FFB400;background:transparent;color:#FFB400;font-weight:700;cursor:pointer}
+.rzr-offer .rzr-offer-status{font-size:12px;color:#FAFAFA}
+@media (max-width:767.98px){#advertising-slot.pc-ad-rzr.has-offer .pc-ad-rzr-main{grid-template-columns:minmax(0,1fr)}}
