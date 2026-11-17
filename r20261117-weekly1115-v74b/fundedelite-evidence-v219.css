@@ -1,0 +1,17 @@
+.fundedelite-evidence-section,.fundedelite-evidence-card{min-width:0}
+.fundedelite-evidence-list,.fundedelite-evidence-sources{display:grid;gap:10px;min-width:0}
+.fundedelite-evidence-card{padding:12px;border:1px solid #dce5eb;border-radius:12px;background:#fff}
+.fundedelite-evidence-group{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;color:#405b69;font-size:12px;font-weight:700}
+.fundedelite-evidence-group small{font-size:11px;font-weight:500;white-space:nowrap}
+.fundedelite-evidence-source{display:grid;grid-template-columns:minmax(130px,180px) minmax(0,1fr) minmax(112px,max-content);grid-template-areas:"meta body link";align-items:start;gap:10px 16px;padding:10px 0;border-top:1px solid #e8edf1;min-width:0}
+.fundedelite-evidence-meta{grid-area:meta;min-width:0}.fundedelite-evidence-meta time{display:block;font-size:12px;color:#4e697c}
+.fundedelite-evidence-types{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.fundedelite-evidence-type{display:inline-flex;padding:3px 7px;border-radius:999px;background:#e9f5ef;color:#17684a;font-size:11px;font-weight:700}
+.fundedelite-evidence-type.problem{background:#fde8e8;color:#a72636}
+.fundedelite-evidence-body{grid-area:body;min-width:0;overflow-wrap:anywhere;line-height:1.6;color:#37546a}
+.fundedelite-evidence-body p{margin:0}.fundedelite-evidence-body small{display:block;color:#637a87;font-size:11px}
+.fundedelite-evidence-excerpt,.fundedelite-evidence-expand p{white-space:normal}
+.fundedelite-evidence-expand summary{cursor:pointer;color:#245d83}.fundedelite-evidence-expand summary span{font-weight:400;color:#37546a}.fundedelite-evidence-expand[open] summary span{display:none}.fundedelite-evidence-expand p{margin-top:7px}
+.fundedelite-evidence-missing{color:#795b35;font-size:13px}
+.fundedelite-evidence-link{grid-area:link;justify-self:end;text-align:right;min-width:0;overflow-wrap:anywhere;color:#075cbd;font-size:13px;font-weight:700}
+@media(max-width:680px){.fundedelite-evidence-source{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"meta link" "body body";gap:8px}.fundedelite-evidence-link{align-self:start}.fundedelite-evidence-group{flex-wrap:wrap}}
