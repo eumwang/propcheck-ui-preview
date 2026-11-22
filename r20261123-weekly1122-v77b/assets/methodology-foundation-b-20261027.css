@@ -1,0 +1,6 @@
+/* methodology #method-foundation: 4項目（説明＋観点）を1つのアコーディオンに統合（k-method-b-20261027） */
+.mjb-merged .mj-criteria>summary{align-items:flex-start}
+.mjb-merged .mj-criteria>summary::before{margin-top:1px}
+.mjb-head{display:flex;flex-direction:column;gap:4px;min-width:0}
+.mjb-name{font-weight:700;color:var(--accent);font-size:15px;line-height:1.5}
+.mjb-desc{font-weight:400;color:var(--ink);font-size:14px;line-height:1.75}
