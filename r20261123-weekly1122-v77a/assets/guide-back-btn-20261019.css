@@ -1,0 +1,9 @@
+/* 2026-10-19 案A：ja 各社紹介ページ「4社ガイド」リンクを緑の枠線ボタンに（各社ページだけが読み込む）。
+   既存ボタン（.af-guide／.btn.secondary）と同じ色・角丸8px・太字700・14px。 */
+a.pc-guide-back{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:9px 16px;box-sizing:border-box;background:#fff;color:#076656;border:1px solid #087362;border-radius:8px;font-size:14px;font-weight:700;line-height:1.45;text-decoration:none;vertical-align:middle;transition:background-color .15s,border-color .15s,color .15s}
+a.pc-guide-back::before{content:"←"/"";font-weight:700;transition:transform .15s}
+a.pc-guide-back:hover{background:var(--wash,#eef6f2);color:#034f43;border-color:#034f43}
+a.pc-guide-back:hover::before{transform:translateX(-2px)}
+.crumb a.pc-guide-back{margin-right:6px}
+.pc-guide-disclosure a.pc-guide-back{margin-top:6px}
+@media(prefers-reduced-motion:reduce){a.pc-guide-back,a.pc-guide-back::before{transition:none}a.pc-guide-back:hover::before{transform:none}}
