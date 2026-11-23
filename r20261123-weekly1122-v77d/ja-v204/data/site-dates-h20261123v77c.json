@@ -1,0 +1,36 @@
+{
+  "schema": "propcheck-site-dates-v1",
+  "timezone": "Asia/Tokyo",
+  "review_cutoff": "2026-11-21",
+  "review_cutoff_exclusive_at": "2026-11-21T12:08:21+09:00",
+  "score_as_of": "2026-11-22",
+  "report_period": {
+    "start": "2024-09-23",
+    "end": "2026-11-21",
+    "end_exclusive_at": "2026-11-21T12:08:21+09:00"
+  },
+  "tag_cutoff": "2026-10-11",
+  "tag_cutoff_exclusive_at": "2026-10-11T00:00:00+09:00",
+  "foundation_basis_date": "2026-10-07",
+  "plans_checked": {
+    "start": "2026-10-02",
+    "end": "2026-10-17"
+  },
+  "held_companies": [],
+  "reflected_at": null,
+  "generated_at": "2026-11-23T01:03:00+09:00",
+  "source": {
+    "run": "weekly_20261122_v7_7",
+    "step": "isolated candidate. not production."
+  },
+  "derivation": {
+    "tag_cutoff": "tag-badges-v194.json review_source.scoped_company_end_exclusive_utc (max)",
+    "review_cutoff": "X watermark / weekB end 2026-11-21 12:08:21 JST (site_data_1122_v7_7)",
+    "report_period": "normal-report-ratios-v143.json snapshot_period_utc.start_inclusive / max(snapshot_period_utc.end_exclusive, companies[].collection_end_exclusive_utc) - 1 day",
+    "score_as_of": "overall-reference as_of 2026-11-22",
+    "overall_reference_as_of_in_file": "2026-11-22",
+    "foundation_basis_date": "overall-reference-v194.json foundation_model_trial_date",
+    "plans_checked": "ja-v204/plan-options-v168.json checked_on (min/max)"
+  },
+  "not_reflected": "11/21 昼以降の X 口コミは api.twitterapis.com の障害（HTTP 502/500、search_envelope_unrecognised・parse_failed）で未取得・未反映。11/19〜11/21 の要確認128本、11/22 分、blueberry_077 は次回に反映。11/22 21:07 の試しで取れた alpha_011・pipfarm_151 各1ページ（計40件、normalize/JEV 未実行）は今回入れない（ファイルは残置）。"
+}

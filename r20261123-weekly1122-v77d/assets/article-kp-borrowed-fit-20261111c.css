@@ -1,0 +1,83 @@
+/* Mobile-only for /articles/borrowed-prop/ (JA/EN/KO).
+   Keep original figure SVGs; scale them to the column width below 681px.
+   Keep heading text-wrap:wrap so titles use the full column.
+   Keep original table layout; show a horizontal scrollbar from the start
+   so off-screen columns are noticeable. Desktop (681px and up) is unchanged.
+   Do not edit existing CSS files. */
+
+@media (max-width: 680px) {
+  .kp-article h1,
+  .kp-article h2,
+  .kp-article h3 {
+    text-wrap: wrap;
+  }
+
+  .kp-article .fig-scroll {
+    overflow-x: hidden;
+  }
+
+  .kp-article .fig-scroll svg {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+  }
+
+  /* Keep original table min-width / wrapping. Always show a modest
+     horizontal scrollbar (Firefox + WebKit). */
+  .kp-article .table-scroll {
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--muted, #c2c7cf) var(--tint, #eef1f5);
+  }
+
+  .kp-article .table-scroll::-webkit-scrollbar {
+    height: 8px;
+    display: block;
+    -webkit-appearance: none;
+  }
+
+  .kp-article .table-scroll::-webkit-scrollbar-track {
+    background: var(--tint, #eef1f5);
+    border-radius: 4px;
+  }
+
+  .kp-article .table-scroll::-webkit-scrollbar-thumb {
+    background: var(--muted, #c2c7cf);
+    border-radius: 4px;
+  }
+
+  .kp-article .table-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--edge, #b4bcc7);
+  }
+
+  /* Fallback track under the table for overlay-scrollbar browsers (iOS Safari etc.).
+     Injected only when a native scrollbar is not occupying space. */
+  .kp-article .table-scroll-hint {
+    display: block;
+    height: 4px;
+    margin: 6px 0 0;
+    background: var(--tint, #eef1f5);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .kp-article .table-scroll-hint .table-scroll-hint-thumb {
+    display: block;
+    height: 100%;
+    background: var(--muted, #c2c7cf);
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: 681px) {
+  .kp-article .table-scroll-hint {
+    display: none !important;
+  }
+}
