@@ -1,0 +1,2 @@
+/* /ko/articles/borrowed-prop/ only: break Korean lines at word spaces, not in the middle of a word (e.g. 프/롭). */
+.kp-article:lang(ko){word-break:keep-all;overflow-wrap:break-word}
