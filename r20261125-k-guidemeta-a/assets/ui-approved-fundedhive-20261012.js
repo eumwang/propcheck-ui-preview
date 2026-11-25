@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{for(const [key,name] of [['classic','Classic'],['instant','Instant Growth']]){const s=document.querySelector('#'+key+' > details.pc-plan-section > summary');if(s && s.textContent==='詳しい条件・図解を見る')s.textContent=name+'の条件・図解を見る';}});
