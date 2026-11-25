@@ -1,0 +1,70 @@
+/* 2026-11-25: what-is-a-prop-firm (JA) を Tangem 記事のデザインに合わせる（NOTE調・サイト緑 #147260）。
+   既存CSS（article-kp-whatis-20261111.css など）は編集せず、このファイルを最後に重ねる。この記事だけに効く（.kp-article 内）。
+   見本：/workspace/work/tangem-article-20261125/index.html */
+
+/* 色：サイトと同じ緑（本番 styles.css の --accent）。図のSVGは var(--accent) を使っているので同じ緑になる */
+:root{ --accent:#147260; --on-accent:#ffffff; }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --accent:#4ec9a8; --on-accent:#0d1218 } }
+:root[data-theme="dark"]{ --accent:#4ec9a8; --on-accent:#0d1218 }
+
+.kp-article h1{font-size:clamp(1.5rem,4.4vw,2.05rem)}
+
+/* 大見出し：目次と同じ番号の丸＋太い緑の下線 */
+.kp-article h2{
+  margin-top:1.9rem;padding:0 0 .6rem;border-bottom:3px solid var(--accent);
+  display:grid;grid-template-columns:auto 1fr;column-gap:.7rem;align-items:center;scroll-margin-top:1.2rem}
+.kp-article h2::before{
+  content:attr(data-n);
+  width:1.85rem;height:1.85rem;border-radius:50%;
+  background:var(--accent);color:var(--on-accent);
+  font-family:var(--font-body);font-weight:700;font-size:.8rem;
+  display:grid;place-items:center;line-height:1;font-variant-numeric:tabular-nums}
+
+/* 小見出し：左に緑の縦線 */
+.kp-article h3{margin:.6rem 0 0;padding:.1rem 0 .1rem .85rem;border-left:4px solid var(--accent);font-size:1.05rem;line-height:1.55}
+
+/* 表：見出し行は薄い緑の地 */
+.kp-article table{min-width:540px;font-variant-numeric:tabular-nums}
+.kp-article thead th{background:color-mix(in srgb, var(--accent) 14%, var(--surface));color:var(--ink);border-bottom:1px solid var(--rule)}
+
+/* 手順番号：枠線だけの丸（この記事には手順リストはないが、決まりどおり入れておく） */
+.kp-article ol.kp-steps li::before{background:transparent;color:var(--ink);border:1.5px solid var(--edge);box-shadow:none}
+
+/* 冒頭の番号付き目次（h2 と同じ番号） */
+.kp-toc{border:1px solid var(--rule);border-radius:10px;background:var(--surface);padding:1rem 1.1rem 1.05rem}
+.kp-toc-title{font-family:var(--font-head);font-weight:700;font-size:.95rem;line-height:1.5;margin:0 0 .35rem}
+.kp-toc ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;counter-reset:toc}
+.kp-toc li{counter-increment:toc;min-width:0}
+.kp-toc a{
+  display:grid;grid-template-columns:1.7rem 1fr;gap:.65rem;align-items:center;
+  text-decoration:none;color:var(--ink);padding:.5rem 0;border-bottom:1px solid var(--rule);line-height:1.55;font-size:.95rem}
+.kp-toc li:last-child a{border-bottom:0;padding-bottom:.15rem}
+.kp-toc a::before{
+  content:counter(toc);
+  width:1.7rem;height:1.7rem;border-radius:50%;
+  background:var(--accent);color:var(--on-accent);
+  font-weight:700;font-size:.75rem;
+  display:grid;place-items:center;line-height:1;font-variant-numeric:tabular-nums}
+.kp-toc a:hover{color:var(--accent)}
+.kp-toc a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+/* スマホ：表は行ごとのカード表示（この記事の表は新しいデザインでカードになる） */
+@media (max-width: 720px){
+  .kp-toc{padding:.9rem 1rem 1rem}
+  .kp-toc a{padding:.62rem 0;font-size:1rem}
+  .table-scroll{overflow-x:visible}
+  .kp-article table{min-width:0;font-size:.95rem}
+  .kp-article thead{
+    position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+    clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  .kp-article table tbody tr{
+    display:block;background:var(--surface);border:1px solid var(--rule);border-radius:10px;
+    padding:.85rem 1rem 1rem;margin:0 0 .75rem}
+  .kp-article table tbody tr:last-child{margin-bottom:0}
+  .kp-article th,.kp-article td{display:block;width:auto;border:0;padding:.2rem 0}
+  .kp-article tbody td:first-child{
+    font-weight:700;font-size:1.02rem;line-height:1.5;padding-bottom:.5rem;margin-bottom:.25rem;
+    border-bottom:1px solid var(--rule)}
+  .kp-article tbody td[data-label]:not(:first-child)::before{
+    content:attr(data-label);display:block;color:var(--quiet);font-weight:400;font-size:.75rem;line-height:1.5;margin-top:.4rem}
+}
