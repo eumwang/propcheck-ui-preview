@@ -388,11 +388,91 @@ body{margin:0}
     padding:.95rem 1.15rem;
   }
 }
+/* Compact mobile sale tables (20261126): keep a real table, do not stack rows as cards. */
+@media (max-width: 720px){
+  .kp-offer .table-scroll{overflow-x:visible}
+  .kp-article .kp-offer-table{
+    min-width:0 !important;
+    width:100%;
+    table-layout:fixed;
+    font-size:.78rem;
+    line-height:1.4;
+    border:1px solid var(--rule);
+    border-radius:10px;
+    overflow:hidden;
+    background:var(--surface);
+  }
+  .kp-article .kp-offer-table thead{
+    all:revert;
+  }
+  .kp-article .kp-offer-table thead th{
+    white-space:normal;
+    font-size:.72rem;
+    font-weight:700;
+    line-height:1.35;
+    padding:.4rem .28rem;
+    overflow-wrap:anywhere;
+    background:color-mix(in srgb, var(--accent) 16%, var(--tint));
+    color:var(--ink);
+    border-bottom:2px solid var(--accent);
+    text-align:left;
+    vertical-align:top;
+  }
+  .kp-article .kp-offer-table th:nth-child(1),
+  .kp-article .kp-offer-table td:nth-child(1){width:26%}
+  .kp-article .kp-offer-table th:nth-child(2),
+  .kp-article .kp-offer-table td:nth-child(2),
+  .kp-article .kp-offer-table th:nth-child(3),
+  .kp-article .kp-offer-table td:nth-child(3){width:37%}
+  .kp-article .kp-offer-table tbody tr{
+    display:table-row;
+    background:transparent;
+    border:0;
+    border-radius:0;
+    padding:0;
+    margin:0;
+  }
+  .kp-article .kp-offer-table th,
+  .kp-article .kp-offer-table td{
+    display:table-cell;
+    border-bottom:1px solid var(--rule);
+    padding:.4rem .28rem;
+    overflow-wrap:anywhere;
+    word-break:break-word;
+    text-align:left;
+    vertical-align:top;
+  }
+  .kp-article .kp-offer-table tbody tr:last-child td{border-bottom:0}
+  .kp-article .kp-offer-table tbody tr:nth-child(even) td{
+    background:color-mix(in srgb, var(--accent) 5%, var(--surface));
+  }
+  .kp-article .kp-offer-table tbody td:first-child{
+    font-weight:700;
+    font-size:.78rem;
+    line-height:1.4;
+    padding:.4rem .28rem;
+    margin:0;
+    color:var(--accent);
+    white-space:normal;
+    background:color-mix(in srgb, var(--accent) 8%, var(--surface));
+    border-bottom:1px solid var(--rule);
+  }
+  .kp-article .kp-offer-table tbody tr:nth-child(even) td:first-child{
+    background:color-mix(in srgb, var(--accent) 12%, var(--surface));
+  }
+  .kp-article .kp-offer-table tbody tr:last-child td:first-child{border-bottom:0}
+  .kp-article .kp-offer-table tbody td[data-label]:not(:first-child)::before{
+    content:none !important;
+    display:none !important;
+    margin:0;
+  }
+}
+
 </style>
 </head>
 <body>
 <article class="kp-article" lang="ja">
-<h1><span style="display:inline-block">ハッキングが過去最多の今、</span> <span style="display:inline-block">Tangemという選択肢</span></h1>
+<h1>ハッキングが過去最多の今、Tangemという<span style="white-space:nowrap">選択肢</span></h1>
 <p class="kp-byline"><span class="kp-pr">PR</span><time datetime="2026-11-25">2026年11月25日</time><span>ぽんちゃい（<a href="https://propchecklab.com/">PROP CHECK</a>）</span></p>
 
 <p>こんちゃ、ぽんちゃいです。</p>
@@ -405,7 +485,7 @@ body{margin:0}
 
 <p>そこで今回は、鍵を自分で持てるカード型のウォレット「Tangem（タンジェム）」を取り上げます。スマホにタッチするだけで使えて、電池も充電も要りません。</p>
 
-<p>日本ではウォレットを触ったことがない人のほうが多いと思うので、「ウォレットとは何か」から書きました。出金を受け取って日本円にするまでの手順は、別の記事で書く予定です。</p>
+<p>日本ではウォレットを触ったことがない人のほうが多いと思うので、「ウォレットとは何か」から書きました。出金を受け取って日本円にするまでの手順は、<a href="/articles/usdc-yen/">こちらの記事</a>にまとめました。</p>
 
 
 <section class="kp-offer" id="offer-top" aria-label="Tangem ブラックフライデーの特典">
@@ -655,7 +735,7 @@ body{margin:0}
 
 <h3>私なら、経費の支払い専用にする</h3>
 
-<p>私なら、Tangem Payはトレードの経費を払う専用のカードにします。プロップのチャレンジ代や、TradingViewの利用料です。どちらもドル建ての請求なので為替手数料がかからず、回数も少ないので記録が追いつきます。税金の計算との関係は、別の記事で書く予定です。</p>
+<p>私なら、Tangem Payはトレードの経費を払う専用のカードにします。プロップのチャレンジ代や、TradingViewの利用料です。どちらもドル建ての請求なので為替手数料がかからず、回数も少ないので記録が追いつきます。税金の計算との関係は、<a href="/articles/usdc-yen/">こちらの記事</a>で書いています。</p>
 
 <h2 id="how-i-use" data-n="6">私ならこう使う</h2>
 
@@ -686,7 +766,7 @@ body{margin:0}
 
 <p>業者選びで出金の見込みを確かめて、受け取ったお金はTangemで自分で守る。私はこの順番がいちばん安心だと思っています。</p>
 
-<p>出金を受け取ってから日本円にするまでの手順と、税金の注意点は、次の記事で書きます。</p>
+<p>出金を受け取ってから日本円にするまでの手順と、税金の注意点は、<a href="/articles/usdc-yen/">こちらの記事</a>にまとめました。</p>
 
 
 <section class="kp-offer" id="offer-bottom" aria-label="Tangem ブラックフライデーの特典（再掲）">
