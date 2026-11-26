@@ -505,6 +505,25 @@ body{margin:0}
   .kp-article table.kp-tight thead th:first-child{width:4.6rem}
 }
 
+
+/* t864u (20261126): mobile header wrap, lane marks, tax title break, tax boxes left-aligned */
+.hf-lane::before{
+  content:"▶";
+  color:var(--accent);
+  margin-right:.35em;
+}
+.hf-title-tax{text-wrap:unset}
+.hf-title-tax .hf-title-l1,
+.hf-title-tax .hf-title-l2{display:block}
+.hf-title-tax .hf-title-l2{white-space:nowrap}
+@media (max-width: 720px){
+  .kp-article thead th .kp-th-sub{display:block}
+  .hf-title-tax{font-size:.92rem}
+}
+@media (max-width: 640px){
+  .hf-tpgrid .hf-tp:last-child:nth-child(odd){grid-column:auto}
+}
+
 </style>
 </head>
 <body>
@@ -545,12 +564,12 @@ body{margin:0}
 <h3>ウォレットで受け取ると</h3>
 <p>こちらは、業者がUSDCなどの暗号資産を、自分のウォレットあてに直接送ってくれる形です。<strong>業者が送金の処理をすれば、数分で届きます</strong>。土日でも夜中でも関係なく届きますし、銀行から何かを聞かれることも、もちろんありません。</p>
 <p>暗号資産での出金には、海外FXでもプロップファームでも、<strong>ほぼすべての業者が対応しています</strong>。どの業者を使っていても、まず選べる受け取り方だと思います。</p>
-<p>ただし、円転するには国内の取引所を通すひと手間がかかります。送り先を間違えると資金は戻ってこないので、そこだけは自己責任になります。</p>
+<p>ただし、円転するには国内の取引所を通すひと手間がかかります。<strong>送り先を間違えると資金は戻ってこないので、そこだけは自己責任になります。</strong></p>
 <div class="table-scroll" tabindex="0"><table class="kp-tight">
 <thead>
 <tr>
 <th></th>
-<th>銀行振込（海外送金）</th>
+<th>銀行振込<span class="kp-th-sub">（海外送金）</span></th>
 <th>Wise</th>
 <th>ウォレット（USDC）</th>
 </tr>
@@ -563,7 +582,7 @@ body{margin:0}
 <tr><td data-label="" data-v="気をつける点">気をつける点</td><td data-label="銀行振込（海外送金）">銀行の判断で受け取れないことがある</td><td data-label="Wise">業者がWiseあてに対応しているか</td><td data-label="ウォレット（USDC）">送り先やネットワークを間違えると戻らない。税金の記録は自分でつける</td></tr>
 </tbody>
 </table></div>
-<figure class="fig"><div class="hf" role="img" aria-label="ウォレットなら受け取りは当日。円になるのは早ければ翌営業日"><p class="hf-title">ウォレットなら受け取りは当日。円になるのは早ければ翌営業日</p><p class="hf-lane">ウォレットで受け取る</p><div class="hf-flow"><div class="hf-step"><b>業者が送金</b><span>土日も夜間も動く</span></div><span class="hf-arrow" aria-hidden="true"></span><div class="hf-step hf-accent"><b>ウォレットに着く</b><span>数分ほど</span></div><span class="hf-arrow" aria-hidden="true"></span><div class="hf-step"><b>取引所で円にする</b><span>当日中にできる</span></div><span class="hf-arrow" aria-hidden="true"></span><div class="hf-step"><b>銀行口座に入金</b><span>早ければ翌営業日</span></div></div><p class="hf-lane">銀行振込で受け取る</p><div class="hf-flow"><div class="hf-step"><b>業者が送金</b><span>銀行の営業日だけ</span></div><span class="hf-arrow" aria-hidden="true"></span><div class="hf-step"><b>銀行の確認</b><span>内容を聞かれることも</span></div><span class="hf-arrow" aria-hidden="true"></span><div class="hf-step"><b>銀行口座に入金</b><span>数営業日</span></div></div><p class="hf-quiet">SBI VCトレードの日本円出金は、公式の目安では3銀行営業日後</p></div><figcaption>受け取り方ごとの時間の目安</figcaption></figure>
+<figure class="fig"><div class="hf" role="img" aria-label="ウォレットなら受け取りは当日、円になるのは早ければ翌営業日"><p class="hf-title">ウォレットなら受け取りは当日、円になるのは早ければ翌営業日</p><p class="hf-lane">ウォレットで受け取る</p><div class="hf-flow"><div class="hf-step"><b>業者が送金</b><span>土日も夜間も動く</span></div><span class="hf-arrow" aria-hidden="true"></span><div class="hf-step hf-accent"><b>ウォレットに着く</b><span>数分ほど</span></div><span class="hf-arrow" aria-hidden="true"></span><div class="hf-step"><b>取引所で円にする</b><span>当日中にできる</span></div><span class="hf-arrow" aria-hidden="true"></span><div class="hf-step"><b>銀行口座に入金</b><span>早ければ翌営業日</span></div></div><p class="hf-lane">銀行振込で受け取る</p><div class="hf-flow"><div class="hf-step"><b>業者が送金</b><span>銀行の営業日だけ</span></div><span class="hf-arrow" aria-hidden="true"></span><div class="hf-step"><b>銀行の確認</b><span>内容を聞かれることも</span></div><span class="hf-arrow" aria-hidden="true"></span><div class="hf-step"><b>銀行口座に入金</b><span>数営業日</span></div></div><p class="hf-quiet">SBI VCトレードの日本円出金は、公式の目安では3銀行営業日後</p></div><figcaption>受け取り方ごとの時間の目安</figcaption></figure>
 <p>ウォレットで受け取ったその日のうちに国内取引所へ送って円転し、出金を申し込んでおけば、早ければ次の銀行営業日には銀行口座に着金します。</p>
 <h2 id="route" data-n="2">プロップの出金を日本円にするまで</h2>
 <p>日本円にするなら、個人的には<strong>EthereumネットワークのUSDCで受け取って、SBI VCトレードで売る</strong>ルートがいちばん楽だと思っています。</p>
@@ -575,7 +594,7 @@ body{margin:0}
 <li><p>しかもSBI VCトレードは、USDCの受け取り（入庫）も日本円の出金も、手数料が無料です。</p></li>
 </ul>
 <blockquote>
-<p><strong>対応しているのはEthereumだけ</strong>。SBI VCトレードが受け取れるUSDCは、Ethereumネットワークのものだけです。Arbitrum、Polygon、Base、Solana、TRONなどで送ると届きません。公式ページにも、未対応のネットワークを選んだ場合は回復処理ができないと書かれているので、ここは必ず覚えておいてください。</p>
+<p><strong>対応しているのはEthereumだけ</strong>。SBI VCトレードが受け取れるUSDCは、Ethereumネットワークのものだけです。Arbitrum、Polygon、Base、Solana、TRONなどで送ると届きません。公式ページにも、未対応のネットワークを選んだ場合は回復処理ができないと書かれています。<strong>Ethereum以外で送ると、資金は戻ってきません。</strong></p>
 </blockquote>
 <h3>準備（最初の1回だけ）</h3>
 <ol class="kp-steps">
@@ -706,7 +725,7 @@ body{margin:0}
 <p>時間の目安も書いておきます。業者が送金してからウォレットに着くまでは数分で、その日のうちにSBI VCトレードへ送って売却、出金の申し込みまで進められます。SBI VCトレードの日本円出金は、公式の目安だと3銀行営業日後です。銀行営業日の午前8時59分までに申し込めば原則として翌銀行営業日、という解説もあるので、早ければ翌営業日に着金するイメージですね。なお、出金の申し込みは1日1回までです。</p>
 <h2 id="tax" data-n="3">税金：どこで課税されるか</h2>
 <p>ウォレットに移したからといって、税金の計算がなくなるわけではないんですよね。どこで課税されるのか、先に押さえておきましょう。</p>
-<figure class="fig"><div class="hf" role="img" aria-label="課税されるのは、受け取り・交換・売却・支払いの4つの場面"><p class="hf-title">課税されるのは、受け取り・交換・売却・支払いの4つの場面</p><div class="hf-tpgrid"><div class="hf-tp"><b>受け取る</b><span>円換算額が収入</span><em class="hf-tax">課税あり</em></div><div class="hf-tp"><b>ウォレットへ移す</b><span>移すだけ</span><em class="hf-notax">課税なし</em></div><div class="hf-tp"><b>別の通貨に交換</b><span>交換時に損益</span><em class="hf-tax">課税あり</em></div><div class="hf-tp"><b>円に売却</b><span>売却時に損益</span><em class="hf-tax">課税あり</em></div><div class="hf-tp"><b>買い物に使う</b><span>支払い時に損益</span><em class="hf-tax">課税あり</em></div></div></div><figcaption>国税庁「暗号資産等に関する税務上の取扱いについて（FAQ）」をもとに作成</figcaption></figure>
+<figure class="fig"><div class="hf" role="img" aria-label="課税されるのは、受け取り・交換・売却・支払いの4つの場面"><p class="hf-title hf-title-tax"><span class="hf-title-l1">課税されるのは、</span><span class="hf-title-l2">受け取り・交換・売却・支払いの4つの場面</span></p><div class="hf-tpgrid"><div class="hf-tp"><b>受け取る</b><span>円換算額が収入</span><em class="hf-tax">課税あり</em></div><div class="hf-tp"><b>ウォレットへ移す</b><span>移すだけ</span><em class="hf-notax">課税なし</em></div><div class="hf-tp"><b>別の通貨に交換</b><span>交換時に損益</span><em class="hf-tax">課税あり</em></div><div class="hf-tp"><b>円に売却</b><span>売却時に損益</span><em class="hf-tax">課税あり</em></div><div class="hf-tp"><b>買い物に使う</b><span>支払い時に損益</span><em class="hf-tax">課税あり</em></div></div></div><figcaption>国税庁「暗号資産等に関する税務上の取扱いについて（FAQ）」をもとに作成</figcaption></figure>
 <div class="table-scroll" tabindex="0"><table>
 <thead>
 <tr>
@@ -739,7 +758,7 @@ body{margin:0}
 <li><p>送金のID（トランザクションハッシュ）と、業者の出金明細</p></li>
 </ul>
 <h2 id="tangem-pay" data-n="4">Tangem Payは、経費の支払いに絞ると記録が楽</h2>
-<p>ここはTangemを使う方向けの話です。Tangemには、USDCをチャージしてVisaの加盟店で払える「Tangem Pay」というカードもあります。プランや安全面は、<a href="/articles/tangem-wallet/">Tangemの記事</a>で書いています。</p>
+<p>ここはTangemを使う方向けの話です。Tangemには、USDCをチャージしてVisaの加盟店で払える「Tangem Pay」というカードもあります。Tangem Payのプランや、ウォレットの安全面は、<a href="/articles/tangem-wallet/">Tangemの記事</a>で書いています。</p>
 <p>個人的には、Tangem Payは<strong>トレードの経費を払う専用のカード</strong>にするのがいちばん楽だと思っています。プロップのチャレンジ代や、TradingViewの利用料ですね。理由は3つあります。</p>
 <ul class="kp-list">
 <li><p>どちらもドル建ての請求なので、為替手数料がかかりません。</p></li>
