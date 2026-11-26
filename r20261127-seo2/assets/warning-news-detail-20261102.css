@@ -1,0 +1,8 @@
+/* 業者詳細ページ上部の要注意ニュース（会社ページの 🚩 と同じ赤系） */
+.pc-wn-top{margin:0 0 14px;padding:12px 14px;border:1px solid #f3b4b6;border-left:5px solid #d64045;border-radius:10px;background:#fff0f0;color:#3a1517;font-size:14px;line-height:1.6;box-sizing:border-box;max-width:100%}
+.pc-wn-top h2{margin:0 0 6px;font-size:16px;color:#b4232a;font-weight:800}
+.pc-wn-top .rh-news{list-style:none;margin:0;padding:0}
+.pc-wn-top .rh-tags{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;margin-bottom:4px;font-size:12px}
+.pc-wn-top .rh-flag{background:#fff;color:#b4232a;border:1px solid #f3b4b6;border-radius:6px;padding:0 7px;font-weight:700}
+.pc-wn-top .rh-rank,.pc-wn-top .rh-ann{color:#6b5254}
+.pc-wn-top .rh-chg{margin:0;overflow-wrap:anywhere}
