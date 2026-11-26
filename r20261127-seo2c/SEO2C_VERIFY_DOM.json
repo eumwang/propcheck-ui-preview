@@ -1,0 +1,2743 @@
+{
+ "pages": 99,
+ "mismatch": 0,
+ "rule_mismatch": 0,
+ "results": [
+  {
+   "page": "companies/alpha-fx-cfd/index.html",
+   "static": {
+    "reviews": "31",
+    "breakdown": [
+     "21",
+     "5",
+     "5"
+    ],
+    "reports": "38",
+    "score": "46.54",
+    "rank": "25",
+    "of": "31"
+   },
+   "dom": {
+    "score": "46.54",
+    "rank": "25",
+    "of": "31",
+    "reports": "38",
+    "reviews": "31",
+    "breakdown": [
+     "21",
+     "5",
+     "5"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/blueberry-fx-cfd/index.html",
+   "static": {
+    "reviews": "112",
+    "breakdown": [
+     "47",
+     "13",
+     "52"
+    ],
+    "reports": "70",
+    "score": "36.14",
+    "rank": "28",
+    "of": "31"
+   },
+   "dom": {
+    "score": "36.14",
+    "rank": "28",
+    "of": "31",
+    "reports": "70",
+    "reviews": "112",
+    "breakdown": [
+     "47",
+     "13",
+     "52"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/blueguardian-fx-cfd/index.html",
+   "static": {
+    "reviews": "49",
+    "breakdown": [
+     "30",
+     "1",
+     "18"
+    ],
+    "reports": "24",
+    "score": "56.44",
+    "rank": "18",
+    "of": "31"
+   },
+   "dom": {
+    "score": "56.44",
+    "rank": "18",
+    "of": "31",
+    "reports": "24",
+    "reviews": "49",
+    "breakdown": [
+     "30",
+     "1",
+     "18"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/brightfunded-fx-cfd/index.html",
+   "static": {
+    "reviews": "133",
+    "breakdown": [
+     "101",
+     "3",
+     "29"
+    ],
+    "reports": "115",
+    "score": "64.70",
+    "rank": "8",
+    "of": "31"
+   },
+   "dom": {
+    "score": "64.70",
+    "rank": "8",
+    "of": "31",
+    "reports": "115",
+    "reviews": "133",
+    "breakdown": [
+     "101",
+     "3",
+     "29"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/e8-fx-cfd/index.html",
+   "static": {
+    "reviews": "85",
+    "breakdown": [
+     "69",
+     "3",
+     "13"
+    ],
+    "reports": "82",
+    "score": "65.48",
+    "rank": "7",
+    "of": "31"
+   },
+   "dom": {
+    "score": "65.48",
+    "rank": "7",
+    "of": "31",
+    "reports": "82",
+    "reviews": "85",
+    "breakdown": [
+     "69",
+     "3",
+     "13"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/eightcapchallenges-fx-cfd/index.html",
+   "static": {
+    "reviews": "7",
+    "breakdown": [
+     "0",
+     "0",
+     "7"
+    ],
+    "reports": "6",
+    "score": "46.55",
+    "rank": "24",
+    "of": "31"
+   },
+   "dom": {
+    "score": "46.55",
+    "rank": "24",
+    "of": "31",
+    "reports": "6",
+    "reviews": "7",
+    "breakdown": [
+     "0",
+     "0",
+     "7"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/fintokei-fx-cfd/index.html",
+   "static": {
+    "reviews": "532",
+    "breakdown": [
+     "219",
+     "38",
+     "275"
+    ],
+    "reports": "177",
+    "score": "59.18",
+    "rank": "15",
+    "of": "31"
+   },
+   "dom": {
+    "score": "59.18",
+    "rank": "15",
+    "of": "31",
+    "reports": "177",
+    "reviews": "532",
+    "breakdown": [
+     "219",
+     "38",
+     "275"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/ftmo-fx-cfd/index.html",
+   "static": {
+    "reviews": "193",
+    "breakdown": [
+     "89",
+     "17",
+     "87"
+    ],
+    "reports": "208",
+    "score": "71.72",
+    "rank": "4",
+    "of": "31"
+   },
+   "dom": {
+    "score": "71.72",
+    "rank": "4",
+    "of": "31",
+    "reports": "208",
+    "reviews": "193",
+    "breakdown": [
+     "89",
+     "17",
+     "87"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/funded7-fx-cfd/index.html",
+   "static": {
+    "reviews": "138",
+    "breakdown": [
+     "76",
+     "15",
+     "47"
+    ],
+    "reports": "91",
+    "score": "57.32",
+    "rank": "16",
+    "of": "31"
+   },
+   "dom": {
+    "score": "57.32",
+    "rank": "16",
+    "of": "31",
+    "reports": "91",
+    "reviews": "138",
+    "breakdown": [
+     "76",
+     "15",
+     "47"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/fundedelite-fx-cfd/index.html",
+   "static": {
+    "reviews": "112",
+    "breakdown": [
+     "44",
+     "10",
+     "58"
+    ],
+    "reports": "22",
+    "score": "36.67",
+    "rank": "27",
+    "of": "31"
+   },
+   "dom": {
+    "score": "36.67",
+    "rank": "27",
+    "of": "31",
+    "reports": "22",
+    "reviews": "112",
+    "breakdown": [
+     "44",
+     "10",
+     "58"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/fundedhive-onchain/index.html",
+   "static": {
+    "reviews": "75",
+    "breakdown": [
+     "57",
+     "3",
+     "15"
+    ],
+    "reports": "40",
+    "score": "74.08",
+    "rank": "2",
+    "of": "31"
+   },
+   "dom": {
+    "score": "74.08",
+    "rank": "2",
+    "of": "31",
+    "reports": "40",
+    "reviews": "75",
+    "breakdown": [
+     "57",
+     "3",
+     "15"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/fundednext-fx-cfd/index.html",
+   "static": {
+    "reviews": "352",
+    "breakdown": [
+     "228",
+     "10",
+     "114"
+    ],
+    "reports": "330",
+    "score": "60.90",
+    "rank": "12",
+    "of": "31"
+   },
+   "dom": {
+    "score": "60.90",
+    "rank": "12",
+    "of": "31",
+    "reports": "330",
+    "reviews": "352",
+    "breakdown": [
+     "228",
+     "10",
+     "114"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/fundedtradermarkets-fx-cfd/index.html",
+   "static": {
+    "reviews": "99",
+    "breakdown": [
+     "76",
+     "8",
+     "15"
+    ],
+    "reports": "45",
+    "score": "64.62",
+    "rank": "9",
+    "of": "31"
+   },
+   "dom": {
+    "score": "64.62",
+    "rank": "9",
+    "of": "31",
+    "reports": "45",
+    "reviews": "99",
+    "breakdown": [
+     "76",
+     "8",
+     "15"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/fundedtradingplus-fx-cfd/index.html",
+   "static": {
+    "reviews": "5",
+    "breakdown": [
+     "4",
+     "1",
+     "0"
+    ],
+    "reports": "2"
+   },
+   "dom": {
+    "reports": "2",
+    "reviews": "5",
+    "breakdown": [
+     "4",
+     "1",
+     "0"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/fundingpips-fx-cfd/index.html",
+   "static": {
+    "reviews": "520",
+    "breakdown": [
+     "300",
+     "14",
+     "206"
+    ],
+    "reports": "293",
+    "score": "49.94",
+    "rank": "22",
+    "of": "31"
+   },
+   "dom": {
+    "score": "49.94",
+    "rank": "22",
+    "of": "31",
+    "reports": "293",
+    "reviews": "520",
+    "breakdown": [
+     "300",
+     "14",
+     "206"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/fundingtraders-fx-cfd/index.html",
+   "static": {
+    "reviews": "50",
+    "breakdown": [
+     "21",
+     "0",
+     "29"
+    ],
+    "reports": "22",
+    "score": "35.27",
+    "rank": "29",
+    "of": "31"
+   },
+   "dom": {
+    "score": "35.27",
+    "rank": "29",
+    "of": "31",
+    "reports": "22",
+    "reviews": "50",
+    "breakdown": [
+     "21",
+     "0",
+     "29"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/fundora-fx-cfd/index.html",
+   "static": {
+    "reviews": "23",
+    "breakdown": [
+     "10",
+     "4",
+     "9"
+    ],
+    "reports": "21",
+    "score": "60.62",
+    "rank": "13",
+    "of": "31"
+   },
+   "dom": {
+    "score": "60.62",
+    "rank": "13",
+    "of": "31",
+    "reports": "21",
+    "reviews": "23",
+    "breakdown": [
+     "10",
+     "4",
+     "9"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/fxify-fx-cfd/index.html",
+   "static": {
+    "reviews": "31",
+    "breakdown": [
+     "17",
+     "4",
+     "10"
+    ],
+    "reports": "13",
+    "score": "63.34",
+    "rank": "10",
+    "of": "31"
+   },
+   "dom": {
+    "score": "63.34",
+    "rank": "10",
+    "of": "31",
+    "reports": "13",
+    "reviews": "31",
+    "breakdown": [
+     "17",
+     "4",
+     "10"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/goat-fx-cfd/index.html",
+   "static": {
+    "reviews": "112",
+    "breakdown": [
+     "64",
+     "2",
+     "46"
+    ],
+    "reports": "55",
+    "score": "43.14",
+    "rank": "26",
+    "of": "31"
+   },
+   "dom": {
+    "score": "43.14",
+    "rank": "26",
+    "of": "31",
+    "reports": "55",
+    "reviews": "112",
+    "breakdown": [
+     "64",
+     "2",
+     "46"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/hypernova-onchain/index.html",
+   "static": {
+    "reviews": "16",
+    "breakdown": [
+     "16",
+     "0",
+     "0"
+    ],
+    "reports": "11",
+    "score": "73.90",
+    "rank": "3",
+    "of": "31"
+   },
+   "dom": {
+    "score": "73.90",
+    "rank": "3",
+    "of": "31",
+    "reports": "11",
+    "reviews": "16",
+    "breakdown": [
+     "16",
+     "0",
+     "0"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/icfunded-fx-cfd/index.html",
+   "static": {
+    "reviews": "1",
+    "breakdown": [
+     "1",
+     "0",
+     "0"
+    ],
+    "reports": "1",
+    "score": "68.55",
+    "rank": "6",
+    "of": "31"
+   },
+   "dom": {
+    "score": "68.55",
+    "rank": "6",
+    "of": "31",
+    "reports": "1",
+    "reviews": "1",
+    "breakdown": [
+     "1",
+     "0",
+     "0"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/instantfunding-fx-cfd/index.html",
+   "static": {
+    "reviews": "16",
+    "breakdown": [
+     "8",
+     "0",
+     "8"
+    ],
+    "reports": "17",
+    "score": "53.66",
+    "rank": "20",
+    "of": "31"
+   },
+   "dom": {
+    "score": "53.66",
+    "rank": "20",
+    "of": "31",
+    "reports": "17",
+    "reviews": "16",
+    "breakdown": [
+     "8",
+     "0",
+     "8"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/monetafunded-fx-cfd/index.html",
+   "static": {
+    "reviews": "39",
+    "breakdown": [
+     "31",
+     "1",
+     "7"
+    ],
+    "reports": "15",
+    "score": "62.94",
+    "rank": "11",
+    "of": "31"
+   },
+   "dom": {
+    "score": "62.94",
+    "rank": "11",
+    "of": "31",
+    "reports": "15",
+    "reviews": "39",
+    "breakdown": [
+     "31",
+     "1",
+     "7"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/pipfarm-fx-cfd/index.html",
+   "static": {
+    "reviews": "190",
+    "breakdown": [
+     "80",
+     "21",
+     "89"
+    ],
+    "reports": "89",
+    "score": "48.27",
+    "rank": "23",
+    "of": "31"
+   },
+   "dom": {
+    "score": "48.27",
+    "rank": "23",
+    "of": "31",
+    "reports": "89",
+    "reviews": "190",
+    "breakdown": [
+     "80",
+     "21",
+     "89"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/propr-onchain/index.html",
+   "static": {
+    "reviews": "35",
+    "breakdown": [
+     "18",
+     "10",
+     "7"
+    ],
+    "reports": "5",
+    "score": "71.24",
+    "rank": "5",
+    "of": "31"
+   },
+   "dom": {
+    "score": "71.24",
+    "rank": "5",
+    "of": "31",
+    "reports": "5",
+    "reviews": "35",
+    "breakdown": [
+     "18",
+     "10",
+     "7"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/rzr-funded/index.html",
+   "static": {
+    "reviews": "23",
+    "breakdown": [
+     "15",
+     "3",
+     "5"
+    ],
+    "reports": "11",
+    "score": "75.87",
+    "rank": "1",
+    "of": "31"
+   },
+   "dom": {
+    "score": "75.87",
+    "rank": "1",
+    "of": "31",
+    "reports": "11",
+    "reviews": "23",
+    "breakdown": [
+     "15",
+     "3",
+     "5"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/superfunded-fx-cfd/index.html",
+   "static": {
+    "reviews": "46",
+    "breakdown": [
+     "32",
+     "3",
+     "11"
+    ],
+    "reports": "16",
+    "score": "54.26",
+    "rank": "19",
+    "of": "31"
+   },
+   "dom": {
+    "score": "54.26",
+    "rank": "19",
+    "of": "31",
+    "reports": "16",
+    "reviews": "46",
+    "breakdown": [
+     "32",
+     "3",
+     "11"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/the5ers-fx-cfd/index.html",
+   "static": {
+    "reviews": "184",
+    "breakdown": [
+     "110",
+     "17",
+     "57"
+    ],
+    "reports": "131",
+    "score": "56.69",
+    "rank": "17",
+    "of": "31"
+   },
+   "dom": {
+    "score": "56.69",
+    "rank": "17",
+    "of": "31",
+    "reports": "131",
+    "reviews": "184",
+    "breakdown": [
+     "110",
+     "17",
+     "57"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/thinkcapital-fx-cfd/index.html",
+   "static": {
+    "reviews": "45",
+    "breakdown": [
+     "22",
+     "8",
+     "15"
+    ],
+    "reports": "11"
+   },
+   "dom": {
+    "reports": "11",
+    "reviews": "45",
+    "breakdown": [
+     "22",
+     "8",
+     "15"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/tradeifyfx-fx-cfd/index.html",
+   "static": {
+    "reviews": "36",
+    "breakdown": [
+     "27",
+     "1",
+     "8"
+    ],
+    "reports": "18",
+    "score": "59.75",
+    "rank": "14",
+    "of": "31"
+   },
+   "dom": {
+    "score": "59.75",
+    "rank": "14",
+    "of": "31",
+    "reports": "18",
+    "reviews": "36",
+    "breakdown": [
+     "27",
+     "1",
+     "8"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/tradingcult-fx-cfd/index.html",
+   "static": {
+    "reviews": "30",
+    "breakdown": [
+     "12",
+     "4",
+     "14"
+    ],
+    "reports": "5",
+    "score": "33.13",
+    "rank": "30",
+    "of": "31"
+   },
+   "dom": {
+    "score": "33.13",
+    "rank": "30",
+    "of": "31",
+    "reports": "5",
+    "reviews": "30",
+    "breakdown": [
+     "12",
+     "4",
+     "14"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/tradingpit-fx-cfd/index.html",
+   "static": {
+    "reviews": "6",
+    "breakdown": [
+     "0",
+     "0",
+     "6"
+    ],
+    "reports": "3",
+    "score": "52.92",
+    "rank": "21",
+    "of": "31"
+   },
+   "dom": {
+    "score": "52.92",
+    "rank": "21",
+    "of": "31",
+    "reports": "3",
+    "reviews": "6",
+    "breakdown": [
+     "0",
+     "0",
+     "6"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "companies/upcomers-fx-cfd/index.html",
+   "static": {
+    "reviews": "51",
+    "breakdown": [
+     "17",
+     "3",
+     "31"
+    ],
+    "reports": "47",
+    "score": "32.02",
+    "rank": "31",
+    "of": "31"
+   },
+   "dom": {
+    "score": "32.02",
+    "rank": "31",
+    "of": "31",
+    "reports": "47",
+    "reviews": "51",
+    "breakdown": [
+     "17",
+     "3",
+     "31"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/alpha-fx-cfd/index.html",
+   "static": {
+    "reviews": "31",
+    "breakdown": [
+     "21",
+     "5",
+     "5"
+    ],
+    "reports": "38",
+    "score": "46.54",
+    "rank": "25",
+    "of": "31"
+   },
+   "dom": {
+    "score": "46.54",
+    "rank": "25",
+    "of": "31",
+    "reports": "38",
+    "reviews": "31",
+    "breakdown": [
+     "21",
+     "5",
+     "5"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/blueberry-fx-cfd/index.html",
+   "static": {
+    "reviews": "112",
+    "breakdown": [
+     "47",
+     "13",
+     "52"
+    ],
+    "reports": "70",
+    "score": "36.14",
+    "rank": "28",
+    "of": "31"
+   },
+   "dom": {
+    "score": "36.14",
+    "rank": "28",
+    "of": "31",
+    "reports": "70",
+    "reviews": "112",
+    "breakdown": [
+     "47",
+     "13",
+     "52"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/blueguardian-fx-cfd/index.html",
+   "static": {
+    "reviews": "49",
+    "breakdown": [
+     "30",
+     "1",
+     "18"
+    ],
+    "reports": "24",
+    "score": "56.44",
+    "rank": "18",
+    "of": "31"
+   },
+   "dom": {
+    "score": "56.44",
+    "rank": "18",
+    "of": "31",
+    "reports": "24",
+    "reviews": "49",
+    "breakdown": [
+     "30",
+     "1",
+     "18"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/brightfunded-fx-cfd/index.html",
+   "static": {
+    "reviews": "133",
+    "breakdown": [
+     "101",
+     "3",
+     "29"
+    ],
+    "reports": "115",
+    "score": "64.70",
+    "rank": "8",
+    "of": "31"
+   },
+   "dom": {
+    "score": "64.70",
+    "rank": "8",
+    "of": "31",
+    "reports": "115",
+    "reviews": "133",
+    "breakdown": [
+     "101",
+     "3",
+     "29"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/e8-fx-cfd/index.html",
+   "static": {
+    "reviews": "85",
+    "breakdown": [
+     "69",
+     "3",
+     "13"
+    ],
+    "reports": "82",
+    "score": "65.48",
+    "rank": "7",
+    "of": "31"
+   },
+   "dom": {
+    "score": "65.48",
+    "rank": "7",
+    "of": "31",
+    "reports": "82",
+    "reviews": "85",
+    "breakdown": [
+     "69",
+     "3",
+     "13"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/eightcapchallenges-fx-cfd/index.html",
+   "static": {
+    "reviews": "7",
+    "breakdown": [
+     "0",
+     "0",
+     "7"
+    ],
+    "reports": "6",
+    "score": "46.55",
+    "rank": "24",
+    "of": "31"
+   },
+   "dom": {
+    "score": "46.55",
+    "rank": "24",
+    "of": "31",
+    "reports": "6",
+    "reviews": "7",
+    "breakdown": [
+     "0",
+     "0",
+     "7"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/fintokei-fx-cfd/index.html",
+   "static": {
+    "reviews": "532",
+    "breakdown": [
+     "219",
+     "38",
+     "275"
+    ],
+    "reports": "177",
+    "score": "59.18",
+    "rank": "15",
+    "of": "31"
+   },
+   "dom": {
+    "score": "59.18",
+    "rank": "15",
+    "of": "31",
+    "reports": "177",
+    "reviews": "532",
+    "breakdown": [
+     "219",
+     "38",
+     "275"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/ftmo-fx-cfd/index.html",
+   "static": {
+    "reviews": "193",
+    "breakdown": [
+     "89",
+     "17",
+     "87"
+    ],
+    "reports": "208",
+    "score": "71.72",
+    "rank": "4",
+    "of": "31"
+   },
+   "dom": {
+    "score": "71.72",
+    "rank": "4",
+    "of": "31",
+    "reports": "208",
+    "reviews": "193",
+    "breakdown": [
+     "89",
+     "17",
+     "87"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/funded7-fx-cfd/index.html",
+   "static": {
+    "reviews": "138",
+    "breakdown": [
+     "76",
+     "15",
+     "47"
+    ],
+    "reports": "91",
+    "score": "57.32",
+    "rank": "16",
+    "of": "31"
+   },
+   "dom": {
+    "score": "57.32",
+    "rank": "16",
+    "of": "31",
+    "reports": "91",
+    "reviews": "138",
+    "breakdown": [
+     "76",
+     "15",
+     "47"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/fundedelite-fx-cfd/index.html",
+   "static": {
+    "reviews": "112",
+    "breakdown": [
+     "44",
+     "10",
+     "58"
+    ],
+    "reports": "22",
+    "score": "36.67",
+    "rank": "27",
+    "of": "31"
+   },
+   "dom": {
+    "score": "36.67",
+    "rank": "27",
+    "of": "31",
+    "reports": "22",
+    "reviews": "112",
+    "breakdown": [
+     "44",
+     "10",
+     "58"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/fundedhive-onchain/index.html",
+   "static": {
+    "reviews": "75",
+    "breakdown": [
+     "57",
+     "3",
+     "15"
+    ],
+    "reports": "40",
+    "score": "74.08",
+    "rank": "2",
+    "of": "31"
+   },
+   "dom": {
+    "score": "74.08",
+    "rank": "2",
+    "of": "31",
+    "reports": "40",
+    "reviews": "75",
+    "breakdown": [
+     "57",
+     "3",
+     "15"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/fundednext-fx-cfd/index.html",
+   "static": {
+    "reviews": "352",
+    "breakdown": [
+     "228",
+     "10",
+     "114"
+    ],
+    "reports": "330",
+    "score": "60.90",
+    "rank": "12",
+    "of": "31"
+   },
+   "dom": {
+    "score": "60.90",
+    "rank": "12",
+    "of": "31",
+    "reports": "330",
+    "reviews": "352",
+    "breakdown": [
+     "228",
+     "10",
+     "114"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/fundedtradermarkets-fx-cfd/index.html",
+   "static": {
+    "reviews": "99",
+    "breakdown": [
+     "76",
+     "8",
+     "15"
+    ],
+    "reports": "45",
+    "score": "64.62",
+    "rank": "9",
+    "of": "31"
+   },
+   "dom": {
+    "score": "64.62",
+    "rank": "9",
+    "of": "31",
+    "reports": "45",
+    "reviews": "99",
+    "breakdown": [
+     "76",
+     "8",
+     "15"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/fundedtradingplus-fx-cfd/index.html",
+   "static": {
+    "reviews": "5",
+    "breakdown": [
+     "4",
+     "1",
+     "0"
+    ],
+    "reports": "2"
+   },
+   "dom": {
+    "reports": "2",
+    "reviews": "5",
+    "breakdown": [
+     "4",
+     "1",
+     "0"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/fundingpips-fx-cfd/index.html",
+   "static": {
+    "reviews": "520",
+    "breakdown": [
+     "300",
+     "14",
+     "206"
+    ],
+    "reports": "293",
+    "score": "49.94",
+    "rank": "22",
+    "of": "31"
+   },
+   "dom": {
+    "score": "49.94",
+    "rank": "22",
+    "of": "31",
+    "reports": "293",
+    "reviews": "520",
+    "breakdown": [
+     "300",
+     "14",
+     "206"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/fundingtraders-fx-cfd/index.html",
+   "static": {
+    "reviews": "50",
+    "breakdown": [
+     "21",
+     "0",
+     "29"
+    ],
+    "reports": "22",
+    "score": "35.27",
+    "rank": "29",
+    "of": "31"
+   },
+   "dom": {
+    "score": "35.27",
+    "rank": "29",
+    "of": "31",
+    "reports": "22",
+    "reviews": "50",
+    "breakdown": [
+     "21",
+     "0",
+     "29"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/fundora-fx-cfd/index.html",
+   "static": {
+    "reviews": "23",
+    "breakdown": [
+     "10",
+     "4",
+     "9"
+    ],
+    "reports": "21",
+    "score": "60.62",
+    "rank": "13",
+    "of": "31"
+   },
+   "dom": {
+    "score": "60.62",
+    "rank": "13",
+    "of": "31",
+    "reports": "21",
+    "reviews": "23",
+    "breakdown": [
+     "10",
+     "4",
+     "9"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/fxify-fx-cfd/index.html",
+   "static": {
+    "reviews": "31",
+    "breakdown": [
+     "17",
+     "4",
+     "10"
+    ],
+    "reports": "13",
+    "score": "63.34",
+    "rank": "10",
+    "of": "31"
+   },
+   "dom": {
+    "score": "63.34",
+    "rank": "10",
+    "of": "31",
+    "reports": "13",
+    "reviews": "31",
+    "breakdown": [
+     "17",
+     "4",
+     "10"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/goat-fx-cfd/index.html",
+   "static": {
+    "reviews": "112",
+    "breakdown": [
+     "64",
+     "2",
+     "46"
+    ],
+    "reports": "55",
+    "score": "43.14",
+    "rank": "26",
+    "of": "31"
+   },
+   "dom": {
+    "score": "43.14",
+    "rank": "26",
+    "of": "31",
+    "reports": "55",
+    "reviews": "112",
+    "breakdown": [
+     "64",
+     "2",
+     "46"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/hypernova-onchain/index.html",
+   "static": {
+    "reviews": "16",
+    "breakdown": [
+     "16",
+     "0",
+     "0"
+    ],
+    "reports": "11",
+    "score": "73.90",
+    "rank": "3",
+    "of": "31"
+   },
+   "dom": {
+    "score": "73.90",
+    "rank": "3",
+    "of": "31",
+    "reports": "11",
+    "reviews": "16",
+    "breakdown": [
+     "16",
+     "0",
+     "0"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/icfunded-fx-cfd/index.html",
+   "static": {
+    "reviews": "1",
+    "breakdown": [
+     "1",
+     "0",
+     "0"
+    ],
+    "reports": "1",
+    "score": "68.55",
+    "rank": "6",
+    "of": "31"
+   },
+   "dom": {
+    "score": "68.55",
+    "rank": "6",
+    "of": "31",
+    "reports": "1",
+    "reviews": "1",
+    "breakdown": [
+     "1",
+     "0",
+     "0"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/instantfunding-fx-cfd/index.html",
+   "static": {
+    "reviews": "16",
+    "breakdown": [
+     "8",
+     "0",
+     "8"
+    ],
+    "reports": "17",
+    "score": "53.66",
+    "rank": "20",
+    "of": "31"
+   },
+   "dom": {
+    "score": "53.66",
+    "rank": "20",
+    "of": "31",
+    "reports": "17",
+    "reviews": "16",
+    "breakdown": [
+     "8",
+     "0",
+     "8"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/monetafunded-fx-cfd/index.html",
+   "static": {
+    "reviews": "39",
+    "breakdown": [
+     "31",
+     "1",
+     "7"
+    ],
+    "reports": "15",
+    "score": "62.94",
+    "rank": "11",
+    "of": "31"
+   },
+   "dom": {
+    "score": "62.94",
+    "rank": "11",
+    "of": "31",
+    "reports": "15",
+    "reviews": "39",
+    "breakdown": [
+     "31",
+     "1",
+     "7"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/pipfarm-fx-cfd/index.html",
+   "static": {
+    "reviews": "190",
+    "breakdown": [
+     "80",
+     "21",
+     "89"
+    ],
+    "reports": "89",
+    "score": "48.27",
+    "rank": "23",
+    "of": "31"
+   },
+   "dom": {
+    "score": "48.27",
+    "rank": "23",
+    "of": "31",
+    "reports": "89",
+    "reviews": "190",
+    "breakdown": [
+     "80",
+     "21",
+     "89"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/propr-onchain/index.html",
+   "static": {
+    "reviews": "35",
+    "breakdown": [
+     "18",
+     "10",
+     "7"
+    ],
+    "reports": "5",
+    "score": "71.24",
+    "rank": "5",
+    "of": "31"
+   },
+   "dom": {
+    "score": "71.24",
+    "rank": "5",
+    "of": "31",
+    "reports": "5",
+    "reviews": "35",
+    "breakdown": [
+     "18",
+     "10",
+     "7"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/rzr-funded/index.html",
+   "static": {
+    "reviews": "23",
+    "breakdown": [
+     "15",
+     "3",
+     "5"
+    ],
+    "reports": "11",
+    "score": "75.87",
+    "rank": "1",
+    "of": "31"
+   },
+   "dom": {
+    "score": "75.87",
+    "rank": "1",
+    "of": "31",
+    "reports": "11",
+    "reviews": "23",
+    "breakdown": [
+     "15",
+     "3",
+     "5"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/superfunded-fx-cfd/index.html",
+   "static": {
+    "reviews": "46",
+    "breakdown": [
+     "32",
+     "3",
+     "11"
+    ],
+    "reports": "16",
+    "score": "54.26",
+    "rank": "19",
+    "of": "31"
+   },
+   "dom": {
+    "score": "54.26",
+    "rank": "19",
+    "of": "31",
+    "reports": "16",
+    "reviews": "46",
+    "breakdown": [
+     "32",
+     "3",
+     "11"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/the5ers-fx-cfd/index.html",
+   "static": {
+    "reviews": "184",
+    "breakdown": [
+     "110",
+     "17",
+     "57"
+    ],
+    "reports": "131",
+    "score": "56.69",
+    "rank": "17",
+    "of": "31"
+   },
+   "dom": {
+    "score": "56.69",
+    "rank": "17",
+    "of": "31",
+    "reports": "131",
+    "reviews": "184",
+    "breakdown": [
+     "110",
+     "17",
+     "57"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/thinkcapital-fx-cfd/index.html",
+   "static": {
+    "reviews": "45",
+    "breakdown": [
+     "22",
+     "8",
+     "15"
+    ],
+    "reports": "11"
+   },
+   "dom": {
+    "reports": "11",
+    "reviews": "45",
+    "breakdown": [
+     "22",
+     "8",
+     "15"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/tradeifyfx-fx-cfd/index.html",
+   "static": {
+    "reviews": "36",
+    "breakdown": [
+     "27",
+     "1",
+     "8"
+    ],
+    "reports": "18",
+    "score": "59.75",
+    "rank": "14",
+    "of": "31"
+   },
+   "dom": {
+    "score": "59.75",
+    "rank": "14",
+    "of": "31",
+    "reports": "18",
+    "reviews": "36",
+    "breakdown": [
+     "27",
+     "1",
+     "8"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/tradingcult-fx-cfd/index.html",
+   "static": {
+    "reviews": "30",
+    "breakdown": [
+     "12",
+     "4",
+     "14"
+    ],
+    "reports": "5",
+    "score": "33.13",
+    "rank": "30",
+    "of": "31"
+   },
+   "dom": {
+    "score": "33.13",
+    "rank": "30",
+    "of": "31",
+    "reports": "5",
+    "reviews": "30",
+    "breakdown": [
+     "12",
+     "4",
+     "14"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/tradingpit-fx-cfd/index.html",
+   "static": {
+    "reviews": "6",
+    "breakdown": [
+     "0",
+     "0",
+     "6"
+    ],
+    "reports": "3",
+    "score": "52.92",
+    "rank": "21",
+    "of": "31"
+   },
+   "dom": {
+    "score": "52.92",
+    "rank": "21",
+    "of": "31",
+    "reports": "3",
+    "reviews": "6",
+    "breakdown": [
+     "0",
+     "0",
+     "6"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "en/companies/upcomers-fx-cfd/index.html",
+   "static": {
+    "reviews": "51",
+    "breakdown": [
+     "17",
+     "3",
+     "31"
+    ],
+    "reports": "47",
+    "score": "32.02",
+    "rank": "31",
+    "of": "31"
+   },
+   "dom": {
+    "score": "32.02",
+    "rank": "31",
+    "of": "31",
+    "reports": "47",
+    "reviews": "51",
+    "breakdown": [
+     "17",
+     "3",
+     "31"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/alpha-fx-cfd/index.html",
+   "static": {
+    "reviews": "31",
+    "breakdown": [
+     "21",
+     "5",
+     "5"
+    ],
+    "reports": "38",
+    "score": "46.54",
+    "rank": "25",
+    "of": "31"
+   },
+   "dom": {
+    "score": "46.54",
+    "rank": "25",
+    "of": "31",
+    "reports": "38",
+    "reviews": "31",
+    "breakdown": [
+     "21",
+     "5",
+     "5"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/blueberry-fx-cfd/index.html",
+   "static": {
+    "reviews": "112",
+    "breakdown": [
+     "47",
+     "13",
+     "52"
+    ],
+    "reports": "70",
+    "score": "36.14",
+    "rank": "28",
+    "of": "31"
+   },
+   "dom": {
+    "score": "36.14",
+    "rank": "28",
+    "of": "31",
+    "reports": "70",
+    "reviews": "112",
+    "breakdown": [
+     "47",
+     "13",
+     "52"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/blueguardian-fx-cfd/index.html",
+   "static": {
+    "reviews": "49",
+    "breakdown": [
+     "30",
+     "1",
+     "18"
+    ],
+    "reports": "24",
+    "score": "56.44",
+    "rank": "18",
+    "of": "31"
+   },
+   "dom": {
+    "score": "56.44",
+    "rank": "18",
+    "of": "31",
+    "reports": "24",
+    "reviews": "49",
+    "breakdown": [
+     "30",
+     "1",
+     "18"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/brightfunded-fx-cfd/index.html",
+   "static": {
+    "reviews": "133",
+    "breakdown": [
+     "101",
+     "3",
+     "29"
+    ],
+    "reports": "115",
+    "score": "64.70",
+    "rank": "8",
+    "of": "31"
+   },
+   "dom": {
+    "score": "64.70",
+    "rank": "8",
+    "of": "31",
+    "reports": "115",
+    "reviews": "133",
+    "breakdown": [
+     "101",
+     "3",
+     "29"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/e8-fx-cfd/index.html",
+   "static": {
+    "reviews": "85",
+    "breakdown": [
+     "69",
+     "3",
+     "13"
+    ],
+    "reports": "82",
+    "score": "65.48",
+    "rank": "7",
+    "of": "31"
+   },
+   "dom": {
+    "score": "65.48",
+    "rank": "7",
+    "of": "31",
+    "reports": "82",
+    "reviews": "85",
+    "breakdown": [
+     "69",
+     "3",
+     "13"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/eightcapchallenges-fx-cfd/index.html",
+   "static": {
+    "reviews": "7",
+    "breakdown": [
+     "0",
+     "0",
+     "7"
+    ],
+    "reports": "6",
+    "score": "46.55",
+    "rank": "24",
+    "of": "31"
+   },
+   "dom": {
+    "score": "46.55",
+    "rank": "24",
+    "of": "31",
+    "reports": "6",
+    "reviews": "7",
+    "breakdown": [
+     "0",
+     "0",
+     "7"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/fintokei-fx-cfd/index.html",
+   "static": {
+    "reviews": "532",
+    "breakdown": [
+     "219",
+     "38",
+     "275"
+    ],
+    "reports": "177",
+    "score": "59.18",
+    "rank": "15",
+    "of": "31"
+   },
+   "dom": {
+    "score": "59.18",
+    "rank": "15",
+    "of": "31",
+    "reports": "177",
+    "reviews": "532",
+    "breakdown": [
+     "219",
+     "38",
+     "275"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/ftmo-fx-cfd/index.html",
+   "static": {
+    "reviews": "193",
+    "breakdown": [
+     "89",
+     "17",
+     "87"
+    ],
+    "reports": "208",
+    "score": "71.72",
+    "rank": "4",
+    "of": "31"
+   },
+   "dom": {
+    "score": "71.72",
+    "rank": "4",
+    "of": "31",
+    "reports": "208",
+    "reviews": "193",
+    "breakdown": [
+     "89",
+     "17",
+     "87"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/funded7-fx-cfd/index.html",
+   "static": {
+    "reviews": "138",
+    "breakdown": [
+     "76",
+     "15",
+     "47"
+    ],
+    "reports": "91",
+    "score": "57.32",
+    "rank": "16",
+    "of": "31"
+   },
+   "dom": {
+    "score": "57.32",
+    "rank": "16",
+    "of": "31",
+    "reports": "91",
+    "reviews": "138",
+    "breakdown": [
+     "76",
+     "15",
+     "47"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/fundedelite-fx-cfd/index.html",
+   "static": {
+    "reviews": "112",
+    "breakdown": [
+     "44",
+     "10",
+     "58"
+    ],
+    "reports": "22",
+    "score": "36.67",
+    "rank": "27",
+    "of": "31"
+   },
+   "dom": {
+    "score": "36.67",
+    "rank": "27",
+    "of": "31",
+    "reports": "22",
+    "reviews": "112",
+    "breakdown": [
+     "44",
+     "10",
+     "58"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/fundedhive-onchain/index.html",
+   "static": {
+    "reviews": "75",
+    "breakdown": [
+     "57",
+     "3",
+     "15"
+    ],
+    "reports": "40",
+    "score": "74.08",
+    "rank": "2",
+    "of": "31"
+   },
+   "dom": {
+    "score": "74.08",
+    "rank": "2",
+    "of": "31",
+    "reports": "40",
+    "reviews": "75",
+    "breakdown": [
+     "57",
+     "3",
+     "15"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/fundednext-fx-cfd/index.html",
+   "static": {
+    "reviews": "352",
+    "breakdown": [
+     "228",
+     "10",
+     "114"
+    ],
+    "reports": "330",
+    "score": "60.90",
+    "rank": "12",
+    "of": "31"
+   },
+   "dom": {
+    "score": "60.90",
+    "rank": "12",
+    "of": "31",
+    "reports": "330",
+    "reviews": "352",
+    "breakdown": [
+     "228",
+     "10",
+     "114"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/fundedtradermarkets-fx-cfd/index.html",
+   "static": {
+    "reviews": "99",
+    "breakdown": [
+     "76",
+     "8",
+     "15"
+    ],
+    "reports": "45",
+    "score": "64.62",
+    "rank": "9",
+    "of": "31"
+   },
+   "dom": {
+    "score": "64.62",
+    "rank": "9",
+    "of": "31",
+    "reports": "45",
+    "reviews": "99",
+    "breakdown": [
+     "76",
+     "8",
+     "15"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/fundedtradingplus-fx-cfd/index.html",
+   "static": {
+    "reviews": "5",
+    "breakdown": [
+     "4",
+     "1",
+     "0"
+    ],
+    "reports": "2"
+   },
+   "dom": {
+    "reports": "2",
+    "reviews": "5",
+    "breakdown": [
+     "4",
+     "1",
+     "0"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/fundingpips-fx-cfd/index.html",
+   "static": {
+    "reviews": "520",
+    "breakdown": [
+     "300",
+     "14",
+     "206"
+    ],
+    "reports": "293",
+    "score": "49.94",
+    "rank": "22",
+    "of": "31"
+   },
+   "dom": {
+    "score": "49.94",
+    "rank": "22",
+    "of": "31",
+    "reports": "293",
+    "reviews": "520",
+    "breakdown": [
+     "300",
+     "14",
+     "206"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/fundingtraders-fx-cfd/index.html",
+   "static": {
+    "reviews": "50",
+    "breakdown": [
+     "21",
+     "0",
+     "29"
+    ],
+    "reports": "22",
+    "score": "35.27",
+    "rank": "29",
+    "of": "31"
+   },
+   "dom": {
+    "score": "35.27",
+    "rank": "29",
+    "of": "31",
+    "reports": "22",
+    "reviews": "50",
+    "breakdown": [
+     "21",
+     "0",
+     "29"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/fundora-fx-cfd/index.html",
+   "static": {
+    "reviews": "23",
+    "breakdown": [
+     "10",
+     "4",
+     "9"
+    ],
+    "reports": "21",
+    "score": "60.62",
+    "rank": "13",
+    "of": "31"
+   },
+   "dom": {
+    "score": "60.62",
+    "rank": "13",
+    "of": "31",
+    "reports": "21",
+    "reviews": "23",
+    "breakdown": [
+     "10",
+     "4",
+     "9"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/fxify-fx-cfd/index.html",
+   "static": {
+    "reviews": "31",
+    "breakdown": [
+     "17",
+     "4",
+     "10"
+    ],
+    "reports": "13",
+    "score": "63.34",
+    "rank": "10",
+    "of": "31"
+   },
+   "dom": {
+    "score": "63.34",
+    "rank": "10",
+    "of": "31",
+    "reports": "13",
+    "reviews": "31",
+    "breakdown": [
+     "17",
+     "4",
+     "10"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/goat-fx-cfd/index.html",
+   "static": {
+    "reviews": "112",
+    "breakdown": [
+     "64",
+     "2",
+     "46"
+    ],
+    "reports": "55",
+    "score": "43.14",
+    "rank": "26",
+    "of": "31"
+   },
+   "dom": {
+    "score": "43.14",
+    "rank": "26",
+    "of": "31",
+    "reports": "55",
+    "reviews": "112",
+    "breakdown": [
+     "64",
+     "2",
+     "46"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/hypernova-onchain/index.html",
+   "static": {
+    "reviews": "16",
+    "breakdown": [
+     "16",
+     "0",
+     "0"
+    ],
+    "reports": "11",
+    "score": "73.90",
+    "rank": "3",
+    "of": "31"
+   },
+   "dom": {
+    "score": "73.90",
+    "rank": "3",
+    "of": "31",
+    "reports": "11",
+    "reviews": "16",
+    "breakdown": [
+     "16",
+     "0",
+     "0"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/icfunded-fx-cfd/index.html",
+   "static": {
+    "reviews": "1",
+    "breakdown": [
+     "1",
+     "0",
+     "0"
+    ],
+    "reports": "1",
+    "score": "68.55",
+    "rank": "6",
+    "of": "31"
+   },
+   "dom": {
+    "score": "68.55",
+    "rank": "6",
+    "of": "31",
+    "reports": "1",
+    "reviews": "1",
+    "breakdown": [
+     "1",
+     "0",
+     "0"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/instantfunding-fx-cfd/index.html",
+   "static": {
+    "reviews": "16",
+    "breakdown": [
+     "8",
+     "0",
+     "8"
+    ],
+    "reports": "17",
+    "score": "53.66",
+    "rank": "20",
+    "of": "31"
+   },
+   "dom": {
+    "score": "53.66",
+    "rank": "20",
+    "of": "31",
+    "reports": "17",
+    "reviews": "16",
+    "breakdown": [
+     "8",
+     "0",
+     "8"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/monetafunded-fx-cfd/index.html",
+   "static": {
+    "reviews": "39",
+    "breakdown": [
+     "31",
+     "1",
+     "7"
+    ],
+    "reports": "15",
+    "score": "62.94",
+    "rank": "11",
+    "of": "31"
+   },
+   "dom": {
+    "score": "62.94",
+    "rank": "11",
+    "of": "31",
+    "reports": "15",
+    "reviews": "39",
+    "breakdown": [
+     "31",
+     "1",
+     "7"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/pipfarm-fx-cfd/index.html",
+   "static": {
+    "reviews": "190",
+    "breakdown": [
+     "80",
+     "21",
+     "89"
+    ],
+    "reports": "89",
+    "score": "48.27",
+    "rank": "23",
+    "of": "31"
+   },
+   "dom": {
+    "score": "48.27",
+    "rank": "23",
+    "of": "31",
+    "reports": "89",
+    "reviews": "190",
+    "breakdown": [
+     "80",
+     "21",
+     "89"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/propr-onchain/index.html",
+   "static": {
+    "reviews": "35",
+    "breakdown": [
+     "18",
+     "10",
+     "7"
+    ],
+    "reports": "5",
+    "score": "71.24",
+    "rank": "5",
+    "of": "31"
+   },
+   "dom": {
+    "score": "71.24",
+    "rank": "5",
+    "of": "31",
+    "reports": "5",
+    "reviews": "35",
+    "breakdown": [
+     "18",
+     "10",
+     "7"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/rzr-funded/index.html",
+   "static": {
+    "reviews": "23",
+    "breakdown": [
+     "15",
+     "3",
+     "5"
+    ],
+    "reports": "11",
+    "score": "75.87",
+    "rank": "1",
+    "of": "31"
+   },
+   "dom": {
+    "score": "75.87",
+    "rank": "1",
+    "of": "31",
+    "reports": "11",
+    "reviews": "23",
+    "breakdown": [
+     "15",
+     "3",
+     "5"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/superfunded-fx-cfd/index.html",
+   "static": {
+    "reviews": "46",
+    "breakdown": [
+     "32",
+     "3",
+     "11"
+    ],
+    "reports": "16",
+    "score": "54.26",
+    "rank": "19",
+    "of": "31"
+   },
+   "dom": {
+    "score": "54.26",
+    "rank": "19",
+    "of": "31",
+    "reports": "16",
+    "reviews": "46",
+    "breakdown": [
+     "32",
+     "3",
+     "11"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/the5ers-fx-cfd/index.html",
+   "static": {
+    "reviews": "184",
+    "breakdown": [
+     "110",
+     "17",
+     "57"
+    ],
+    "reports": "131",
+    "score": "56.69",
+    "rank": "17",
+    "of": "31"
+   },
+   "dom": {
+    "score": "56.69",
+    "rank": "17",
+    "of": "31",
+    "reports": "131",
+    "reviews": "184",
+    "breakdown": [
+     "110",
+     "17",
+     "57"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/thinkcapital-fx-cfd/index.html",
+   "static": {
+    "reviews": "45",
+    "breakdown": [
+     "22",
+     "8",
+     "15"
+    ],
+    "reports": "11"
+   },
+   "dom": {
+    "reports": "11",
+    "reviews": "45",
+    "breakdown": [
+     "22",
+     "8",
+     "15"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/tradeifyfx-fx-cfd/index.html",
+   "static": {
+    "reviews": "36",
+    "breakdown": [
+     "27",
+     "1",
+     "8"
+    ],
+    "reports": "18",
+    "score": "59.75",
+    "rank": "14",
+    "of": "31"
+   },
+   "dom": {
+    "score": "59.75",
+    "rank": "14",
+    "of": "31",
+    "reports": "18",
+    "reviews": "36",
+    "breakdown": [
+     "27",
+     "1",
+     "8"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/tradingcult-fx-cfd/index.html",
+   "static": {
+    "reviews": "30",
+    "breakdown": [
+     "12",
+     "4",
+     "14"
+    ],
+    "reports": "5",
+    "score": "33.13",
+    "rank": "30",
+    "of": "31"
+   },
+   "dom": {
+    "score": "33.13",
+    "rank": "30",
+    "of": "31",
+    "reports": "5",
+    "reviews": "30",
+    "breakdown": [
+     "12",
+     "4",
+     "14"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/tradingpit-fx-cfd/index.html",
+   "static": {
+    "reviews": "6",
+    "breakdown": [
+     "0",
+     "0",
+     "6"
+    ],
+    "reports": "3",
+    "score": "52.92",
+    "rank": "21",
+    "of": "31"
+   },
+   "dom": {
+    "score": "52.92",
+    "rank": "21",
+    "of": "31",
+    "reports": "3",
+    "reviews": "6",
+    "breakdown": [
+     "0",
+     "0",
+     "6"
+    ]
+   },
+   "diff": {}
+  },
+  {
+   "page": "ko/companies/upcomers-fx-cfd/index.html",
+   "static": {
+    "reviews": "51",
+    "breakdown": [
+     "17",
+     "3",
+     "31"
+    ],
+    "reports": "47",
+    "score": "32.02",
+    "rank": "31",
+    "of": "31"
+   },
+   "dom": {
+    "score": "32.02",
+    "rank": "31",
+    "of": "31",
+    "reports": "47",
+    "reviews": "51",
+    "breakdown": [
+     "17",
+     "3",
+     "31"
+    ]
+   },
+   "diff": {}
+  }
+ ]
+}

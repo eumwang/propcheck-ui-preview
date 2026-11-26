@@ -1,0 +1,136 @@
+[
+ {
+  "gtm": 1,
+  "collect": 4,
+  "collect_en": [
+   "page_view",
+   "page_view",
+   "affiliate_click",
+   "affiliate_click"
+  ],
+  "host": "https://propchecklab.com",
+  "path": "/",
+  "clicked": true,
+  "dataLayer_events": [
+   "event:affiliate_click"
+  ]
+ },
+ {
+  "gtm": 1,
+  "collect": 2,
+  "collect_en": [
+   "page_view",
+   "page_view"
+  ],
+  "host": "https://propchecklab.com",
+  "path": "/en/companies/ftmo-fx-cfd/",
+  "clicked": false,
+  "dataLayer_events": []
+ },
+ {
+  "gtm": 1,
+  "collect": 2,
+  "collect_en": [
+   "page_view",
+   "page_view"
+  ],
+  "host": "https://propchecklab.com",
+  "path": "/companies/",
+  "clicked": false,
+  "dataLayer_events": []
+ },
+ {
+  "gtm": 1,
+  "collect": 4,
+  "collect_en": [
+   "page_view",
+   "page_view",
+   "affiliate_click",
+   "affiliate_click"
+  ],
+  "host": "https://www.propchecklab.com",
+  "path": "/",
+  "clicked": true,
+  "dataLayer_events": [
+   "event:affiliate_click"
+  ]
+ },
+ {
+  "gtm": 1,
+  "collect": 2,
+  "collect_en": [
+   "page_view",
+   "page_view"
+  ],
+  "host": "https://www.propchecklab.com",
+  "path": "/en/companies/ftmo-fx-cfd/",
+  "clicked": false,
+  "dataLayer_events": []
+ },
+ {
+  "gtm": 1,
+  "collect": 2,
+  "collect_en": [
+   "page_view",
+   "page_view"
+  ],
+  "host": "https://www.propchecklab.com",
+  "path": "/companies/",
+  "clicked": false,
+  "dataLayer_events": []
+ },
+ {
+  "gtm": 0,
+  "collect": 0,
+  "collect_en": [],
+  "host": "http://127.0.0.1:8804",
+  "path": "/",
+  "clicked": true,
+  "dataLayer_events": []
+ },
+ {
+  "gtm": 0,
+  "collect": 0,
+  "collect_en": [],
+  "host": "http://127.0.0.1:8804",
+  "path": "/en/companies/ftmo-fx-cfd/",
+  "clicked": false,
+  "dataLayer_events": []
+ },
+ {
+  "gtm": 0,
+  "collect": 0,
+  "collect_en": [],
+  "host": "http://127.0.0.1:8804",
+  "path": "/companies/",
+  "clicked": false,
+  "dataLayer_events": []
+ },
+ {
+  "gtm": 0,
+  "collect": 0,
+  "collect_en": [],
+  "host": "http://localhost:8804",
+  "path": "/",
+  "clicked": true,
+  "dataLayer_events": []
+ },
+ {
+  "gtm": 0,
+  "collect": 0,
+  "collect_en": [],
+  "host": "http://localhost:8804",
+  "path": "/en/companies/ftmo-fx-cfd/",
+  "clicked": false,
+  "dataLayer_events": []
+ },
+ {
+  "gtm": 0,
+  "collect": 0,
+  "collect_en": [],
+  "host": "http://localhost:8804",
+  "path": "/companies/",
+  "clicked": false,
+  "dataLayer_events": []
+ }
+]
