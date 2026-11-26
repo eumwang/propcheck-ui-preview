@@ -1,0 +1,2396 @@
+{
+ "sources": {
+  "overall": {
+   "map_key": "/data/overall-reference-v194.json",
+   "file": "perf-data/e1c88c053f519353c7c49ea4.json",
+   "sha256": "e1c88c053f519353c7c49ea40a836ea3a466e09ddbc7fe49a1de38d7e786d26b",
+   "as_of": "2026-11-22"
+  },
+  "reports": {
+   "map_key": "/data/normal-report-ratios-v143.json",
+   "file": "perf-data/6fe67ce6d37c54b4f05ce120.json",
+   "sha256": "6fe67ce6d37c54b4f05ce120eac8a4b625f68b62560526a4823809923b8208b9"
+  },
+  "reviews": {
+   "via": "preview-v217-r6-w1122v77c.js",
+   "file": "reviewed-period-index-v237-w1122v77c.json",
+   "sha256": "27ed304f0feadd8a09928a2900d07bfda10d5735d3a6d8799c99444af39ba608"
+  }
+ },
+ "as_of": "2026-11-22",
+ "ranked": 31,
+ "all": 33,
+ "isolated": [
+  "fundedtradingplus-fx-cfd",
+  "thinkcapital-fx-cfd"
+ ],
+ "companies": {
+  "alpha-fx-cfd": {
+   "dir": "alpha-fx-cfd",
+   "overall": 46.54,
+   "rank": 25,
+   "reviews": {
+    "total": 31,
+    "public_730_posts": 31,
+    "in_window_posts": 31,
+    "positive": 21,
+    "mixed": 5,
+    "negative": 5,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 38,
+    "received": 31,
+    "refused": 5
+   },
+   "rule": {
+    "ja": {
+     "id": "R79ef1fc622",
+     "date": "2026-10-27",
+     "label": "改悪",
+     "text": "公式ヘルプ「ギャンブル的な取引についての方針」で、ニュース制限時間の直前に入って直後に閉じる短期取引をギャンブルと見なす対象に「Direct」モデルを追加（Pro/One/Three → Pro/One/Three/Direct）。ギャンブルと判断されると利益の取り消し、契約終了・口座閉鎖の可能性あり",
+     "listed": 9,
+     "timeline_pos": 3,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R79ef1fc622",
+     "date": "2026-10-27",
+     "label": "Adverse change",
+     "text": "In the official help article on its policy against gambling-style trading, “Direct” was added to the models where short trades opened just before and closed just after a news restriction window count as gambling (Pro/One/Three → Pro/One/Three/Direct). If judged as gambling, profits may be voided and the contract terminated or the account closed.",
+     "listed": 9,
+     "timeline_pos": 3,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R79ef1fc622",
+     "date": "2026-10-27",
+     "label": "불리한 변경",
+     "text": "공식 도움말 「도박성 거래에 대한 방침」에서 뉴스 제한 시간 직전에 진입해 직후에 청산하는 단기 거래를 도박으로 보는 대상에 「Direct」 모델이 추가되었습니다(Pro/One/Three → Pro/One/Three/Direct). 도박으로 판단되면 이익 취소, 계약 종료·계좌 폐쇄가 있을 수 있습니다.",
+     "listed": 9,
+     "timeline_pos": 3,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10",
+     "text_fixed": false
+    }
+   }
+  },
+  "blueberry-fx-cfd": {
+   "dir": "blueberry-fx-cfd",
+   "overall": 36.14,
+   "rank": 28,
+   "reviews": {
+    "total": 112,
+    "public_730_posts": 112,
+    "in_window_posts": 112,
+    "positive": 47,
+    "mixed": 13,
+    "negative": 52,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 70,
+    "received": 50,
+    "refused": 6
+   },
+   "rule": {
+    "ja": {
+     "id": "R03f34e422d",
+     "date": "2026-10-27",
+     "label": "改良",
+     "text": "公式ヘルプ（シンセティック・プラン）で、最小の取引サイズを全銘柄0.2ロットから「FX Volatility は0.01ロット、それ以外は0.2ロット」に変更（最大15ロットは同じ）",
+     "listed": 14,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-27",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R03f34e422d",
+     "date": "2026-10-27",
+     "label": "Improvement",
+     "text": "In the official help for Synthetic plans, the minimum trade size changed from 0.2 lots on all instruments to 0.01 lots for FX Volatility and 0.2 lots for the others (the 15-lot maximum is unchanged).",
+     "listed": 14,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-27",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R03f34e422d",
+     "date": "2026-10-27",
+     "label": "개선",
+     "text": "공식 도움말(합성상품 플랜)에서 최소 거래 크기가 전 종목 0.2랏에서 「FX Volatility는 0.01랏, 그 외는 0.2랏」으로 바뀌었습니다(최대 15랏은 동일).",
+     "listed": 14,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-27",
+     "text_fixed": false
+    }
+   }
+  },
+  "blueguardian-fx-cfd": {
+   "dir": "blueguardian-fx-cfd",
+   "overall": 56.44,
+   "rank": 18,
+   "reviews": {
+    "total": 49,
+    "public_730_posts": 49,
+    "in_window_posts": 49,
+    "positive": 30,
+    "mixed": 1,
+    "negative": 18,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 24,
+    "received": 21,
+    "refused": 3
+   },
+   "rule": {
+    "ja": {
+     "id": "Rffc0980376",
+     "date": "2026-10-28",
+     "label": "改悪",
+     "text": "公式ヘルプ「How do payouts work?」で、暗号資産での出金を「$5,000未満なら利用可」→「1回の申請につき最大$1,000」に変更。$1,000を超える出金は Rise Works（上限なし）で申請が必要に",
+     "listed": 14,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-28",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "Rffc0980376",
+     "date": "2026-10-28",
+     "label": "Adverse change",
+     "text": "In the official help article “How do payouts work?”, crypto payouts changed from “available for amounts under $5,000” to “up to $1,000 per request”. Payouts above $1,000 must be requested through Rise Works (no cap).",
+     "listed": 14,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-28",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "Rffc0980376",
+     "date": "2026-10-28",
+     "label": "불리한 변경",
+     "text": "공식 도움말 「How do payouts work?」에서 암호자산 출금이 「$5,000 미만이면 이용 가능」에서 「1회 신청당 최대 $1,000」으로 바뀌었습니다. $1,000를 넘는 출금은 Rise Works로 신청해야 합니다(상한 없음).",
+     "listed": 14,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-28",
+     "text_fixed": false
+    }
+   }
+  },
+  "brightfunded-fx-cfd": {
+   "dir": "brightfunded-fx-cfd",
+   "overall": 64.7,
+   "rank": 8,
+   "reviews": {
+    "total": 133,
+    "public_730_posts": 133,
+    "in_window_posts": 133,
+    "positive": 101,
+    "mixed": 3,
+    "negative": 29,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 115,
+    "received": 110,
+    "refused": 1
+   },
+   "rule": {
+    "ja": {
+     "id": "Rd8f188ecf8",
+     "date": "2026-10",
+     "label": "改悪",
+     "text": "15%評価利益リワード：有料チャレンジ口座のみ対象と限定",
+     "listed": 2,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "Rd8f188ecf8",
+     "date": "2026-10",
+     "label": "Adverse change",
+     "text": "15% reward on evaluation profits: eligibility is expressly limited to paid challenge accounts.",
+     "listed": 2,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "Rd8f188ecf8",
+     "date": "2026-10",
+     "label": "불리한 변경",
+     "text": "평가 수익 15% 보상은 유료 챌린지 계좌에만 적용된다고 한정했습니다.",
+     "listed": 2,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10",
+     "text_fixed": false
+    }
+   }
+  },
+  "e8-fx-cfd": {
+   "dir": "e8-fx-cfd",
+   "overall": 65.48,
+   "rank": 7,
+   "reviews": {
+    "total": 85,
+    "public_730_posts": 85,
+    "in_window_posts": 85,
+    "positive": 69,
+    "mixed": 3,
+    "negative": 13,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 82,
+    "received": 81,
+    "refused": 0
+   },
+   "rule": {
+    "ja": {
+     "id": "Re5bd500fcd",
+     "date": "2026-10-01",
+     "label": "改悪",
+     "text": "Signature先物$150K：DD $4,500→$4,000、出金回数上限 5回→4回（10/1 17:00 UTC以降購入分、既存口座は従来のまま）",
+     "listed": 3,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-01",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "Re5bd500fcd",
+     "date": "2026-10-01",
+     "label": "Adverse change",
+     "text": "Signature Futures $150K: drawdown allowance falls from $4,500 to $4,000 and the payout limit from five to four. This applies to purchases from 1 October, 17:00 UTC; existing accounts keep their prior terms.",
+     "listed": 3,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-01",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "Re5bd500fcd",
+     "date": "2026-10-01",
+     "label": "불리한 변경",
+     "text": "Signature 선물 $150K: 드로다운 허용액 $4,500→$4,000, 출금 횟수 상한 5회→4회. 10월 1일 17:00 UTC 이후 구매분에 적용하며 기존 계좌는 종전 조건을 유지합니다.",
+     "listed": 3,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-01",
+     "text_fixed": false
+    }
+   }
+  },
+  "eightcapchallenges-fx-cfd": {
+   "dir": "eightcapchallenges-fx-cfd",
+   "overall": 46.55,
+   "rank": 24,
+   "reviews": {
+    "total": 7,
+    "public_730_posts": 7,
+    "in_window_posts": 7,
+    "positive": 0,
+    "mixed": 0,
+    "negative": 7,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 6,
+    "received": 1,
+    "refused": 6
+   },
+   "rule": {
+    "ja": null,
+    "en": null,
+    "ko": null
+   }
+  },
+  "fintokei-fx-cfd": {
+   "dir": "fintokei-fx-cfd",
+   "overall": 59.18,
+   "rank": 15,
+   "reviews": {
+    "total": 532,
+    "public_730_posts": 532,
+    "in_window_posts": 532,
+    "positive": 219,
+    "mixed": 38,
+    "negative": 275,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 177,
+    "received": 169,
+    "refused": 0
+   },
+   "rule": {
+    "ja": {
+     "id": "R132962647b",
+     "date": "2026-10-21",
+     "label": "改悪",
+     "text": "1口座あたりの出金は、口座の期間全体で合計400ドル（80,000円・400ユーロ・8,000チェココルナ）までになりました。申請は最大2回で、上限は2回の合計です。",
+     "listed": 15,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-21",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R132962647b",
+     "date": "2026-10-21",
+     "label": "Adverse change",
+     "text": "Payouts are now capped at $400 (¥80,000 / €400 / 8,000 CZK) per account over its whole lifetime, with up to two requests; the cap is the total of both.",
+     "listed": 15,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-21",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R132962647b",
+     "date": "2026-10-21",
+     "label": "불리한 변경",
+     "text": "계좌당 출금은 계좌 전체 기간 합계 400달러(80,000엔·400유로·8,000체코 코루나)까지가 되었습니다. 신청은 최대 2회이며 한도는 2회 합계입니다.",
+     "listed": 15,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-21",
+     "text_fixed": false
+    }
+   }
+  },
+  "ftmo-fx-cfd": {
+   "dir": "ftmo-fx-cfd",
+   "overall": 71.72,
+   "rank": 4,
+   "reviews": {
+    "total": 193,
+    "public_730_posts": 193,
+    "in_window_posts": 193,
+    "positive": 89,
+    "mixed": 17,
+    "negative": 87,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 208,
+    "received": 198,
+    "refused": 3
+   },
+   "rule": {
+    "ja": {
+     "id": "R8fba0ea44a",
+     "date": "2026-10-12",
+     "label": "改悪",
+     "text": "1-Step CFD：Best Day Rule（最良日≦プラス日の利益合計の50%）→Consistency rule（最良日≦全取引日の合計利益の50%、損失日も算入）（10/12 9:00以降の新規注文・統合口座。既存口座はBest Day Rule維持）",
+     "listed": 6,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-12",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R8fba0ea44a",
+     "date": "2026-10-12",
+     "label": "Adverse change",
+     "text": "1-Step CFD: Best Day Rule (best day ≤ 50% of profits on positive days) → Consistency rule (best day ≤ 50% of total profits across all trading days, including loss days). Applies to new orders and merged accounts from Oct 12, 9:00; existing accounts retain the Best Day Rule.",
+     "listed": 6,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-12",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R8fba0ea44a",
+     "date": "2026-10-12",
+     "label": "불리한 변경",
+     "text": "1-Step CFD: Best Day Rule(최고 수익일 ≤ 수익일 이익 합계의 50%) → Consistency rule(최고 수익일 ≤ 손실일을 포함한 모든 거래일의 이익 합계 50%). 10월 12일 9:00 이후 신규 주문·통합 계좌에 적용하며 기존 계좌는 Best Day Rule 유지.",
+     "listed": 6,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-12",
+     "text_fixed": false
+    }
+   }
+  },
+  "funded7-fx-cfd": {
+   "dir": "funded7-fx-cfd",
+   "overall": 57.32,
+   "rank": 16,
+   "reviews": {
+    "total": 138,
+    "public_730_posts": 138,
+    "in_window_posts": 138,
+    "positive": 76,
+    "mixed": 15,
+    "negative": 47,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 91,
+    "received": 75,
+    "refused": 12
+   },
+   "rule": {
+    "ja": {
+     "id": "R947b7de2d1",
+     "date": "2026-10",
+     "label": "改悪",
+     "text": "レバレッジ引き下げ②（期間：2026-05-21〜10-16）：Instant FX 1:50→1:30、貴金属・指数 1:10→1:5、暗号資産 1:3→1:2（エキゾチックは1:10→1:30に引き上げ）。PAYG列を追加し表をMT5のみに",
+     "listed": 17,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R947b7de2d1",
+     "date": "2026-10",
+     "label": "Adverse change",
+     "text": "Leverage cut 2 (period May 21–Oct 16, 2026): Instant FX 1:50→1:30, metals/indices 1:10→1:5, crypto 1:3→1:2 (exotics rose 1:10→1:30). Added PAYG column; table became MT5-only.",
+     "listed": 17,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R947b7de2d1",
+     "date": "2026-10",
+     "label": "불리한 변경",
+     "text": "레버리지 인하 2(기간: 2026년 5월 21일~10월 16일): Instant FX 1:50→1:30, 금속·지수 1:10→1:5, 암호자산 1:3→1:2(이색 통화쌍은 1:10→1:30으로 상향). PAYG 열 추가, 표는 MT5 전용으로 변경.",
+     "listed": 17,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10",
+     "text_fixed": false
+    }
+   }
+  },
+  "fundedelite-fx-cfd": {
+   "dir": "fundedelite-fx-cfd",
+   "overall": 36.67,
+   "rank": 27,
+   "reviews": {
+    "total": 112,
+    "public_730_posts": 112,
+    "in_window_posts": 112,
+    "positive": 44,
+    "mixed": 10,
+    "negative": 58,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 22,
+    "received": 17,
+    "refused": 3
+   },
+   "rule": {
+    "ja": {
+     "id": "Rce31f07887",
+     "date": "2026-10-23",
+     "label": "中立",
+     "text": "日本語FAQ：日次損失上限3%（固定）。英語FAQ：3%のトレーリング（その日の最高の有効証拠金から追従）。",
+     "listed": 23,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-23",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "Rce31f07887",
+     "date": "2026-10-23",
+     "label": "Neutral",
+     "text": "Japanese FAQ: 3% daily loss limit (fixed). English FAQ: 3% trailing (from the day’s highest equity).",
+     "listed": 23,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-23",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "Rce31f07887",
+     "date": "2026-10-23",
+     "label": "중립",
+     "text": "일본어 FAQ: 일일 손실 한도 3%(고정). 영어 FAQ: 3% 트레일링(당일 최고 유효 증거금 기준으로 추종).",
+     "listed": 23,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-23",
+     "text_fixed": false
+    }
+   }
+  },
+  "fundedhive-onchain": {
+   "dir": "fundedhive-onchain",
+   "overall": 74.08,
+   "rank": 2,
+   "reviews": {
+    "total": 75,
+    "public_730_posts": 75,
+    "in_window_posts": 75,
+    "positive": 57,
+    "mixed": 3,
+    "negative": 15,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 40,
+    "received": 40,
+    "refused": 0
+   },
+   "rule": {
+    "ja": {
+     "id": "Reec7487d5b",
+     "date": "2026-02",
+     "label": "中立",
+     "text": "T&C（同じ発効日2026-01-05のまま）の文言修正：1トレード最大損失の基準「初期残高の%」→「残高の%」（期間：2026-01-30〜02-23）",
+     "listed": 7,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-02",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "Reec7487d5b",
+     "date": "2026-02",
+     "label": "Neutral",
+     "text": "Terms wording revised without changing the stated effective date of 5 January 2026: the maximum loss per trade changes from a percentage of initial balance to a percentage of balance (period: Jan 30–Feb 23, 2026).",
+     "listed": 7,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-02",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "Reec7487d5b",
+     "date": "2026-02",
+     "label": "중립",
+     "text": "약관의 명시된 시행일은 2026년 1월 5일로 유지하면서 문구를 수정했습니다. 거래당 최대 손실의 기준이 ‘초기 잔액의 %’에서 ‘잔액의 %’로 바뀌었습니다(기간: 2026년 1월 30일~2월 23일).",
+     "listed": 7,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-02",
+     "text_fixed": false
+    }
+   }
+  },
+  "fundednext-fx-cfd": {
+   "dir": "fundednext-fx-cfd",
+   "overall": 60.9,
+   "rank": 12,
+   "reviews": {
+    "total": 352,
+    "public_730_posts": 354,
+    "in_window_posts": 352,
+    "positive": 228,
+    "mixed": 10,
+    "negative": 114,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 330,
+    "received": 303,
+    "refused": 5
+   },
+   "rule": {
+    "ja": {
+     "id": "R62eef50524",
+     "date": "2026-10-15",
+     "label": "改悪",
+     "text": "【先物】Futures Flexチャレンジ価格（定価）：50K $133.99・100K $264.99・150K $483.99→50K $141.99・100K $273.99・150K $490.99（割引後の表示価格も $69.99・$139.99・$249.99→$74.99・$144.99・$259.99）",
+     "listed": 9,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-15",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R62eef50524",
+     "date": "2026-10-15",
+     "label": "Adverse change",
+     "text": "[Futures] Futures Flex challenge list prices: 50K $133.99, 100K $264.99, 150K $483.99 → 50K $141.99, 100K $273.99, 150K $490.99 (discounted display prices also $69.99, $139.99, $249.99 → $74.99, $144.99, $259.99).",
+     "listed": 9,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-15",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R62eef50524",
+     "date": "2026-10-15",
+     "label": "불리한 변경",
+     "text": "[선물] Futures Flex 챌린지 정가: 50K $133.99·100K $264.99·150K $483.99 → 50K $141.99·100K $273.99·150K $490.99(할인 후 표시 가격도 $69.99·$139.99·$249.99 → $74.99·$144.99·$259.99).",
+     "listed": 9,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-15",
+     "text_fixed": false
+    }
+   }
+  },
+  "fundedtradermarkets-fx-cfd": {
+   "dir": "fundedtradermarkets-fx-cfd",
+   "overall": 64.62,
+   "rank": 9,
+   "reviews": {
+    "total": 99,
+    "public_730_posts": 99,
+    "in_window_posts": 99,
+    "positive": 76,
+    "mixed": 8,
+    "negative": 15,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 45,
+    "received": 44,
+    "refused": 0
+   },
+   "rule": {
+    "ja": {
+     "id": "Rbb736b5a13",
+     "date": "2026-10-25",
+     "label": "改良",
+     "text": "選んだ口座は、1回の出金額の上限なし、出金後に残す残高（バッファ）不要、出金と出金の間の1%の追加利益も不要です。Infinity Plus の口座サイズは最大2万ドルです。",
+     "listed": 8,
+     "timeline_pos": 1,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-07",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "Rbb736b5a13",
+     "date": "2026-10-25",
+     "label": "Improvement",
+     "text": "Accounts with it have no per-payout cap, no buffer to keep after a payout, and no extra 1% profit needed between payouts. Infinity Plus accounts go up to $20,000.",
+     "listed": 8,
+     "timeline_pos": 1,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-07",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "Rbb736b5a13",
+     "date": "2026-10-25",
+     "label": "개선",
+     "text": "선택한 계좌는 1회 출금액 상한 없음, 출금 후 남겨야 할 잔고(버퍼) 불필요, 출금 사이 1% 추가 수익도 불필요입니다. Infinity Plus 계좌 크기는 최대 2만 달러입니다.",
+     "listed": 8,
+     "timeline_pos": 1,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-07",
+     "text_fixed": false
+    }
+   }
+  },
+  "fundedtradingplus-fx-cfd": {
+   "dir": "fundedtradingplus-fx-cfd",
+   "overall": 61.13,
+   "rank": null,
+   "reviews": {
+    "total": 5,
+    "public_730_posts": 5,
+    "in_window_posts": 5,
+    "positive": 4,
+    "mixed": 1,
+    "negative": 0,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 2,
+    "received": 2,
+    "refused": 0
+   },
+   "rule": {
+    "ja": {
+     "id": "R1a2198abe0",
+     "date": "2026-07-10",
+     "label": "改悪",
+     "text": "利益配分：口座30%成長で生涯100%配分へ引き上げ可→記載削除（「マイルストーンで増加」のみ）",
+     "listed": 2,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-07-10",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R1a2198abe0",
+     "date": "2026-07-10",
+     "label": "Adverse change",
+     "text": "Profit split: the statement that 30% account growth can unlock a lifetime 100% split is removed; only ‘increases at milestones’ remains.",
+     "listed": 2,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-07-10",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R1a2198abe0",
+     "date": "2026-07-10",
+     "label": "불리한 변경",
+     "text": "수익 배분: 계좌가 30% 성장하면 평생 100% 배분율로 올릴 수 있다는 문구가 삭제되고 '마일스톤에 따라 증가'만 남았습니다.",
+     "listed": 2,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-07-10",
+     "text_fixed": false
+    }
+   }
+  },
+  "fundingpips-fx-cfd": {
+   "dir": "fundingpips-fx-cfd",
+   "overall": 49.94,
+   "rank": 22,
+   "reviews": {
+    "total": 520,
+    "public_730_posts": 520,
+    "in_window_posts": 520,
+    "positive": 300,
+    "mixed": 14,
+    "negative": 206,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 293,
+    "received": 246,
+    "refused": 4
+   },
+   "rule": {
+    "ja": {
+     "id": "R51614bbe79",
+     "date": "2026-10-16",
+     "label": "改悪",
+     "text": "2 Step Standard 報酬サイクル：Weekly 60%／Bi-Weekly 80%／Monthly 100%／On Demand 90%（35%一貫性スコア・最低2%で随時申請可）→On Demand 90%を削除（Weekly／Bi-Weekly／Monthlyのみ）",
+     "listed": 10,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-16",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R51614bbe79",
+     "date": "2026-10-16",
+     "label": "Adverse change",
+     "text": "2 Step Standard reward cycles: Weekly 60% / Bi-Weekly 80% / Monthly 100% / On Demand 90% (35% consistency score, request anytime at ≥2%) → removed On Demand 90%, retaining the other three",
+     "listed": 10,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-16",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R51614bbe79",
+     "date": "2026-10-16",
+     "label": "불리한 변경",
+     "text": "2 Step Standard 보상 주기: Weekly 60% / Bi-Weekly 80% / Monthly 100% / On Demand 90%(일관성 점수 35%, 수익 2% 이상이면 수시 신청) → On Demand 90% 삭제, 나머지 세 가지 유지",
+     "listed": 10,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-16",
+     "text_fixed": false
+    }
+   }
+  },
+  "fundingtraders-fx-cfd": {
+   "dir": "fundingtraders-fx-cfd",
+   "overall": 35.27,
+   "rank": 29,
+   "reviews": {
+    "total": 50,
+    "public_730_posts": 50,
+    "in_window_posts": 50,
+    "positive": 21,
+    "mixed": 0,
+    "negative": 29,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 22,
+    "received": 9,
+    "refused": 6
+   },
+   "rule": {
+    "ja": {
+     "id": "R8e083b901e",
+     "date": "2026-10-23",
+     "label": "改悪",
+     "text": "Instant口座：最低利益日あり→撤廃、on-demand出金導入",
+     "listed": 5,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-23",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R8e083b901e",
+     "date": "2026-10-23",
+     "label": "Adverse change",
+     "text": "Instant accounts: the minimum number of profitable days is removed and on-demand payouts are introduced.",
+     "listed": 5,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-23",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R8e083b901e",
+     "date": "2026-10-23",
+     "label": "불리한 변경",
+     "text": "Instant 계좌: 최소 수익일 요건이 폐지되고 요청 시 출금이 도입됐습니다.",
+     "listed": 5,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-23",
+     "text_fixed": false
+    }
+   }
+  },
+  "fundora-fx-cfd": {
+   "dir": "fundora-fx-cfd",
+   "overall": 60.62,
+   "rank": 13,
+   "reviews": {
+    "total": 23,
+    "public_730_posts": 23,
+    "in_window_posts": 23,
+    "positive": 10,
+    "mixed": 4,
+    "negative": 9,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 21,
+    "received": 21,
+    "refused": 0
+   },
+   "rule": {
+    "ja": {
+     "id": "Re2b9acb786",
+     "date": "2026-03-20",
+     "label": "中立",
+     "text": "複数口座統合（マージ）のルール・条件を新設",
+     "listed": 3,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-03-20",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "Re2b9acb786",
+     "date": "2026-03-20",
+     "label": "Neutral",
+     "text": "Rules and conditions for merging multiple accounts are introduced.",
+     "listed": 3,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-03-20",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "Re2b9acb786",
+     "date": "2026-03-20",
+     "label": "중립",
+     "text": "여러 계좌를 병합하는 규칙과 조건이 새로 마련됐습니다.",
+     "listed": 3,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-03-20",
+     "text_fixed": false
+    }
+   }
+  },
+  "fxify-fx-cfd": {
+   "dir": "fxify-fx-cfd",
+   "overall": 63.34,
+   "rank": 10,
+   "reviews": {
+    "total": 31,
+    "public_730_posts": 31,
+    "in_window_posts": 31,
+    "positive": 17,
+    "mixed": 4,
+    "negative": 10,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 13,
+    "received": 9,
+    "refused": 3
+   },
+   "rule": {
+    "ja": {
+     "id": "R507a2bead3",
+     "date": "2026-07",
+     "label": "改悪",
+     "text": "スケーリング：3ヶ月ごとの倍増（上限記載なし）→最大4回（最終$4M）に上限",
+     "listed": 2,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-07",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R507a2bead3",
+     "date": "2026-07",
+     "label": "Adverse change",
+     "text": "Scaling: doubling every three months, with no stated cap, changes to a maximum of four increases and a final $4 million cap.",
+     "listed": 2,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-07",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R507a2bead3",
+     "date": "2026-07",
+     "label": "불리한 변경",
+     "text": "스케일링: 3개월마다 두 배(명시된 상한 없음)에서 최대 4회, 최종 $4M 상한으로 변경되었습니다.",
+     "listed": 2,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-07",
+     "text_fixed": false
+    }
+   }
+  },
+  "goat-fx-cfd": {
+   "dir": "goat-fx-cfd",
+   "overall": 43.14,
+   "rank": 26,
+   "reviews": {
+    "total": 112,
+    "public_730_posts": 112,
+    "in_window_posts": 112,
+    "positive": 64,
+    "mixed": 2,
+    "negative": 46,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 55,
+    "received": 32,
+    "refused": 16
+   },
+   "rule": {
+    "ja": {
+     "id": "R4c77ce6fde",
+     "date": "2026-10-19",
+     "label": "改悪",
+     "text": "リセット（有料）：ファンデッド口座は違反後にリセット購入可→出金（報酬）を受け取ったファンデッド口座はリセット不可（Instant Funding・評価経由のファンデッドとも。ルール導入前に出金済みの口座にも適用）",
+     "listed": 15,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-19",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R4c77ce6fde",
+     "date": "2026-10-19",
+     "label": "Adverse change",
+     "text": "Paid resets: funded accounts could buy a reset after a violation → a funded account that has received a payout (reward) can no longer be reset (both Instant Funding and funded accounts from an evaluation; also applies to accounts that received a payout before the rule was introduced).",
+     "listed": 15,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-19",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R4c77ce6fde",
+     "date": "2026-10-19",
+     "label": "불리한 변경",
+     "text": "유료 리셋: 펀딩 계좌는 위반 후 리셋 구매 가능 → 출금(보상)을 받은 펀딩 계좌는 리셋 불가(Instant Funding·평가를 거친 펀딩 계좌 모두. 규칙 도입 전에 출금한 계좌에도 적용).",
+     "listed": 15,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-19",
+     "text_fixed": false
+    }
+   }
+  },
+  "hantec-fx-cfd": {
+   "dir": "rzr-funded",
+   "overall": 75.87,
+   "rank": 1,
+   "reviews": {
+    "total": 23,
+    "public_730_posts": 23,
+    "in_window_posts": 23,
+    "positive": 15,
+    "mixed": 3,
+    "negative": 5,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 11,
+    "received": 11,
+    "refused": 0
+   },
+   "rule": {
+    "ja": {
+     "id": "R8a9189af0e",
+     "date": "2026-07-07",
+     "label": "改良",
+     "text": "同額口座の複数保有を解禁し、合計配分上限を$400Kに",
+     "listed": 6,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-07-07",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R8a9189af0e",
+     "date": "2026-07-07",
+     "label": "Improvement",
+     "text": "Multiple accounts of the same size are allowed, with an aggregate allocation cap of $400K.",
+     "listed": 6,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-07-07",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R8a9189af0e",
+     "date": "2026-07-07",
+     "label": "개선",
+     "text": "같은 규모의 계좌를 여러 개 보유할 수 있게 됐으며 총 배정 상한은 $400K입니다.",
+     "listed": 6,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-07-07",
+     "text_fixed": false
+    }
+   }
+  },
+  "hypernova-onchain": {
+   "dir": "hypernova-onchain",
+   "overall": 73.9,
+   "rank": 3,
+   "reviews": {
+    "total": 16,
+    "public_730_posts": 16,
+    "in_window_posts": 16,
+    "positive": 16,
+    "mixed": 0,
+    "negative": 0,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 11,
+    "received": 11,
+    "refused": 0
+   },
+   "rule": {
+    "ja": {
+     "id": "R6316a36561",
+     "date": "2026-10-14",
+     "label": "改良",
+     "text": "最大資金を$300kに、暗号資産のレバレッジを10倍に引き上げ",
+     "listed": 4,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-14",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R6316a36561",
+     "date": "2026-10-14",
+     "label": "Improvement",
+     "text": "Maximum funding rises to $300K and crypto leverage to 10×.",
+     "listed": 4,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-14",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R6316a36561",
+     "date": "2026-10-14",
+     "label": "개선",
+     "text": "최대 제공 자금은 $300K, 암호자산 레버리지는 10배로 높아졌습니다.",
+     "listed": 4,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-14",
+     "text_fixed": false
+    }
+   }
+  },
+  "icfunded-fx-cfd": {
+   "dir": "icfunded-fx-cfd",
+   "overall": 68.55,
+   "rank": 6,
+   "reviews": {
+    "total": 1,
+    "public_730_posts": 1,
+    "in_window_posts": 1,
+    "positive": 1,
+    "mixed": 0,
+    "negative": 0,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 1,
+    "received": 1,
+    "refused": 0
+   },
+   "rule": {
+    "ja": null,
+    "en": null,
+    "ko": null
+   }
+  },
+  "instantfunding-fx-cfd": {
+   "dir": "instantfunding-fx-cfd",
+   "overall": 53.66,
+   "rank": 20,
+   "reviews": {
+    "total": 16,
+    "public_730_posts": 16,
+    "in_window_posts": 16,
+    "positive": 8,
+    "mixed": 0,
+    "negative": 8,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 17,
+    "received": 14,
+    "refused": 3
+   },
+   "rule": {
+    "ja": {
+     "id": "R0eb05ea7ad",
+     "date": "2026-10",
+     "label": "中立",
+     "text": "一般規約PDF更新（2026年10月アップロード版、日付はURLパス由来）",
+     "listed": 2,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R0eb05ea7ad",
+     "date": "2026-10",
+     "label": "Neutral",
+     "text": "General terms PDF updated (October 2026 upload; the date comes from the URL path).",
+     "listed": 2,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R0eb05ea7ad",
+     "date": "2026-10",
+     "label": "중립",
+     "text": "일반 약관 PDF 갱신(2026년 10월 업로드본, 날짜는 URL 경로에서 확인).",
+     "listed": 2,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10",
+     "text_fixed": false
+    }
+   }
+  },
+  "monetafunded-fx-cfd": {
+   "dir": "monetafunded-fx-cfd",
+   "overall": 62.94,
+   "rank": 11,
+   "reviews": {
+    "total": 39,
+    "public_730_posts": 39,
+    "in_window_posts": 39,
+    "positive": 31,
+    "mixed": 1,
+    "negative": 7,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 15,
+    "received": 13,
+    "refused": 1
+   },
+   "rule": {
+    "ja": {
+     "id": "Rf5a452adf3",
+     "date": "2026-10-12",
+     "label": "改悪",
+     "text": "1-Step刷新：トレーリングDD5%・同一銘柄含み損1%で失格、価格値上げ（新商品として提供）",
+     "listed": 4,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-12",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "Rf5a452adf3",
+     "date": "2026-10-12",
+     "label": "Adverse change",
+     "text": "1-Step is relaunched as a new product with 5% trailing drawdown, disqualification at 1% floating loss in one instrument, and a higher price.",
+     "listed": 4,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-12",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "Rf5a452adf3",
+     "date": "2026-10-12",
+     "label": "불리한 변경",
+     "text": "1-Step이 새 상품으로 재출시됐으며 트레일링 드로다운 5%, 한 종목의 미실현 손실 1%에서 실격, 가격이 인상됐습니다.",
+     "listed": 4,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-12",
+     "text_fixed": true
+    }
+   }
+  },
+  "pipfarm-fx-cfd": {
+   "dir": "pipfarm-fx-cfd",
+   "overall": 48.27,
+   "rank": 23,
+   "reviews": {
+    "total": 190,
+    "public_730_posts": 190,
+    "in_window_posts": 190,
+    "positive": 80,
+    "mixed": 21,
+    "negative": 89,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 89,
+    "received": 77,
+    "refused": 7
+   },
+   "rule": {
+    "ja": {
+     "id": "Rb127a7b817",
+     "date": "2026-10-30",
+     "label": "改悪",
+     "text": "Pay with Profits（PWP）を変更（10/30 以降の購入分）：①挑戦中の日次損失（Daily Loss）も段の判定に加え、Max Loss・Max Risk・日次損失の一番悪いもので段が決まる（3つのうち最悪）②資金口座の最大日次損失を段ごとに（Very Low 1%・Low 2%・Moderate 3%・High 4%・Very High 5%。前は全段5%）③資金口座の Max Risk を高い段ほど狭く（High 2→1.5%、Very High 3→1%）④合格時に自分で高い段を選ぶ選択肢を廃止（前は上の段へ1回だけ選べた）",
+     "listed": 7,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-30",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "Rb127a7b817",
+     "date": "2026-10-30",
+     "label": "Adverse change",
+     "text": "Pay with Profits (PWP) changes (for purchases from Oct 30): (1) the daily loss during the challenge now also counts toward the tier, which is set by the worst of Max Loss, Max Risk and daily loss; (2) the funded account’s max daily loss now depends on the tier (Very Low 1%, Low 2%, Moderate 3%, High 4%, Very High 5%; previously 5% for all tiers); (3) funded Max Risk is narrower for higher tiers (High 2→1.5%, Very High 3→1%); (4) the option to choose a higher tier yourself when passing was removed (previously you could move up one tier once).",
+     "listed": 7,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-30",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "Rb127a7b817",
+     "date": "2026-10-30",
+     "label": "불리한 변경",
+     "text": "Pay with Profits(PWP) 변경(10월 30일 이후 구매분): ① 챌린지 중 일일 손실(Daily Loss)도 단계 판정에 포함되어 Max Loss·Max Risk·일일 손실 중 가장 나쁜 값으로 단계가 정해짐 ② 펀딩 계좌의 최대 일일 손실을 단계별로(Very Low 1%·Low 2%·Moderate 3%·High 4%·Very High 5%, 이전에는 전 단계 5%) ③ 펀딩 계좌의 Max Risk를 높은 단계일수록 좁게(High 2→1.5%, Very High 3→1%) ④ 합격 시 스스로 높은 단계를 고르는 선택지 폐지(이전에는 한 단계 위로 1회 선택 가능).",
+     "listed": 7,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-30",
+     "text_fixed": false
+    }
+   }
+  },
+  "propr-onchain": {
+   "dir": "propr-onchain",
+   "overall": 71.24,
+   "rank": 5,
+   "reviews": {
+    "total": 35,
+    "public_730_posts": 35,
+    "in_window_posts": 35,
+    "positive": 18,
+    "mixed": 10,
+    "negative": 7,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 5,
+    "received": 5,
+    "refused": 0
+   },
+   "rule": {
+    "ja": {
+     "id": "R26591f442b",
+     "date": "2026-10-26",
+     "label": "改良",
+     "text": "ルールブック「Anti-Farming & Anti-Gaming Rules」（禁止行為）から「Switching trading approach after passing」（合格後の手法変更：評価で使った手法を、ファンデッド後に切り替えること）の項目を削除。R31145941d7 で追加された3項目のうち①だけが消え、②アカウント共有・同じ場所からの複数口座、③再現困難・高リスクの戦略は残っている",
+     "listed": 5,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-26",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R26591f442b",
+     "date": "2026-10-26",
+     "label": "Improvement",
+     "text": "The item “Switching trading approach after passing” (switching to a different method after the evaluation) was removed from the rulebook’s Anti-Farming & Anti-Gaming Rules. Of the three items added in R31145941d7, only this one was removed; the bans on account sharing / multiple accounts from the same location and on hard-to-replicate high-risk strategies remain.",
+     "listed": 5,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-26",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R26591f442b",
+     "date": "2026-10-26",
+     "label": "개선",
+     "text": "룰북의 「Anti-Farming & Anti-Gaming Rules」(금지 행위)에서 「Switching trading approach after passing」(합격 후 평가 때와 다른 매매 방식으로 바꾸는 것) 항목이 삭제되었습니다. R31145941d7에서 추가된 3개 항목 중 이 항목만 삭제되었고, 계정 공유·같은 장소에서의 복수 계정, 재현이 어려운 고위험 전략의 금지는 그대로입니다.",
+     "listed": 5,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-26",
+     "text_fixed": false
+    }
+   }
+  },
+  "superfunded-fx-cfd": {
+   "dir": "superfunded-fx-cfd",
+   "overall": 54.26,
+   "rank": 19,
+   "reviews": {
+    "total": 46,
+    "public_730_posts": 46,
+    "in_window_posts": 46,
+    "positive": 32,
+    "mixed": 3,
+    "negative": 11,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 16,
+    "received": 11,
+    "refused": 3
+   },
+   "rule": {
+    "ja": {
+     "id": "R1c7d720ab3",
+     "date": "2026-10-22",
+     "label": "改良",
+     "text": "「マーチンゲール」の定義から「損失後にポジションサイズを維持する」が外れ、損失後にサイズを段階的・積極的・指数的に増やす取引だけが対象になりました。",
+     "listed": 13,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-22",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R1c7d720ab3",
+     "date": "2026-10-22",
+     "label": "Improvement",
+     "text": "“Maintaining position size after losses” was removed from the definition of Martingale; only trading that progressively, aggressively or exponentially increases size after losses is covered.",
+     "listed": 13,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-22",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R1c7d720ab3",
+     "date": "2026-10-22",
+     "label": "개선",
+     "text": "‘마틴게일’ 정의에서 ‘손실 후 포지션 크기 유지’가 빠지고, 손실 후 크기를 단계적·공격적·기하급수적으로 늘리는 거래만 대상이 되었습니다.",
+     "listed": 13,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-22",
+     "text_fixed": false
+    }
+   }
+  },
+  "the5ers-fx-cfd": {
+   "dir": "the5ers-fx-cfd",
+   "overall": 56.69,
+   "rank": 17,
+   "reviews": {
+    "total": 184,
+    "public_730_posts": 184,
+    "in_window_posts": 184,
+    "positive": 110,
+    "mixed": 17,
+    "negative": 57,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 131,
+    "received": 119,
+    "refused": 8
+   },
+   "rule": {
+    "ja": {
+     "id": "R25248ea7d8",
+     "date": "2026-10-31",
+     "label": "改悪",
+     "text": "サマープラン：資金口座の一貫性スコアを口座全体の総利益で見る方式から、出金ごとにリセットする方式に変更。既存の資金口座にも即時適用",
+     "listed": 10,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-31",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R25248ea7d8",
+     "date": "2026-10-31",
+     "label": "Adverse change",
+     "text": "Summer plans: the funded account’s consistency score changed from being calculated on the account’s total profit to being reset with each payout. Applied immediately to existing funded accounts as well.",
+     "listed": 10,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-31",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R25248ea7d8",
+     "date": "2026-10-31",
+     "label": "불리한 변경",
+     "text": "서머 플랜: 펀딩 계좌의 일관성 점수를 계좌 전체 총이익 기준이 아니라 출금할 때마다 초기화해서 계산하는 방식으로 바뀌었습니다. 기존 펀딩 계좌에도 즉시 적용됩니다.",
+     "listed": 10,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-31",
+     "text_fixed": false
+    }
+   }
+  },
+  "thinkcapital-fx-cfd": {
+   "dir": "thinkcapital-fx-cfd",
+   "overall": 59.26,
+   "rank": null,
+   "reviews": {
+    "total": 45,
+    "public_730_posts": 45,
+    "in_window_posts": 45,
+    "positive": 22,
+    "mixed": 8,
+    "negative": 15,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 11,
+    "received": 10,
+    "refused": 1
+   },
+   "rule": {
+    "ja": {
+     "id": "R743752c9ac",
+     "date": "2026-10-05",
+     "label": "改良",
+     "text": "Instant Funding価格：約20%値下げ（$10K $159→$127、$50K $599→$479、$2.5K $49→$39）",
+     "listed": 7,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-05",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R743752c9ac",
+     "date": "2026-10-05",
+     "label": "Improvement",
+     "text": "Instant Funding prices fall by about 20%: $10K $159→$127, $50K $599→$479, and $2.5K $49→$39.",
+     "listed": 7,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-05",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R743752c9ac",
+     "date": "2026-10-05",
+     "label": "개선",
+     "text": "Instant Funding 가격이 약 20% 인하됐습니다($10K $159→$127, $50K $599→$479, $2.5K $49→$39).",
+     "listed": 7,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-05",
+     "text_fixed": false
+    }
+   }
+  },
+  "tradeifyfx-fx-cfd": {
+   "dir": "tradeifyfx-fx-cfd",
+   "overall": 59.75,
+   "rank": 14,
+   "reviews": {
+    "total": 36,
+    "public_730_posts": 36,
+    "in_window_posts": 36,
+    "positive": 27,
+    "mixed": 1,
+    "negative": 8,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 18,
+    "received": 15,
+    "refused": 1
+   },
+   "rule": {
+    "ja": null,
+    "en": null,
+    "ko": null
+   }
+  },
+  "tradingcult-fx-cfd": {
+   "dir": "tradingcult-fx-cfd",
+   "overall": 33.13,
+   "rank": 30,
+   "reviews": {
+    "total": 30,
+    "public_730_posts": 30,
+    "in_window_posts": 30,
+    "positive": 12,
+    "mixed": 4,
+    "negative": 14,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 5,
+    "received": 0,
+    "refused": 4
+   },
+   "rule": {
+    "ja": {
+     "id": "Rd056c4efb0",
+     "date": "2026-10-21",
+     "label": "改悪",
+     "text": "1回の取引リスク：一般の禁止事項に数値の上限なし→同じ銘柄・同じ方向の合計リスクは初期残高の2%まで（SL到達時の損失で計算。超えると口座違反）。2026-10-21以降に購入した評価から（当初は10/20と告知、公式が10/22に10/21へ訂正）（それより前の評価は旧ルール）",
+     "listed": 6,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-21",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "Rd056c4efb0",
+     "date": "2026-10-21",
+     "label": "Adverse change",
+     "text": "Risk per trade: no numeric cap in the general prohibited practices → total risk on the same instrument in the same direction is limited to 2% of the initial balance (calculated as the loss at the stop loss; exceeding it is an account violation). Applies to evaluations bought on or after 2026-10-21 (first announced as 20 Oct; the firm corrected it to 21 Oct on 22 Oct) (earlier evaluations keep the old rules).",
+     "listed": 6,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-21",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "Rd056c4efb0",
+     "date": "2026-10-21",
+     "label": "불리한 변경",
+     "text": "1회 거래 리스크: 일반 금지 사항에 수치 상한 없음 → 같은 종목·같은 방향의 합계 리스크는 초기 잔고의 2%까지(SL 도달 시 손실로 계산, 초과하면 계좌 위반). 2026-10-21 이후 구매한 평가부터 적용(처음에는 10/20로 공지, 공식이 10/22에 10/21로 정정)(이전 평가는 기존 규칙).",
+     "listed": 6,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-10-21",
+     "text_fixed": false
+    }
+   }
+  },
+  "tradingpit-fx-cfd": {
+   "dir": "tradingpit-fx-cfd",
+   "overall": 52.92,
+   "rank": 21,
+   "reviews": {
+    "total": 6,
+    "public_730_posts": 6,
+    "in_window_posts": 6,
+    "positive": 0,
+    "mixed": 0,
+    "negative": 6,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 3,
+    "received": 2,
+    "refused": 0
+   },
+   "rule": {
+    "ja": {
+     "id": "R594cfd058f",
+     "date": "2026-07",
+     "label": "改悪",
+     "text": "大口口座：一貫性ルールなし→最良日がプラス日の利益合計の50%以下（7月上旬以降購入分）",
+     "listed": 3,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-07",
+     "text_fixed": false
+    },
+    "en": {
+     "id": "R594cfd058f",
+     "date": "2026-07",
+     "label": "Adverse change",
+     "text": "Large accounts: no consistency rule changes to a requirement that the best day account for no more than 50% of total profits on profitable days, for purchases from early July onward.",
+     "listed": 3,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-07",
+     "text_fixed": false
+    },
+    "ko": {
+     "id": "R594cfd058f",
+     "date": "2026-07",
+     "label": "불리한 변경",
+     "text": "대형 계좌: 일관성 규칙 없음에서 최고 수익일의 수익이 플러스 수익일 총이익의 50% 이하여야 하는 규칙으로 바뀝니다(7월 상순 이후 구매분).",
+     "listed": 3,
+     "timeline_pos": 0,
+     "selected_by": "max record date (y,m,d; day-less=0), tie=earlier in timeline",
+     "first_in_timeline": "2026-07",
+     "text_fixed": false
+    }
+   }
+  },
+  "upcomers-fx-cfd": {
+   "dir": "upcomers-fx-cfd",
+   "overall": 32.02,
+   "rank": 31,
+   "reviews": {
+    "total": 51,
+    "public_730_posts": 51,
+    "in_window_posts": 51,
+    "positive": 17,
+    "mixed": 3,
+    "negative": 31,
+    "end": "2026-11-21",
+    "other_sentiment": []
+   },
+   "reports": {
+    "report_count": 47,
+    "received": 20,
+    "refused": 19
+   },
+   "rule": {
+    "ja": null,
+    "en": null,
+    "ko": null
+   }
+  }
+ },
+ "new_pages": [
+  "companies/index.html",
+  "en/companies/index.html",
+  "ko/companies/index.html",
+  "compare/index.html"
+ ],
+ "sitemap": {
+  "urls": 178,
+  "changed": [
+   [
+    "https://propchecklab.com/companies/ftmo-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/the5ers-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/fundednext-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/fundingpips-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/e8-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/alpha-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/fxify-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/blueguardian-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/fundedelite-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/goat-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/thinkcapital-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/brightfunded-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/fundedtradingplus-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/instantfunding-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/tradingpit-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/fintokei-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/fundingtraders-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/propr-onchain/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/hypernova-onchain/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/rzr-funded/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/rzr-funded/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/fundedhive-onchain/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/pipfarm-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/fundedtradermarkets-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/funded7-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/tradingcult-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/blueberry-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/fundora-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/monetafunded-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/superfunded-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/icfunded-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/ftmo-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/the5ers-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/fundednext-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/fundingpips-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/e8-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/alpha-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/fxify-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/blueguardian-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/fundedelite-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/goat-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/thinkcapital-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/brightfunded-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/fundedtradingplus-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/instantfunding-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/tradingpit-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/fintokei-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/fundingtraders-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/propr-onchain/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/hypernova-onchain/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/rzr-funded/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/fundedhive-onchain/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/pipfarm-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/fundedtradermarkets-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/funded7-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/tradingcult-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/blueberry-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/fundora-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/monetafunded-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/superfunded-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/icfunded-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/alpha-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/blueberry-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/blueguardian-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/brightfunded-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/e8-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/fintokei-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/ftmo-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/funded7-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/fundedelite-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/fundedhive-onchain/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/fundednext-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/fundedtradermarkets-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/fundedtradingplus-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/fundingpips-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/fundingtraders-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/fundora-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/fxify-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/goat-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/hypernova-onchain/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/icfunded-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/instantfunding-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/monetafunded-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/pipfarm-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/propr-onchain/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/superfunded-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/the5ers-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/thinkcapital-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/tradingcult-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/tradingpit-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/tradeifyfx-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/tradeifyfx-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/tradeifyfx-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/eightcapchallenges-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/eightcapchallenges-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/eightcapchallenges-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/upcomers-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/upcomers-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/en/companies/upcomers-fx-cfd/",
+    "2026-11-27",
+    "2026-11-27",
+    "content changed"
+   ],
+   [
+    "https://propchecklab.com/companies/",
+    "2026-11-27",
+    "2026-11-27",
+    "new page"
+   ],
+   [
+    "https://propchecklab.com/en/companies/",
+    "2026-11-27",
+    "2026-11-27",
+    "new page"
+   ],
+   [
+    "https://propchecklab.com/ko/companies/",
+    "2026-11-27",
+    "2026-11-27",
+    "new page"
+   ],
+   [
+    "https://propchecklab.com/compare/",
+    "2026-11-27",
+    "2026-11-27",
+    "new page"
+   ]
+  ]
+ },
+ "written": [
+  "companies/alpha-fx-cfd/index.html",
+  "en/companies/alpha-fx-cfd/index.html",
+  "ko/companies/alpha-fx-cfd/index.html",
+  "en/companies/blueberry-fx-cfd/index.html",
+  "en/companies/blueguardian-fx-cfd/index.html",
+  "en/companies/brightfunded-fx-cfd/index.html",
+  "en/companies/e8-fx-cfd/index.html",
+  "en/companies/eightcapchallenges-fx-cfd/index.html",
+  "en/companies/fintokei-fx-cfd/index.html",
+  "en/companies/ftmo-fx-cfd/index.html",
+  "en/companies/funded7-fx-cfd/index.html",
+  "en/companies/fundedelite-fx-cfd/index.html",
+  "en/companies/fundedhive-onchain/index.html",
+  "en/companies/fundednext-fx-cfd/index.html",
+  "companies/fundedtradermarkets-fx-cfd/index.html",
+  "en/companies/fundedtradermarkets-fx-cfd/index.html",
+  "ko/companies/fundedtradermarkets-fx-cfd/index.html",
+  "en/companies/fundedtradingplus-fx-cfd/index.html",
+  "ko/companies/fundedtradingplus-fx-cfd/index.html",
+  "en/companies/fundingpips-fx-cfd/index.html",
+  "en/companies/fundingtraders-fx-cfd/index.html",
+  "en/companies/fundora-fx-cfd/index.html",
+  "en/companies/fxify-fx-cfd/index.html",
+  "en/companies/goat-fx-cfd/index.html",
+  "en/companies/rzr-funded/index.html",
+  "en/companies/hypernova-onchain/index.html",
+  "en/companies/icfunded-fx-cfd/index.html",
+  "en/companies/instantfunding-fx-cfd/index.html",
+  "en/companies/monetafunded-fx-cfd/index.html",
+  "ko/companies/monetafunded-fx-cfd/index.html",
+  "en/companies/pipfarm-fx-cfd/index.html",
+  "en/companies/propr-onchain/index.html",
+  "en/companies/superfunded-fx-cfd/index.html",
+  "en/companies/the5ers-fx-cfd/index.html",
+  "en/companies/thinkcapital-fx-cfd/index.html",
+  "ko/companies/thinkcapital-fx-cfd/index.html",
+  "en/companies/tradeifyfx-fx-cfd/index.html",
+  "en/companies/tradingcult-fx-cfd/index.html",
+  "en/companies/tradingpit-fx-cfd/index.html",
+  "en/companies/upcomers-fx-cfd/index.html",
+  "compare/index.html"
+ ]
+}

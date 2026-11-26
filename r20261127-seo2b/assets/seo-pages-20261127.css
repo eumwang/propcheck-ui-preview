@@ -1,0 +1,23 @@
+/* PROP CHECK 会社一覧・比較ページ（2026-11-27）。この2種類のページだけで読み込む。 */
+.pc-seo-page{max-width:880px}
+.pc-seo-page .pc-seo-lead,.pc-seo-page .pc-seo-dates{color:#4b5852;font-size:14px;line-height:1.7;margin:0 0 14px}
+.pc-seo-page .pc-seo-more{margin:0 0 18px;font-size:14px}
+.pc-seo-page .pc-seo-more a,.pc-seo-page .pc-seo-table a{color:#126d4f;font-weight:700;text-decoration:none}
+.pc-seo-page .pc-seo-table a:hover,.pc-seo-page .pc-seo-more a:hover{text-decoration:underline}
+.pc-seo-table{width:100%;border-collapse:collapse;table-layout:auto;background:#fff;border:1px solid #d8e7e1;border-radius:12px;overflow:hidden;font-size:14px;line-height:1.45}
+.pc-seo-table th,.pc-seo-table td{padding:8px 10px;border-top:1px solid #edf1ef;text-align:left;vertical-align:middle;overflow-wrap:anywhere}
+.pc-seo-table thead th{background:#f4f8f6;color:#4b5852;font-size:12.5px;font-weight:700;border-top:0}
+.pc-seo-table .pc-seo-num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.pc-seo-table .pc-seo-note{color:#6b7770;font-size:12.5px}
+.pc-seo-page p.pc-seo-note{color:#6b7770;font-size:12.5px;line-height:1.6;margin:10px 0 0}
+.pc-seo-page .pc-seo-axes{margin:0;padding-left:1.2em;line-height:1.7;font-size:14px}
+.pc-seo-page .pc-seo-slot{margin:14px 0;padding:12px 14px;border:1px dashed #bfc6ca;border-radius:10px;background:#f6f7f7;color:#4b5852;font-size:13.5px}
+@media (max-width:600px){
+ .pc-seo-table{font-size:12.5px}
+ .pc-seo-table th,.pc-seo-table td{padding:6px 5px}
+ .pc-seo-table thead th{font-size:11px}
+ .pc-seo-compare{font-size:11.5px}
+ .pc-seo-compare th,.pc-seo-compare td{padding:6px 3px}
+ .pc-seo-compare thead th{font-size:10px;white-space:normal}
+ .pc-seo-compare .pc-seo-num{white-space:normal}
+}

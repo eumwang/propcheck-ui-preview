@@ -1,0 +1,5 @@
+
+/* Local visual candidate: larger section numbers beside existing titles. */
+.section > .num{float:left;font-size:clamp(22px,2.1vw,27px);line-height:1.55;font-weight:700;letter-spacing:.04em;margin:6px 16px 0 0;font-variant-numeric:tabular-nums}
+.section > h2{overflow:hidden}
+@media(max-width:620px){.section > .num{margin-right:12px;margin-top:5px}}
