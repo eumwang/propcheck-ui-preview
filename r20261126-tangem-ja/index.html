@@ -468,6 +468,68 @@ body{margin:0}
   }
 }
 
+/* Compact mobile tables (20261126-2): all tables stay real tables, not stacked cards. */
+@media (max-width: 720px){
+  .kp-article .table-scroll{overflow-x:visible}
+  .kp-article table{
+    min-width:0 !important;
+    width:100%;
+    table-layout:fixed;
+    font-size:.78rem;
+    line-height:1.4;
+  }
+  .kp-article thead{
+    all:revert;
+  }
+  .kp-article thead th{
+    white-space:normal;
+    font-size:.72rem;
+    font-weight:700;
+    line-height:1.35;
+    padding:.4rem .28rem;
+    overflow-wrap:anywhere;
+    background:color-mix(in srgb, var(--accent) 14%, var(--surface));
+    color:var(--ink);
+    border-bottom:1px solid var(--rule);
+    text-align:left;
+    vertical-align:top;
+  }
+  .kp-article table tbody tr{
+    display:table-row;
+    background:transparent;
+    border:0;
+    border-radius:0;
+    padding:0;
+    margin:0;
+  }
+  .kp-article th,.kp-article td{
+    display:table-cell;
+    width:auto;
+    border-bottom:1px solid var(--rule);
+    padding:.4rem .28rem;
+    overflow-wrap:anywhere;
+    word-break:break-word;
+    text-align:left;
+    vertical-align:top;
+  }
+  .kp-article tbody td:first-child{
+    font-weight:700;
+    font-size:.78rem;
+    line-height:1.4;
+    padding:.4rem .28rem;
+    margin:0;
+    border-bottom:1px solid var(--rule);
+  }
+  .kp-article tbody td[data-label]:not(:first-child)::before{
+    content:none !important;
+    display:none !important;
+    margin:0;
+  }
+  .kp-article table.kp-tight td:first-child{white-space:normal}
+  .kp-article table.kp-tight tbody td:first-child,
+  .kp-article table.kp-tight thead th:first-child{width:5.6rem}
+}
+
 </style>
 </head>
 <body>
