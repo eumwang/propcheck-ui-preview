@@ -1,0 +1,341 @@
+<!doctype html><html lang="en"><head><meta name="robots" content="noindex,nofollow"><script id="pc-preview-guard">(()=>{const root='/propcheck-ui-preview/r20261127-tangem-thumb-enko/';const map=u=>{if(typeof u==='string'&&u.startsWith(location.origin+'/'))u=u.slice(location.origin.length);if(typeof u!=='string'||!u.startsWith('/')||u.startsWith('//')||u.startsWith('/propcheck-ui-preview/'))return u;return root+u.slice(1);};const nf=window.fetch.bind(window);window.fetch=(i,o)=>{const m=(o?.method||((i instanceof Request)&&i.method)||'GET').toUpperCase();if(m!=='GET'&&m!=='HEAD')return Promise.reject(new Error('Preview: submissions disabled'));return nf(typeof i==='string'?map(i):(i instanceof URL?map(i.href):(i instanceof Request&&map(i.url)!==i.url?new Request(map(i.url),i):i)),o);};const xo=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(m,u,...r){if(!['GET','HEAD'].includes(String(m).toUpperCase()))throw new Error('Preview: submissions disabled');return xo.call(this,m,map(u instanceof URL?u.href:u),...r);};try{navigator.sendBeacon=()=>false}catch(_e){}document.addEventListener('submit',e=>{e.preventDefault();e.stopImmediatePropagation();},true);const fix=n=>{if(n.nodeType!==1)return;for(const it of [n,...n.querySelectorAll('a[href],img[src],source[src],link[href],script[src]')])for(const k of ['href','src']){const v=it.getAttribute(k);if(v&&map(v)!==v)it.setAttribute(k,map(v));}};new MutationObserver(es=>{for(const e of es){if(e.type==='attributes')fix(e.target);else for(const n of e.addedNodes)fix(n);}}).observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:['href','src']});const si=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,'src');Object.defineProperty(HTMLImageElement.prototype,'src',{get(){return si.get.call(this)},set(v){si.set.call(this,map(String(v)))},configurable:true});document.addEventListener('DOMContentLoaded',()=>{for(const f of document.forms){f.removeAttribute('data-netlify');f.method='get';f.action='#';}fix(document.body);});})();</script><!-- preview: GA4 loader removed --><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-6QHP92GKS1');</script><script defer src="/propcheck-ui-preview/r20261127-tangem-thumb-enko/assets/ga4-events-20261126.js"></script><script src="/propcheck-ui-preview/r20261127-tangem-thumb-enko/perf-data/d63e313d4c1f85d0fb8d86d8.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="index,follow"><title>Which Prop Firm Models Can Survive? | Comparing Propr’s Hedging Losses and Payout Mechanisms — PROP CHECK</title><meta name="description" content="Using Propr, which lost about $1.61 million on hedging in November, as the example, I split prop firms into traditional, switching (FundedHive) and partial-hedge (Propr, Hypernova) models and compared where their payout money comes from and how easily each one breaks."><link rel="canonical" href="https://propchecklab.com/en/articles/prop-firm-survival-models/"><link rel="alternate" hreflang="ja" href="https://propchecklab.com/articles/prop-firm-survival-models/"><link rel="alternate" hreflang="en" href="https://propchecklab.com/en/articles/prop-firm-survival-models/"><link rel="alternate" hreflang="ko" href="https://propchecklab.com/ko/articles/prop-firm-survival-models/"><link rel="alternate" hreflang="x-default" href="https://propchecklab.com/articles/prop-firm-survival-models/"><meta property="og:type" content="article"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="PROP CHECK"><meta property="og:title" content="Which Prop Firm Models Can Survive? | Comparing Propr’s Hedging Losses and Payout Mechanisms — PROP CHECK"><meta property="og:description" content="Using Propr, which lost about $1.61 million on hedging in November, as the example, I split prop firms into traditional, switching (FundedHive) and partial-hedge (Propr, Hypernova) models and compared where their payout money comes from and how easily each one breaks."><meta property="og:url" content="https://propchecklab.com/en/articles/prop-firm-survival-models/"><meta property="og:image" content="https://propchecklab.com/assets/articles/prop-firm-survival-models/thumb-survive-model-en-20261127.png"><meta property="og:image:width" content="880"><meta property="og:image:height" content="495"><meta property="og:image:alt" content="Which Prop Firm Models Can Survive?"><meta property="article:published_time" content="2026-11-26"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Which Prop Firm Models Can Survive? | Comparing Propr’s Hedging Losses and Payout Mechanisms — PROP CHECK"><meta name="twitter:description" content="Using Propr, which lost about $1.61 million on hedging in November, as the example, I split prop firms into traditional, switching (FundedHive) and partial-hedge (Propr, Hypernova) models and compared where their payout money comes from and how easily each one breaks."><meta name="twitter:image" content="https://propchecklab.com/assets/articles/prop-firm-survival-models/thumb-survive-model-en-20261127.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Which Prop Firm Models Can Survive?","description":"Using Propr, which lost about $1.61 million on hedging in November, as the example, I split prop firms into traditional, switching (FundedHive) and partial-hedge (Propr, Hypernova) models and compared where their payout money comes from and how easily each one breaks.","url":"https://propchecklab.com/en/articles/prop-firm-survival-models/","mainEntityOfPage":"https://propchecklab.com/en/articles/prop-firm-survival-models/","inLanguage":"en","datePublished":"2026-11-26","dateModified":"2026-11-26","image":"https://propchecklab.com/assets/articles/prop-firm-survival-models/thumb-survive-model-en-20261127.png","author":{"@type":"Person","name":"PONCHAI"},"publisher":{"@type":"Organization","name":"PROP CHECK","logo":{"@type":"ImageObject","url":"https://propchecklab.com/assets/propcheck-logo-r20261020.webp"}}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"PROP CHECK","item":"https://propchecklab.com/en/"},{"@type":"ListItem","position":2,"name":"Articles","item":"https://propchecklab.com/en/articles/"},{"@type":"ListItem","position":3,"name":"Which Prop Firm Models Can Survive?","item":"https://propchecklab.com/en/articles/prop-firm-survival-models/"}]}</script><link rel="icon" href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/apple-touch-icon.png"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/w7-header.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/assets/header-x-link-20261017.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/assets/footer-reference-20261018.css">
+<style>/* 記事ページのみ: 本番ヘッダーを390pxで本番と同じく折り返す */@media(max-width:700px){.site-header nav>a{white-space:normal!important;font-size:11px!important;line-height:1.25!important;text-align:center}.site-header nav{gap:4px 8px!important}}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@700&display=swap"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/assets/guide-back-btn-20261019.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/assets/article-crumb-back-20261111.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/assets/article-kp-crumb-align-20261111.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/assets/article-kp-survive-model-20261127.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/assets/article-kp-survive-model-enko-20261127.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/assets/article-chrome-20261111.css"></head><body><header class="site-header"><div class="header-row"><a class="site-brand site-brand-logo" href="../../../en/"><img src="/propcheck-ui-preview/r20261127-tangem-thumb-enko/assets/propcheck-logo-r20261020.webp" alt="PROP CHECK"></a><nav aria-label="Site menu"><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/#featured">Featured 4</a><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/#comparison">Compare 31</a><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/report/">Information Center</a><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/guides/" title="All firm guides" hreflang="en">Firm guides</a><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/articles/">Articles</a><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/methodology/">Methodology</a><a class="pc-x-link" href="https://x.com/PropCheck_EN" target="_blank" rel="noopener noreferrer" aria-label="PROP CHECK on X (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><details class="language-menu" data-language-menu><summary aria-label="Choose language (current: English)" aria-expanded="false"><svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#012169"/><path d="M0 0l30 20M30 0L0 20" stroke="#fff" stroke-width="5"/><path d="M0 0l30 20M30 0L0 20" stroke="#c8102e" stroke-width="2"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6"/><path d="M15 0v20M0 10h30" stroke="#c8102e" stroke-width="3"/></svg><span class="language-menu-chevron" aria-hidden="true">⌄</span><span class="visually-hidden">English</span></summary><div class="language-menu-list" role="menu"><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/articles/prop-firm-survival-models/" role="menuitem"><svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="6" fill="#bc002d"/></svg><span>日本語</span></a><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/articles/prop-firm-survival-models/" role="menuitem" aria-current="page"><svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#012169"/><path d="M0 0l30 20M30 0L0 20" stroke="#fff" stroke-width="5"/><path d="M0 0l30 20M30 0L0 20" stroke="#c8102e" stroke-width="2"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6"/><path d="M15 0v20M0 10h30" stroke="#c8102e" stroke-width="3"/></svg><span>English</span></a><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/ko/articles/prop-firm-survival-models/" role="menuitem"><svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><path d="M10 10a5 5 0 0 1 10 0z" fill="#cd2e3a"/><path d="M10 10a5 5 0 0 0 10 0z" fill="#0047a0"/><path d="M5 5l4-2M5.8 7l4-2M21 15l4-2M20.2 13l4-2" stroke="#111" stroke-width="1"/></svg><span>한국어</span></a></div></details></nav></div></header><main class="kp-page"><div class="crumb"><a class="pc-guide-back" href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/articles/">← Articles</a></div><article class="kp-article" lang="en">
+<h1><span style="display:inline-block">Which Prop Firm Models</span> <span style="display:inline-block">Can Survive?</span></h1>
+<p class="kp-subtitle kp-subtitle-mark"><span class="kp-sub-part">Starting from Propr’s failure,</span> <span class="kp-sub-part">I compared three models</span></p>
+<p class="kp-byline"><span class="kp-pr">Advertisement</span><time datetime="2026-11-26">November 26, 2026</time><span>PONCHAI (<a href="https://propchecklab.com/en/">PROP CHECK</a>)</span></p>
+
+<p>Hi, Ponchai here.</p>
+
+<p>While researching prop firms, one question has kept nagging at me: how long will the price war over challenges go on, and can firms really keep going like this?</p>
+<p>Then in November, a prop firm called Propr <strong>lost about <span class="kp-nw">$1.61 million</span> in a single month</strong>. To prepare for payouts, Propr takes trades in the real market, using the firm’s own money, in the same direction as part of its traders’ orders (hedging). The account it uses for that hedging kept losing as the market fell, and on <span class="kp-nw">November 21</span> its balance ran out.</p>
+<p>Almost no firm discloses what is inside its hedging, so <strong>this is a rare case where outsiders could follow in detail what happened</strong>. Looking at it made the strengths and weaknesses of models with different payout mechanisms much clearer. This time I will compare three models: which situations each one handles well, and which ones it handles badly.</p>
+<div class="kp-box sum">
+<p class="kp-box-head">The short answer</p>
+<div class="sum-rows">
+<div class="sum-row"><div class="sum-name">Traditional<p class="sum-tag">Sustainability in doubt</p></div><p class="sum-text">Relies on new sales. Gets squeezed by the price war, and tends to limit payouts through rules.</p></div>
+<div class="sum-row"><div class="sum-name">Switching<span>e.g., FundedHive</span><p class="sum-tag">WIN-WIN with users</p></div><p class="sum-text">Accounts in profit connect directly to LPs (liquidity providers). Spreads are tight and the trading environment is good. It pays out only profit made in the market, so the firm is happy when users win.</p></div>
+<div class="sum-row"><div class="sum-name">Partial hedge<span>e.g., Propr, Hypernova</span><p class="sum-tag">Most efficient, widest swings</p></div><p class="sum-text">The most efficient in theory. But if it runs without deciding how much it can lose, it can collapse all at once (Propr in November).</p></div>
+</div>
+<div class="sum-survive">
+<p class="sum-sub">Who survives</p>
+<p class="sum-lead">The survivors are the firms that users keep choosing for reliability, transparency and trading environment.</p>
+<dl>
+<div><dt>Traditional</dt><dd>Firms that hold out on the strength of their operator’s reliability (market share or financial backing) and keep being chosen (e.g., FTMO, RZR Funded)</dd></div>
+<div><dt>Switching</dt><dd>Firms that earn trust through a good trading environment and transparent withdrawals and rules, and run as a WIN-WIN with users (e.g., FundedHive)</dd></div>
+<div><dt>Hedge-based</dt><dd>Firms that complete the optimal hedge first to raise their reliability, and are also chosen for transparency, trading environment and price</dd></div>
+</dl>
+<p class="sum-note">All of these assume the firm can buy “time” with its financial strength.</p>
+</div>
+<p class="sum-foot">Users’ peace of mind comes from on-chain transparency and smart contracts. But what they can tell you has limits.</p>
+</div>
+
+<nav class="kp-toc" aria-labelledby="toc-title">
+<p class="kp-toc-title" id="toc-title">Contents</p>
+<ol>
+<li><a href="#three-types"><span>Payout money comes from three types of source</span></a></li>
+<li><a href="#traditional"><span>Traditional: looks cheap, and only works if it keeps selling</span></a></li>
+<li><a href="#switching"><span>Switching: a great trading environment, but stricter rules</span></a></li>
+<li><a href="#partial-hedge"><span>Partial hedge: best in theory, but Propr broke</span></a></li>
+<li><a href="#stress"><span>Putting the three models in the same situations</span></a></li>
+<li><a href="#best-hedge"><span>It comes down to how well the “optimal hedge” gets completed</span></a></li>
+<li><a href="#who-survives"><span>What kind of firm survives</span></a></li>
+<li><a href="#transparency"><span>What reassures users: transparency and smart contracts</span></a></li>
+<li><a href="#summary"><span>Summary: choose a prop firm by “can it keep paying?”</span></a></li>
+<li><a href="#sources"><span>Sources</span></a></li>
+</ol>
+</nav>
+
+<h2 id="three-types" data-n="1"><span>Payout money comes from three types of source</span></h2>
+<p>At a prop firm, <strong>where the payout money comes from depends on whether orders placed after you pass go to the real market</strong>. In the industry, sending orders to the real market is called “A-book,” and handling them in the firm’s own demo environment without sending them to the market is called “B-book.” I will use these terms in this article too.</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">Where payout money comes from depends on whether orders go to the real market</p>
+<p class="rw-legend"><span class="rw-lg"><span class="chip mkt">A-book</span>Traded in the real market</span><span class="rw-lg"><span class="chip int">B-book</span>Handled in the firm’s demo environment</span></p>
+<div class="rws">
+<div class="rw rw-head"><div class="rw-name"></div><p class="rw-lab">Where orders go after passing</p><p class="rw-lab">Source of payout money</p></div>
+<div class="rw"><div class="rw-name"><b>Traditional</b><span>e.g., many firms that don’t disclose their setup</span></div>
+<div class="rw-col"><p><span class="chip int">B-book</span>All</p></div>
+<div class="rw-col"><p class="rw-val">Challenge fees and the firm’s own funds</p></div></div>
+<div class="rw"><div class="rw-name"><b>Switching</b><span>e.g., FundedHive</span></div>
+<div class="rw-col"><p><span class="chip mkt">A-book</span>Accounts in profit</p><p><span class="chip int">B-book</span>Accounts below −1%</p></div>
+<div class="rw-col"><p class="rw-val">Only profit actually made in the market</p></div></div>
+<div class="rw"><div class="rw-name"><b>Partial hedge</b><span>e.g., Propr, Hypernova</span></div>
+<div class="rw-col"><p><span class="chip mkt">A-book</span>The part the firm picks</p><p><span class="chip int">B-book</span>The rest</p></div>
+<div class="rw-col"><p class="rw-val">Challenge fees + profit made in the market</p></div></div>
+</div></div><figcaption>From each firm’s official rules and FAQ. Propr’s hedging account hit <span class="kp-nw">$0</span> on <span class="kp-nw">November 21</span>, so until early 2027 it is effectively “traditional.”</figcaption></figure>
+
+<h2 id="traditional" data-n="2"><span>Traditional: looks cheap, and only works if it keeps selling</span></h2>
+<p>A traditional firm’s income is almost entirely challenge fees. Orders don’t reach the market during the challenge or after you pass, so payouts to winners come out of the challenge fees everyone has paid.</p>
+<p>This works because only a small share of people ever reach a payout. In FPFX Tech’s data covering 10 firms and about 300,000 accounts, <strong>only 7% of the people who bought a challenge received a payout</strong>.</p>
+<p><strong>The problem is that a price war now sits on top of this.</strong> As of April 2026, nine firms were offering 12 discount codes, with discounts from 15% to 90%. Apex Trader Funding even offered a 90%-off code. When revenue per customer falls this far, paying out to the same number of people makes payouts take up a steadily larger share of revenue.</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">The deeper the discount, the larger the share of revenue that disappears into payouts (estimate)</p>
+<p class="hf-quiet">Payouts as a share of revenue, assuming payout amounts stay the same and only revenue shrinks because of discounts</p>
+<div class="pr-row"><b>List price</b><div class="pr-track"><i style="width:26.0%"></i></div><em>26%</em></div>
+<div class="pr-row"><b>30% off</b><div class="pr-track"><i style="width:37.1%"></i></div><em>37%</em></div>
+<div class="pr-row"><b>50% off</b><div class="pr-track"><i style="width:52.0%"></i></div><em>52%</em></div>
+<div class="pr-row"><b>70% off</b><div class="pr-track"><i style="width:86.7%"></i></div><em>87%</em></div>
+<div class="pr-row pr-axis-row"><span></span><div class="pr-axis"><span>0%</span><span><i class="pr-k">100%: </i>all revenue goes to payouts</span></div><span></span></div>
+<p class="hf-quiet">For reference, of the two partial-hedge firms that publish revenue and payouts, Propr is at 66% (cumulative since launch) and Hypernova at about 94% (August to November).</p>
+</div><figcaption>The author’s estimate. The list-price share of 26% is the midpoint of the 17.5–35% range calculated from the average in FPFX Tech’s study (10 firms, about 300,000 accounts, published September 2024). The effect of more people buying at a discount is not included.</figcaption></figure>
+<p>And <strong>rules are the first thing a struggling firm tends to touch</strong>.</p>
+<ul class="kp-list">
+<li><p>The Funded Trader refused more than <span class="kp-nw">$2 million</span> in payouts in January and February 2024 alone, and then stopped operating.</p></li>
+<li><p>In December 2025, FundingTicks introduced a limit on scalping trades under one minute, higher targets and a lower profit split. It met with backlash, and in January 2026 it began winding down.</p></li>
+<li><p>From February 2024 to the end of 2025, an estimated 80–100 prop firms closed. The UK’s Propel Capital shut down <span class="kp-nw">14 months</span> after launch, saying competition was too fierce to continue.</p></li>
+</ul>
+<p>A “risk team review” comes before payouts, and no one explains what the problem was. I feel that this kind of black box is typical of traditional firms. <strong>I think it is a model that easily ends up this way: look cheap, keep selling, and squeeze payouts through fine-print rules.</strong></p>
+<p>The moves of the big players are symbolic. In December 2025, FTMO acquired the broker OANDA for <span class="kp-nw">$250 million</span>. Seacrest, which changed its name from MyFundedFX, exited the prop business in February 2026 and became a regulated CFD broker only. <strong>Even the industry’s top firms are going after income other than challenge fees.</strong></p>
+<p>To be fair, <strong>traditional firms can be profitable too.</strong> The part of Propr that excludes hedging (in other words, the part handled in the B-book, just like a traditional firm) has made about <span class="kp-nw">$1.77 million</span> in profit since launch, about 26% of revenue. The problem is that this profit lasts only while new sales keep coming in and payouts are limited to a small group of people. That is where my doubts about sustainability come from.</p>
+
+<h2 id="switching" data-n="3"><span>Switching: a great trading environment, but stricter rules</span></h2>
+<p>FundedHive runs post-pass accounts on a mechanism called “AADS (Automated A-Book Dealing System).” Going by the official page, the flow looks like this.</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">FundedHive automatically switches each account between A-book and B-book</p>
+<div class="hf-flow">
+<div class="hf-step live"><b>Trade on A-book</b><span>In the real market after passing</span></div><span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-step"><b>Falls below −1%</b><span>From the initial balance</span></div><span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-step sim"><b>Move to B-book</b><span>Positions are force-closed</span></div><span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-step sim"><b>Recover on B-book</b><span>Profit in this period can’t be withdrawn</span></div><span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-step live"><b>Back to A-book</b><span>Once back at the initial balance</span></div>
+</div>
+<p class="hf-quiet">Losses made in the market (up to −1%) are recorded as “negative PnL” and deducted from later profits</p>
+</div><figcaption>From the explanation on FundedHive’s official “AADS” page (checked <span class="kp-nw">November 26, 2026</span>). The challenge stage is a simulation.</figcaption></figure>
+<p>There are three key points.</p>
+<ul class="kp-list">
+<li><p><strong>Payouts come only from profit made in the real market.</strong> Profit made while you are on B-book (the demo environment) can’t be withdrawn. (After you close the account, it can be converted into FundedHive’s own coin and used to buy your next account.)</p></li>
+<li><p><strong>What the firm risks in the real market is about 1% per account at most.</strong> And that loss is deducted from the trader’s next profits.</p></li>
+<li><p><strong>Withdrawals come from a smart contract.</strong> You can request one at any time, with no human approval. When I tried it, <strong>the funds reached my wallet about <span class="kp-nw">0.3 seconds</span> after the request</strong>. There is a daily withdrawal cap.</p></li>
+</ul>
+<p>From the firm’s side, this is a very hard-to-break design. <strong>It pays money that was actually earned in the market, so “too many winners to pay” can’t happen</strong>. Market losses also stop at about 1% per account and are recovered later. In an interview, the CEO said payouts are 20–30% of revenue.</p>
+<p>What traders need to watch is the 1% line. After you pass, a small loss moves you to B-book right away, and you can’t withdraw profit until you are back at the initial balance. Some reviews dislike that negative PnL stays on the books like a “debt.”</p>
+<p>Still, I rate FundedHive highly. First, the trading environment is good. The official terms say accounts in profit connect directly to Tier-1 LPs through a FIX API, with no markup on spreads. <strong>Looking at actual spreads and commissions, it is at the top level among offshore brokers overall</strong> (a <span class="kp-nw">$3</span> commission per lot). The spreads are also all published by time of day on the members page (a free member sign-up is required to see them).</p>
+<p>I actually looked at the spreads around 13:40–14:40 UTC on <span class="kp-nw">November 26</span>. Major currency pairs are normally 0.2–0.3&nbsp;pips.</p>
+<div class="table-scroll" tabindex="0"><table class="kp-money kp-spread"><thead><tr><th>Symbol</th><th>Usual upper limit</th><th>When widened</th><th>Lower limit</th></tr></thead><tbody>
+<tr><td data-label="Symbol">EUR/USD</td><td data-label="Usual upper limit">0.2&nbsp;pips</td><td data-label="When widened">0.3&nbsp;pips</td><td data-label="Lower limit">0.0&nbsp;pips</td></tr>
+<tr><td data-label="Symbol">USD/JPY</td><td data-label="Usual upper limit">0.2&nbsp;pips</td><td data-label="When widened">0.3&nbsp;pips</td><td data-label="Lower limit">0.0&nbsp;pips</td></tr>
+<tr><td data-label="Symbol">GBP/USD</td><td data-label="Usual upper limit">0.3&nbsp;pips</td><td data-label="When widened">0.4&nbsp;pips</td><td data-label="Lower limit">0.0&nbsp;pips</td></tr>
+<tr><td data-label="Symbol">XAU/USD (gold)</td><td data-label="Usual upper limit">about 1.3&nbsp;pips</td><td data-label="When widened">3.2&nbsp;pips</td><td data-label="Lower limit">0.6&nbsp;pips</td></tr>
+</tbody></table></div>
+<p class="kp-note" style="font-size:.8125rem">From the spread list on FundedHive’s members page (about one hour, around 13:40–14:40 UTC on <span class="kp-nw">November 26, 2026</span>). A separate commission of <span class="kp-nw">$3</span> per lot applies.</p>
+<p>Add the peace of mind of instant withdrawals from a smart contract to this trading environment, and it is a combination you rarely find elsewhere. The 1% line is manageable too, if, as the official site recommends, you build a bit of a profit cushion before taking big positions. The rules are clearly published from the start, and no traps turn up later. I think it is far better than the traditional type.</p>
+
+<p>That said, total revenue and total payouts are not published, so I can’t verify it with numbers yet. Purchase records are published on-chain one by one.</p>
+
+<h2 id="partial-hedge" data-n="4"><span>Partial hedge: best in theory, but Propr broke</span></h2>
+<p>The partial-hedge type looks at the firm’s overall position and hedges in the market only the riskier parts, or the direction of well-performing traders. Instead of switching accounts one by one by machine like FundedHive, the firm decides collectively. It places fewer constraints on traders, and in theory it is the most capital-efficient model.</p>
+<p>Hypernova, also a partial-hedge firm, states that it processes orders on its own engine, while the firm may trade with its own funds using traders’ trades as a reference. It does not publish results from this, however. In the published figures, payouts from August to November were about 94% of revenue, and from August to October the operator topped up the payout wallet three times, about <span class="kp-nw">$1.38 million</span> in total. <strong>It isn’t sustained by revenue alone; the operator’s funds are propping it up</strong>.</p>
+<p>The one that discloses even the contents of its hedging is Propr. From August to October, this approach worked well for Propr.</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">Propr’s hedging earned <span class="kp-nw">$610,000</span> in three months, then lost <span class="kp-nw">$1.61 million</span> in November alone</p>
+<p class="hf-quiet">Monthly realized PnL of the hedging account</p>
+<div class="hb-row"><b>Aug</b><div class="hb-track"><i style="width:13.6%"></i><em><span class="kp-nw">+$280K</span></em></div></div>
+<div class="hb-row"><b>Sep</b><div class="hb-track"><i style="width:2.4%"></i><em><span class="kp-nw">+$49K</span></em></div></div>
+<div class="hb-row"><b>Oct</b><div class="hb-track"><i style="width:13.9%"></i><em><span class="kp-nw">+$286K</span></em></div></div>
+<div class="hb-row"><b>Nov</b><div class="hb-track"><i class="neg" style="width:78%"></i><em><span class="kp-nw">−$1,611K</span></em></div></div>
+<p class="hf-quiet">Cumulative since launch: <span class="kp-nw">−$996K</span></p>
+</div><figcaption>Daily hedging PnL data from Propr’s transparency dashboard, summed by month (retrieved <span class="kp-nw">November 26, 2026</span>; November covers up to the 26th)</figcaption></figure>
+
+<h3>What happened in November</h3>
+<p>The hedging account kept long (buy) positions in three assets, WLD, XPL and ZEC, at 10x leverage, and unrealized losses grew as the market fell. In date order, it went like this.</p>
+<div class="table-scroll" tabindex="0"><table class="kp-two"><thead><tr><th>Date (UTC)</th><th>What happened</th></tr></thead><tbody>
+<tr><td data-label="Date (UTC)"><span class="kp-nw">Nov 11</span></td><td data-label="">The hedging account’s unrealized loss reached about <span class="kp-nw">$570,000.</span> The CEO explained on Discord that “there is about <span class="kp-nw">$4.3 million</span> in usable liquidity,” that “we will top up the hedging account to <span class="kp-nw">$500,000,</span>” and that “we will publish a hedging explainer”</td></tr>
+<tr><td data-label="Date (UTC)"><span class="kp-nw">Nov 15</span></td><td data-label="">About <span class="kp-nw">$420,000</span> deposited into the hedging account</td></tr>
+<tr><td data-label="Date (UTC)"><span class="kp-nw">Nov 20</span></td><td data-label="">Hedging booked a realized loss of <span class="kp-nw">−$680,000</span> in a single day. The hedging PnL field disappears from the top of the dashboard</td></tr>
+<tr><td data-label="Date (UTC)"><span class="kp-nw">Nov 21</span></td><td data-label="">The remaining positions are also closed at <span class="kp-nw">−$170,000,</span> and the hedging account’s balance runs out. The CEO comments that “we have stopped hedging”</td></tr>
+<tr><td data-label="Date (UTC)"><span class="kp-nw">Nov 23</span></td><td data-label="">Publishes the hedging explainer. Announces that hedging will be paused until early 2027</td></tr>
+<tr><td data-label="Date (UTC)"><span class="kp-nw">Nov 23</span></td><td data-label="">After the API key of an external app, Trigger.xyz, leaks, payouts move to manual review</td></tr>
+<tr><td data-label="Date (UTC)"><span class="kp-nw">Nov 23</span></td><td data-label="">About <span class="kp-nw">$390,000</span> is added to the public withdrawal account (around 15:00 UTC)</td></tr>
+<tr><td data-label="Date (UTC)"><span class="kp-nw">Nov 24</span></td><td data-label="">Introduces a “paid <span class="kp-nw">30 days</span> after application” rule for referral rewards. On-chain payouts stop for about a day and resume on the 25th</td></tr>
+<tr><td data-label="Date (UTC)"><span class="kp-nw">Nov 26</span></td><td data-label="">Launches a new plan, “1-Step Max,” with up to 40x on stock indices. Black Friday: 20% off all challenges</td></tr>
+</tbody></table></div>
+<p>Propr publishes the total of the wallet balances used for withdrawals and hedging on its dashboard as “Reserve.” In this article I call it the “public withdrawal account.” Here is how its balance moved.</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">The public withdrawal account’s balance briefly fell below <span class="kp-nw">$40,000,</span> then recovered to about <span class="kp-nw">$404,000</span> with a top-up from outside</p>
+<p class="hf-quiet">Total of the wallet balances Propr publishes on-chain (every half day)</p>
+<div class="chart" id="reserve" role="img" aria-label="Balance of Propr’s public withdrawal account. It fell from about $800,000 at the end of October to about $39,000 on November 22–23, and after the November 23 top-up it stood at about $404,000 on November 26"></div>
+<ol class="hf-legend" id="reserve-legend"></ol>
+</div><figcaption>Reserve data from Propr’s transparency dashboard (every half day, <span class="kp-nw">October 27</span> – <span class="kp-nw">November 26, 2026</span>; dates on the axis and markers are in UTC). The dotted line is the <span class="kp-nw">$1 million</span> that Propr announced at the end of September it had prepared.</figcaption></figure>
+<p>Most of this balance was margin for the hedging account. So the balance shrank every time the hedge lost. The amount added on <span class="kp-nw">November 15</span> also vanished in about a week. What came back on <span class="kp-nw">November 23</span> was money the operator put in from outside. In a stream on <span class="kp-nw">November 23</span>, the CEO said he had arranged about <span class="kp-nw">$1.2 million</span> through a personal credit line and had already put in about <span class="kp-nw">$650,000.</span> This amount can’t be verified on-chain.</p>
+<p>Honestly, this is the part that bothers me. On <span class="kp-nw">November 11</span>, the CEO had explained that “there is about <span class="kp-nw">$4.3 million</span> in usable liquidity.” Even so, the balance fell to nearly <span class="kp-nw">$40,000,</span> and money had to be brought in from outside. How these two fit together has not been explained yet.</p>
+<p><strong>That said, Propr has substantial financial backing behind it</strong>. XBorg, which created Propr, is a company spun out of the crypto app SwissBorg, and its shareholders are SwissBorg and the founders. SwissBorg is one of Europe’s leading crypto apps, with about 920,000 verified users and about <span class="kp-nw">$970 million</span> in total user crypto (as of <span class="kp-nw">November 27, 2026</span>, per its official site). This time, too, the CEO put in outside funds and kept payouts going. A firm without that kind of financial strength could easily have stopped payouts the moment the hedging account ran out. It is a case of exactly what this article’s conclusion calls “buying time with financial strength.”</p>
+<p>The hit to profit since launch is also large. Cumulative profit, calculated as revenue minus payouts and referral rewards, plus hedging PnL, fell from about <span class="kp-nw">$2.27 million</span> at the end of October to about <span class="kp-nw">$770,000</span> on <span class="kp-nw">November 26</span>. If you subtract the fixed-cost estimate Propr used to show on its dashboard (about <span class="kp-nw">$100,000</span> a month since August), profit since launch is almost zero.</p>
+<p>On the other hand, <strong>payouts to traders are still continuing</strong>. But the time until payment, at the median, rose from about <span class="kp-nw">14 minutes</span> on <span class="kp-nw">November 12</span> to about <span class="kp-nw">3 hours</span> on <span class="kp-nw">November 26</span>.</p>
+
+<h3>What did Propr get wrong?</h3>
+<p>Propr’s explainer, published on <span class="kp-nw">November 23</span>, lists four reasons for the failure.</p>
+<ul class="kp-list">
+<li><p>It judged trader skill over <span class="kp-nw">6 weeks</span> and reviewed only every <span class="kp-nw">2 weeks</span> (the review was too slow)</p></li>
+<li><p>It allowed positions that were too large in minor coins such as XPL and WLD</p></li>
+<li><p>The “amount it is OK to lose” was set too loosely</p></li>
+<li><p>The daily loss limit was too large</p></li>
+</ul>
+<p>What I thought as I read it is that <strong>none of these is a failure of “picking right.” They are failures of “not deciding how to lose.”</strong> The top traders it was copying all lost together, and some traders kept adding to losing positions, so the system kept holding positions. It is exactly the opposite of FundedHive deciding to cut each account at −1%.</p>
+
+<h2 id="stress" data-n="5"><span>Putting the three models in the same situations</span></h2>
+<p>Which situations is each model strong in, and which is it weak in? I have marked them from my own point of view.</p>
+<p class="mk-legend"><span class="mk o">○</span>Strong<span class="mk t">△</span>Depends<span class="mk x">×</span>Weak</p>
+<div class="table-scroll" tabindex="0"><table class="kp-stress"><thead><tr><th>Situation</th><th>Traditional</th><th>Switching</th><th>Partial hedge</th></tr></thead><tbody>
+<tr><td data-label="Situation">New sales stop</td><td data-label="Traditional"><div class="cell"><span class="mk x" aria-label="Weak">×</span><span>Payout funds shrink</span></div></td><td data-label="Switching"><div class="cell"><span class="mk o" aria-label="Strong">○</span><span>Payouts come from market profit</span></div></td><td data-label="Partial hedge"><div class="cell"><span class="mk t" aria-label="Depends">△</span><span>The B-book part is weak</span></div></td></tr>
+<tr><td data-label="Situation">Winners suddenly increase</td><td data-label="Traditional"><div class="cell"><span class="mk x" aria-label="Weak">×</span><span>Everything is paid from challenge fees</span></div></td><td data-label="Switching"><div class="cell"><span class="mk o" aria-label="Strong">○</span><span>Paid from market profit</span></div></td><td data-label="Partial hedge"><div class="cell"><span class="mk t" aria-label="Depends">△</span><span>Strong if the hedge is right</span></div></td></tr>
+<tr><td data-label="Situation">Market moves sharply</td><td data-label="Traditional"><div class="cell"><span class="mk x" aria-label="Weak">×</span><span>Especially weak when prices rise</span></div></td><td data-label="Switching"><div class="cell"><span class="mk o" aria-label="Strong">○</span><span>Firm’s loss is about 1% per account</span></div></td><td data-label="Partial hedge"><div class="cell"><span class="mk t" aria-label="Depends">△</span><span>Doubly painful if it misses</span></div></td></tr>
+<tr><td data-label="Situation">The operator misjudges</td><td data-label="Traditional"><div class="cell"><span class="mk t" aria-label="Depends">△</span><span>Tends to squeeze payouts via rules</span></div></td><td data-label="Switching"><div class="cell"><span class="mk o" aria-label="Strong">○</span><span>Mechanical rules make it unlikely</span></div></td><td data-label="Partial hedge"><div class="cell"><span class="mk x" aria-label="Weak">×</span><span>Most dangerous (Propr in November)</span></div></td></tr>
+<tr><td data-label="Situation">Friendliness to traders</td><td data-label="Traditional"><div class="cell"><span class="mk t" aria-label="Depends">△</span><span>Many fine-print conditions</span></div></td><td data-label="Switching"><div class="cell"><span class="mk t" aria-label="Depends">△</span><span>The 1% line is strict</span></div></td><td data-label="Partial hedge"><div class="cell"><span class="mk o" aria-label="Strong">○</span><span>Fewest constraints</span></div></td></tr>
+<tr><td data-label="Situation">Verifiable from outside</td><td data-label="Traditional"><div class="cell"><span class="mk x" aria-label="Weak">×</span><span>Almost impossible</span></div></td><td data-label="Switching"><div class="cell"><span class="mk t" aria-label="Depends">△</span><span>Mechanism and individual records are public</span></div></td><td data-label="Partial hedge"><div class="cell"><span class="mk o" aria-label="Strong">○</span><span>Propr down to the books, Hypernova partly</span></div></td></tr>
+</tbody></table></div>
+<p>The switching type gets many ○. It looks at both the trading environment and a mechanism that lets the firm keep paying without strain. The partial-hedge type is the friendliest to traders, but in return it gets many △. <strong>When it works it is the strongest, and when it fails it breaks the hardest</strong>. The swings are big.</p>
+
+<h2 id="best-hedge" data-n="6"><span>It comes down to how well the “optimal hedge” gets completed</span></h2>
+<p>I think hedging has the most potential of the three. A traditional firm that does no hedging at all can’t escape the price war and tightening rules. Drawing a line per account like FundedHive protects the firm, but the rules for traders become stricter. In between lies the question of how much to send to the market (A-book) and how much to keep inside the firm (B-book). <strong>I think the firms that complete this dividing line in a form that protects the firm without being too harsh on traders will be the next to survive</strong>.</p>
+<p>Turn Propr’s failure inside out and compare it with FundedHive’s approach, and the conditions of a “completed hedge” come into view.</p>
+<ul class="kp-list">
+<li><p><strong>Decide in advance how much you can afford to lose, and when to stop.</strong> FundedHive uses −1% per account; Propr effectively had no stop-loss. If you hedge at the firm level, you need a firm-wide stop-loss line.</p></li>
+<li><p><strong>Hedge only with highly liquid assets.</strong> Minor coins don’t move like the overall market, so hedging them with a large-cap asset doesn’t work.</p></li>
+<li><p><strong>Contain what can’t be hedged with rules.</strong> Capping open positions and leverage on minor coins is proper risk management. The design of the rules is itself part of the hedge.</p></li>
+<li><p><strong>Review the traders you copy faster.</strong> With six weeks of results, it is often impossible to tell skill from luck.</p></li>
+<li><p><strong>Publish hedging PnL together with the payout obligation.</strong> Propr explained that “when traders lose, our payout obligation falls too,” but since the size of that obligation isn’t shown, outsiders could not verify it.</p></li>
+</ul>
+<p>So far, I can’t find a firm that meets all of these. Propr says it will “rebuild the hedge and come back” in early 2027. PROP CHECK intends to follow what has changed by then.</p>
+
+<h2 id="who-survives" data-n="7"><span>What kind of firm survives</span></h2>
+<p>To sum up so far, here is my conclusion. The conditions for survival differ by model.</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">Both models assume that financial strength can buy “time.” What the time is for differs</p>
+<div class="sv">
+<div class="sv-card"><p class="sv-head">What survives as a traditional firm</p><dl>
+<div><dt>Condition</dt><dd>A major player with market share (e.g., FTMO) or an operator with financial strength (e.g., RZR Funded)</dd></div>
+<div><dt>Time bought with funds</dt><dd>Until it has weathered the price war’s losses and captured its share</dd></div>
+<div><dt>Beyond that</dt><dd>Has income sources other than challenge fees, such as a broker business</dd></div></dl></div>
+<div class="sv-card"><p class="sv-head">What survives as a hedge-based firm</p><dl>
+<div><dt>Condition</dt><dd>Completes the optimal hedge mechanism first</dd></div>
+<div><dt>Time bought with funds</dt><dd>Until it has weathered the failures before the mechanism is complete</dd></div>
+<div><dt>Beyond that</dt><dd>Keeps being chosen by users for price, rules and transparency</dd></div></dl></div>
+</div></div><figcaption>A diagram summarizing the author’s view</figcaption></figure>
+<p><strong>I think traditional firms have already entered a contest of stamina</strong>. The ones starting the price wars are also big players with financial strength, or firms with large operators behind them. RZR Funded, for example, is part of the Hantec Group, which has 35 years of experience in financial markets. Firms with operators like this can hold out on stamina through a price war, and can combine with the group’s broker business. Conversely, a new firm without financial strength that enters as a traditional firm tends to hit a wall in about a year, like Propel Capital. If you choose a traditional firm, looking at its scale and operator is the surest approach.</p>
+<p>Hedge-based firms are still in the middle of a race to complete their mechanism. Propr failed once in November, and the CEO is getting through it by putting in his own money. FundedHive has won users with its good trading environment, fast withdrawals, and a mechanism that pays winners from market profit. What remains is how friendly it can make the 1% line for traders. Even with a completed hedge, users won’t come if the price is too high or the rules are too strict. <strong>I think the firm that gets both the maturity of its mechanism and the conditions users choose will win</strong>.</p>
+
+<h2 id="transparency" data-n="8"><span>What reassures users: transparency and smart contracts</span></h2>
+<p>What the Propr episode made me feel again is that <strong>on-chain transparency is strong after all</strong>. The collapse of the hedging account was visible from outside every day. We could see the public withdrawal account’s balance falling and the positions approaching liquidation. At a non-transparent firm, even if the same thing happened, no one would notice until payouts stopped.</p>
+<p>But what transparency mainly shows is “money held” and “records of payments.”</p>
+<ul class="kp-list">
+<li><p><strong>The total of what it owes is not visible.</strong> Traders’ unrealized profits and unpaid referral rewards don’t appear on-chain.</p></li>
+<li><p><strong>How things are shown can be changed by the operator.</strong> In November, Propr removed the hedging PnL field from the top of its dashboard. The numbers published now won’t necessarily keep being published.</p></li>
+</ul>
+
+<h3>What is a smart contract?</h3>
+<p>A smart contract is a program that runs on a blockchain. If you set it up as “when this condition is met, send this money to this person,” it executes automatically without human hands. Its defining feature is that anyone can verify both the program’s contents and the movement of money.</p>
+<p>But even among firms that use a blockchain for payouts, there are levels in how it is used.</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">Even among “on-chain” firms, payout mechanisms come in three levels</p>
+<div class="stairs">
+<div class="stair s1"><p class="st-n">Level 1</p><p class="st-t">Records are visible</p><p class="st-d">The operator decides whether to pay. Anyone can see the transfer records</p><p class="st-ex">e.g., Propr</p></div>
+<div class="stair s2"><p class="st-n">Level 2</p><p class="st-t">Pays automatically</p><p class="st-d">When conditions are met, the contract pays without approval</p><p class="st-ex">e.g., FundedHive, Hypernova</p></div>
+<div class="stair s3"><p class="st-n">Level 3</p><p class="st-t">Funds held in escrow</p><p class="st-d">Payout funds are locked, and even the operator can’t withdraw them</p><p class="st-ex">e.g.:<br class="st-ex-br"> none found so far</p></div>
+</div>
+<p class="st-axis">Stronger as reassurance →</p>
+</div><figcaption>The author’s breakdown. FundedHive and Hypernova both process withdrawals with smart contracts</figcaption></figure>
+<p>Propr is Level 1. All payout records are visible, but the operator decides whether and when to pay. That is also why it could switch payouts to manual review this time, and make referral rewards payable after <span class="kp-nw">30 days</span>.</p>
+<p>FundedHive and Hypernova are Level 2. When you request a withdrawal, the smart contract checks it on the spot and pays. In Hypernova’s case, the contract verifies the profit amount, caps the withdrawal at the actual profit, and sends USDC within the same transaction as the request. Since the “promise to pay” is written in code, it is a step beyond Level 1. Even so, there are three points worth checking.</p>
+<ul class="kp-list">
+<li><p><strong>It is the firm’s system that calculates the profit amount.</strong> The contract pays based on the numbers it receives.</p></li>
+<li><p><strong>It can’t pay more than the money inside the contract.</strong> You will want to check the balance yourself.</p></li>
+<li><p><strong>The operator often holds the authority to stop or replace the contract.</strong> This is hard for ordinary users to verify.</p></li>
+</ul>
+<p><strong>I think you can only truly say “a smart contract protects payouts” at Level 3</strong>. As far as I could confirm, no firm does that yet. If a firm that has completed its hedging mechanism goes this far, it should become a very strong source of reassurance for users.</p>
+<p>So even for firms that publish on-chain, I regularly look at the following five things.</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">Five numbers worth checking regularly at a transparent firm</p>
+<ol class="chk">
+<li><b>Balance of the public withdrawal account</b><span>Is it growing, or does it keep falling?</span></li>
+<li><b>Time to payout</b><span>Has it suddenly grown?</span></li>
+<li><b>Payouts as a share of revenue</b><span>Is it approaching 100%?</span></li>
+<li><b>History of operator top-ups</b><span>How often, and how much, outside money goes in</span></li>
+<li><b>Number of published items</b><span>Have numbers that used to be there disappeared?</span></li>
+</ol>
+</div><figcaption>PROP CHECK’s “Operational foundation” score uses the same approach</figcaption></figure>
+
+<h2 id="summary" data-n="9"><span>Summary: choose a prop firm by “can it keep paying?”</span></h2>
+<p>Having compared the three models, here is my conclusion.</p>
+<ul class="kp-list">
+<li><p><strong>Traditional</strong> is now a contest of stamina. Unless it is a major player with market share like FTMO, or has a financially strong operator like RZR Funded, I think it is hard to keep going through the price war.</p></li>
+<li><p><strong>Switching</strong> is strong in its good trading environment and in the WIN-WIN of paying winners from market profit. It is also hard for the firm to break. Once you get used to the 1% line, this trading environment and withdrawal speed are a big draw.</p></li>
+<li><p><strong>Partial hedge</strong> is still in the race to complete its mechanism. Propr failed once, but it keeps paying out on the strength of its parent’s financial backing, and says it will rebuild the hedge in early 2027.</p></li>
+</ul>
+<p>So if I were choosing a prop firm now, I would look at these in this order.</p>
+<ol class="kp-list kp-steps">
+<li><p><strong>Does the operator have financial strength?</strong> In any model, whether a firm gets through hard times is decided here in the end.</p></li>
+<li><p><strong>Where does the payout money come from?</strong> Market profit, or challenge fees? With a firm that doesn’t explain its mechanism, assume it runs on challenge fees alone.</p></li>
+<li><p><strong>Can you follow the numbers from outside?</strong> Can you check the public withdrawal account’s balance and time to payout yourself?</p></li>
+<li><p><strong>Withdraw profit often.</strong> At any firm, not letting profit pile up in the account is the best self-defense.</p></li>
+</ol>
+<p>When Propr comes back with its rebuilt hedge, what will have changed? Who will be the first to complete the optimal hedge? PROP CHECK will keep following it with numbers.</p>
+<p><strong>More than discount rates or the detail of the rules, the question is “can this firm keep paying the people who win?”</strong> I think prop firms have reached an era where they should be chosen on that.</p>
+
+<p class="kp-note">PROP CHECK has referral links to FundedHive, RZR Funded, Hypernova, Propr and others, and the operator may receive compensation when someone signs up. Referral compensation is not included in score calculations. Every number in this article can be checked by anyone on the pages listed as sources.</p>
+
+<h2 id="sources" data-n="10"><span>Sources</span></h2>
+<ul class="kp-sources">
+<li><p><a href="https://www.propr.xyz/transparency">Propr transparency dashboard</a></p></li>
+<li><p><a href="https://docs.google.com/document/d/1Iz7AydeYdmTjhMPTZOumK3GqdmY3m_ucW11o3BGCW6M/edit?usp=sharing">Propr hedging explainer (<span class="kp-nw">November 23, 2026</span>)</a></p></li>
+<li><p><a href="https://www.propr.xyz/rules">Propr trading rules</a></p></li>
+<li><p>Propr official Discord (#announcements and statements from the operator, <span class="kp-nw">November 11–26, 2026</span>)</p></li>
+<li><p><a href="https://thedefiant.io/news/press-releases/powering-the-next-generation-of-gaming-xborg-sells-out-2-million-seed-round-community-allocation">The Defiant: XBorg is a spin-off of SwissBorg</a></p></li>
+<li><p><a href="https://xborg-faq.gitbook.io/xborg/06-or-token/fundraise">XBorg FAQ (shareholders are SwissBorg and the founders)</a></p></li>
+<li><p><a href="https://swissborg.com/">SwissBorg official site (about 920,000 verified users, about <span class="kp-nw">$970 million</span> in total user crypto, as of <span class="kp-nw">November 27, 2026</span>)</a></p></li>
+<li><p><a href="https://alexfirdaus.com/propr-hedge-losses/">Alex Firdaus: Propr Hedge Losses (the CEO’s statements in his stream, the <span class="kp-nw">November 24</span> payout halt)</a></p></li>
+<li><p><a href="https://fundedhive.com/aads">FundedHive AADS (Automated A-Book Dealing System)</a></p></li>
+<li><p><a href="https://fundedhive.com/transparency">FundedHive transparency page</a></p></li>
+<li><p><a href="https://fundedhive.com/faq">FundedHive FAQ</a></p></li>
+<li><p><a href="https://chainwire.org/2026/08/28/the-onchain-prop-firm-traders-can-verify-in-real-time/">Hypernova: The Onchain Prop Firm Traders Can Verify In Real Time (<span class="kp-nw">August 28, 2026</span>, withdrawal mechanism)</a></p></li>
+<li><p><a href="https://funded.tradinghive.com/spread">FundedHive spread list (by time of day, login required)</a></p></li>
+<li><p><a href="https://ctrader.com/prop-firms/tradinghive">cTrader: FundedHive (trading commissions)</a></p></li>
+<li><p><a href="https://financemagnates.com/executives/interview/fundedhive-prop-firm-ceo-calls-consistency-rule-a-payout-trap/">Finance Magnates: FundedHive CEO interview</a></p></li>
+<li><p><a href="https://hypernova.xyz/rulebook">Hypernova rulebook (order handling)</a></p></li>
+<li><p><a href="https://hypernova.xyz/stats">Hypernova Stats</a></p></li>
+<li><p><a href="https://propchecklab.com/en/guides/hypernova/">PROP CHECK Hypernova guide (history of payout wallet top-ups)</a></p></li>
+<li><p><a href="https://www.financemagnates.com/forex/exclusive-only-7-of-300000-prop-trading-accounts-achieved-payouts/">Finance Magnates: Only 7% of 300,000 Prop Trading Accounts Achieved Payouts (<span class="kp-nw">September 18, 2024</span>)</a></p></li>
+<li><p><a href="https://propfirmmap.com/blog/prop-firm-discount-wars-pricing-report-april-2026">PropFirmMap: Prop Firm Discount Wars (April 2026)</a></p></li>
+<li><p><a href="https://propfirmmap.com/blog/prop-firm-news-week-april-16-2026-thinkcapital-price-drops-e8-on-demand">PropFirmMap: Prop Firm News This Week (<span class="kp-nw">April 17, 2026</span>, Apex’s 90% discount)</a></p></li>
+<li><p><a href="https://propfirmmatch.com/crypto/prop-firms/rzr-funded">Prop Firm Match: RZR Funded (Hantec Group’s 35 years of experience)</a></p></li>
+<li><p><a href="https://thetrustedprop.com/prop-firms/rzr-funded">The Trusted Prop: RZR Funded (relationship with the Hantec Group)</a></p></li>
+<li><p><a href="https://thepropfirmguide.com/prop-firms-that-shut-down/">The Prop Firm Guide: Prop Firm Shutdowns (list of firms that have closed)</a></p></li>
+<li><p><a href="https://www.financemagnates.com/forex/following-profit-cuts-and-trading-limits-prop-firm-fundingticks-begins-winding-down/">Finance Magnates: FundingTicks Begins Winding Down (<span class="kp-nw">January 19, 2026</span>)</a></p></li>
+<li><p><a href="https://www.financemagnates.com/forex/prop-firm-propel-capital-folds-after-14-months-ceo-blames-fierce-competition/amp">Finance Magnates: Propel Capital Folds After 14 Months</a></p></li>
+<li><p><a href="https://www.financemagnates.com/forex/analysis/prop-firm-crypto-payouts-doubled-to-115-million-in-q1-2026-but-growth-has-stalled-since-december/">Finance Magnates: Prop Firm Crypto Payouts Doubled in Q1 2026 (FTMO’s OANDA acquisition, Seacrest’s pivot)</a></p></li>
+</ul>
+</article>
+
+<script>
+{
+const R=[["2026-10-27", 0, 824218], ["2026-10-27", 1, 826134], ["2026-10-28", 0, 859409], ["2026-10-28", 1, 843984], ["2026-10-29", 0, 940820], ["2026-10-29", 1, 765967], ["2026-10-30", 0, 793647], ["2026-10-30", 1, 820012], ["2026-10-31", 0, 844275], ["2026-10-31", 1, 861097], ["2026-11-01", 0, 829782], ["2026-11-01", 1, 781289], ["2026-11-02", 0, 768888], ["2026-11-02", 1, 710943], ["2026-11-03", 0, 677490], ["2026-11-03", 1, 711279], ["2026-11-04", 0, 803261], ["2026-11-04", 1, 868007], ["2026-11-05", 0, 817731], ["2026-11-05", 1, 586357], ["2026-11-06", 0, 613367], ["2026-11-06", 1, 568286], ["2026-11-07", 0, 577403], ["2026-11-07", 1, 554870], ["2026-11-08", 0, 551243], ["2026-11-08", 1, 442499], ["2026-11-09", 0, 497641], ["2026-11-09", 1, 464023], ["2026-11-10", 0, 414236], ["2026-11-10", 1, 275163], ["2026-11-11", 0, 304609], ["2026-11-11", 1, 270220], ["2026-11-12", 0, 238859], ["2026-11-12", 1, 335566], ["2026-11-13", 0, 282723], ["2026-11-13", 1, 256451], ["2026-11-14", 0, 221469], ["2026-11-14", 1, 131306], ["2026-11-15", 0, 191821], ["2026-11-15", 1, 599570], ["2026-11-16", 0, 508582], ["2026-11-16", 1, 576250], ["2026-11-17", 0, 537880], ["2026-11-17", 1, 632195], ["2026-11-18", 0, 580950], ["2026-11-18", 1, 383658], ["2026-11-19", 0, 570363], ["2026-11-19", 1, 391188], ["2026-11-20", 0, 231670], ["2026-11-20", 1, 101283], ["2026-11-21", 0, 50551], ["2026-11-21", 1, 45858], ["2026-11-22", 0, 49157], ["2026-11-22", 1, 39191], ["2026-11-23", 0, 45646], ["2026-11-23", 1, 431209], ["2026-11-24", 0, 431209], ["2026-11-24", 1, 425362], ["2026-11-25", 1, 403686], ["2026-11-26", 0, 404000]], E=[["2026-11-11",0,"Time of the previous article"],["2026-11-15",17,"About $420,000 deposited into the hedging account"],["2026-11-21",4,"Hedging account hits zero"],["2026-11-23",15,"About $390,000 added from outside"]];
+const box=document.getElementById('reserve'), leg=document.getElementById('reserve-legend');
+const day0=Date.parse(R[0][0]);
+const di=(d,h)=>(Date.parse(d)-day0)/864e5+h*.5;
+const span=di(R[R.length-1][0],R[R.length-1][1]);
+const MN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const md=d=>`${MN[+d.slice(5,7)-1]} ${+d.slice(8,10)}`;
+leg.innerHTML=E.map(e=>`<li><span><b>${md(e[0])}</b> ${e[2]}</span></li>`).join('');
+const kfmt=v=>v>=1e6?`$${v/1e6}M`:`$${Math.round(v/1e3)}K`;
+function draw(){
+  const W=box.clientWidth,H=box.clientHeight,narrow=W<520;
+  const L=narrow?44:56,Rm=12,T=30,B=26,pw=W-L-Rm,ph=H-T-B;
+  const xs=(d,h)=>L+di(d,h)/span*pw, ys=v=>T+ph-v/1.15e6*ph;
+  const xj=(d,hr)=>L+(di(d,0)+hr/24)/span*pw;
+  const ticks=[0,25e4,5e5,75e4,1e6];
+  const xt=(narrow?['2026-10-28','2026-11-10','2026-11-26']:['2026-10-28','2026-11-01','2026-11-05','2026-11-10','2026-11-15','2026-11-20','2026-11-26']);
+  let s='';
+  s+=ticks.map(t=>`<line x1="${L}" x2="${W-Rm}" y1="${ys(t)}" y2="${ys(t)}" stroke="var(--rule)"/><text x="${L-6}" y="${ys(t)+4}" text-anchor="end" font-size="11" fill="var(--quiet)">${t?kfmt(t):'$0'}</text>`).join('');
+  s+=`<line x1="${L}" x2="${W-Rm}" y1="${ys(1e6)}" y2="${ys(1e6)}" stroke="var(--quiet)" stroke-dasharray="5 4"/><text x="${L+6}" y="${ys(1e6)-6}" font-size="11" fill="var(--quiet)">${narrow?'Sept announcement: $1M':'Amount announced at end of Sept: $1M'}</text>`;
+  s+=`<line x1="${L}" x2="${W-Rm}" y1="${T+ph}" y2="${T+ph}" stroke="var(--edge)"/>`;
+  s+=xt.map(d=>`<text x="${xj(d,0)}" y="${T+ph+18}" text-anchor="${d===xt[0]?'start':d===xt[xt.length-1]?'end':'middle'}" font-size="11" fill="var(--quiet)">${md(d)}</text>`).join('');
+  s+=E.map((e,i)=>{const x=xj(e[0],e[1]);return `<line x1="${x}" x2="${x}" y1="${T-4}" y2="${T+ph}" stroke="var(--edge)" stroke-dasharray="2 3"/><circle cx="${x}" cy="${T-14}" r="8.5" fill="var(--tint)" stroke="var(--edge)"/><text x="${x}" y="${T-10}" text-anchor="middle" font-size="11" font-weight="700" fill="var(--ink)">${i+1}</text>`}).join('');
+  const p=R.map((r,i)=>`${i?'L':'M'}${xs(r[0],r[1]).toFixed(1)},${ys(r[2]).toFixed(1)}`).join(' ');
+  s+=`<path d="${p}" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linejoin="round"/>`;
+  const last=R[R.length-1];
+  s+=`<circle cx="${xs(last[0],last[1])}" cy="${ys(last[2])}" r="3.5" fill="var(--accent)"/><text x="${xs(last[0],last[1])}" y="${ys(last[2])-12}" text-anchor="end" font-size="12" font-weight="700" fill="var(--ink)">$${Math.round(last[2]/1e3)}K</text>`;
+  box.innerHTML=`<svg viewBox="0 0 ${W} ${H}" aria-hidden="true">${s}</svg>`;
+}
+const ro=new ResizeObserver(draw); ro.observe(box);
+}
+</script>
+</main><footer class="pc-site-footer"><nav class="pc-footer-layout" aria-label="Footer menu"><a class="pc-footer-brand" href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/" aria-label="PROP CHECK home"><img src="/propcheck-ui-preview/r20261127-tangem-thumb-enko/assets/propcheck-logo-r20261020.webp" alt="PROP CHECK"></a><div class="pc-footer-group" aria-labelledby="pc-footer-heading-1"><h2 id="pc-footer-heading-1">Contact &amp; requests</h2><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/report/">Report a payout refusal or ban</a><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/request-listing/">Request an unlisted firm</a><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/report-error/">Report an error in our information</a><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/contact/">Contact</a></div><div class="pc-footer-group" aria-labelledby="pc-footer-heading-2"><h2 id="pc-footer-heading-2">Operations &amp; transparency</h2><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/guides/">Firm guides</a><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/methodology/">Methodology</a><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/about/">About the operator</a><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/policy/">Editorial policy &amp; disclaimer</a><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/advertising/">Advertising &amp; referral link policy</a></div><div class="pc-footer-group" aria-labelledby="pc-footer-heading-3"><h2 id="pc-footer-heading-3">Terms of use</h2><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/terms/">Terms of use</a><a href="/propcheck-ui-preview/r20261127-tangem-thumb-enko/en/privacy/">Privacy policy</a></div></nav><p class="pc-footer-copyright">© 2026 PROP CHECK</p></footer><script defer src="/propcheck-ui-preview/r20261127-tangem-thumb-enko/w7-header.js?perf=fe0f3f24066304eb"></script><script src="/propcheck-ui-preview/r20261127-tangem-thumb-enko/language-menu.js?perf=8cf084e5a93ffaae" defer></script></body></html>
