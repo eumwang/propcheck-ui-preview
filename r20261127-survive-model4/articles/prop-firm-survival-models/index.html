@@ -1,0 +1,336 @@
+<!doctype html><html lang="ja"><head><meta name="robots" content="noindex,nofollow"><script id="pc-preview-guard">(()=>{const root='/propcheck-ui-preview/r20261127-survive-model4/';const map=u=>{if(typeof u==='string'&&u.startsWith(location.origin+'/'))u=u.slice(location.origin.length);if(typeof u!=='string'||!u.startsWith('/')||u.startsWith('//')||u.startsWith('/propcheck-ui-preview/'))return u;return root+u.slice(1);};const nf=window.fetch.bind(window);window.fetch=(i,o)=>{const m=(o?.method||((i instanceof Request)&&i.method)||'GET').toUpperCase();if(m!=='GET'&&m!=='HEAD')return Promise.reject(new Error('Preview: submissions disabled'));return nf(typeof i==='string'?map(i):(i instanceof URL?map(i.href):(i instanceof Request&&map(i.url)!==i.url?new Request(map(i.url),i):i)),o);};const xo=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(m,u,...r){if(!['GET','HEAD'].includes(String(m).toUpperCase()))throw new Error('Preview: submissions disabled');return xo.call(this,m,map(u instanceof URL?u.href:u),...r);};try{navigator.sendBeacon=()=>false}catch(_e){}document.addEventListener('submit',e=>{e.preventDefault();e.stopImmediatePropagation();},true);const fix=n=>{if(n.nodeType!==1)return;for(const it of [n,...n.querySelectorAll('a[href],img[src],source[src],link[href],script[src]')])for(const k of ['href','src']){const v=it.getAttribute(k);if(v&&map(v)!==v)it.setAttribute(k,map(v));}};new MutationObserver(es=>{for(const e of es){if(e.type==='attributes')fix(e.target);else for(const n of e.addedNodes)fix(n);}}).observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:['href','src']});const si=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,'src');Object.defineProperty(HTMLImageElement.prototype,'src',{get(){return si.get.call(this)},set(v){si.set.call(this,map(String(v)))},configurable:true});document.addEventListener('DOMContentLoaded',()=>{for(const f of document.forms){f.removeAttribute('data-netlify');f.method='get';f.action='#';}fix(document.body);});})();</script><!-- preview: GA4 loader removed --><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-6QHP92GKS1');</script><script defer src="/propcheck-ui-preview/r20261127-survive-model4/assets/ga4-events-20261126.js"></script><script src="/propcheck-ui-preview/r20261127-survive-model4/perf-data/d63e313d4c1f85d0fb8d86d8.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="index,follow"><title>プロップファームはどのモデルなら生き残れるのか｜Proprのヘッジ損失と出金の仕組みを比較 — PROP CHECK</title><meta name="description" content="11月にヘッジで約161万ドルを失ったProprの例から、プロップファームを従来型・切り替え型（FundedHive）・一部ヘッジ型（Propr、Hypernova）に分け、出金（払い出し）の元手と崩れやすさを比べました。"><link rel="canonical" href="https://propchecklab.com/articles/prop-firm-survival-models/"><link rel="alternate" hreflang="ja" href="https://propchecklab.com/articles/prop-firm-survival-models/"><link rel="alternate" hreflang="x-default" href="https://propchecklab.com/articles/prop-firm-survival-models/"><meta property="og:type" content="article"><meta property="og:locale" content="ja_JP"><meta property="og:site_name" content="PROP CHECK"><meta property="og:title" content="プロップファームはどのモデルなら生き残れるのか｜Proprのヘッジ損失と出金の仕組みを比較 — PROP CHECK"><meta property="og:description" content="11月にヘッジで約161万ドルを失ったProprの例から、プロップファームを従来型・切り替え型（FundedHive）・一部ヘッジ型（Propr、Hypernova）に分け、出金（払い出し）の元手と崩れやすさを比べました。"><meta property="og:url" content="https://propchecklab.com/articles/prop-firm-survival-models/"><meta property="og:image" content="https://propchecklab.com/assets/articles/prop-firm-survival-models/thumb-survive-model-ja-20261127.png"><meta property="og:image:width" content="880"><meta property="og:image:height" content="495"><meta property="og:image:alt" content="プロップファームはどのモデルなら生き残れるのか"><meta property="article:published_time" content="2026-11-26"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="プロップファームはどのモデルなら生き残れるのか｜Proprのヘッジ損失と出金の仕組みを比較 — PROP CHECK"><meta name="twitter:description" content="11月にヘッジで約161万ドルを失ったProprの例から、プロップファームを従来型・切り替え型（FundedHive）・一部ヘッジ型（Propr、Hypernova）に分け、出金（払い出し）の元手と崩れやすさを比べました。"><meta name="twitter:image" content="https://propchecklab.com/assets/articles/prop-firm-survival-models/thumb-survive-model-ja-20261127.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"プロップファームはどのモデルなら生き残れるのか","description":"11月にヘッジで約161万ドルを失ったProprの例から、プロップファームを従来型・切り替え型（FundedHive）・一部ヘッジ型（Propr、Hypernova）に分け、出金（払い出し）の元手と崩れやすさを比べました。","url":"https://propchecklab.com/articles/prop-firm-survival-models/","mainEntityOfPage":"https://propchecklab.com/articles/prop-firm-survival-models/","inLanguage":"ja","datePublished":"2026-11-26","dateModified":"2026-11-26","image":"https://propchecklab.com/assets/articles/prop-firm-survival-models/thumb-survive-model-ja-20261127.png","author":{"@type":"Person","name":"ぽんちゃい"},"publisher":{"@type":"Organization","name":"PROP CHECK","logo":{"@type":"ImageObject","url":"https://propchecklab.com/assets/propcheck-logo-r20261020.webp"}}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"PROP CHECK","item":"https://propchecklab.com/"},{"@type":"ListItem","position":2,"name":"記事","item":"https://propchecklab.com/articles/"},{"@type":"ListItem","position":3,"name":"プロップファームはどのモデルなら生き残れるのか","item":"https://propchecklab.com/articles/prop-firm-survival-models/"}]}</script><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-survive-model4/w7-header.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-survive-model4/assets/header-x-link-20261017.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-survive-model4/assets/footer-reference-20261018.css"><link rel="icon" href="/propcheck-ui-preview/r20261127-survive-model4/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/propcheck-ui-preview/r20261127-survive-model4/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/propcheck-ui-preview/r20261127-survive-model4/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="/propcheck-ui-preview/r20261127-survive-model4/apple-touch-icon.png">
+<style>/* 記事ページのみ: 本番ヘッダーを390pxで本番と同じく折り返す */@media(max-width:700px){.site-header nav>a{white-space:normal!important;font-size:11px!important;line-height:1.25!important;text-align:center}.site-header nav{gap:4px 8px!important}}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@700&display=swap"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-survive-model4/assets/guide-back-btn-20261019.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-survive-model4/assets/article-crumb-back-20261111.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-survive-model4/assets/article-kp-crumb-align-20261111.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-survive-model4/assets/article-kp-survive-model-20261127.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-survive-model4/assets/article-chrome-20261111.css"></head>
+<body><header class="site-header"><div class="header-row"><a class="site-brand site-brand-logo" href="../../"><img src="/propcheck-ui-preview/r20261127-survive-model4/assets/propcheck-logo-r20261020.webp" alt="PROP CHECK"></a><nav aria-label="サイトメニュー"><a href="/propcheck-ui-preview/r20261127-survive-model4/#featured">注目4社</a><a href="/propcheck-ui-preview/r20261127-survive-model4/#comparison">31社比較</a><a href="/propcheck-ui-preview/r20261127-survive-model4/report/">供養所</a><a href="/propcheck-ui-preview/r20261127-survive-model4/guides/" title="紹介記事一覧" hreflang="ja">紹介記事</a><a href="/propcheck-ui-preview/r20261127-survive-model4/articles/">記事</a><a href="/propcheck-ui-preview/r20261127-survive-model4/methodology/">評価方法</a><a class="pc-x-link" href="https://x.com/XS4N62dvqf32385" target="_blank" rel="noopener noreferrer" aria-label="PROP CHECK公式Xアカウント（新しいタブで開く）"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><details class="language-menu" data-language-menu><summary aria-label="言語を選択（現在：日本語）" aria-expanded="false"><svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="6" fill="#bc002d"/></svg><span class="language-menu-chevron" aria-hidden="true">⌄</span><span class="visually-hidden">日本語</span></summary><div class="language-menu-list" role="menu"><a href="/propcheck-ui-preview/r20261127-survive-model4/articles/prop-firm-survival-models/" role="menuitem" aria-current="page"><svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="6" fill="#bc002d"/></svg><span>日本語</span></a><a href="/propcheck-ui-preview/r20261127-survive-model4/en/articles/" role="menuitem"><svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#012169"/><path d="M0 0l30 20M30 0L0 20" stroke="#fff" stroke-width="5"/><path d="M0 0l30 20M30 0L0 20" stroke="#c8102e" stroke-width="2"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6"/><path d="M15 0v20M0 10h30" stroke="#c8102e" stroke-width="3"/></svg><span>English</span></a><a href="/propcheck-ui-preview/r20261127-survive-model4/ko/articles/" role="menuitem"><svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><path d="M10 10a5 5 0 0 1 10 0z" fill="#cd2e3a"/><path d="M10 10a5 5 0 0 0 10 0z" fill="#0047a0"/><path d="M5 5l4-2M5.8 7l4-2M21 15l4-2M20.2 13l4-2" stroke="#111" stroke-width="1"/></svg><span>한국어</span></a></div></details></nav></div></header><main class="kp-page"><div class="crumb"><a class="pc-guide-back" href="/propcheck-ui-preview/r20261127-survive-model4/articles/">← 記事一覧</a></div>
+<article class="kp-article" lang="ja">
+<h1><span style="display:inline-block">プロップファームは</span><span style="display:inline-block">どのモデルなら生き残れるのか</span></h1>
+<p class="kp-subtitle"><span class="kp-sub-part">Proprの失敗から、</span><span class="kp-sub-part">3つのモデルを比べてみました</span></p>
+<p class="kp-byline"><span class="kp-pr">PR</span><time datetime="2026-11-26">2026年11月26日</time><span>ぽんちゃい（<a href="https://propchecklab.com/">PROP CHECK</a>）</span></p>
+
+<p>こんちゃ、ぽんちゃいです。</p>
+
+<p>プロップファームを調べていると、ずっと引っかかっていることがあります。チャレンジの値下げ合戦はどこまで続くのか、このままで本当にファームはやっていけるのか、ということです。</p>
+<p>そんな中で11月、<a href="/propcheck-ui-preview/r20261127-survive-model4/companies/propr-onchain/">Propr</a>というプロップファームが、<strong>1か月で約161万ドルの損失を出しました</strong>。Proprは払い出しに備えるために、トレーダーの注文の一部と同じ方向の取引を、ファーム自身のお金で実際の市場でも行っています（ヘッジ）。そのヘッジ用の口座が相場の下落で負け続け、11月21日に残高がなくなりました。</p>
+<p>ヘッジの中身まで公開しているファームはほとんどないので、<strong>外から何が起きたのかを細かく追えた、珍しいケースです</strong>。これを見て、払い出しの仕組みが違うモデルごとの強さと弱さが、かなりはっきりしてきました。今回は3つのモデルが、それぞれどんな状況に弱いのかを比べてみます。</p>
+<div class="kp-box sum">
+<p class="kp-box-head">先に結論</p>
+<div class="sum-rows">
+<div class="sum-row"><div class="sum-name">従来型<p class="sum-tag">持続性に疑問</p></div><p class="sum-text">新しい売上が頼り。値下げ合戦で苦しくなり、ルールで払い出しを絞りがち。</p></div>
+<div class="sum-row"><div class="sum-name">切り替え型<span>FundedHive</span><p class="sum-tag">一番崩れにくい</p></div><p class="sum-text">利益が出ている口座だけAブックで取引し、−1%でBブックに切り替える。ファームの損失が小さく抑えられる。</p></div>
+<div class="sum-row"><div class="sum-name">一部ヘッジ型<span>Propr、Hypernova</span><p class="sum-tag">効率は一番、振れ幅も一番</p></div><p class="sum-text">理屈では一番効率がいい。ただ、負け方を決めずに運用すると一気に崩れる（Proprの11月）。</p></div>
+</div>
+<div class="sum-survive">
+<p class="sum-sub">生き残るのは</p>
+<dl>
+<div><dt>従来型</dt><dd>FTMOのようにシェアを持つ大手か、RZR Fundedのように赤字に耐えられる資金力のある運営元を持つところ</dd></div>
+<div><dt>ヘッジ系</dt><dd>最適なヘッジをいち早く完成させ、価格と透明性でも選ばれるところ</dd></div>
+</dl>
+<p class="sum-note">どちらも、資金力で「時間」を買えることが前提です。</p>
+</div>
+<p class="sum-foot">ユーザーの安心材料は、オンチェーンの透明性とスマートコントラクト。ただし、それで分かることには限りがあります。</p>
+</div>
+
+<nav class="kp-toc" aria-labelledby="toc-title">
+<p class="kp-toc-title" id="toc-title">目次</p>
+<ol>
+<li><a href="#three-types">払い出しの元手は、3つのタイプに分かれる</a></li>
+<li><a href="#traditional">従来型：安く見せて、売り続けないと回らない</a></li>
+<li><a href="#switching">切り替え型：ファームは崩れにくい。ルールは厳しめ</a></li>
+<li><a href="#partial-hedge">一部ヘッジ型：理屈では一番いい。でもProprは崩れた</a></li>
+<li><a href="#stress">3つのモデルを、同じ状況に置いてみる</a></li>
+<li><a href="#best-hedge">勝負は「最適なヘッジ」をどう完成させるか</a></li>
+<li><a href="#who-survives">生き残るのは、どんなファームか</a></li>
+<li><a href="#transparency">ユーザーの安心材料は、透明性とスマートコントラクト</a></li>
+<li><a href="#summary">まとめ：プロップファームは「払い続けられるか」で選ぶ</a></li>
+<li><a href="#sources">出典</a></li>
+</ol>
+</nav>
+
+<h2 id="three-types" data-n="1">払い出しの元手は、3つのタイプに分かれる</h2>
+<p>プロップファームは、<strong>合格後の注文を実際の市場に出すかどうかで、払い出しのお金の出どころが変わります</strong>。業界では、注文を実際の市場に出すことを「Aブック」、市場に出さずにファーム内のデモ環境で処理することを「Bブック」と呼びます。この記事でもこの呼び方を使います。</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">注文を実際の市場に出すかどうかで、払い出しの元手が変わる</p>
+<p class="rw-legend"><span class="chip mkt">Aブック</span>実際の市場で取引<span class="chip int">Bブック</span>ファーム内のデモ環境で処理</p>
+<div class="rws">
+<div class="rw"><div class="rw-name"><b>従来型</b><span>例：仕組みを公開していない多くのファーム</span></div>
+<div class="rw-col"><p class="rw-lab">合格後の注文の行き先</p><p><span class="chip int">Bブック</span>全部</p></div>
+<div class="rw-col"><p class="rw-lab">払い出しの元手</p><p class="rw-val">チャレンジ代と手持ち資金</p></div></div>
+<div class="rw"><div class="rw-name"><b>切り替え型</b><span>例：FundedHive</span></div>
+<div class="rw-col"><p class="rw-lab">合格後の注文の行き先</p><p><span class="chip mkt">Aブック</span>利益が出ている口座</p><p><span class="chip int">Bブック</span>−1%を下回った口座</p></div>
+<div class="rw-col"><p class="rw-lab">払い出しの元手</p><p class="rw-val">市場で実際に出た利益だけ</p></div></div>
+<div class="rw"><div class="rw-name"><b>一部ヘッジ型</b><span>例：Propr、Hypernova</span></div>
+<div class="rw-col"><p class="rw-lab">合格後の注文の行き先</p><p><span class="chip mkt">Aブック</span>会社が選んだ分</p><p><span class="chip int">Bブック</span>残り</p></div>
+<div class="rw-col"><p class="rw-lab">払い出しの元手</p><p class="rw-val">チャレンジ代＋市場で出た利益</p></div></div>
+</div></div><figcaption>各社の公式ルール・FAQより。Proprは11月23日の時点でヘッジ口座が0ドルで、2027年初めまでは実質「従来型」です</figcaption></figure>
+
+<h2 id="traditional" data-n="2">従来型：安く見せて、売り続けないと回らない</h2>
+<p>従来型のファームの収入は、ほぼチャレンジ代だけです。チャレンジ中も合格後も注文は市場に出ないので、勝った人への払い出しは、みんなが払ったチャレンジ代から出ています。</p>
+<p>これが成り立つのは、払い出しまで届く人がごく一部だからです。10社・約30万口座を調べたFPFX Techのデータでは、<strong>チャレンジを買った人のうち払い出しを受け取れたのは7%でした</strong>。</p>
+<p><strong>問題は、ここに値下げ合戦が重なっていることなんですよね</strong>。2026年4月の時点で、9社が12個の割引コードを出していて、割引率は15%〜90%。Apex Trader Fundingは90%引きのコードまで出していました。1人あたりの売上がこれだけ下がると、同じ人数に払い出しても、売上に対する払い出しの割合はどんどん上がります。</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">割引が深くなるほど、売上のうち払い出しに消える割合が増える（試算）</p>
+<p class="hf-quiet">払い出しの額は変わらず、割引で売上だけが減ったと仮定した場合の、売上に占める払い出しの割合</p>
+<div class="pr-row"><b>定価</b><div class="pr-track"><i style="width:26.0%"></i></div><em>26%</em></div>
+<div class="pr-row"><b>30%オフ</b><div class="pr-track"><i style="width:37.1%"></i></div><em>37%</em></div>
+<div class="pr-row"><b>50%オフ</b><div class="pr-track"><i style="width:52.0%"></i></div><em>52%</em></div>
+<div class="pr-row"><b>70%オフ</b><div class="pr-track"><i style="width:86.7%"></i></div><em>87%</em></div>
+<p class="pr-scale"><span>0%</span><span>100%：売上がすべて払い出しに消える</span></p>
+<p class="hf-quiet">参考までに、売上と払い出しを公開している一部ヘッジ型の2社では、Proprが66%（開業からの累計）、Hypernovaが約94%（8月〜11月）です。</p>
+</div><figcaption>筆者の試算。定価での割合は、FPFX Techの調査（10社・約30万口座、2024年9月公開）の平均値から計算した17.5〜35%の中間の26%としました。割引で買う人が増える効果は入れていません</figcaption></figure>
+<p>そして、<strong>苦しくなったファームが手を付けやすいのが、ルールなんですよね</strong>。</p>
+<ul class="kp-list">
+<li><p>The Funded Traderは、2024年1〜2月だけで200万ドルを超える払い出しを拒否し、その後運営を止めました。</p></li>
+<li><p>FundingTicksは、2025年12月に1分以内のスキャルピング制限、目標の引き上げ、取り分の引き下げを入れて反発を受け、2026年1月に事業を畳み始めました。</p></li>
+<li><p>2024年2月から2025年末までに、推定80〜100社のプロップファームが閉鎖しています。英国のPropel Capitalは、立ち上げから14か月で「競争が激しすぎて続けられない」として閉鎖しました。</p></li>
+</ul>
+<p>払い出しの前に「リスクチームの審査」が入り、何が問題だったのかが説明されない。こういうブラックボックスな部分が多いのも、従来型の特徴だと感じています。安く見せて売り続け、ルールの細かい条件で払い出しを絞る。そういう構造になりやすいモデルだと思うんです。</p>
+<p>象徴的なのが、大手の動きです。<a href="/propcheck-ui-preview/r20261127-survive-model4/companies/ftmo-fx-cfd/">FTMO</a>は2025年12月に、ブローカーのOANDAを2.5億ドルで買収しました。MyFundedFXから名前を変えたSeacrestは、2026年2月にプロップ事業をやめて、規制下のCFDブローカー専業になっています。<strong>業界のトップでさえ、チャレンジ代以外の収入源を取りにいっているわけです</strong>。</p>
+<p>ただ、公平に書いておくと、<strong>従来型でも利益は出ます。</strong>Proprのヘッジを除いた部分（つまり従来型と同じ、Bブックで処理している部分）は、開業から約177万ドル、売上の約26%の利益を出していました。問題は、その利益が「新しい売上が入り続けて、払い出しが一部の人に限られている間」しか続かないことです。私が持続性に疑問を持っているのはそこです。</p>
+
+<h2 id="switching" data-n="3">切り替え型：ファームは崩れにくい。ルールは厳しめ</h2>
+<p><a href="/propcheck-ui-preview/r20261127-survive-model4/companies/fundedhive-onchain/">FundedHive</a>は、合格後の口座を「AADS（自動Aブック・ディーリングシステム）」という仕組みで動かしています。公式ページの説明を整理すると、流れはこうです。</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">FundedHiveは、口座ごとにAブックとBブックを自動で切り替える</p>
+<div class="hf-flow">
+<div class="hf-step live"><b>Aブックで取引</b><span>合格後は実際の市場から</span></div><span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-step"><b>−1%を下回る</b><span>初期残高から</span></div><span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-step sim"><b>Bブックへ</b><span>ポジションは強制決済</span></div><span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-step sim"><b>Bブックで回復</b><span>この間の利益は出金不可</span></div><span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-step live"><b>Aブックに戻る</b><span>初期残高まで戻ったら</span></div>
+</div>
+<p class="hf-quiet">市場で出た損失（最大−1%）は「マイナスPnL」として記録され、その後の利益から差し引かれる</p>
+</div><figcaption>FundedHive公式「AADS」ページの説明より（2026年11月26日確認）。チャレンジ中はシミュレーションです</figcaption></figure>
+<p>ポイントは3つです。</p>
+<ul class="kp-list">
+<li><p><strong>払い出しは、実際の市場で出た利益からだけ。</strong>Bブック（デモ環境）にいる間に出た利益は出金できません（口座を閉じたあと、FundedHive独自のコインに換えて次の口座の購入には使えます）。</p></li>
+<li><p><strong>ファームが実際の市場で負うのは、1口座あたり最大1%ほど。</strong>しかもその損失は、トレーダーが次に出した利益から差し引かれます。</p></li>
+<li><p><strong>出金はスマートコントラクトから。</strong>いつでも申請でき、人の承認は入りません。私が試したときは、<strong>申請から0.3秒ほどでウォレットに着金しました</strong>。1日の出金額には上限があります。</p></li>
+</ul>
+<p>ファームから見ると、かなり崩れにくい仕組みです。<strong>払うのは市場で実際に稼いだお金なので、「勝つ人が増えすぎて払えない」ということが起きません</strong>。市場での負けも1口座1%ほどで止まり、あとで回収されます。CEOはインタビューで、払い出しは売上の2〜3割だと話しています。</p>
+<p>トレーダー側で気をつけたいのは、1%のラインです。合格後に少し負けるとすぐBブックに切り替わり、初期残高まで取り戻すまでの利益は出金できません。マイナスPnLが「借金」のように残るのが嫌だ、という口コミもあります。</p>
+<p>とはいえ、私はFundedHiveを高く評価しています。まず、取引環境がいい。<strong>スプレッドと手数料は、海外ブローカー全体と比べても最高峰のレベルです</strong>（手数料は1ロットあたり3ドル）。しかもスプレッドは、<a href="https://funded.tradinghive.com/spread">会員ページ</a>で時間帯ごとにすべて公開されています（見るには無料の会員登録が必要です）。</p>
+<p>実際に、日本時間11月26日の夜（22時40分〜23時40分ごろ）のスプレッドを見てみました。主要な通貨ペアは、ふだん0.2〜0.3pipsです。</p>
+<div class="table-scroll" tabindex="0"><table class="kp-money kp-spread"><thead><tr><th>銘柄</th><th>ふだんの上限</th><th>広がったとき</th><th>下限</th></tr></thead><tbody>
+<tr><td data-label="銘柄">EUR/USD</td><td data-label="ふだんの上限">0.2pips</td><td data-label="広がったとき">0.3pips</td><td data-label="下限">0.0pips</td></tr>
+<tr><td data-label="銘柄">USD/JPY</td><td data-label="ふだんの上限">0.2pips</td><td data-label="広がったとき">0.3pips</td><td data-label="下限">0.0pips</td></tr>
+<tr><td data-label="銘柄">GBP/USD</td><td data-label="ふだんの上限">0.3pips</td><td data-label="広がったとき">0.4pips</td><td data-label="下限">0.0pips</td></tr>
+<tr><td data-label="銘柄">XAU/USD（金）</td><td data-label="ふだんの上限">1.3pips前後</td><td data-label="広がったとき">3.2pips</td><td data-label="下限">0.6pips</td></tr>
+</tbody></table></div>
+<p class="kp-note" style="font-size:.8125rem">FundedHiveの会員ページのスプレッド一覧（2026年11月26日、日本時間22時40分〜23時40分ごろの約1時間）より。手数料は別に1ロットあたり3ドルかかります。</p>
+<p>この取引環境に、スマートコントラクトから即座に出金できる安心感が加わる。この組み合わせは、ほかではなかなか味わえません。1%のラインも、公式が勧めているように少し利益の余裕を作ってから大きく張るようにすれば、十分付き合えます。ルールが最初からはっきり公開されていて、後から罠が出てくることもない。従来型よりずっと良いと思っています。</p>
+
+<p>ただ、売上と払い出しの合計額はまとめて公開されていないので、数字での検証はまだできません。購入の記録は1件ずつオンチェーンで公開されています。</p>
+
+<h2 id="partial-hedge" data-n="4">一部ヘッジ型：理屈では一番いい。でもProprは崩れた</h2>
+<p>一部ヘッジ型は、会社全体のポジションを見て、リスクが大きい部分や成績のいいトレーダーの方向だけを市場でヘッジします。FundedHiveのように口座ごとに機械で切り替えるのではなく、会社がまとめて判断するやり方です。トレーダーへの制約が少なく、理屈の上では一番お金の効率がいいモデルです。</p>
+<p>同じ一部ヘッジ型の<a href="/propcheck-ui-preview/r20261127-survive-model4/companies/hypernova-onchain/">Hypernova</a>は、注文を自社のエンジンで処理しつつ、トレーダーの売買を参考にファームが自分の資金で取引することがあると明記しています。ただ、その実績は公開していません。公開されている数字では、<span class="kp-nw">8月〜11月</span>の払い出しが売上の約94%で、運営は8月〜10月に3回、合計約138万ドルを払い出し用の財布に補充しています。<strong>売上だけでは回っておらず、運営の資金で支えている状態です</strong>。</p>
+<p>ヘッジの中身まで公開しているのはProprです。Proprは8月〜10月、このやり方でうまくいっていました。</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">Proprのヘッジは3か月で61万ドル稼ぎ、11月だけで161万ドル失った</p>
+<p class="hf-quiet">ヘッジ口座の月ごとの確定損益</p>
+<div class="hb-row"><b>8月</b><div class="hb-track"><i style="width:13.6%"></i><em>+28.0万ドル</em></div></div>
+<div class="hb-row"><b>9月</b><div class="hb-track"><i style="width:2.4%"></i><em>+4.9万ドル</em></div></div>
+<div class="hb-row"><b>10月</b><div class="hb-track"><i style="width:13.9%"></i><em>+28.6万ドル</em></div></div>
+<div class="hb-row"><b>11月</b><div class="hb-track"><i class="neg" style="width:78%"></i><em>−161.1万ドル</em></div></div>
+<p class="hf-quiet">開業からの累計は −99.6万ドル</p>
+</div><figcaption>Propr透明性ダッシュボードのヘッジ損益の日次データを月ごとに合計（2026年11月26日取得。11月は26日まで）</figcaption></figure>
+
+<h3>11月に何が起きたのか</h3>
+<p>ヘッジ口座は、WLD・XPL・ZECという3つの銘柄のロング（買い）を10倍のレバレッジで持ったまま、相場の下落で含み損が膨らんでいきました。流れを日付順に並べるとこうなります。</p>
+<div class="table-scroll" tabindex="0"><table class="kp-two"><thead><tr><th>日付</th><th>出来事</th></tr></thead><tbody>
+<tr><td data-label="日付">11月11日</td><td data-label="">ヘッジ口座の含み損が約57万ドルに。CEOがDiscordで「使える流動性は約430万ドルある」「ヘッジ口座を50万ドルまで積み増す」「ヘッジの説明文書を出す」と説明</td></tr>
+<tr><td data-label="日付">11月15日</td><td data-label="">ヘッジ口座に約42万ドルを入金</td></tr>
+<tr><td data-label="日付">11月20日</td><td data-label="">ヘッジが1日で−68万ドルの確定損失。ダッシュボードのトップから、ヘッジ損益の欄が消える</td></tr>
+<tr><td data-label="日付">11月21日</td><td data-label="">残りのポジションも−17万ドルで決済され、ヘッジ口座の残高がなくなる。CEOは「ヘッジはやめた」とコメント</td></tr>
+<tr><td data-label="日付">11月23日</td><td data-label="">ヘッジの説明文書を公開。ヘッジは2027年初めまで止めると発表</td></tr>
+<tr><td data-label="日付">11月23日</td><td data-label="">外部アプリTrigger.xyzのAPIキー流出を受け、払い出しを手作業で審査する形に</td></tr>
+<tr><td data-label="日付">11月24日</td><td data-label="">出金用の公開口座に約39万ドルを補充。紹介報酬に「申請から30日後に支払い」のルールを導入。オンチェーンの払い出しがほぼ1日止まり、25日に再開</td></tr>
+<tr><td data-label="日付">11月26日</td><td data-label="">株価指数で最大40倍の新プラン「1-Step Max」を開始。ブラックフライデーで全チャレンジ20%オフ</td></tr>
+</tbody></table></div>
+<p>Proprは、出金やヘッジに使うウォレットの残高の合計を「Reserve（準備金）」としてダッシュボードで公開しています。この記事では「出金用の公開口座」と呼びます。その残高の動きがこちらです。</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">出金用の公開口座の残高は一時4万ドルを切り、外部からの補充で約40.4万ドルに戻った</p>
+<p class="hf-quiet">Proprがオンチェーンで公開しているウォレット残高の合計（半日ごと）</p>
+<div class="chart" id="reserve" role="img" aria-label="Proprの出金用公開口座の残高の推移。10月末の約80万ドルから11月22日に約3.9万ドルまで減り、11月24日の補充のあと、11月26日は約40.4万ドル"></div>
+<ol class="hf-legend" id="reserve-legend"></ol>
+</div><figcaption>Propr透明性ダッシュボードのReserveデータ（UTCで半日ごと、2026年10月27日〜11月26日）。点線は9月末に「100万ドルを用意した」と発表された額</figcaption></figure>
+<p>この残高のほとんどは、ヘッジ口座の証拠金でした。なので、ヘッジが負けるたびに残高も減っていきます。11月15日に積み増した分も、1週間ほどで消えてしまいました。11月24日に戻ったのは、運営が外から入れたお金です。CEOは11月23日の配信で、個人の融資枠を使って約120万ドルを用意し、すでに約65万ドルを入れたと話しています。ただ、この金額はオンチェーンでは確かめられません。</p>
+<p>正直、気になるのはここなんですよね。11月11日には「使える流動性は約430万ドル」と説明していました。それでも残高は4万ドル近くまで減り、外からお金を入れることになっています。この2つがどうつながるのかは、まだ説明されていません。</p>
+<p><strong>ただ、Proprの大元には大きな資金力があります</strong>。Proprを作ったXBorgは、暗号資産アプリSwissBorgから生まれた会社で、株主はSwissBorgと創業者です。SwissBorgは、本人確認済みの利用者約92万人、利用者の暗号資産の合計約9.7億ドル（2026年11月27日時点、公式サイト）の、ヨーロッパ有数の暗号資産アプリです。今回もCEOが外から資金を入れて、払い出しを止めずに続けています。資金力のないファームなら、ヘッジ口座の残高がなくなった時点で払い出しが止まっていてもおかしくありませんでした。この記事の結論で書く「資金力で時間を買う」を、まさに実行している例です。</p>
+<p>開業からの利益で見ても、影響は大きいです。売上から払い出しと紹介報酬を引き、ヘッジの損益を足した利益の累計は、10月末の約227万ドルから、11月26日には約77万ドルまで減りました。Proprが以前ダッシュボードに載せていた固定費の目安（8月以降は月約10万ドル）を引くと、開業からの利益はほぼゼロです。</p>
+<p>一方で、<strong>トレーダーへの払い出しは今も続いています</strong>。ただ、支払われるまでの時間は、中央値で11月12日の約14分から、11月26日は約3時間に延びました。</p>
+
+<h3>Proprは何を間違えたのか</h3>
+<p>Proprが11月23日に公開した説明文書では、失敗の理由を4つ挙げています。</p>
+<ul class="kp-list">
+<li><p>トレーダーの実力を6週間で判断して、2週間ごとにしか見直していなかった（見直しが遅かった）</p></li>
+<li><p>XPLやWLDのようなマイナーコインで、大きな建玉を許しすぎた</p></li>
+<li><p>「負けてもいい額」の設定が甘かった</p></li>
+<li><p>1日の損失の上限が大きすぎた</p></li>
+</ul>
+<p>読んでいて思ったのは、<strong>どれも「当て方」の失敗ではなく、「負け方を決めていなかった」失敗だということです</strong>。まねていた上位トレーダーがそろって負けたうえに、負けても買い増しを続けるトレーダーがいたので、システムがポジションを持ち続けてしまった。FundedHiveが口座ごとに「−1%で切る」と決めているのとは、まさに正反対です。</p>
+
+<h2 id="stress" data-n="5">3つのモデルを、同じ状況に置いてみる</h2>
+<p>それぞれのモデルが、どんな状況に強くて、どんな状況に弱いのか。私の見方で印をつけてみました。</p>
+<p class="mk-legend"><span class="mk o">○</span>強い<span class="mk t">△</span>状況次第<span class="mk x">×</span>弱い</p>
+<div class="table-scroll" tabindex="0"><table class="kp-stress"><thead><tr><th>状況</th><th>従来型</th><th>切り替え型</th><th>一部ヘッジ型</th></tr></thead><tbody>
+<tr><td data-label="状況">新しい売上が止まる</td><td data-label="従来型"><div class="cell"><span class="mk x" aria-label="弱い">×</span><span>払い出しの元手が細る</span></div></td><td data-label="切り替え型"><div class="cell"><span class="mk o" aria-label="強い">○</span><span>払い出しは市場の利益から</span></div></td><td data-label="一部ヘッジ型"><div class="cell"><span class="mk t" aria-label="状況次第">△</span><span>Bブックの分は弱い</span></div></td></tr>
+<tr><td data-label="状況">勝つ人が急に増える</td><td data-label="従来型"><div class="cell"><span class="mk x" aria-label="弱い">×</span><span>全額チャレンジ代から払う</span></div></td><td data-label="切り替え型"><div class="cell"><span class="mk o" aria-label="強い">○</span><span>市場の利益から払う</span></div></td><td data-label="一部ヘッジ型"><div class="cell"><span class="mk t" aria-label="状況次第">△</span><span>ヘッジが合っていれば強い</span></div></td></tr>
+<tr><td data-label="状況">相場が大きく動く</td><td data-label="従来型"><div class="cell"><span class="mk x" aria-label="弱い">×</span><span>上がる局面に特に弱い</span></div></td><td data-label="切り替え型"><div class="cell"><span class="mk o" aria-label="強い">○</span><span>ファームの損失は1口座1%ほど</span></div></td><td data-label="一部ヘッジ型"><div class="cell"><span class="mk t" aria-label="状況次第">△</span><span>外すと二重に痛い</span></div></td></tr>
+<tr><td data-label="状況">運営が判断を誤る</td><td data-label="従来型"><div class="cell"><span class="mk t" aria-label="状況次第">△</span><span>ルールで払い出しを絞りがち</span></div></td><td data-label="切り替え型"><div class="cell"><span class="mk o" aria-label="強い">○</span><span>機械的なルールなので起きにくい</span></div></td><td data-label="一部ヘッジ型"><div class="cell"><span class="mk x" aria-label="弱い">×</span><span>一番危ない（Proprの11月）</span></div></td></tr>
+<tr><td data-label="状況">トレーダーへの優しさ</td><td data-label="従来型"><div class="cell"><span class="mk t" aria-label="状況次第">△</span><span>細かい条件が多い</span></div></td><td data-label="切り替え型"><div class="cell"><span class="mk t" aria-label="状況次第">△</span><span>1%のラインが厳しめ</span></div></td><td data-label="一部ヘッジ型"><div class="cell"><span class="mk o" aria-label="強い">○</span><span>制約が一番少ない</span></div></td></tr>
+<tr><td data-label="状況">外から確かめられるか</td><td data-label="従来型"><div class="cell"><span class="mk x" aria-label="弱い">×</span><span>ほぼできない</span></div></td><td data-label="切り替え型"><div class="cell"><span class="mk t" aria-label="状況次第">△</span><span>仕組みと1件ずつの記録は公開</span></div></td><td data-label="一部ヘッジ型"><div class="cell"><span class="mk o" aria-label="強い">○</span><span>Proprは帳簿まで、Hypernovaは一部</span></div></td></tr>
+</tbody></table></div>
+<p>切り替え型は○が多く、ファームを守ることを優先した作りです。一部ヘッジ型はトレーダーに一番優しい代わりに、△が多い。<strong>うまくいけば一番強く、失敗すると一番崩れやすい</strong>。振れ幅が大きいんですよね。</p>
+
+<h2 id="best-hedge" data-n="6">勝負は「最適なヘッジ」をどう完成させるか</h2>
+<p>私は、3つの中で一番可能性があるのはヘッジだと思っています。まったくヘッジしない従来型は、値下げ合戦とルールの締め付けから抜け出せません。FundedHiveのように口座ごとに線を引けばファームは守れますが、そのぶんトレーダーへのルールは厳しめになります。その間で、どこまでを市場に出して（Aブック）、どこからをファームの中で持つか（Bブック）。<strong>この線引きを、ファームを守りながらトレーダーにも厳しすぎない形で完成させたところが、次に生き残るファームになると思います</strong>。</p>
+<p>Proprの失敗を裏返し、FundedHiveのやり方と見比べると、「完成したヘッジ」の条件が見えてきます。</p>
+<ul class="kp-list">
+<li><p><strong>「負けてもいい額」と、止めるタイミングを先に決めておく。</strong>FundedHiveは口座ごとに−1%、Proprには実質的な損切りがありませんでした。会社全体でヘッジするなら、会社全体の損切りラインが必要です。</p></li>
+<li><p><strong>ヘッジは流動性の高い銘柄だけで行う。</strong>マイナーコインは市場全体と同じように動かないので、大型銘柄でヘッジしても効きません。</p></li>
+<li><p><strong>ヘッジできないものは、ルールで抑える。</strong>マイナーコインの建玉やレバレッジに上限をかけるのも、立派なリスク管理です。ルールの設計そのものがヘッジの一部、ということです。</p></li>
+<li><p><strong>まねる相手の見直しを速くする。</strong>6週間の成績は、実力なのか運なのか分からないことも多いです。</p></li>
+<li><p><strong>ヘッジの損益は、払い出しの義務とセットで公開する。</strong>Proprは「トレーダーが負ければ払う義務も減る」と説明しましたが、その義務の額が出ていないので、外からは確かめられませんでした。</p></li>
+</ul>
+<p>今のところ、これを全部満たしているファームは見当たりません。Proprは2027年初めに「ヘッジを作り直して戻る」と言っています。そこで何が変わっているかは、PROP CHECKでも追いかけるつもりです。</p>
+
+<h2 id="who-survives" data-n="7">生き残るのは、どんなファームか</h2>
+<p>ここまでをまとめると、私の結論はこうです。モデルによって、生き残る条件が違います。</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">どちらのモデルも、資金力で「時間」を買えることが前提。何のための時間かが違う</p>
+<div class="sv">
+<div class="sv-card"><p class="sv-head">従来型で生き残るのは</p><dl>
+<div><dt>条件</dt><dd>シェアを持つ大手（例：FTMO）か、資金力のある運営元がいる（例：RZR Funded）</dd></div>
+<div><dt>資金で買う時間</dt><dd>値下げ合戦の赤字に耐えて、シェアを取りきるまで</dd></div>
+<div><dt>その先</dt><dd>ブローカー事業など、チャレンジ代以外の収入源も持つ</dd></div></dl></div>
+<div class="sv-card"><p class="sv-head">ヘッジ系で生き残るのは</p><dl>
+<div><dt>条件</dt><dd>最適なヘッジの仕組みを、いち早く完成させる</dd></div>
+<div><dt>資金で買う時間</dt><dd>仕組みが完成するまでの失敗に耐えるまで</dd></div>
+<div><dt>その先</dt><dd>価格・ルール・透明性で、ユーザーに選ばれ続ける</dd></div></dl></div>
+</div></div><figcaption>筆者の見方をまとめた図</figcaption></figure>
+<p><strong>従来型は、もう体力勝負の段階に入っていると思います</strong>。値下げ合戦を仕掛けているのも、資金力のある大手や、大きな運営元を持つファームです。たとえば<a href="/propcheck-ui-preview/r20261127-survive-model4/companies/rzr-funded/">RZR Funded</a>（旧Hantec Trader）は、金融市場で35年の実績があるHantecグループの一員です。こうした運営元を持つファームは、値下げ合戦の中でも体力で持ちこたえやすく、グループのブローカー事業とも組み合わせられます。逆に、資金力のない新しいファームが従来型で参入しても、Propel Capitalのように1年ほどで行き詰まりやすい。従来型を選ぶなら、規模と運営元を見るのが一番確実です。</p>
+<p>ヘッジ系は、まだ「仕組みを完成させる競争」の途中です。Proprは11月に一度失敗し、CEOが自分のお金を入れてしのいでいます。FundedHiveは崩れにくい仕組みを作り、出金の速さでもユーザーをつかんでいます。あとは1%のラインを、どこまでトレーダーに優しくできるかだと思います。完成したヘッジを持っていても、価格が高すぎたり、ルールが厳しすぎたりすればユーザーは来ません。<strong>仕組みの完成度と、ユーザーに選ばれる条件の両方をそろえたところが勝つと思っています</strong>。</p>
+
+<h2 id="transparency" data-n="8">ユーザーの安心材料は、透明性とスマートコントラクト</h2>
+<p>今回のProprの件で改めて思ったのは、<strong>オンチェーンの透明性はやっぱり強い</strong>、ということです。ヘッジ口座が崩れていく様子は、外から毎日見えていました。出金用の公開口座の残高が減っていくのも、ポジションが清算ラインに近づいていくのも分かった。非公開のファームなら、同じことが起きても、払い出しが止まるまで誰も気づけません。</p>
+<p>ただ、透明性で見えるのは「持っているお金」と「払った記録」が中心です。</p>
+<ul class="kp-list">
+<li><p><strong>払う義務の総額は見えません。</strong>トレーダーの含み益や、未払いの紹介報酬はオンチェーンに出てきません。</p></li>
+<li><p><strong>見せ方は運営が変えられます。</strong>Proprは11月、ダッシュボードのトップからヘッジ損益の欄を外しました。今公開されている数字が、この先も公開され続けるとは限りません。</p></li>
+</ul>
+
+<h3>スマートコントラクトって何？</h3>
+<p>スマートコントラクトは、ブロックチェーンの上で動くプログラムです。「この条件を満たしたら、このお金をこの人に送る」と決めておくと、人の手を通さずに自動で実行されます。プログラムの中身も、お金の動きも、誰でも確かめられるのが特徴です。</p>
+<p>ただ、払い出しにブロックチェーンを使っているファームでも、使い方には段階があります。</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">同じ「オンチェーン」でも、払い出しの仕組みには3つの段階がある</p>
+<div class="stairs">
+<div class="stair s1"><p class="st-n">段階1</p><p class="st-t">記録が見える</p><p class="st-d">払うかどうかは運営が決める。送金の記録は誰でも見られる</p><p class="st-ex">例：Propr</p></div>
+<div class="stair s2"><p class="st-n">段階2</p><p class="st-t">自動で払う</p><p class="st-d">条件を満たせば、コントラクトが承認なしで払う</p><p class="st-ex">例：FundedHive、Hypernova</p></div>
+<div class="stair s3"><p class="st-n">段階3</p><p class="st-t">お金ごと預ける</p><p class="st-d">払い出し用のお金をロックし、運営も引き出せない</p><p class="st-ex">例：確認できた範囲ではなし</p></div>
+</div>
+<p class="st-axis">安心材料として強い →</p>
+</div><figcaption>筆者の整理。FundedHiveとHypernovaは、どちらも出金をスマートコントラクトで処理しています</figcaption></figure>
+<p>Proprは段階1です。払い出しの記録はすべて見えますが、払うかどうか、いつ払うかは運営が決めます。今回、払い出しを手作業での審査に切り替えたり、紹介報酬を30日後払いにしたりできたのも、そのためです。</p>
+<p>FundedHiveとHypernovaは段階2です。出金を申請すると、スマートコントラクトがその場で確認して支払います。Hypernovaの場合は、コントラクトが利益の額を確かめ、出金額を実際の利益までに抑えたうえで、申請と同じ取引の中でUSDCを送ります。「払う約束」がコードになっている分、段階1より一歩進んだ形です。それでも、確かめておきたい点が3つあります。</p>
+<ul class="kp-list">
+<li><p><strong>利益の額を計算しているのは、ファームのシステムです。</strong>コントラクトは、受け取った数字をもとに払います。</p></li>
+<li><p><strong>コントラクトに入っているお金以上は払えません。</strong>残高は自分で確かめておきたいところです。</p></li>
+<li><p><strong>運営がコントラクトを止めたり入れ替えたりできる権限を持っていることも多いです。</strong>ここは、普通のユーザーにはなかなか確かめにくいところなんですよね。</p></li>
+</ul>
+<p><strong>本当の意味で「スマートコントラクトが払い出しを守っている」と言えるのは、段階3まで来たときだと思います</strong>。そこまでやっているファームは、私が確認できた範囲ではまだありません。ヘッジの仕組みを完成させたファームが、ここまで踏み込んでくれば、ユーザーにとってはかなり強い安心材料になるはずです。</p>
+<p>なので私は、オンチェーンで公開しているファームでも、次の5つを定期的に見るようにしています。</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">透明性のあるファームで、定期的に見ておきたい5つの数字</p>
+<ol class="chk">
+<li><b>出金用の公開口座の残高</b><span>増えているか、減り続けていないか</span></li>
+<li><b>払い出しまでの時間</b><span>急に延びていないか</span></li>
+<li><b>売上に対する払い出しの割合</b><span>100%に近づいていないか</span></li>
+<li><b>運営による補充の履歴</b><span>外からお金を入れる頻度と額</span></li>
+<li><b>公開項目の数</b><span>前にあった数字が消えていないか</span></li>
+</ol>
+</div><figcaption>PROP CHECKの「運営基盤」の点数でも、この考え方を使っています</figcaption></figure>
+
+<h2 id="summary" data-n="9">まとめ：プロップファームは「払い続けられるか」で選ぶ</h2>
+<p>3つのモデルを比べてみて、私の結論はこうです。</p>
+<ul class="kp-list">
+<li><p><strong>従来型</strong>は、もう体力勝負です。FTMOのようにシェアを持つ大手か、RZR Fundedのように資金力のある運営元を持つところでなければ、値下げ合戦の中で続けるのは難しいと思います。</p></li>
+<li><p><strong>切り替え型</strong>は、3つの中で一番崩れにくい仕組みです。1%のラインに慣れれば、取引環境と出金の速さは大きな魅力です。</p></li>
+<li><p><strong>一部ヘッジ型</strong>は、まだ仕組みを完成させる競争の途中です。Proprは一度失敗しましたが、大元の資金力で払い出しを続けながら、2027年初めにヘッジを作り直すと言っています。</p></li>
+</ul>
+<p>なので私は、今プロップファームを選ぶなら次の順番で見ます。</p>
+<ol class="kp-list kp-steps">
+<li><p><strong>運営元に資金力があるか。</strong>どのモデルでも、苦しい時期を乗り切れるかは結局ここで決まります。</p></li>
+<li><p><strong>払い出しのお金がどこから来るか。</strong>市場で出た利益なのか、チャレンジ代なのか。仕組みを説明していないファームは、チャレンジ代だけで回しているつもりで付き合います。</p></li>
+<li><p><strong>数字を外から追えるか。</strong>出金用の公開口座の残高や、払い出しまでの時間を自分で確かめられるか。</p></li>
+<li><p><strong>利益はこまめに出金する。</strong>どんなファームでも、口座に利益をためこまないのが一番の自衛です。</p></li>
+</ol>
+<p>Proprが作り直したヘッジで戻ってきたとき、何が変わっているのか。最適なヘッジを最初に完成させるのはどこなのか。PROP CHECKでは、これからも数字で追いかけていきます。</p>
+<p><strong>割引率やルールの細かさより、「このファームは、勝った人に払い続けられるか」。</strong>プロップファームは、そこで選ぶ時代になったと思っています。</p>
+
+<p class="kp-note">PROP CHECKには、FundedHive・RZR Funded・Hypernova・Proprなどへの紹介リンクがあり、申し込みがあると運営者に報酬が入る場合があります。紹介報酬は点数の計算に含めていません。この記事の数字は、どれも出典のページで誰でも確かめられます。</p>
+
+<h2 id="sources" data-n="10">出典</h2>
+<ul class="kp-sources">
+<li><p><a href="https://www.propr.xyz/transparency">Propr 透明性ダッシュボード</a></p></li>
+<li><p><a href="https://docs.google.com/document/d/1Iz7AydeYdmTjhMPTZOumK3GqdmY3m_ucW11o3BGCW6M/edit?usp=sharing">Propr ヘッジの説明文書（2026年11月23日）</a></p></li>
+<li><p><a href="https://www.propr.xyz/rules">Propr 取引ルール</a></p></li>
+<li><p>Propr 公式Discord（#announcements と運営の発言、2026年11月11日〜26日）</p></li>
+<li><p><a href="https://thedefiant.io/news/press-releases/powering-the-next-generation-of-gaming-xborg-sells-out-2-million-seed-round-community-allocation">The Defiant: XBorg is a spin-off of SwissBorg</a></p></li>
+<li><p><a href="https://xborg-faq.gitbook.io/xborg/06-or-token/fundraise">XBorg FAQ（株主はSwissBorgと創業者）</a></p></li>
+<li><p><a href="https://swissborg.com/">SwissBorg 公式サイト（本人確認済みの利用者約92万人、利用者の暗号資産の合計約9.7億ドル、2026年11月27日時点）</a></p></li>
+<li><p><a href="https://alexfirdaus.com/propr-hedge-losses/">Alex Firdaus: Propr Hedge Losses（CEOの配信での発言、11月24日の払い出し停止）</a></p></li>
+<li><p><a href="https://fundedhive.com/aads">FundedHive AADS（自動Aブック・ディーリングシステム）</a></p></li>
+<li><p><a href="https://fundedhive.com/transparency">FundedHive 透明性ページ</a></p></li>
+<li><p><a href="https://fundedhive.com/faq">FundedHive よくある質問</a></p></li>
+<li><p><a href="https://chainwire.org/2026/08/28/the-onchain-prop-firm-traders-can-verify-in-real-time/">Hypernova: The Onchain Prop Firm Traders Can Verify In Real Time（2026年8月28日、出金の仕組み）</a></p></li>
+<li><p><a href="https://funded.tradinghive.com/spread">FundedHive スプレッド一覧（時間帯ごと、要ログイン）</a></p></li>
+<li><p><a href="https://ctrader.com/prop-firms/tradinghive">cTrader: FundedHive（取引手数料）</a></p></li>
+<li><p><a href="https://financemagnates.com/executives/interview/fundedhive-prop-firm-ceo-calls-consistency-rule-a-payout-trap/">Finance Magnates: FundedHive CEO インタビュー</a></p></li>
+<li><p><a href="https://hypernova.xyz/rulebook">Hypernova ルールブック（注文の扱い）</a></p></li>
+<li><p><a href="https://hypernova.xyz/stats">Hypernova Stats</a></p></li>
+<li><p><a href="https://propchecklab.com/guides/hypernova/">PROP CHECK Hypernova紹介記事（払い出し用の財布の補充履歴）</a></p></li>
+<li><p><a href="https://www.financemagnates.com/forex/exclusive-only-7-of-300000-prop-trading-accounts-achieved-payouts/">Finance Magnates: Only 7% of 300,000 Prop Trading Accounts Achieved Payouts（2024年9月18日）</a></p></li>
+<li><p><a href="https://propfirmmap.com/blog/prop-firm-discount-wars-pricing-report-april-2026">PropFirmMap: Prop Firm Discount Wars（2026年4月）</a></p></li>
+<li><p><a href="https://propfirmmap.com/blog/prop-firm-news-week-april-16-2026-thinkcapital-price-drops-e8-on-demand">PropFirmMap: Prop Firm News This Week（2026年4月17日、Apexの90%引き）</a></p></li>
+<li><p><a href="https://propfirmmatch.com/crypto/prop-firms/rzr-funded">Prop Firm Match: RZR Funded（Hantecグループの35年の実績）</a></p></li>
+<li><p><a href="https://thetrustedprop.com/prop-firms/rzr-funded">The Trusted Prop: RZR Funded（旧Hantec Trader、Hantecグループとの関係）</a></p></li>
+<li><p><a href="https://thepropfirmguide.com/prop-firms-that-shut-down/">The Prop Firm Guide: Prop Firm Shutdowns（閉鎖したファームの一覧）</a></p></li>
+<li><p><a href="https://www.financemagnates.com/forex/following-profit-cuts-and-trading-limits-prop-firm-fundingticks-begins-winding-down/">Finance Magnates: FundingTicks Begins Winding Down（2026年1月19日）</a></p></li>
+<li><p><a href="https://www.financemagnates.com/forex/prop-firm-propel-capital-folds-after-14-months-ceo-blames-fierce-competition/amp">Finance Magnates: Propel Capital Folds After 14 Months</a></p></li>
+<li><p><a href="https://www.financemagnates.com/forex/analysis/prop-firm-crypto-payouts-doubled-to-115-million-in-q1-2026-but-growth-has-stalled-since-december/">Finance Magnates: Prop Firm Crypto Payouts Doubled in Q1 2026（FTMOのOANDA買収、Seacrestの転換）</a></p></li>
+</ul>
+</article>
+<script>
+{
+const R=[["2026-10-27", 0, 824218], ["2026-10-27", 1, 826134], ["2026-10-28", 0, 859409], ["2026-10-28", 1, 843984], ["2026-10-29", 0, 940820], ["2026-10-29", 1, 765967], ["2026-10-30", 0, 793647], ["2026-10-30", 1, 820012], ["2026-10-31", 0, 844275], ["2026-10-31", 1, 861097], ["2026-11-01", 0, 829782], ["2026-11-01", 1, 781289], ["2026-11-02", 0, 768888], ["2026-11-02", 1, 710943], ["2026-11-03", 0, 677490], ["2026-11-03", 1, 711279], ["2026-11-04", 0, 803261], ["2026-11-04", 1, 868007], ["2026-11-05", 0, 817731], ["2026-11-05", 1, 586357], ["2026-11-06", 0, 613367], ["2026-11-06", 1, 568286], ["2026-11-07", 0, 577403], ["2026-11-07", 1, 554870], ["2026-11-08", 0, 551243], ["2026-11-08", 1, 442499], ["2026-11-09", 0, 497641], ["2026-11-09", 1, 464023], ["2026-11-10", 0, 414236], ["2026-11-10", 1, 275163], ["2026-11-11", 0, 304609], ["2026-11-11", 1, 270220], ["2026-11-12", 0, 238859], ["2026-11-12", 1, 335566], ["2026-11-13", 0, 282723], ["2026-11-13", 1, 256451], ["2026-11-14", 0, 221469], ["2026-11-14", 1, 131306], ["2026-11-15", 0, 191821], ["2026-11-15", 1, 599570], ["2026-11-16", 0, 508582], ["2026-11-16", 1, 576250], ["2026-11-17", 0, 537880], ["2026-11-17", 1, 632195], ["2026-11-18", 0, 580950], ["2026-11-18", 1, 383658], ["2026-11-19", 0, 570363], ["2026-11-19", 1, 391188], ["2026-11-20", 0, 231670], ["2026-11-20", 1, 101283], ["2026-11-21", 0, 50551], ["2026-11-21", 1, 45858], ["2026-11-22", 0, 49157], ["2026-11-22", 1, 39191], ["2026-11-23", 0, 45646], ["2026-11-23", 1, 431209], ["2026-11-24", 0, 431209], ["2026-11-24", 1, 425362], ["2026-11-25", 1, 403686], ["2026-11-26", 0, 404000]], E=[["2026-11-11", 0, "前回の記事の時点"], ["2026-11-15", 1, "ヘッジ口座に約42万ドルを入金"], ["2026-11-21", 0, "ヘッジ口座がゼロに"], ["2026-11-24", 0, "外部から約39万ドルを補充"]];
+const box=document.getElementById('reserve'), leg=document.getElementById('reserve-legend');
+const md=d=>`${+d.slice(5,7)}/${+d.slice(8,10)}`;
+leg.innerHTML=E.map(e=>`<li><span><b>${md(e[0])}</b> ${e[2]}</span></li>`).join('');
+const day0=Date.parse(R[0][0]);
+const di=(d,h)=>(Date.parse(d)-day0)/864e5+h*.5;
+const span=di(R[R.length-1][0],R[R.length-1][1]);
+const man=v=>`${(v/1e4).toFixed(v<1e5?1:0)}万`;
+function draw(){
+  const W=box.clientWidth,H=box.clientHeight,narrow=W<520;
+  const L=narrow?40:52,Rm=12,T=30,B=26,pw=W-L-Rm,ph=H-T-B;
+  const xs=(d,h)=>L+di(d,h)/span*pw, ys=v=>T+ph-v/1.15e6*ph;
+  const ticks=[0,25e4,5e5,75e4,1e6];
+  const xt=(narrow?['2026-10-27','2026-11-10','2026-11-26']:['2026-10-27','2026-11-01','2026-11-05','2026-11-10','2026-11-15','2026-11-20','2026-11-26']);
+  let s='';
+  s+=ticks.map(t=>`<line x1="${L}" x2="${W-Rm}" y1="${ys(t)}" y2="${ys(t)}" stroke="var(--rule)"/><text x="${L-6}" y="${ys(t)+4}" text-anchor="end" font-size="11" fill="var(--quiet)">${t?'$'+man(t):'$0'}</text>`).join('');
+  s+=`<line x1="${L}" x2="${W-Rm}" y1="${ys(1e6)}" y2="${ys(1e6)}" stroke="var(--quiet)" stroke-dasharray="5 4"/><text x="${L+6}" y="${ys(1e6)-6}" font-size="11" fill="var(--quiet)">${narrow?'9月末の発表 100万ドル':'9月末に発表した額 100万ドル'}</text>`;
+  s+=`<line x1="${L}" x2="${W-Rm}" y1="${T+ph}" y2="${T+ph}" stroke="var(--edge)"/>`;
+  s+=xt.map(d=>`<text x="${xs(d,0)}" y="${T+ph+18}" text-anchor="${d===xt[0]?'start':d===xt[xt.length-1]?'end':'middle'}" font-size="11" fill="var(--quiet)">${md(d)}</text>`).join('');
+  s+=E.map((e,i)=>{const x=xs(e[0],e[1]);return `<line x1="${x}" x2="${x}" y1="${T-4}" y2="${T+ph}" stroke="var(--edge)" stroke-dasharray="2 3"/><circle cx="${x}" cy="${T-14}" r="8.5" fill="var(--tint)" stroke="var(--edge)"/><text x="${x}" y="${T-10}" text-anchor="middle" font-size="11" font-weight="700" fill="var(--ink)">${i+1}</text>`}).join('');
+  const p=R.map((r,i)=>`${i?'L':'M'}${xs(r[0],r[1]).toFixed(1)},${ys(r[2]).toFixed(1)}`).join(' ');
+  s+=`<path d="${p}" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linejoin="round"/>`;
+  const last=R[R.length-1];
+  s+=`<circle cx="${xs(last[0],last[1])}" cy="${ys(last[2])}" r="3.5" fill="var(--accent)"/><text x="${xs(last[0],last[1])}" y="${ys(last[2])-12}" text-anchor="end" font-size="12" font-weight="700" fill="var(--ink)">$${(last[2]/1e4).toFixed(1)}万</text>`;
+  box.innerHTML=`<svg viewBox="0 0 ${W} ${H}" aria-hidden="true">${s}</svg>`;
+}
+const ro=new ResizeObserver(draw); ro.observe(box);
+}
+</script>
+</main><footer class="pc-site-footer"><nav class="pc-footer-layout" aria-label="フッターメニュー"><a class="pc-footer-brand" href="/propcheck-ui-preview/r20261127-survive-model4/" aria-label="PROP CHECK トップページ"><img src="/propcheck-ui-preview/r20261127-survive-model4/assets/propcheck-logo-r20261020.webp" alt="PROP CHECK"></a><div class="pc-footer-group" aria-labelledby="pc-footer-heading-1"><h2 id="pc-footer-heading-1">連絡・依頼</h2><a href="/propcheck-ui-preview/r20261127-survive-model4/report/">出金拒否・BANを報告</a><a href="/propcheck-ui-preview/r20261127-survive-model4/ja/request-listing/">未掲載業者をリクエスト</a><a href="/propcheck-ui-preview/r20261127-survive-model4/report-error/">情報の誤りを報告</a><a href="/propcheck-ui-preview/r20261127-survive-model4/ja/contact/">お問い合わせ</a></div><div class="pc-footer-group" aria-labelledby="pc-footer-heading-2"><h2 id="pc-footer-heading-2">運営と透明性</h2><a href="/propcheck-ui-preview/r20261127-survive-model4/guides/">紹介記事</a><a href="/propcheck-ui-preview/r20261127-survive-model4/methodology/">評価方法</a><a href="/propcheck-ui-preview/r20261127-survive-model4/about/">運営者情報</a><a href="/propcheck-ui-preview/r20261127-survive-model4/policy/">編集方針・免責事項</a><a href="/propcheck-ui-preview/r20261127-survive-model4/advertising/">広告・紹介リンクの方針</a></div><div class="pc-footer-group" aria-labelledby="pc-footer-heading-3"><h2 id="pc-footer-heading-3">利用条件</h2><a href="/propcheck-ui-preview/r20261127-survive-model4/terms/">利用規約</a><a href="/propcheck-ui-preview/r20261127-survive-model4/privacy/">プライバシーポリシー</a></div></nav><p class="pc-footer-copyright">© 2026 PROP CHECK</p></footer><script defer src="/propcheck-ui-preview/r20261127-survive-model4/w7-header.js?perf=fe0f3f24066304eb"></script><script src="/propcheck-ui-preview/r20261127-survive-model4/language-menu.js?perf=8cf084e5a93ffaae" defer></script></body></html>
