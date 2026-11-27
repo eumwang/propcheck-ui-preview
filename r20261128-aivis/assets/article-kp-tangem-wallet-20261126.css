@@ -1,0 +1,652 @@
+/* article-kp-tangem-wallet-20261126.css
+   /articles/tangem-wallet/ ・ /en/articles/tangem-wallet/ ・ /ko/articles/tangem-wallet/ （JA・EN・KO 共通）。
+   Tangem記事（確定版 20261126）の見出し・目次・セール表・手順番号・図・実表（スマホでも横スクロールなし）。
+   色はサイトの緑 #147260。変数は main.kp-page に閉じ、ヘッダー・フッターは変えない。
+   既存の共通CSS（article-chrome 等）は編集しない。 */
+
+main.kp-page{
+  --bg:#fbfcfd; --surface:#ffffff; --ink:#16202b; --quiet:#5a6675; --edge:#b4bcc7; --rule:#dde2e9;
+  --accent:#147260; --on-accent:#ffffff; --tint:#eef1f5; --muted:#c2c7cf; --minus:#d9534f; --marker:#ffe27a;
+  --font-body:"Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  --font-head:"Zen Kaku Gothic New","Noto Sans JP","Hiragino Sans","Yu Gothic",Meiryo,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  --font-mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  box-sizing:border-box;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.9;
+  padding:0 max(16px, env(safe-area-inset-right, 0px)) 72px max(16px, env(safe-area-inset-left, 0px));
+  min-width:0;
+}
+main.kp-page *,
+main.kp-page *::before,
+main.kp-page *::after{box-sizing:border-box}
+
+main.kp-page .kp-article{max-width:44rem;margin:0 auto;display:flex;flex-direction:column;gap:1.35rem;min-width:0}
+
+main.kp-page .kp-article > *{margin:0;min-width:0}
+
+main.kp-page .kp-article h1{font-family:var(--font-head);font-weight:700;font-size:clamp(1.5rem,4.4vw,2.05rem);line-height:1.45;text-wrap:wrap;letter-spacing:.01em}
+
+@media (max-width: 720px){
+  main.kp-page .kp-article h1{font-size:1.38rem}
+}
+
+main.kp-page .kp-article h2{font-family:var(--font-head);font-weight:700;font-size:clamp(1.2rem,3.4vw,1.45rem);line-height:1.5;text-wrap:balance;
+  margin-top:1.9rem;padding:0 0 .6rem;border-bottom:3px solid var(--accent);
+  display:grid;grid-template-columns:auto 1fr;column-gap:.7rem;align-items:center}
+
+main.kp-page .kp-article h2::before{
+  content:attr(data-n);
+  width:1.85rem;height:1.85rem;border-radius:50%;
+  background:var(--accent);color:var(--on-accent);
+  font-family:var(--font-body);font-weight:700;font-size:.8rem;
+  display:grid;place-items:center;line-height:1;font-variant-numeric:tabular-nums}
+
+main.kp-page .kp-article h3{font-family:var(--font-head);font-weight:700;font-size:1.05rem;line-height:1.55;
+  margin-top:.6rem;padding:.1rem 0 .1rem .85rem;border-left:4px solid var(--accent)}
+
+main.kp-page .kp-byline{color:var(--quiet);font-size:.875rem;font-variant-numeric:tabular-nums;display:flex;flex-wrap:wrap;gap:.4rem .7rem;align-items:center}
+
+main.kp-page .kp-pr{border:1px solid var(--edge);border-radius:4px;padding:0 .45em;font-size:.75rem;font-weight:700;letter-spacing:.08em;color:var(--quiet);line-height:1.7}
+
+main.kp-page .kp-lead{font-size:1.06rem}
+
+main.kp-page .kp-article strong{font-weight:700;background:linear-gradient(transparent 62%, var(--marker) 62%)}
+
+main.kp-page .kp-article a{color:var(--accent);text-underline-offset:.2em}
+
+main.kp-page .kp-article a:focus-visible,
+main.kp-page .fig-scroll:focus-visible,
+main.kp-page .table-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+main.kp-page .kp-article code{font-family:var(--font-mono);font-size:.9em;background:var(--tint);border:1px solid var(--rule);border-radius:4px;padding:.08em .38em}
+
+main.kp-page .kp-offer{border:2px solid var(--accent);border-radius:12px;background:var(--surface);padding:1.1rem 1.2rem 1.2rem;display:flex;flex-direction:column;gap:.8rem}
+
+main.kp-page .kp-offer-head{font-family:var(--font-head);font-weight:700;font-size:1.1rem;line-height:1.5;display:flex;flex-wrap:wrap;gap:.3rem .8rem;align-items:baseline}
+
+main.kp-page .kp-offer-head span{font-family:var(--font-body);font-weight:400;font-size:.8125rem;color:var(--quiet)}
+
+main.kp-page .kp-offer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.8rem}
+
+main.kp-page .kp-offer-item{border:1px solid var(--rule);border-radius:8px;padding:.8rem .9rem;display:flex;flex-direction:column;gap:.25rem;min-width:0;font-size:.9rem;line-height:1.7}
+
+main.kp-page .kp-offer-item b{font-size:1rem}
+
+main.kp-page .kp-offer-item .big{font-family:var(--font-head);font-weight:700;font-size:1.7rem;line-height:1.2;color:var(--accent);font-variant-numeric:tabular-nums}
+
+main.kp-page .kp-offer-code{font-family:var(--font-mono);font-weight:700;font-size:1rem;background:var(--tint);border:1px dashed var(--edge);border-radius:6px;padding:.15em .5em;user-select:all;overflow-wrap:anywhere}
+
+main.kp-page .kp-offer small,
+main.kp-page .kp-small{color:var(--quiet);font-size:.8125rem;line-height:1.7}
+
+main.kp-page .kp-cta{align-self:flex-start;background:var(--accent);color:var(--on-accent)!important;font-weight:700;text-decoration:none;border-radius:8px;padding:.5rem 1.1rem;line-height:1.6}
+
+main.kp-page .kp-steps{list-style:none;padding:0;counter-reset:step;display:flex;flex-direction:column;gap:.7rem}
+
+main.kp-page .kp-steps li{counter-increment:step;display:grid;grid-template-columns:2rem 1fr;gap:.75rem;align-items:start}
+
+main.kp-page .kp-steps li::before{content:counter(step);width:2rem;height:2rem;border-radius:50%;background:var(--accent);color:var(--on-accent);
+  font-weight:700;display:grid;place-items:center;line-height:1;font-variant-numeric:tabular-nums}
+
+main.kp-page .kp-steps p{margin:0;min-width:0}
+
+main.kp-page .kp-list{padding-left:1.3em;display:flex;flex-direction:column;gap:.3rem}
+
+main.kp-page .kp-list p{margin:0}
+
+main.kp-page .fig{display:flex;flex-direction:column;gap:.5rem}
+
+main.kp-page .fig-scroll{overflow-x:auto;background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:6px 0}
+
+main.kp-page .fig-scroll svg{display:block;width:100%;min-width:620px;height:auto;font-family:var(--font-body)}
+
+main.kp-page .fig figcaption{color:var(--quiet);font-size:.8125rem;line-height:1.6}
+
+main.kp-page .table-scroll{overflow-x:auto}
+
+main.kp-page .kp-article table{border-collapse:collapse;width:100%;min-width:540px;font-size:.9rem;line-height:1.7;font-variant-numeric:tabular-nums}
+
+main.kp-page .kp-article th,
+main.kp-page .kp-article td{text-align:left;vertical-align:top;padding:.7rem .8rem;border-bottom:1px solid var(--rule)}
+
+main.kp-page .kp-article thead th{font-weight:700;white-space:nowrap;background:color-mix(in srgb, var(--accent) 14%, var(--surface));color:var(--ink);border-bottom:1px solid var(--rule)}
+
+main.kp-page .kp-article tbody td:first-child{font-weight:600}
+
+main.kp-page .kp-article table.kp-tight td:first-child{white-space:nowrap}
+
+main.kp-page .kp-note{color:var(--quiet);font-size:.875rem;border-top:1px solid var(--rule);padding-top:1rem}
+
+main.kp-page .kp-sources{font-size:.875rem;line-height:1.7;padding-left:1.3em;display:flex;flex-direction:column;gap:.35rem;overflow-wrap:anywhere}
+
+main.kp-page .kp-sources p{margin:0}
+
+/* ===== BLOCK ===== */
+main.kp-page .kp-warn{border:1px solid var(--minus);border-radius:8px;background:var(--surface);padding:.85rem 1rem;font-size:.95rem;line-height:1.8}
+
+main.kp-page .kp-warn b{display:block;font-family:var(--font-head);margin-bottom:.15rem}
+
+/* ===== BLOCK ===== */
+main.kp-page .hf{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:1rem 1rem 1.1rem;display:flex;flex-direction:column;gap:.8rem;line-height:1.6}
+
+main.kp-page .hf p{margin:0}
+
+main.kp-page .hf-title{font-family:var(--font-head);font-weight:700;font-size:1rem;line-height:1.5}
+
+main.kp-page .hf-grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.8rem}
+
+main.kp-page .hf-card{border:1.25px solid var(--edge);border-radius:8px;padding:.9rem 1rem;min-width:0}
+
+main.kp-page .hf-accent{border:2px solid var(--accent);background:color-mix(in srgb, var(--accent) 12%, transparent)}
+
+main.kp-page .hf-name{font-weight:700;font-size:.95rem;margin-bottom:.5rem!important}
+
+main.kp-page .hf dl{margin:0;display:flex;flex-direction:column;gap:.45rem}
+
+main.kp-page .hf-row{display:grid;grid-template-columns:7.5em 1fr;gap:.6rem;align-items:baseline}
+
+main.kp-page .hf dt{color:var(--quiet);font-size:.8125rem}
+
+main.kp-page .hf dd{margin:0;font-weight:700;font-size:.875rem}
+
+main.kp-page .hf-strong{font-weight:700;font-size:.875rem}
+
+main.kp-page .hf-quiet{color:var(--quiet);font-size:.8125rem}
+
+main.kp-page .hf-mech{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:1rem 1.2rem}
+
+main.kp-page .hf-mech-cards{flex:1 1 19rem;min-width:0;display:flex;flex-direction:column;gap:.5rem;text-align:center}
+
+main.kp-page .hf-cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;padding-bottom:.7rem;border-bottom:1px solid var(--edge)}
+
+main.kp-page .hf-ccard{border:1.25px solid var(--edge);border-radius:9px;padding:.55rem .5rem .6rem;display:grid;grid-template-columns:auto 1fr;gap:.25rem .4rem;align-items:center;text-align:left;min-width:0}
+
+main.kp-page .hf-chip{width:1.4rem;height:1rem;border-radius:3px;border:1.25px solid var(--accent);background:color-mix(in srgb, var(--accent) 20%, transparent)}
+
+main.kp-page .hf-chiplabel{color:var(--quiet);font-size:.6875rem}
+
+main.kp-page .hf-ccard b{grid-column:1 / -1;text-align:center;font-size:.875rem}
+
+main.kp-page .hf-touch{flex:0 0 auto;color:var(--quiet);font-size:.8125rem;display:flex;align-items:center;gap:.4rem}
+
+main.kp-page .hf-touch::after{content:"→";font-size:1.2rem;color:var(--edge)}
+
+main.kp-page .hf-phonewrap{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:.5rem;text-align:center;max-width:15rem}
+
+main.kp-page .hf-phone{width:7.4rem;border:1.25px solid var(--edge);border-radius:14px;padding:.8rem .55rem}
+
+main.kp-page .hf-screen{background:var(--tint);border-radius:6px;padding:.6rem .5rem;display:flex;flex-direction:column;gap:.3rem;align-items:flex-start}
+
+main.kp-page .hf-screen b{font-size:.75rem;align-self:center;margin-bottom:.2rem}
+
+main.kp-page .hf-lbl{font-size:.6875rem;color:var(--quiet)}
+
+main.kp-page .hf-bar{display:block;height:.45rem;border-radius:.3rem;background:var(--rule)}
+
+main.kp-page .hf-btn{align-self:stretch;text-align:center;background:var(--accent);color:var(--on-accent);font-weight:700;font-size:.6875rem;border-radius:1rem;padding:.2rem 0;margin-top:.35rem}
+
+@media (max-width: 640px){
+  main.kp-page .hf-touch{flex-basis:100%;justify-content:center}
+  main.kp-page .hf-touch::after{content:"↓"}
+  main.kp-page .hf-row{grid-template-columns:6.5em 1fr}
+}
+
+/* ===== BLOCK ===== */
+main.kp-page .kp-article blockquote{margin:0;border:1px solid var(--minus);border-radius:8px;background:var(--surface);padding:.85rem 1rem;font-size:.95rem;line-height:1.8}
+
+main.kp-page .kp-article blockquote p{margin:0}
+
+main.kp-page .kp-ph{border:1px dashed var(--edge);border-radius:8px;padding:.6rem .9rem;color:var(--quiet);font-size:.875rem;line-height:1.7;background:var(--tint)}
+
+main.kp-page .kp-draft{align-self:flex-start;border:1px solid var(--edge);border-radius:6px;padding:.15rem .7rem;font-size:.8125rem;color:var(--quiet);line-height:1.8}
+
+main.kp-page .kp-article li > p{margin:0}
+
+main.kp-page .kp-img{display:block;max-width:100%;height:auto;border-radius:10px}
+
+main.kp-page .kp-ref{border:1px solid var(--edge);border-radius:6px;padding:.05rem .5rem;font-size:.9em;white-space:nowrap}
+
+/* Work draft: still a standalone page (no site chrome). Keep noindex. */
+main.kp-page .kp-offer p{margin:0}
+
+main.kp-page .kp-cta{display:inline-block;margin:.15rem 0 .35rem}
+
+/* Mobile: each table row becomes a stacked card. Desktop stays a table. */
+
+@media (max-width: 720px){
+  main.kp-page .table-scroll{overflow-x:visible}
+  main.kp-page .kp-article table{min-width:0;font-size:.95rem}
+  main.kp-page .kp-article thead{
+    position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+    clip:rect(0,0,0,0);white-space:nowrap;border:0
+  }
+  main.kp-page .kp-article table tbody tr{
+    display:block;
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:10px;
+    padding:.85rem 1rem 1rem;
+    margin:0 0 .75rem
+  }
+  main.kp-page .kp-article table tbody tr:last-child{margin-bottom:0}
+  main.kp-page .kp-article th,
+main.kp-page .kp-article td{
+    display:block;width:auto;border:0;padding:.2rem 0
+  }
+  main.kp-page .kp-article tbody td:first-child{
+    font-weight:700;font-size:1.02rem;line-height:1.5;
+    padding-bottom:.5rem;margin-bottom:.25rem;
+    border-bottom:1px solid var(--rule)
+  }
+  main.kp-page .kp-article tbody td[data-label]:not(:first-child)::before{
+    content:attr(data-label);
+    display:block;
+    color:var(--quiet);
+    font-weight:400;
+    font-size:.75rem;
+    line-height:1.5;
+    margin-top:.4rem
+  }
+  main.kp-page .kp-article table.kp-tight td:first-child{white-space:normal}
+}
+
+/* Table of contents: in-page links to each h2. Stacks cleanly on phones. */
+main.kp-page .kp-article h2{scroll-margin-top:1.2rem}
+
+main.kp-page .kp-toc{
+  border:1px solid var(--rule);
+  border-radius:10px;
+  background:var(--surface);
+  padding:1rem 1.1rem 1.05rem;
+}
+
+main.kp-page .kp-toc-title{
+  font-family:var(--font-head);
+  font-weight:700;
+  font-size:.95rem;
+  line-height:1.5;
+  margin:0 0 .35rem;
+}
+
+main.kp-page .kp-toc ol{
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  counter-reset:toc;
+}
+
+main.kp-page .kp-toc li{counter-increment:toc;min-width:0}
+
+main.kp-page .kp-toc a{
+  display:grid;
+  grid-template-columns:1.7rem 1fr;
+  gap:.65rem;
+  align-items:center;
+  text-decoration:none;
+  color:var(--ink);
+  padding:.5rem 0;
+  border-bottom:1px solid var(--rule);
+  line-height:1.55;
+  font-size:.95rem;
+}
+
+main.kp-page .kp-toc li:last-child a{border-bottom:0;padding-bottom:.15rem}
+
+main.kp-page .kp-toc a::before{
+  content:counter(toc);
+  width:1.7rem;height:1.7rem;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--on-accent);
+  font-weight:700;
+  font-size:.75rem;
+  display:grid;
+  place-items:center;
+  line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+
+main.kp-page .kp-toc a:hover{color:var(--accent)}
+
+main.kp-page .kp-toc a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+@media (max-width: 720px){
+  main.kp-page .kp-toc{padding:.9rem 1rem 1rem}
+  main.kp-page .kp-toc a{padding:.62rem 0;font-size:1rem}
+}
+
+/* ② Steps: outline numbers, distinct from the filled TOC circles */
+main.kp-page .kp-article ol.kp-steps li::before{
+  background:transparent;
+  color:var(--ink);
+  border:1.5px solid var(--edge);
+  box-shadow:none;
+}
+
+/* ① Sale block: stronger header, accent table, code badges */
+main.kp-page .kp-offer{
+  padding:0 0 1.15rem;
+  overflow:hidden;
+  gap:0;
+  box-shadow:0 10px 28px color-mix(in srgb, var(--accent) 14%, transparent);
+}
+
+main.kp-page .kp-offer-head{
+  background:var(--accent);
+  color:var(--on-accent);
+  padding:1rem 1.2rem .95rem;
+  margin:0;
+  gap:.35rem .75rem;
+}
+
+main.kp-page .kp-offer-head span{
+  color:color-mix(in srgb, var(--on-accent) 82%, transparent);
+  font-weight:600;
+  letter-spacing:.02em;
+}
+
+main.kp-page .kp-offer > *:not(.kp-offer-head){
+  margin-left:1.2rem;
+  margin-right:1.2rem;
+}
+
+main.kp-page .kp-offer > p:first-of-type{margin-top:.95rem}
+
+main.kp-page .kp-offer .table-scroll{margin-top:.15rem}
+
+main.kp-page .kp-offer .kp-note,
+main.kp-page .kp-offer .kp-small{margin-top:.15rem}
+
+main.kp-page .kp-cta{
+  display:inline-block;
+  margin:.15rem 0 .35rem;
+  box-shadow:0 2px 0 color-mix(in srgb, var(--accent) 55%, #000);
+}
+
+main.kp-page .kp-offer-table{min-width:0;border:1px solid var(--rule);border-radius:10px;overflow:hidden}
+
+main.kp-page .kp-article .kp-offer-table thead th{
+  background:color-mix(in srgb, var(--accent) 16%, var(--tint));
+  color:var(--ink);
+  border-bottom:2px solid var(--accent);
+  white-space:nowrap;
+  padding:.7rem .85rem;
+}
+
+main.kp-page .kp-article .kp-offer-table tbody td{
+  border-bottom:1px solid var(--rule);
+  padding:.8rem .85rem;
+  vertical-align:top;
+}
+
+main.kp-page .kp-article .kp-offer-table tbody tr:last-child td{border-bottom:0}
+
+main.kp-page .kp-article .kp-offer-table tbody tr:nth-child(even) td{
+  background:color-mix(in srgb, var(--accent) 5%, var(--surface));
+}
+
+main.kp-page .kp-article .kp-offer-table tbody td:first-child{
+  font-weight:700;
+  color:var(--accent);
+  white-space:nowrap;
+  background:color-mix(in srgb, var(--accent) 8%, var(--surface));
+}
+
+main.kp-page .kp-offer-table tbody tr:nth-child(even) td:first-child{
+  background:color-mix(in srgb, var(--accent) 12%, var(--surface));
+}
+
+main.kp-page .kp-offer code{
+  font-family:var(--font-mono);
+  font-weight:700;
+  font-size:.92em;
+  letter-spacing:.06em;
+  color:var(--accent);
+  background:color-mix(in srgb, var(--accent) 12%, var(--surface));
+  border:1px solid color-mix(in srgb, var(--accent) 40%, var(--edge));
+  border-radius:999px;
+  padding:.12em .65em .14em;
+  user-select:all;
+  white-space:nowrap;
+}
+
+@media (max-width: 720px){
+  main.kp-page .kp-offer .kp-cta{align-self:stretch;text-align:center;width:100%;box-sizing:border-box}
+  main.kp-page .kp-article .kp-offer-table,
+main.kp-page .kp-article .kp-offer-table tbody,
+main.kp-page .kp-article .kp-offer-table tbody tr,
+main.kp-page .kp-article .kp-offer-table tbody td,
+main.kp-page .kp-article .kp-offer-table tbody tr:nth-child(even) td,
+main.kp-page .kp-article .kp-offer-table tbody td:first-child,
+main.kp-page .kp-article .kp-offer-table tbody tr:nth-child(even) td:first-child{background:transparent}
+  main.kp-page .kp-article .kp-offer-table{border:0;border-radius:0;overflow:visible}
+  main.kp-page .kp-article .kp-offer-table tbody tr{
+    background:var(--surface);
+    border:1px solid color-mix(in srgb, var(--accent) 28%, var(--rule));
+    border-radius:10px;
+    padding:.85rem 1rem 1rem;
+    margin:0 0 .75rem;
+  }
+  main.kp-page .kp-article .kp-offer-table tbody td:first-child{
+    color:var(--accent);
+    background:transparent;
+    white-space:normal;
+    border-bottom:1px solid var(--rule);
+  }
+  main.kp-page .kp-article .kp-offer-table tbody td{
+    border-bottom:0;
+    padding:.2rem 0;
+  }
+}
+
+/* Sale CTA: make it clearly a pressable button / external link */
+main.kp-page .kp-article a.kp-cta{
+  display:inline-block;
+  text-align:center;
+  cursor:pointer;
+  font-weight:700;
+  font-size:1.02rem;
+  line-height:1.45;
+  text-decoration:none;
+  color:var(--on-accent)!important;
+  background:var(--accent);
+  border:0;
+  border-radius:12px;
+  padding:.72rem 1.3rem;
+  margin:.2rem 0 .4rem;
+  box-shadow:0 3px 0 color-mix(in srgb, var(--accent) 50%, #000), 0 8px 16px color-mix(in srgb, var(--accent) 26%, transparent);
+  transition:background .15s ease, box-shadow .15s ease, transform .15s ease;
+  word-break:keep-all;
+}
+
+main.kp-page .kp-article a.kp-cta::after{
+  content:"\00a0↗";
+  font-weight:700;
+  font-size:1.05em;
+}
+
+main.kp-page .kp-article a.kp-cta:hover,
+main.kp-page .kp-article a.kp-cta:focus-visible{
+  background:color-mix(in srgb, var(--accent) 80%, #000);
+  box-shadow:0 4px 0 color-mix(in srgb, var(--accent) 40%, #000), 0 10px 18px color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+main.kp-page .kp-article a.kp-cta:active{
+  transform:translateY(1px);
+  box-shadow:0 1px 0 color-mix(in srgb, var(--accent) 40%, #000);
+}
+
+main.kp-page .kp-offer p:has(> a.kp-cta){margin-top:0;margin-bottom:0}
+
+/* CTA: white button with green text/border, distinct from the green offer header band */
+main.kp-page .kp-article a.kp-cta{background:#fff;color:var(--accent)!important;border:2px solid var(--accent);box-shadow:0 3px 0 var(--accent), 0 8px 16px color-mix(in srgb, var(--accent) 18%, transparent)}
+
+main.kp-page .kp-article a.kp-cta:hover,
+main.kp-page .kp-article a.kp-cta:focus-visible{background:var(--accent-soft, #e9f3ee);box-shadow:0 4px 0 var(--accent), 0 10px 18px color-mix(in srgb, var(--accent) 22%, transparent)}
+
+main.kp-page .kp-article a.kp-cta:active{box-shadow:0 1px 0 var(--accent)}
+
+@media (max-width: 720px){
+  main.kp-page .kp-article a.kp-cta{
+    display:block;
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+    font-size:1.05rem;
+    padding:.95rem 1.15rem;
+  }
+}
+
+/* Compact mobile sale tables (20261126): keep a real table, do not stack rows as cards. */
+
+@media (max-width: 720px){
+  main.kp-page .kp-offer .table-scroll{overflow-x:visible}
+  main.kp-page .kp-article .kp-offer-table{
+    min-width:0 !important;
+    width:100%;
+    table-layout:fixed;
+    font-size:.78rem;
+    line-height:1.4;
+    border:1px solid var(--rule);
+    border-radius:10px;
+    overflow:hidden;
+    background:var(--surface);
+  }
+  main.kp-page .kp-article .kp-offer-table thead{
+    all:revert;
+  }
+  main.kp-page .kp-article .kp-offer-table thead th{
+    white-space:normal;
+    font-size:.72rem;
+    font-weight:700;
+    line-height:1.35;
+    padding:.4rem .28rem;
+    overflow-wrap:anywhere;
+    background:color-mix(in srgb, var(--accent) 16%, var(--tint));
+    color:var(--ink);
+    border-bottom:2px solid var(--accent);
+    text-align:left;
+    vertical-align:top;
+  }
+  main.kp-page .kp-article .kp-offer-table th:nth-child(1),
+main.kp-page .kp-article .kp-offer-table td:nth-child(1){width:26%}
+  main.kp-page .kp-article .kp-offer-table th:nth-child(2),
+main.kp-page .kp-article .kp-offer-table td:nth-child(2),
+main.kp-page .kp-article .kp-offer-table th:nth-child(3),
+main.kp-page .kp-article .kp-offer-table td:nth-child(3){width:37%}
+  main.kp-page .kp-article .kp-offer-table tbody tr{
+    display:table-row;
+    background:transparent;
+    border:0;
+    border-radius:0;
+    padding:0;
+    margin:0;
+  }
+  main.kp-page .kp-article .kp-offer-table th,
+main.kp-page .kp-article .kp-offer-table td{
+    display:table-cell;
+    border-bottom:1px solid var(--rule);
+    padding:.4rem .28rem;
+    overflow-wrap:anywhere;
+    word-break:break-word;
+    text-align:left;
+    vertical-align:top;
+  }
+  main.kp-page .kp-article .kp-offer-table tbody tr:last-child td{border-bottom:0}
+  main.kp-page .kp-article .kp-offer-table tbody tr:nth-child(even) td{
+    background:color-mix(in srgb, var(--accent) 5%, var(--surface));
+  }
+  main.kp-page .kp-article .kp-offer-table tbody td:first-child{
+    font-weight:700;
+    font-size:.78rem;
+    line-height:1.4;
+    padding:.4rem .28rem;
+    margin:0;
+    color:var(--accent);
+    white-space:normal;
+    background:color-mix(in srgb, var(--accent) 8%, var(--surface));
+    border-bottom:1px solid var(--rule);
+  }
+  main.kp-page .kp-article .kp-offer-table tbody tr:nth-child(even) td:first-child{
+    background:color-mix(in srgb, var(--accent) 12%, var(--surface));
+  }
+  main.kp-page .kp-article .kp-offer-table tbody tr:last-child td:first-child{border-bottom:0}
+  main.kp-page .kp-article .kp-offer-table tbody td[data-label]:not(:first-child)::before{
+    content:none !important;
+    display:none !important;
+    margin:0;
+  }
+}
+
+/* Compact mobile tables (20261126-2): all tables stay real tables, not stacked cards. */
+
+@media (max-width: 720px){
+  main.kp-page .kp-article .table-scroll{overflow-x:visible}
+  main.kp-page .kp-article table{
+    min-width:0 !important;
+    width:100%;
+    table-layout:fixed;
+    font-size:.78rem;
+    line-height:1.4;
+  }
+  main.kp-page .kp-article thead{
+    all:revert;
+  }
+  main.kp-page .kp-article thead th{
+    white-space:normal;
+    font-size:.72rem;
+    font-weight:700;
+    line-height:1.35;
+    padding:.4rem .28rem;
+    overflow-wrap:anywhere;
+    background:color-mix(in srgb, var(--accent) 14%, var(--surface));
+    color:var(--ink);
+    border-bottom:1px solid var(--rule);
+    text-align:left;
+    vertical-align:top;
+  }
+  main.kp-page .kp-article table tbody tr{
+    display:table-row;
+    background:transparent;
+    border:0;
+    border-radius:0;
+    padding:0;
+    margin:0;
+  }
+  main.kp-page .kp-article th,
+main.kp-page .kp-article td{
+    display:table-cell;
+    width:auto;
+    border-bottom:1px solid var(--rule);
+    padding:.4rem .28rem;
+    overflow-wrap:anywhere;
+    word-break:break-word;
+    text-align:left;
+    vertical-align:top;
+  }
+  main.kp-page .kp-article tbody td:first-child{
+    font-weight:700;
+    font-size:.78rem;
+    line-height:1.4;
+    padding:.4rem .28rem;
+    margin:0;
+    border-bottom:1px solid var(--rule);
+  }
+  main.kp-page .kp-article tbody td[data-label]:not(:first-child)::before{
+    content:none !important;
+    display:none !important;
+    margin:0;
+  }
+  main.kp-page .kp-article table.kp-tight td:first-child{white-space:normal}
+  main.kp-page .kp-article table.kp-tight tbody td:first-child,
+main.kp-page .kp-article table.kp-tight thead th:first-child{width:5.6rem}
+}
+
+/* Korean: keep words together when wrapping (tables keep their own break rules). */
+main.kp-page .kp-article[lang="ko"] :is(h1,h2,h3,p,li){word-break:keep-all;overflow-wrap:break-word}
+main.kp-page .kp-article[lang="ko"] :is(td,th){word-break:break-word}
