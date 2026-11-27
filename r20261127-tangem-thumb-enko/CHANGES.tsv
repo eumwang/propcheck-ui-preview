@@ -1,3 +1,4 @@
-区分	変更前（r20261127-survive-model-enko／TSV c9a8647c…fcaf9）	変更後（確認版 r20261127-survive-model-enko2）	根拠
-①EN「5つの数字」の図の注	PROP CHECK’s “Operations” score uses the same approach	PROP CHECK’s “Operational foundation” score uses the same approach。引用符と大文字は既存EN記事（borrowed-prop・propcheck-launch・評価方法ページ）と同じ	【K】ダブルチェック 18:55 不合格の要修正1
-②EN準備金グラフの点線ラベル（幅520px未満の短い版）	Sept pledge: $1M	Sept announcement: $1M。長い版「Amount announced at end of Sept: $1M」はもともと pledge ではなく、変更なし。360px・390pxでラベルは枠内・他の文字や印と重ならない	【K】ダブルチェック 18:55 不合格の要修正2
+区分	変更前	変更後
+EN記事一覧 Tangemカードのサムネ	/assets/articles/tangem-wallet/thumb-tangem-wallet-ja-20261125.png	/assets/articles/tangem-wallet/thumb-tangem-wallet-en-20261127.png（新規）
+KO記事一覧 Tangemカードのサムネ	/assets/articles/tangem-wallet/thumb-tangem-wallet-ja-20261125.png	/assets/articles/tangem-wallet/thumb-tangem-wallet-ko-20261127.png（新規）
+JAの一覧・Tangem記事ページ・JAサムネ	変更なし	変更なし
