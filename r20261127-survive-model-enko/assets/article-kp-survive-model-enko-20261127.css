@@ -1,0 +1,6 @@
+/* EN/KO only: loaded after article-kp-survive-model-20261127.css */
+main.kp-page .kp-article[lang="ko"],main.kp-page .kp-article[lang="ko"] *{word-break:keep-all!important;overflow-wrap:break-word!important}
+main.kp-page .kp-article[lang="en"],main.kp-page .kp-article[lang="en"] *{overflow-wrap:break-word!important}
+@media(max-width:720px){main.kp-page .kp-article[lang="en"] table.kp-spread :is(th,td):not(:first-child){white-space:normal!important}}
+/* EN: longer labels in the "Who survives" list */
+main.kp-page .kp-article[lang="en"] .sum-survive dl div{grid-template-columns:7.4em minmax(0,1fr)}

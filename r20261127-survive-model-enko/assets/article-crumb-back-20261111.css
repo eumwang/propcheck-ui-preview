@@ -1,0 +1,6 @@
+/* 2026-11-11: article “back to list” button, matched to propcheck-launch.
+   Launch puts the arrow in the link text and disables the ::before arrow
+   from /assets/guide-back-btn-20261019.css. Crumb spacing from launch (guides.css
+   .crumb padding, then padding-top:16px). Existing CSS files are not edited. */
+.crumb{font-size:12px;padding:16px 0 8px}
+.crumb a.pc-guide-back::before{content:none}

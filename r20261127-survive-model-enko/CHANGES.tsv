@@ -1,0 +1,8 @@
+区分	変更前（本番 6b0947e4）	変更後（確認版 r20261127-survive-model-enko）	根拠
+①EN記事の新規追加 /en/articles/prop-firm-survival-models/	なし	JA本番（第10版）を英訳した記事を新規追加。レイアウト・表・図・見出し・マーカー位置はJAと同じ。時刻はUTC（表頭「Date (UTC)」、図の目盛りと印もUTC）。サムネはEN版。RZRは「RZR Funded」（旧名はEN既存ページの慣例どおり書かない）。Advertisementラベル・PONCHAI・hreflang・canonical・og は既存EN記事（tangem-wallet）と同じ書式	親の依頼・YAMAAN 17:54「日本語版先に公開してから英韓作成」
+②KO記事の新規追加 /ko/articles/prop-firm-survival-models/	なし	JA本番（第10版）を韓国語に翻訳した記事を新規追加。時刻は韓国時間（JSTと同時刻）。サムネはKO版。RZRは「RZR Funded」。광고ラベル・PONCHAI・hreflang・canonical・og は既存KO記事と同じ書式	同上
+③EN/KO用の追加CSS assets/article-kp-survive-model-enko-20261127.css	なし	JA記事CSS（変更なし）の後に読み込む、EN/KO専用の小さなCSS（KOは単語単位の折り返し、ENは表の折り返しと「誰が生き残るか」リストの見出し幅）。JA記事には読み込まれない	JA記事CSSは触らない方針
+④EN/KO記事一覧に1枚ずつ追加 en/articles/index.html・ko/articles/index.html	最新はTangem記事	先頭にこの記事のカードを追加（既存のカードと同じ書式）	親の依頼「EN/KOの記事一覧にも追加」
+⑤JA記事に hreflang と言語メニューのリンクを追加 articles/prop-firm-survival-models/index.html	headにja・x-defaultのみ。言語メニューのEN/KOは記事一覧（/en/articles/、/ko/articles/）へ	headに hreflang en / ko を2行追加。言語メニューのEN/KOを新EN/KO記事へ（Tangem記事のJA版と同じ形）。本文・見た目は不変	親の依頼「JA記事にhreflang等が要るなら差分を含めて報告」
+⑥sitemap.xml にEN/KOの2行を追加	JAの1行のみ	EN・KOのURLを2行追加（lastmod 2026-11-27、Tangem記事のEN/KOと同じ書式）。公開時は最新本番に重ねるので、本番側のsitemapが変わっていたら作り直す	既存記事のsitemap書式
+⑦EN/KOサムネ assets/articles/prop-firm-survival-models/thumb-survive-model-{en,ko}-20261127.png	JA版のみ	JA版と同じデザイン（880×495、同じ配色・配置・ロゴ）でEN/KO文言に差し替え	親の依頼「サムネもJAと同じデザインで」

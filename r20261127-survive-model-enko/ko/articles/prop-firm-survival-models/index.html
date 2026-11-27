@@ -1,0 +1,339 @@
+<!doctype html><html lang="ko"><head><meta name="robots" content="noindex,nofollow"><script id="pc-preview-guard">(()=>{const root='/propcheck-ui-preview/r20261127-survive-model-enko/';const map=u=>{if(typeof u==='string'&&u.startsWith(location.origin+'/'))u=u.slice(location.origin.length);if(typeof u!=='string'||!u.startsWith('/')||u.startsWith('//')||u.startsWith('/propcheck-ui-preview/'))return u;return root+u.slice(1);};const nf=window.fetch.bind(window);window.fetch=(i,o)=>{const m=(o?.method||((i instanceof Request)&&i.method)||'GET').toUpperCase();if(m!=='GET'&&m!=='HEAD')return Promise.reject(new Error('Preview: submissions disabled'));return nf(typeof i==='string'?map(i):(i instanceof URL?map(i.href):(i instanceof Request&&map(i.url)!==i.url?new Request(map(i.url),i):i)),o);};const xo=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(m,u,...r){if(!['GET','HEAD'].includes(String(m).toUpperCase()))throw new Error('Preview: submissions disabled');return xo.call(this,m,map(u instanceof URL?u.href:u),...r);};try{navigator.sendBeacon=()=>false}catch(_e){}document.addEventListener('submit',e=>{e.preventDefault();e.stopImmediatePropagation();},true);const fix=n=>{if(n.nodeType!==1)return;for(const it of [n,...n.querySelectorAll('a[href],img[src],source[src],link[href],script[src]')])for(const k of ['href','src']){const v=it.getAttribute(k);if(v&&map(v)!==v)it.setAttribute(k,map(v));}};new MutationObserver(es=>{for(const e of es){if(e.type==='attributes')fix(e.target);else for(const n of e.addedNodes)fix(n);}}).observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:['href','src']});const si=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,'src');Object.defineProperty(HTMLImageElement.prototype,'src',{get(){return si.get.call(this)},set(v){si.set.call(this,map(String(v)))},configurable:true});document.addEventListener('DOMContentLoaded',()=>{for(const f of document.forms){f.removeAttribute('data-netlify');f.method='get';f.action='#';}fix(document.body);});})();</script><!-- preview: GA4 loader removed --><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-6QHP92GKS1');</script><script defer src="/propcheck-ui-preview/r20261127-survive-model-enko/assets/ga4-events-20261126.js"></script><script src="/propcheck-ui-preview/r20261127-survive-model-enko/perf-data/d63e313d4c1f85d0fb8d86d8.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="index,follow"><title>프롭펌은 어떤 모델이어야 살아남을 수 있을까｜Propr의 헤지 손실과 출금 구조 비교 — PROP CHECK</title><meta name="description" content="11월에 헤지로 약 161만 달러를 잃은 Propr의 사례를 바탕으로, 프롭펌을 기존형·전환형(FundedHive)·부분 헤지형(Propr, Hypernova)으로 나눠 출금(페이아웃) 재원과 무너지기 쉬운 정도를 비교했습니다."><link rel="canonical" href="https://propchecklab.com/ko/articles/prop-firm-survival-models/"><link rel="alternate" hreflang="ja" href="https://propchecklab.com/articles/prop-firm-survival-models/"><link rel="alternate" hreflang="en" href="https://propchecklab.com/en/articles/prop-firm-survival-models/"><link rel="alternate" hreflang="ko" href="https://propchecklab.com/ko/articles/prop-firm-survival-models/"><link rel="alternate" hreflang="x-default" href="https://propchecklab.com/articles/prop-firm-survival-models/"><meta property="og:type" content="article"><meta property="og:locale" content="ko_KR"><meta property="og:site_name" content="PROP CHECK"><meta property="og:title" content="프롭펌은 어떤 모델이어야 살아남을 수 있을까｜Propr의 헤지 손실과 출금 구조 비교 — PROP CHECK"><meta property="og:description" content="11월에 헤지로 약 161만 달러를 잃은 Propr의 사례를 바탕으로, 프롭펌을 기존형·전환형(FundedHive)·부분 헤지형(Propr, Hypernova)으로 나눠 출금(페이아웃) 재원과 무너지기 쉬운 정도를 비교했습니다."><meta property="og:url" content="https://propchecklab.com/ko/articles/prop-firm-survival-models/"><meta property="og:image" content="https://propchecklab.com/assets/articles/prop-firm-survival-models/thumb-survive-model-ko-20261127.png"><meta property="og:image:width" content="880"><meta property="og:image:height" content="495"><meta property="og:image:alt" content="프롭펌은 어떤 모델이어야 살아남을 수 있을까"><meta property="article:published_time" content="2026-11-26"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="프롭펌은 어떤 모델이어야 살아남을 수 있을까｜Propr의 헤지 손실과 출금 구조 비교 — PROP CHECK"><meta name="twitter:description" content="11월에 헤지로 약 161만 달러를 잃은 Propr의 사례를 바탕으로, 프롭펌을 기존형·전환형(FundedHive)·부분 헤지형(Propr, Hypernova)으로 나눠 출금(페이아웃) 재원과 무너지기 쉬운 정도를 비교했습니다."><meta name="twitter:image" content="https://propchecklab.com/assets/articles/prop-firm-survival-models/thumb-survive-model-ko-20261127.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"프롭펌은 어떤 모델이어야 살아남을 수 있을까","description":"11월에 헤지로 약 161만 달러를 잃은 Propr의 사례를 바탕으로, 프롭펌을 기존형·전환형(FundedHive)·부분 헤지형(Propr, Hypernova)으로 나눠 출금(페이아웃) 재원과 무너지기 쉬운 정도를 비교했습니다.","url":"https://propchecklab.com/ko/articles/prop-firm-survival-models/","mainEntityOfPage":"https://propchecklab.com/ko/articles/prop-firm-survival-models/","inLanguage":"ko","datePublished":"2026-11-26","dateModified":"2026-11-26","image":"https://propchecklab.com/assets/articles/prop-firm-survival-models/thumb-survive-model-ko-20261127.png","author":{"@type":"Person","name":"PONCHAI"},"publisher":{"@type":"Organization","name":"PROP CHECK","logo":{"@type":"ImageObject","url":"https://propchecklab.com/assets/propcheck-logo-r20261020.webp"}}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"PROP CHECK","item":"https://propchecklab.com/ko/"},{"@type":"ListItem","position":2,"name":"콘텐츠","item":"https://propchecklab.com/ko/articles/"},{"@type":"ListItem","position":3,"name":"프롭펌은 어떤 모델이어야 살아남을 수 있을까","item":"https://propchecklab.com/ko/articles/prop-firm-survival-models/"}]}</script><link rel="icon" href="/propcheck-ui-preview/r20261127-survive-model-enko/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="/propcheck-ui-preview/r20261127-survive-model-enko/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/propcheck-ui-preview/r20261127-survive-model-enko/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="/propcheck-ui-preview/r20261127-survive-model-enko/apple-touch-icon.png"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-survive-model-enko/w7-header.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-survive-model-enko/assets/header-x-link-20261017.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-survive-model-enko/assets/footer-reference-20261018.css">
+<style>/* 記事ページのみ: 本番ヘッダーを390pxで本番と同じく折り返す */@media(max-width:700px){.site-header nav>a{white-space:normal!important;font-size:11px!important;line-height:1.25!important;text-align:center}.site-header nav{gap:4px 8px!important}}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&family=Zen+Kaku+Gothic+New:wght@700&display=swap"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-survive-model-enko/assets/guide-back-btn-20261019.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-survive-model-enko/assets/article-crumb-back-20261111.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-survive-model-enko/assets/article-kp-crumb-align-20261111.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-survive-model-enko/assets/article-kp-survive-model-20261127.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-survive-model-enko/assets/article-kp-survive-model-enko-20261127.css"><link rel="stylesheet" href="/propcheck-ui-preview/r20261127-survive-model-enko/assets/article-chrome-20261111.css"></head><body><header class="site-header"><div class="header-row"><a class="site-brand site-brand-logo" href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/"><img src="/propcheck-ui-preview/r20261127-survive-model-enko/assets/propcheck-logo-r20261020.webp" alt="PROP CHECK"></a><nav aria-label="사이트 메뉴"><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/#featured">주목할 4개사</a><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/#comparison">31개사 비교</a><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/report/">제보센터</a><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/guides/" title="소개 글 목록" hreflang="ko">소개 글</a><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/articles/">기사</a><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/methodology/">평가 방법</a><a class="pc-x-link" href="https://x.com/XS4N62dvqf32385" target="_blank" rel="noopener noreferrer" aria-label="PROP CHECK 공식 X 계정(새 탭에서 열림)"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><details class="language-menu" data-language-menu><summary aria-label="언어 선택(현재: 한국어)" aria-expanded="false"><svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><path d="M10 10a5 5 0 0 1 10 0z" fill="#cd2e3a"/><path d="M10 10a5 5 0 0 0 10 0z" fill="#0047a0"/><path d="M5 5l4-2M5.8 7l4-2M21 15l4-2M20.2 13l4-2" stroke="#111" stroke-width="1"/></svg><span class="language-menu-chevron" aria-hidden="true">⌄</span><span class="visually-hidden">한국어</span></summary><div class="language-menu-list" role="menu"><a href="/propcheck-ui-preview/r20261127-survive-model-enko/articles/prop-firm-survival-models/" role="menuitem"><svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="6" fill="#bc002d"/></svg><span>日本語</span></a><a href="/propcheck-ui-preview/r20261127-survive-model-enko/en/articles/prop-firm-survival-models/" role="menuitem"><svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#012169"/><path d="M0 0l30 20M30 0L0 20" stroke="#fff" stroke-width="5"/><path d="M0 0l30 20M30 0L0 20" stroke="#c8102e" stroke-width="2"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6"/><path d="M15 0v20M0 10h30" stroke="#c8102e" stroke-width="3"/></svg><span>English</span></a><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/articles/prop-firm-survival-models/" role="menuitem" aria-current="page"><svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#fff"/><path d="M10 10a5 5 0 0 1 10 0z" fill="#cd2e3a"/><path d="M10 10a5 5 0 0 0 10 0z" fill="#0047a0"/><path d="M5 5l4-2M5.8 7l4-2M21 15l4-2M20.2 13l4-2" stroke="#111" stroke-width="1"/></svg><span>한국어</span></a></div></details></nav></div></header><main class="kp-page"><div class="crumb"><a class="pc-guide-back" href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/articles/">← 글 목록</a></div><article class="kp-article" lang="ko">
+<h1><span style="display:inline-block">프롭펌은 어떤 모델이어야</span> <span style="display:inline-block">살아남을 수 있을까</span></h1>
+<p class="kp-subtitle kp-subtitle-mark"><span class="kp-sub-part">Propr의 실패에서 출발해,</span> <span class="kp-sub-part">3가지 모델을 비교해 봤습니다</span></p>
+<p class="kp-byline"><span class="kp-pr">광고</span><time datetime="2026-11-26">2026년 <span class="kp-nw">11월 26일</span></time><span>PONCHAI(<a href="https://propchecklab.com/ko/">PROP CHECK</a>)</span></p>
+
+<p>안녕하세요, 퐁차이입니다.</p>
+
+<p>프롭펌을 조사하다 보면 계속 마음에 걸리는 점이 있습니다. 챌린지 할인 경쟁은 어디까지 이어질지, 이대로 정말 펌들이 버틸 수 있을지입니다.</p>
+<p>그러던 11월, Propr라는 프롭펌이 <strong>한 달 만에 약 <span class="kp-nw">161만 달러</span>의 손실을 냈습니다</strong>. Propr는 페이아웃에 대비해, 트레이더 주문 일부와 같은 방향의 거래를 펌 자신의 돈으로 실제 시장에서도 하고 있습니다(헤지). 그 헤지용 계좌가 시장 하락으로 계속 손실을 보다가, <span class="kp-nw">11월 21일</span>에 잔고가 바닥났습니다.</p>
+<p>헤지의 내용까지 공개하는 펌은 거의 없기 때문에, <strong>외부에서 무슨 일이 일어났는지 자세히 따라갈 수 있었던 드문 사례입니다</strong>. 이를 보면서 페이아웃 구조가 다른 모델별 강점과 약점이 꽤 뚜렷해졌습니다. 이번에는 3가지 모델의 강점과 약점을, 어떤 상황에 강하고 어떤 상황에 약한지라는 관점에서 비교해 보겠습니다.</p>
+<div class="kp-box sum">
+<p class="kp-box-head">먼저 결론</p>
+<div class="sum-rows">
+<div class="sum-row"><div class="sum-name">기존형<p class="sum-tag">지속 가능성에 의문</p></div><p class="sum-text">새로운 매출에 의존합니다. 할인 경쟁으로 어려워지면 규칙으로 페이아웃을 조이기 쉽습니다.</p></div>
+<div class="sum-row"><div class="sum-name">전환형<span>예: FundedHive</span><p class="sum-tag">유저와 WIN-WIN</p></div><p class="sum-text">수익이 난 계좌는 LP(유동성 공급자)에 직접 연결됩니다. 스프레드가 좁고 거래 환경이 좋습니다. 시장에서 실제로 난 수익만 지급하므로, 유저가 이겨도 펌이 오히려 기뻐합니다.</p></div>
+<div class="sum-row"><div class="sum-name">부분 헤지형<span>예: Propr, Hypernova</span><p class="sum-tag">효율은 최고, 변동 폭도 최고</p></div><p class="sum-text">이론상 가장 효율적입니다. 다만 얼마나 잃을지 정하지 않고 운용하면 한꺼번에 무너집니다(Propr의 11월).</p></div>
+</div>
+<div class="sum-survive">
+<p class="sum-sub">살아남는 곳</p>
+<p class="sum-lead">살아남는 곳은 신뢰성·투명성·거래 환경으로 유저에게 계속 선택받는 곳입니다.</p>
+<dl>
+<div><dt>기존형</dt><dd>운영사의 신뢰성(점유율이나 자금력)으로 버티며 계속 선택받는 곳(예: FTMO, RZR Funded 등)</dd></div>
+<div><dt>전환형</dt><dd>거래 환경의 장점과 출금·규칙의 투명성으로 신뢰를 얻고, 유저와 WIN-WIN으로 돌아가는 곳(예: FundedHive)</dd></div>
+<div><dt>헤지 계열</dt><dd>최적의 헤지를 가장 먼저 완성해 신뢰성을 높이고, 투명성과 거래 환경·가격에서도 선택받는 곳</dd></div>
+</dl>
+<p class="sum-note">어느 쪽이든 자금력으로 「시간」을 살 수 있다는 것이 전제입니다.</p>
+</div>
+<p class="sum-foot">유저가 안심할 수 있는 근거는 온체인 투명성과 스마트 컨트랙트입니다. 다만 그것으로 알 수 있는 것에는 한계가 있습니다.</p>
+</div>
+
+<nav class="kp-toc" aria-labelledby="toc-title">
+<p class="kp-toc-title" id="toc-title">목차</p>
+<ol>
+<li><a href="#three-types"><span>페이아웃 재원은 3가지 유형으로 나뉜다</span></a></li>
+<li><a href="#traditional"><span>기존형: 싸 보이게 하고, 계속 팔아야 돌아간다</span></a></li>
+<li><a href="#switching"><span>전환형: 거래 환경은 좋고 규칙은 <span class="kp-nw">엄격한 편</span></span></a></li>
+<li><a href="#partial-hedge"><span>부분 헤지형: 이론상 최고, 하지만 Propr는 무너졌다</span></a></li>
+<li><a href="#stress"><span>3가지 모델을 같은 상황에 놓아 본다</span></a></li>
+<li><a href="#best-hedge"><span>승부는 「최적의 헤지」를 어떻게 완성하느냐</span></a></li>
+<li><a href="#who-survives"><span>살아남는 곳은 어떤 펌인가</span></a></li>
+<li><a href="#transparency"><span>유저의 안심 근거는 투명성과 스마트 컨트랙트</span></a></li>
+<li><a href="#summary"><span>정리: 프롭펌은 「계속 지급할 수 있는가」로 고른다</span></a></li>
+<li><a href="#sources"><span>출처</span></a></li>
+</ol>
+</nav>
+
+<h2 id="three-types" data-n="1"><span>페이아웃 재원은 3가지 유형으로 나뉜다</span></h2>
+<p>프롭펌은 <strong>합격 후의 주문을 실제 시장에 내보내느냐에 따라 페이아웃 돈의 출처가 달라집니다</strong>. 업계에서는 주문을 실제 시장에 내보내는 것을 「A-book」, 시장에 내보내지 않고 펌 내부의 데모 환경에서 처리하는 것을 「B-book」이라고 부릅니다. 이 글에서도 이 용어를 쓰겠습니다.</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">주문을 실제 시장에 내보내느냐에 따라 페이아웃 재원이 달라진다</p>
+<p class="rw-legend"><span class="rw-lg"><span class="chip mkt">A-book</span>실제 시장에서 거래</span><span class="rw-lg"><span class="chip int">B-book</span>펌 내부 데모 환경에서 처리</span></p>
+<div class="rws">
+<div class="rw rw-head"><div class="rw-name"></div><p class="rw-lab">합격 후 주문의 행선지</p><p class="rw-lab">페이아웃 재원</p></div>
+<div class="rw"><div class="rw-name"><b>기존형</b><span>예: 구조를 공개하지 않는 많은 펌</span></div>
+<div class="rw-col"><p><span class="chip int">B-book</span>전부</p></div>
+<div class="rw-col"><p class="rw-val">챌린지 비용과 보유 자금</p></div></div>
+<div class="rw"><div class="rw-name"><b>전환형</b><span>예: FundedHive</span></div>
+<div class="rw-col"><p><span class="chip mkt">A-book</span>수익이 난 계좌</p><p><span class="chip int">B-book</span>−1%를 밑돈 계좌</p></div>
+<div class="rw-col"><p class="rw-val">시장에서 실제로 난 수익만</p></div></div>
+<div class="rw"><div class="rw-name"><b>부분 헤지형</b><span>예: Propr, Hypernova</span></div>
+<div class="rw-col"><p><span class="chip mkt">A-book</span>회사가 고른 분량</p><p><span class="chip int">B-book</span>나머지</p></div>
+<div class="rw-col"><p class="rw-val">챌린지 비용 + 시장에서 난 수익</p></div></div>
+</div></div><figcaption>각 사의 공식 규칙·FAQ 기준. Propr는 <span class="kp-nw">11월 21일</span>에 헤지 계좌가 <span class="kp-nw">0달러</span>가 되어, 2027년 초까지는 사실상 「기존형」입니다.</figcaption></figure>
+
+<h2 id="traditional" data-n="2"><span>기존형: 싸 보이게 하고, 계속 팔아야 돌아간다</span></h2>
+<p>기존형 펌의 수입은 거의 챌린지 비용뿐입니다. 챌린지 중에도 합격 후에도 주문이 시장에 나가지 않으므로, 이긴 사람에게 주는 페이아웃은 모두가 낸 챌린지 비용에서 나옵니다.</p>
+<p>이것이 성립하는 이유는 페이아웃까지 도달하는 사람이 극히 일부이기 때문입니다. 10개 사·약 30만 계좌를 조사한 FPFX Tech의 데이터에서는, <strong>챌린지를 산 사람 중 페이아웃을 받은 사람은 7%였습니다</strong>.</p>
+<p><strong>문제는 여기에 할인 경쟁이 겹쳐 있다는 점입니다.</strong> 2026년 4월 시점에 9개 사가 12개의 할인 코드를 내걸었고, 할인율은 15%~90%였습니다. Apex Trader Funding은 90% 할인 코드까지 냈습니다. 1인당 매출이 이만큼 떨어지면, 같은 인원에게 페이아웃해도 매출 대비 페이아웃 비율은 계속 올라갑니다.</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">할인이 깊어질수록, 매출 중 페이아웃으로 사라지는 비율이 늘어난다(추정)</p>
+<p class="hf-quiet">페이아웃 금액은 그대로이고 할인으로 매출만 줄었다고 가정했을 때, 매출 대비 페이아웃 비율</p>
+<div class="pr-row"><b>정가</b><div class="pr-track"><i style="width:26.0%"></i></div><em>26%</em></div>
+<div class="pr-row"><b>30% 할인</b><div class="pr-track"><i style="width:37.1%"></i></div><em>37%</em></div>
+<div class="pr-row"><b>50% 할인</b><div class="pr-track"><i style="width:52.0%"></i></div><em>52%</em></div>
+<div class="pr-row"><b>70% 할인</b><div class="pr-track"><i style="width:86.7%"></i></div><em>87%</em></div>
+<div class="pr-row pr-axis-row"><span></span><div class="pr-axis"><span>0%</span><span><i class="pr-k">100%: </i>매출이 전부 페이아웃으로 사라짐</span></div><span></span></div>
+<p class="hf-quiet">참고로 매출과 페이아웃을 공개하는 부분 헤지형 2개 사는 Propr가 66%(개업 이후 누계), Hypernova가 약 94%(8월~11월)입니다.</p>
+</div><figcaption>필자의 추정. 정가 기준 비율은 FPFX Tech 조사(10개 사·약 30만 계좌, 2024년 9월 공개)의 평균값으로 계산한 17.5~35%의 중간값인 26%로 했습니다. 할인으로 사는 사람이 늘어나는 효과는 넣지 않았습니다.</figcaption></figure>
+<p>그리고 <strong>어려워진 펌이 가장 손대기 쉬운 것이 규칙입니다</strong>.</p>
+<ul class="kp-list">
+<li><p>The Funded Trader는 2024년 1~2월에만 <span class="kp-nw">200만 달러</span>가 넘는 페이아웃을 거부했고, 이후 운영을 중단했습니다.</p></li>
+<li><p>FundingTicks는 2025년 12월에 <span class="kp-nw">1분</span> 이내 스캘핑 제한, 목표 상향, 수익 배분율 인하를 도입했다가 반발을 사서, 2026년 1월에 사업을 정리하기 시작했습니다.</p></li>
+<li><p>2024년 2월부터 2025년 말까지 추정 80~100개의 프롭펌이 폐업했습니다. 영국의 Propel Capital은 출범 <span class="kp-nw">14개월</span> 만에 「경쟁이 너무 치열해 계속할 수 없다」며 문을 닫았습니다.</p></li>
+</ul>
+<p>페이아웃 전에 「리스크 팀 심사」가 들어가는데, 무엇이 문제였는지는 설명되지 않습니다. 이런 블랙박스 같은 부분이 많은 것도 기존형의 특징이라고 느낍니다. <strong>싸 보이게 해서 계속 팔고, 규칙의 세세한 조건으로 페이아웃을 조이는 구조가 되기 쉬운 모델이라고 생각합니다.</strong></p>
+<p>상징적인 것이 대형 업체의 움직임입니다. FTMO는 2025년 12월에 브로커 OANDA를 <span class="kp-nw">2억 5천만 달러</span>에 인수했습니다. MyFundedFX에서 이름을 바꾼 Seacrest는 2026년 2월에 프롭 사업을 접고 규제를 받는 CFD 브로커 전업이 되었습니다. <strong>업계 최상위조차 챌린지 비용 이외의 수입원을 잡으러 가고 있는 셈입니다</strong>.</p>
+<p>다만 공정하게 적어 두면, <strong>기존형도 이익은 납니다.</strong> Propr의 헤지를 제외한 부분(즉 기존형과 같은, B-book으로 처리하는 부분)은 개업 이후 약 <span class="kp-nw">177만 달러</span>, 매출의 약 26%의 이익을 냈습니다. 문제는 그 이익이 「새 매출이 계속 들어오고, 페이아웃이 일부 사람에게 한정되어 있는 동안」에만 이어진다는 점입니다. 제가 지속 가능성에 의문을 갖는 이유가 바로 여기입니다.</p>
+
+<h2 id="switching" data-n="3"><span>전환형: 거래 환경은 좋고 규칙은 <span class="kp-nw">엄격한 편</span></span></h2>
+<p>FundedHive는 합격 후 계좌를 「AADS(Automated A-Book Dealing System)」라는 구조로 운용합니다. 공식 페이지의 설명을 정리하면 흐름은 이렇습니다.</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">FundedHive는 계좌별로 A-book과 B-book을 자동으로 전환한다</p>
+<div class="hf-flow">
+<div class="hf-step live"><b>A-book에서 거래</b><span>합격 후에는 실제 시장에서</span></div><span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-step"><b>−1% 아래로</b><span>초기 잔고 기준</span></div><span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-step sim"><b>B-book으로</b><span>포지션은 강제 청산</span></div><span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-step sim"><b>B-book에서 회복</b><span>이 기간의 수익은 출금 불가</span></div><span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-step live"><b>A-book으로 복귀</b><span>초기 잔고까지 회복하면</span></div>
+</div>
+<p class="hf-quiet">시장에서 난 손실(최대 −1%)은 「마이너스 PnL」로 기록되어, 이후의 수익에서 차감된다</p>
+</div><figcaption>FundedHive 공식 「AADS」 페이지의 설명 기준(2026년 <span class="kp-nw">11월 26일</span> 확인). 챌린지 중에는 시뮬레이션입니다.</figcaption></figure>
+<p>포인트는 3가지입니다.</p>
+<ul class="kp-list">
+<li><p><strong>페이아웃은 실제 시장에서 난 수익에서만 나옵니다.</strong> B-book(데모 환경)에 있는 동안 난 수익은 출금할 수 없습니다(계좌를 닫은 뒤 FundedHive 자체 코인으로 바꿔 다음 계좌 구매에 쓸 수는 있습니다).</p></li>
+<li><p><strong>펌이 실제 시장에서 떠안는 것은 계좌당 최대 1% 정도입니다.</strong> 게다가 그 손실은 트레이더가 다음에 낸 수익에서 차감됩니다.</p></li>
+<li><p><strong>출금은 스마트 컨트랙트에서 나옵니다.</strong> 언제든 신청할 수 있고 사람의 승인은 들어가지 않습니다. 제가 시험해 봤을 때는 <strong>신청 후 0.3초 정도 만에 지갑에 입금되었습니다</strong>. 하루 출금액에는 상한이 있습니다.</p></li>
+</ul>
+<p>펌 입장에서는 꽤 무너지기 어려운 구조입니다. <strong>지급하는 것이 시장에서 실제로 번 돈이라서, 「이기는 사람이 너무 많아 지급하지 못한다」는 일이 생기지 않습니다</strong>. 시장에서의 손실도 계좌당 1% 정도에서 멈추고 나중에 회수됩니다. CEO는 인터뷰에서 페이아웃이 매출의 20~30%라고 말했습니다.</p>
+<p>트레이더 쪽에서 조심할 것은 1% 라인입니다. 합격 후 조금만 잃어도 바로 B-book으로 전환되고, 초기 잔고까지 되찾을 때까지의 수익은 출금할 수 없습니다. 마이너스 PnL이 「빚」처럼 남는 것이 싫다는 후기도 있습니다.</p>
+<p>그래도 저는 FundedHive를 높이 평가합니다. 우선 거래 환경이 좋습니다. 공식 이용약관에는 수익이 난 계좌는 Tier 1 LP에 FIX API로 직접 연결하며 스프레드에 가산이 없다고 쓰여 있습니다. <strong>실제 스프레드와 수수료를 봐도 해외 브로커 전체와 비교해 최상위 수준입니다</strong>(수수료는 1랏당 <span class="kp-nw">3달러</span>). 게다가 스프레드는 회원 페이지에서 시간대별로 모두 공개되어 있습니다(보려면 무료 회원 가입이 필요합니다).</p>
+<p>실제로 한국 시간 <span class="kp-nw">11월 26일</span> 밤(22시 <span class="kp-nw">40분</span>~23시 40분경)의 스프레드를 봤습니다. 주요 통화쌍은 평소 0.2~0.3pips입니다.</p>
+<div class="table-scroll" tabindex="0"><table class="kp-money kp-spread"><thead><tr><th>종목</th><th>평소 상한</th><th>확대 시</th><th>하한</th></tr></thead><tbody>
+<tr><td data-label="종목">EUR/USD</td><td data-label="평소 상한">0.2pips</td><td data-label="확대 시">0.3pips</td><td data-label="하한">0.0pips</td></tr>
+<tr><td data-label="종목">USD/JPY</td><td data-label="평소 상한">0.2pips</td><td data-label="확대 시">0.3pips</td><td data-label="하한">0.0pips</td></tr>
+<tr><td data-label="종목">GBP/USD</td><td data-label="평소 상한">0.3pips</td><td data-label="확대 시">0.4pips</td><td data-label="하한">0.0pips</td></tr>
+<tr><td data-label="종목">XAU/USD(금)</td><td data-label="평소 상한">1.3pips 안팎</td><td data-label="확대 시">3.2pips</td><td data-label="하한">0.6pips</td></tr>
+</tbody></table></div>
+<p class="kp-note" style="font-size:.8125rem">FundedHive 회원 페이지의 스프레드 목록(2026년 <span class="kp-nw">11월 26일</span>, 한국 시간 22시 <span class="kp-nw">40분</span>~23시 40분경의 약 <span class="kp-nw">1시간</span>) 기준. 수수료는 별도로 1랏당 <span class="kp-nw">3달러</span>가 듭니다.</p>
+<p>이 거래 환경에 스마트 컨트랙트에서 즉시 출금할 수 있다는 안심감이 더해집니다. 이 조합은 다른 곳에서는 좀처럼 맛보기 어렵습니다. 1% 라인도 공식이 권하는 대로 수익 여유를 조금 만든 뒤에 크게 베팅하면 충분히 맞출 수 있습니다. 규칙이 처음부터 분명하게 공개되어 있고, 나중에 함정이 튀어나오는 일도 없습니다. 기존형보다 훨씬 낫다고 생각합니다.</p>
+
+<p>다만 매출과 페이아웃의 합계액은 한꺼번에 공개되어 있지 않아서, 숫자로 검증하는 것은 아직 못 합니다. 구매 기록은 한 건씩 온체인에 공개되어 있습니다.</p>
+
+<h2 id="partial-hedge" data-n="4"><span>부분 헤지형: 이론상 최고, 하지만 Propr는 무너졌다</span></h2>
+<p>부분 헤지형은 회사 전체의 포지션을 보고, 위험이 큰 부분이나 성적이 좋은 트레이더의 방향만 시장에서 헤지합니다. FundedHive처럼 계좌별로 기계가 전환하는 것이 아니라 회사가 한꺼번에 판단하는 방식입니다. 트레이더에 대한 제약이 적고, 이론상 자금 효율이 가장 좋은 모델입니다.</p>
+<p>같은 부분 헤지형인 Hypernova는 주문을 자체 엔진으로 처리하면서, 트레이더의 매매를 참고해 펌이 자기 자금으로 거래하는 경우가 있다고 명시합니다. 다만 그 실적은 공개하지 않습니다. 공개된 숫자로는 8월~11월의 페이아웃이 매출의 약 94%이고, 운영사는 8월~10월에 3번, 합계 약 <span class="kp-nw">138만 달러</span>를 페이아웃용 지갑에 보충했습니다. <strong>매출만으로는 돌아가지 않고, 운영사의 자금으로 떠받치고 있는 상태입니다</strong>.</p>
+<p>헤지의 내용까지 공개하는 곳은 Propr입니다. Propr는 8월~10월 동안 이 방식으로 잘 운영되고 있었습니다.</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">Propr의 헤지는 3개월간 <span class="kp-nw">61만 달러</span>를 벌고, 11월 한 달에만 <span class="kp-nw">161만 달러</span>를 잃었다</p>
+<p class="hf-quiet">헤지 계좌의 월별 확정 손익</p>
+<div class="hb-row"><b>8월</b><div class="hb-track"><i style="width:13.6%"></i><em><span class="kp-nw">+28.0만 달러</span></em></div></div>
+<div class="hb-row"><b>9월</b><div class="hb-track"><i style="width:2.4%"></i><em><span class="kp-nw">+4.9만 달러</span></em></div></div>
+<div class="hb-row"><b>10월</b><div class="hb-track"><i style="width:13.9%"></i><em><span class="kp-nw">+28.6만 달러</span></em></div></div>
+<div class="hb-row"><b>11월</b><div class="hb-track"><i class="neg" style="width:78%"></i><em><span class="kp-nw">−161.1만 달러</span></em></div></div>
+<p class="hf-quiet">개업 이후 누계는 <span class="kp-nw">−99.6만 달러</span></p>
+</div><figcaption>Propr 투명성 대시보드의 헤지 손익 일별 데이터를 월별로 합산(2026년 <span class="kp-nw">11월 26일</span> 취득. 11월은 26일까지)</figcaption></figure>
+
+<h3>11월에 무슨 일이 있었나</h3>
+<p>헤지 계좌는 WLD·XPL·ZEC 3개 종목의 롱(매수) 포지션을 10배 레버리지로 들고 있다가, 시장 하락으로 평가손이 불어났습니다. 날짜순으로 정리하면 이렇습니다.</p>
+<div class="table-scroll" tabindex="0"><table class="kp-two"><thead><tr><th>날짜</th><th>일어난 일</th></tr></thead><tbody>
+<tr><td data-label="날짜"><span class="kp-nw">11월 11일</span></td><td data-label="">헤지 계좌의 평가손이 약 <span class="kp-nw">57만 달러</span>로 늘어남. CEO가 Discord에서 「쓸 수 있는 유동성은 약 <span class="kp-nw">430만 달러</span>」 「헤지 계좌를 <span class="kp-nw">50만 달러</span>까지 늘리겠다」 「헤지 설명 문서를 내겠다」고 설명</td></tr>
+<tr><td data-label="날짜"><span class="kp-nw">11월 16일</span></td><td data-label="">헤지 계좌에 약 <span class="kp-nw">42만 달러</span> 입금</td></tr>
+<tr><td data-label="날짜"><span class="kp-nw">11월 20일</span></td><td data-label="">헤지가 하루에 <span class="kp-nw">−68만 달러</span>의 확정 손실. 대시보드 첫 화면에서 헤지 손익 항목이 사라짐</td></tr>
+<tr><td data-label="날짜"><span class="kp-nw">11월 21일</span></td><td data-label="">남은 포지션도 <span class="kp-nw">−17만 달러</span>로 청산되어 헤지 계좌의 잔고가 바닥남. CEO는 「헤지는 그만뒀다」고 언급</td></tr>
+<tr><td data-label="날짜"><span class="kp-nw">11월 23일</span></td><td data-label="">헤지 설명 문서를 공개. 헤지를 2027년 초까지 중단한다고 발표</td></tr>
+<tr><td data-label="날짜"><span class="kp-nw">11월 23일</span></td><td data-label="">외부 앱 Trigger.xyz의 API 키 유출을 계기로, 페이아웃을 수작업 심사 방식으로 전환</td></tr>
+<tr><td data-label="날짜"><span class="kp-nw">11월 24일</span></td><td data-label="">출금용 공개 계좌에 약 <span class="kp-nw">39만 달러</span>를 보충. 추천 보상에 「신청 30일 후 지급」 규칙을 도입. 온체인 페이아웃이 거의 하루 멈췄다가 25일에 재개</td></tr>
+<tr><td data-label="날짜"><span class="kp-nw">11월 26일</span></td><td data-label="">주가지수 최대 40배의 신규 플랜 「1-Step Max」 시작. 블랙프라이데이로 모든 챌린지 20% 할인</td></tr>
+</tbody></table></div>
+<p>Propr는 출금과 헤지에 쓰는 지갑 잔고의 합계를 「Reserve(준비금)」로 대시보드에 공개하고 있습니다. 이 글에서는 「출금용 공개 계좌」라고 부르겠습니다. 그 잔고의 움직임은 이렇습니다.</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">출금용 공개 계좌의 잔고는 한때 <span class="kp-nw">4만 달러</span> 아래로 떨어졌다가, 외부에서 보충해 약 <span class="kp-nw">40.4만 달러</span>로 돌아왔다</p>
+<p class="hf-quiet">Propr가 온체인으로 공개하는 지갑 잔고의 합계(반나절 단위)</p>
+<div class="chart" id="reserve" role="img" aria-label="Propr의 출금용 공개 계좌 잔고 추이. 10월 말 약 80만 달러에서 11월 23일에 약 3.9만 달러까지 줄었고, 11월 24일의 보충 이후 11월 26일에는 약 40.4만 달러"></div>
+<ol class="hf-legend" id="reserve-legend"></ol>
+</div><figcaption>Propr 투명성 대시보드의 Reserve 데이터(반나절 단위, 2026년 <span class="kp-nw">10월 27일</span>~<span class="kp-nw">11월 26일</span>. 눈금과 표시의 날짜는 한국 시간). 점선은 9월 말에 「<span class="kp-nw">100만 달러</span>를 마련했다」고 발표한 금액입니다.</figcaption></figure>
+<p>이 잔고의 대부분은 헤지 계좌의 증거금이었습니다. 그래서 헤지가 질 때마다 잔고도 줄어들었습니다. <span class="kp-nw">11월 16일</span>에 늘린 몫도 일주일쯤 지나 사라졌습니다. <span class="kp-nw">11월 24일</span>에 돌아온 것은 운영 측이 외부에서 넣은 돈입니다. CEO는 <span class="kp-nw">11월 23일</span> 방송에서, 개인 대출 한도를 이용해 약 <span class="kp-nw">120만 달러</span>를 마련했고 이미 약 <span class="kp-nw">65만 달러</span>를 넣었다고 말했습니다. 다만 이 금액은 온체인에서는 확인할 수 없습니다.</p>
+<p>솔직히 마음에 걸리는 것이 바로 여기입니다. <span class="kp-nw">11월 11일</span>에는 「쓸 수 있는 유동성은 약 <span class="kp-nw">430만 달러</span>」라고 설명했습니다. 그런데도 잔고는 <span class="kp-nw">4만 달러</span> 가까이까지 줄었고 외부에서 돈을 넣게 되었습니다. 이 두 가지가 어떻게 이어지는지는 아직 설명되지 않았습니다.</p>
+<p><strong>다만 Propr의 뿌리에는 큰 자금력이 있습니다</strong>. Propr를 만든 XBorg는 암호화폐 앱 SwissBorg에서 나온 회사이며, 주주는 SwissBorg와 창업자입니다. SwissBorg는 본인 확인을 마친 이용자 약 92만 명, 이용자의 암호화폐 합계 약 <span class="kp-nw">9.7억 달러</span>(2026년 <span class="kp-nw">11월 27일</span> 기준, 공식 사이트)의 유럽 유수 암호화폐 앱입니다. 이번에도 CEO가 외부에서 자금을 넣어 페이아웃을 멈추지 않고 이어 가고 있습니다. 자금력이 없는 펌이었다면 헤지 계좌의 잔고가 바닥난 시점에 페이아웃이 멈췄어도 이상하지 않았습니다. 이 글의 결론에서 쓰는 「자금력으로 시간을 산다」를 바로 실행하고 있는 사례입니다.</p>
+<p>개업 이후의 이익으로 봐도 영향은 큽니다. 매출에서 페이아웃과 추천 보상을 빼고 헤지 손익을 더한 이익 누계는 10월 말 약 <span class="kp-nw">227만 달러</span>에서 <span class="kp-nw">11월 26일</span>에는 약 <span class="kp-nw">77만 달러</span>까지 줄었습니다. Propr가 예전에 대시보드에 올렸던 고정비 추정치(8월 이후 월 약 <span class="kp-nw">10만 달러</span>)를 빼면, 개업 이후의 이익은 거의 0입니다.</p>
+<p>한편 <strong>트레이더에 대한 페이아웃은 지금도 계속되고 있습니다</strong>. 다만 지급까지 걸리는 시간은 중앙값 기준으로 <span class="kp-nw">11월 12일</span>의 약 14분에서 <span class="kp-nw">11월 26일</span>에는 약 3시간으로 늘었습니다.</p>
+
+<h3>Propr는 무엇을 잘못했나</h3>
+<p>Propr가 <span class="kp-nw">11월 23일</span>에 공개한 설명 문서에는 실패의 이유가 4가지로 꼽혀 있습니다.</p>
+<ul class="kp-list">
+<li><p>트레이더의 실력을 <span class="kp-nw">6주</span> 기준으로 판단하고, 2주마다만 재검토했다(재검토가 늦었다)</p></li>
+<li><p>XPL이나 WLD 같은 마이너 코인에서 너무 큰 포지션을 허용했다</p></li>
+<li><p>「잃어도 되는 금액」 설정이 느슨했다</p></li>
+<li><p>하루 손실 한도가 너무 컸다</p></li>
+</ul>
+<p>읽으면서 느낀 것은, <strong>모두 「맞히는 법」의 실패가 아니라 「잃는 법을 정해 두지 않았던」 실패라는 점입니다</strong>. 따라 하던 상위 트레이더들이 한꺼번에 잃었고, 잃어도 물타기를 계속하는 트레이더가 있어서 시스템이 포지션을 계속 들고 있게 되었습니다. FundedHive가 계좌별로 「−1%에서 자른다」고 정해 둔 것과는 정반대입니다.</p>
+
+<h2 id="stress" data-n="5"><span>3가지 모델을 같은 상황에 놓아 본다</span></h2>
+<p>각 모델이 어떤 상황에 강하고 어떤 상황에 약한지, 제 관점에서 표시해 봤습니다.</p>
+<p class="mk-legend"><span class="mk o">○</span>강함<span class="mk t">△</span>상황에 따라 다름<span class="mk x">×</span>약함</p>
+<div class="table-scroll" tabindex="0"><table class="kp-stress"><thead><tr><th>상황</th><th>기존형</th><th>전환형</th><th>부분 헤지형</th></tr></thead><tbody>
+<tr><td data-label="상황">새 매출이 멈춘다</td><td data-label="기존형"><div class="cell"><span class="mk x" aria-label="약함">×</span><span>페이아웃 재원이 줄어든다</span></div></td><td data-label="전환형"><div class="cell"><span class="mk o" aria-label="강함">○</span><span>페이아웃은 시장 수익에서</span></div></td><td data-label="부분 헤지형"><div class="cell"><span class="mk t" aria-label="상황에 따라 다름">△</span><span>B-book 몫은 약하다</span></div></td></tr>
+<tr><td data-label="상황">이기는 사람이 갑자기 늘어난다</td><td data-label="기존형"><div class="cell"><span class="mk x" aria-label="약함">×</span><span>전액 챌린지 비용에서 지급</span></div></td><td data-label="전환형"><div class="cell"><span class="mk o" aria-label="강함">○</span><span>시장 수익에서 지급</span></div></td><td data-label="부분 헤지형"><div class="cell"><span class="mk t" aria-label="상황에 따라 다름">△</span><span>헤지가 맞으면 강하다</span></div></td></tr>
+<tr><td data-label="상황">시장이 크게 움직인다</td><td data-label="기존형"><div class="cell"><span class="mk x" aria-label="약함">×</span><span>오르는 국면에 특히 약하다</span></div></td><td data-label="전환형"><div class="cell"><span class="mk o" aria-label="강함">○</span><span>펌의 손실은 계좌당 1% 정도</span></div></td><td data-label="부분 헤지형"><div class="cell"><span class="mk t" aria-label="상황에 따라 다름">△</span><span>빗나가면 이중으로 아프다</span></div></td></tr>
+<tr><td data-label="상황">운영사가 판단을 그르친다</td><td data-label="기존형"><div class="cell"><span class="mk t" aria-label="상황에 따라 다름">△</span><span>규칙으로 페이아웃을 조이기 쉽다</span></div></td><td data-label="전환형"><div class="cell"><span class="mk o" aria-label="강함">○</span><span>기계적인 규칙이라 잘 안 생긴다</span></div></td><td data-label="부분 헤지형"><div class="cell"><span class="mk x" aria-label="약함">×</span><span>가장 위험(Propr의 11월)</span></div></td></tr>
+<tr><td data-label="상황">트레이더에 대한 우호도</td><td data-label="기존형"><div class="cell"><span class="mk t" aria-label="상황에 따라 다름">△</span><span>세세한 조건이 많다</span></div></td><td data-label="전환형"><div class="cell"><span class="mk t" aria-label="상황에 따라 다름">△</span><span>1% 라인이 <span class="kp-nw">엄격한 편</span></span></div></td><td data-label="부분 헤지형"><div class="cell"><span class="mk o" aria-label="강함">○</span><span>제약이 가장 적다</span></div></td></tr>
+<tr><td data-label="상황">외부에서 확인할 수 있는가</td><td data-label="기존형"><div class="cell"><span class="mk x" aria-label="약함">×</span><span>거의 불가능</span></div></td><td data-label="전환형"><div class="cell"><span class="mk t" aria-label="상황에 따라 다름">△</span><span>구조와 건별 기록은 공개</span></div></td><td data-label="부분 헤지형"><div class="cell"><span class="mk o" aria-label="강함">○</span><span>Propr는 장부까지, Hypernova는 일부</span></div></td></tr>
+</tbody></table></div>
+<p>전환형은 ○가 많습니다. 거래 환경과, 펌이 무리 없이 계속 지급할 수 있는 구조를 둘 다 보기 때문입니다. 부분 헤지형은 트레이더에게 가장 우호적인 대신 △가 많습니다. <strong>잘되면 가장 강하고, 실패하면 가장 무너지기 쉽습니다</strong>. 변동 폭이 큽니다.</p>
+
+<h2 id="best-hedge" data-n="6"><span>승부는 「최적의 헤지」를 어떻게 완성하느냐</span></h2>
+<p>저는 3가지 중 가장 가능성이 큰 것이 헤지라고 생각합니다. 전혀 헤지하지 않는 기존형은 할인 경쟁과 규칙 조이기에서 벗어날 수 없습니다. FundedHive처럼 계좌별로 선을 그으면 펌은 지킬 수 있지만, 그만큼 트레이더에 대한 규칙이 엄격해집니다. 그 사이에서 어디까지를 시장에 내보내고(A-book), 어디부터를 펌 안에서 들고 있을지(B-book). <strong>이 선 긋기를 펌을 지키면서도 트레이더에게 너무 가혹하지 않은 형태로 완성한 곳이 다음에 살아남는 펌이 될 것이라고 생각합니다</strong>.</p>
+<p>Propr의 실패를 뒤집어 FundedHive의 방식과 견주어 보면, 「완성된 헤지」의 조건이 보입니다.</p>
+<ul class="kp-list">
+<li><p><strong>「잃어도 되는 금액」과 멈추는 시점을 먼저 정해 둔다.</strong> FundedHive는 계좌별로 −1%, Propr에는 사실상 손절이 없었습니다. 회사 전체로 헤지한다면 회사 전체의 손절 라인이 필요합니다.</p></li>
+<li><p><strong>헤지는 유동성이 높은 종목으로만 한다.</strong> 마이너 코인은 시장 전체와 같이 움직이지 않으므로, 대형 종목으로 헤지해도 듣지 않습니다.</p></li>
+<li><p><strong>헤지할 수 없는 것은 규칙으로 억제한다.</strong> 마이너 코인의 포지션이나 레버리지에 상한을 거는 것도 훌륭한 리스크 관리입니다. 규칙의 설계 자체가 헤지의 일부라는 뜻입니다.</p></li>
+<li><p><strong>따라 하는 대상의 재검토를 빠르게 한다.</strong> <span class="kp-nw">6주</span> 성적은 실력인지 운인지 알 수 없는 경우가 많습니다.</p></li>
+<li><p><strong>헤지 손익은 페이아웃 의무와 세트로 공개한다.</strong> Propr는 「트레이더가 지면 지급 의무도 줄어든다」고 설명했지만, 그 의무의 금액이 나와 있지 않아서 외부에서는 확인할 수 없었습니다.</p></li>
+</ul>
+<p>지금으로서는 이를 전부 충족하는 펌이 보이지 않습니다. Propr는 2027년 초에 「헤지를 다시 만들어 돌아오겠다」고 합니다. 그때 무엇이 달라져 있을지는 PROP CHECK에서도 계속 지켜볼 생각입니다.</p>
+
+<h2 id="who-survives" data-n="7"><span>살아남는 곳은 어떤 펌인가</span></h2>
+<p>여기까지를 정리하면 제 결론은 이렇습니다. 모델에 따라 살아남는 조건이 다릅니다.</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">어느 모델이든 자금력으로 「시간」을 살 수 있다는 것이 전제. 무엇을 위한 시간인지가 다르다</p>
+<div class="sv">
+<div class="sv-card"><p class="sv-head">기존형으로 살아남는 곳은</p><dl>
+<div><dt>조건</dt><dd>점유율을 가진 대형 업체(예: FTMO 등)이거나, 자금력 있는 운영사가 있다(예: RZR Funded 등)</dd></div>
+<div><dt>자금으로 사는 시간</dt><dd>할인 경쟁의 적자를 견디며 점유율을 다 가져갈 때까지</dd></div>
+<div><dt>그 너머</dt><dd>브로커 사업 등 챌린지 비용 이외의 수입원도 갖춘다</dd></div></dl></div>
+<div class="sv-card"><p class="sv-head">헤지 계열로 살아남는 곳은</p><dl>
+<div><dt>조건</dt><dd>최적의 헤지 구조를 가장 먼저 완성한다</dd></div>
+<div><dt>자금으로 사는 시간</dt><dd>구조가 완성될 때까지의 실패를 견딜 때까지</dd></div>
+<div><dt>그 너머</dt><dd>가격·규칙·투명성으로 유저에게 계속 선택받는다</dd></div></dl></div>
+</div></div><figcaption>필자의 관점을 정리한 그림</figcaption></figure>
+<p><strong>기존형은 이미 체력 싸움 단계에 들어갔다고 생각합니다</strong>. 할인 경쟁을 거는 쪽도 자금력 있는 대형 업체나 큰 운영사를 가진 펌입니다. 예를 들어 RZR Funded는 금융 시장에서 35년의 실적을 가진 Hantec 그룹의 일원입니다. 이런 운영사를 가진 펌은 할인 경쟁 속에서도 체력으로 버티기 쉽고, 그룹의 브로커 사업과도 결합할 수 있습니다. 반대로 자금력 없는 새 펌이 기존형으로 진입하면 Propel Capital처럼 1년 정도 만에 막히기 쉽습니다. 기존형을 고른다면 규모와 운영사를 보는 것이 가장 확실합니다.</p>
+<p>헤지 계열은 아직 「구조를 완성하는 경쟁」의 한창입니다. Propr는 11월에 한 번 실패했고, CEO가 자기 돈을 넣어 버티고 있습니다. FundedHive는 좋은 거래 환경과 빠른 출금, 그리고 승리를 시장 수익에서 지급하는 구조로 유저를 붙잡고 있습니다. 남은 것은 1% 라인을 트레이더에게 어디까지 우호적으로 만들 수 있느냐라고 생각합니다. 완성된 헤지를 갖고 있어도 가격이 너무 비싸거나 규칙이 너무 엄격하면 유저는 오지 않습니다. <strong>구조의 완성도와 유저에게 선택받는 조건을 둘 다 갖춘 곳이 이길 것이라고 생각합니다</strong>.</p>
+
+<h2 id="transparency" data-n="8"><span>유저의 안심 근거는 투명성과 스마트 컨트랙트</span></h2>
+<p>이번 Propr 건으로 다시 한번 느낀 것은 <strong>온체인 투명성은 역시 강하다</strong>는 점입니다. 헤지 계좌가 무너져 가는 모습은 외부에서 매일 보였습니다. 출금용 공개 계좌의 잔고가 줄어드는 것도, 포지션이 청산 라인에 가까워지는 것도 알 수 있었습니다. 비공개 펌이라면 같은 일이 일어나도 페이아웃이 멈출 때까지 아무도 알아채지 못합니다.</p>
+<p>다만 투명성으로 보이는 것은 「가진 돈」과 「지급한 기록」이 중심입니다.</p>
+<ul class="kp-list">
+<li><p><strong>지급해야 할 의무의 총액은 보이지 않습니다.</strong> 트레이더의 미실현 수익이나 미지급 추천 보상은 온체인에 나오지 않습니다.</p></li>
+<li><p><strong>보여 주는 방식은 운영 측이 바꿀 수 있습니다.</strong> Propr는 11월에 대시보드 첫 화면에서 헤지 손익 항목을 뺐습니다. 지금 공개된 숫자가 앞으로도 계속 공개된다는 보장은 없습니다.</p></li>
+</ul>
+
+<h3>스마트 컨트랙트란?</h3>
+<p>스마트 컨트랙트는 블록체인 위에서 돌아가는 프로그램입니다. 「이 조건을 충족하면 이 돈을 이 사람에게 보낸다」고 정해 두면, 사람의 손을 거치지 않고 자동으로 실행됩니다. 프로그램의 내용도 돈의 움직임도 누구나 확인할 수 있다는 것이 특징입니다.</p>
+<p>다만 페이아웃에 블록체인을 쓰는 펌이라도, 쓰는 방식에는 단계가 있습니다.</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">같은 「온체인」이라도, 페이아웃 구조에는 3단계가 있다</p>
+<div class="stairs">
+<div class="stair s1"><p class="st-n">1단계</p><p class="st-t">기록이 보인다</p><p class="st-d">지급 여부는 운영 측이 정한다. 송금 기록은 누구나 볼 수 있다</p><p class="st-ex">예: Propr</p></div>
+<div class="stair s2"><p class="st-n">2단계</p><p class="st-t">자동으로 지급한다</p><p class="st-d">조건을 충족하면 컨트랙트가 승인 없이 지급한다</p><p class="st-ex">예: FundedHive, Hypernova</p></div>
+<div class="stair s3"><p class="st-n">3단계</p><p class="st-t">돈째로 맡긴다</p><p class="st-d">페이아웃용 돈을 잠가 두어 운영 측도 인출할 수 없다</p><p class="st-ex">예:<br class="st-ex-br"> 확인한 범위에서는 없음</p></div>
+</div>
+<p class="st-axis">안심 근거로서 강하다 →</p>
+</div><figcaption>필자의 정리. FundedHive와 Hypernova는 둘 다 출금을 스마트 컨트랙트로 처리합니다</figcaption></figure>
+<p>Propr는 1단계입니다. 페이아웃 기록은 모두 보이지만, 지급할지 여부와 언제 지급할지는 운영 측이 정합니다. 이번에 페이아웃을 수작업 심사로 바꾸거나 추천 보상을 30일 후 지급으로 할 수 있었던 것도 그 때문입니다.</p>
+<p>FundedHive와 Hypernova는 2단계입니다. 출금을 신청하면 스마트 컨트랙트가 그 자리에서 확인하고 지급합니다. Hypernova의 경우 컨트랙트가 수익 금액을 확인해 출금액을 실제 수익까지로 제한한 뒤, 신청과 같은 거래 안에서 USDC를 보냅니다. 「지급 약속」이 코드가 되어 있는 만큼 1단계보다 한 걸음 나아간 형태입니다. 그래도 확인해 두고 싶은 점이 3가지 있습니다.</p>
+<ul class="kp-list">
+<li><p><strong>수익 금액을 계산하는 것은 펌의 시스템입니다.</strong> 컨트랙트는 전달받은 숫자를 바탕으로 지급합니다.</p></li>
+<li><p><strong>컨트랙트에 들어 있는 돈 이상은 지급할 수 없습니다.</strong> 잔고는 직접 확인해 두고 싶은 부분입니다.</p></li>
+<li><p><strong>운영 측이 컨트랙트를 멈추거나 교체할 수 있는 권한을 가진 경우도 많습니다.</strong> 이 부분은 일반 유저가 확인하기 어렵습니다.</p></li>
+</ul>
+<p><strong>진짜 의미로 「스마트 컨트랙트가 페이아웃을 지키고 있다」고 말할 수 있는 것은 3단계까지 왔을 때라고 생각합니다</strong>. 거기까지 하는 펌은 제가 확인한 범위에서는 아직 없습니다. 헤지 구조를 완성한 펌이 여기까지 나아간다면, 유저에게는 꽤 강한 안심 근거가 될 것입니다.</p>
+<p>그래서 저는 온체인으로 공개하는 펌이라도 다음 5가지를 정기적으로 봅니다.</p>
+<figure class="fig"><div class="hf">
+<p class="hf-title">투명한 펌에서 정기적으로 봐 둘 5가지 숫자</p>
+<ol class="chk">
+<li><b>출금용 공개 계좌의 잔고</b><span>늘고 있는지, 계속 줄고 있지 않은지</span></li>
+<li><b>페이아웃까지 걸리는 시간</b><span>갑자기 길어지지 않았는지</span></li>
+<li><b>매출 대비 페이아웃 비율</b><span>100%에 가까워지고 있지 않은지</span></li>
+<li><b>운영 측의 보충 이력</b><span>외부에서 돈을 넣는 빈도와 금액</span></li>
+<li><b>공개 항목의 수</b><span>전에 있던 숫자가 사라지지 않았는지</span></li>
+</ol>
+</div><figcaption>PROP CHECK의 「운영 기반」 점수에서도 이 사고방식을 씁니다</figcaption></figure>
+
+<h2 id="summary" data-n="9"><span>정리: 프롭펌은 「계속 지급할 수 있는가」로 고른다</span></h2>
+<p>3가지 모델을 비교해 본 제 결론은 이렇습니다.</p>
+<ul class="kp-list">
+<li><p><strong>기존형</strong>은 이미 체력 싸움입니다. FTMO처럼 점유율을 가진 대형 업체이거나 RZR Funded처럼 자금력 있는 운영사를 가진 곳이 아니면, 할인 경쟁 속에서 계속하기는 어렵다고 생각합니다.</p></li>
+<li><p><strong>전환형</strong>의 강점은 좋은 거래 환경과, 승리를 시장 수익에서 지급하는 WIN-WIN입니다. 펌으로서도 무너지기 어렵습니다. 1% 라인에 익숙해지면 이 거래 환경과 출금 속도는 큰 매력입니다.</p></li>
+<li><p><strong>부분 헤지형</strong>은 아직 구조를 완성하는 경쟁의 한창입니다. Propr는 한 번 실패했지만, 뿌리의 자금력으로 페이아웃을 이어 가면서 2027년 초에 헤지를 다시 만들겠다고 합니다.</p></li>
+</ul>
+<p>그래서 저는 지금 프롭펌을 고른다면 다음 순서로 봅니다.</p>
+<ol class="kp-list kp-steps">
+<li><p><strong>운영사에 자금력이 있는가.</strong> 어느 모델이든 어려운 시기를 넘길 수 있는지는 결국 여기서 정해집니다.</p></li>
+<li><p><strong>페이아웃 돈이 어디서 오는가.</strong> 시장에서 난 수익인지, 챌린지 비용인지. 구조를 설명하지 않는 펌은 챌린지 비용만으로 돌린다고 생각하고 상대합니다.</p></li>
+<li><p><strong>숫자를 외부에서 따라갈 수 있는가.</strong> 출금용 공개 계좌의 잔고나 페이아웃까지 걸리는 시간을 직접 확인할 수 있는가.</p></li>
+<li><p><strong>수익은 자주 출금한다.</strong> 어떤 펌이든 계좌에 수익을 쌓아 두지 않는 것이 최선의 자기방어입니다.</p></li>
+</ol>
+<p>Propr가 다시 만든 헤지로 돌아왔을 때 무엇이 달라져 있을지. 최적의 헤지를 가장 먼저 완성하는 곳은 어디일지. PROP CHECK에서는 앞으로도 숫자로 계속 따라가겠습니다.</p>
+<p><strong>할인율이나 규칙의 세세함보다, 「이 펌은 이긴 사람에게 계속 지급할 수 있는가」.</strong> 프롭펌은 이제 그것으로 고르는 시대가 되었다고 생각합니다.</p>
+
+<p class="kp-note">PROP CHECK에는 FundedHive·RZR Funded·Hypernova·Propr 등으로 가는 추천 링크가 있으며, 가입이 이루어지면 운영자에게 보상이 들어오는 경우가 있습니다. 추천 보상은 점수 계산에 포함하지 않습니다. 이 글의 숫자는 모두 출처 페이지에서 누구나 확인할 수 있습니다.</p>
+
+<h2 id="sources" data-n="10"><span>출처</span></h2>
+<ul class="kp-sources">
+<li><p><a href="https://www.propr.xyz/transparency">Propr 투명성 대시보드</a></p></li>
+<li><p><a href="https://docs.google.com/document/d/1Iz7AydeYdmTjhMPTZOumK3GqdmY3m_ucW11o3BGCW6M/edit?usp=sharing">Propr 헤지 설명 문서(2026년 <span class="kp-nw">11월 23일</span>)</a></p></li>
+<li><p><a href="https://www.propr.xyz/rules">Propr 거래 규칙</a></p></li>
+<li><p>Propr 공식 Discord(#announcements와 운영 측 발언, 2026년 <span class="kp-nw">11월 11일</span>~26일)</p></li>
+<li><p><a href="https://thedefiant.io/news/press-releases/powering-the-next-generation-of-gaming-xborg-sells-out-2-million-seed-round-community-allocation">The Defiant: XBorg is a spin-off of SwissBorg</a></p></li>
+<li><p><a href="https://xborg-faq.gitbook.io/xborg/06-or-token/fundraise">XBorg FAQ(주주는 SwissBorg와 창업자)</a></p></li>
+<li><p><a href="https://swissborg.com/">SwissBorg 공식 사이트(본인 확인을 마친 이용자 약 92만 명, 이용자의 암호화폐 합계 약 <span class="kp-nw">9.7억 달러</span>, 2026년 <span class="kp-nw">11월 27일</span> 기준)</a></p></li>
+<li><p><a href="https://alexfirdaus.com/propr-hedge-losses/">Alex Firdaus: Propr Hedge Losses(CEO의 방송 발언, <span class="kp-nw">11월 24일</span>의 페이아웃 중단)</a></p></li>
+<li><p><a href="https://fundedhive.com/aads">FundedHive AADS(Automated A-Book Dealing System)</a></p></li>
+<li><p><a href="https://fundedhive.com/transparency">FundedHive 투명성 페이지</a></p></li>
+<li><p><a href="https://fundedhive.com/faq">FundedHive 자주 묻는 질문</a></p></li>
+<li><p><a href="https://chainwire.org/2026/08/28/the-onchain-prop-firm-traders-can-verify-in-real-time/">Hypernova: The Onchain Prop Firm Traders Can Verify In Real Time(2026년 <span class="kp-nw">8월 28일</span>, 출금 구조)</a></p></li>
+<li><p><a href="https://funded.tradinghive.com/spread">FundedHive 스프레드 목록(시간대별, 로그인 필요)</a></p></li>
+<li><p><a href="https://ctrader.com/prop-firms/tradinghive">cTrader: FundedHive(거래 수수료)</a></p></li>
+<li><p><a href="https://financemagnates.com/executives/interview/fundedhive-prop-firm-ceo-calls-consistency-rule-a-payout-trap/">Finance Magnates: FundedHive CEO 인터뷰</a></p></li>
+<li><p><a href="https://hypernova.xyz/rulebook">Hypernova 룰북(주문 처리)</a></p></li>
+<li><p><a href="https://hypernova.xyz/stats">Hypernova Stats</a></p></li>
+<li><p><a href="https://propchecklab.com/ko/guides/hypernova/">PROP CHECK Hypernova 소개 글(페이아웃용 지갑 보충 이력)</a></p></li>
+<li><p><a href="https://www.financemagnates.com/forex/exclusive-only-7-of-300000-prop-trading-accounts-achieved-payouts/">Finance Magnates: Only 7% of 300,000 Prop Trading Accounts Achieved Payouts(2024년 <span class="kp-nw">9월 18일</span>)</a></p></li>
+<li><p><a href="https://propfirmmap.com/blog/prop-firm-discount-wars-pricing-report-april-2026">PropFirmMap: Prop Firm Discount Wars(2026년 4월)</a></p></li>
+<li><p><a href="https://propfirmmap.com/blog/prop-firm-news-week-april-16-2026-thinkcapital-price-drops-e8-on-demand">PropFirmMap: Prop Firm News This Week(2026년 <span class="kp-nw">4월 17일</span>, Apex의 90% 할인)</a></p></li>
+<li><p><a href="https://propfirmmatch.com/crypto/prop-firms/rzr-funded">Prop Firm Match: RZR Funded(Hantec 그룹의 35년 실적)</a></p></li>
+<li><p><a href="https://thetrustedprop.com/prop-firms/rzr-funded">The Trusted Prop: RZR Funded(Hantec 그룹과의 관계)</a></p></li>
+<li><p><a href="https://thepropfirmguide.com/prop-firms-that-shut-down/">The Prop Firm Guide: Prop Firm Shutdowns(폐업한 펌 목록)</a></p></li>
+<li><p><a href="https://www.financemagnates.com/forex/following-profit-cuts-and-trading-limits-prop-firm-fundingticks-begins-winding-down/">Finance Magnates: FundingTicks Begins Winding Down(2026년 <span class="kp-nw">1월 19일</span>)</a></p></li>
+<li><p><a href="https://www.financemagnates.com/forex/prop-firm-propel-capital-folds-after-14-months-ceo-blames-fierce-competition/amp">Finance Magnates: Propel Capital Folds After 14 Months</a></p></li>
+<li><p><a href="https://www.financemagnates.com/forex/analysis/prop-firm-crypto-payouts-doubled-to-115-million-in-q1-2026-but-growth-has-stalled-since-december/">Finance Magnates: Prop Firm Crypto Payouts Doubled in Q1 2026(FTMO의 OANDA 인수, Seacrest의 전환)</a></p></li>
+</ul>
+</article>
+
+<script>
+{
+const R=[["2026-10-27", 0, 824218], ["2026-10-27", 1, 826134], ["2026-10-28", 0, 859409], ["2026-10-28", 1, 843984], ["2026-10-29", 0, 940820], ["2026-10-29", 1, 765967], ["2026-10-30", 0, 793647], ["2026-10-30", 1, 820012], ["2026-10-31", 0, 844275], ["2026-10-31", 1, 861097], ["2026-11-01", 0, 829782], ["2026-11-01", 1, 781289], ["2026-11-02", 0, 768888], ["2026-11-02", 1, 710943], ["2026-11-03", 0, 677490], ["2026-11-03", 1, 711279], ["2026-11-04", 0, 803261], ["2026-11-04", 1, 868007], ["2026-11-05", 0, 817731], ["2026-11-05", 1, 586357], ["2026-11-06", 0, 613367], ["2026-11-06", 1, 568286], ["2026-11-07", 0, 577403], ["2026-11-07", 1, 554870], ["2026-11-08", 0, 551243], ["2026-11-08", 1, 442499], ["2026-11-09", 0, 497641], ["2026-11-09", 1, 464023], ["2026-11-10", 0, 414236], ["2026-11-10", 1, 275163], ["2026-11-11", 0, 304609], ["2026-11-11", 1, 270220], ["2026-11-12", 0, 238859], ["2026-11-12", 1, 335566], ["2026-11-13", 0, 282723], ["2026-11-13", 1, 256451], ["2026-11-14", 0, 221469], ["2026-11-14", 1, 131306], ["2026-11-15", 0, 191821], ["2026-11-15", 1, 599570], ["2026-11-16", 0, 508582], ["2026-11-16", 1, 576250], ["2026-11-17", 0, 537880], ["2026-11-17", 1, 632195], ["2026-11-18", 0, 580950], ["2026-11-18", 1, 383658], ["2026-11-19", 0, 570363], ["2026-11-19", 1, 391188], ["2026-11-20", 0, 231670], ["2026-11-20", 1, 101283], ["2026-11-21", 0, 50551], ["2026-11-21", 1, 45858], ["2026-11-22", 0, 49157], ["2026-11-22", 1, 39191], ["2026-11-23", 0, 45646], ["2026-11-23", 1, 431209], ["2026-11-24", 0, 431209], ["2026-11-24", 1, 425362], ["2026-11-25", 1, 403686], ["2026-11-26", 0, 404000]], E=[["2026-11-11",9,"이전 글 시점"],["2026-11-16",2,"헤지 계좌에 약 42만 달러 입금"],["2026-11-21",13,"헤지 계좌가 0으로"],["2026-11-24",0,"외부에서 약 39만 달러 보충"]];
+const box=document.getElementById('reserve'), leg=document.getElementById('reserve-legend');
+const day0=Date.parse(R[0][0]);
+const di=(d,h)=>(Date.parse(d)-day0)/864e5+h*.5;
+const span=di(R[R.length-1][0],R[R.length-1][1]);
+const md=d=>`${+d.slice(5,7)}/${+d.slice(8,10)}`;
+leg.innerHTML=E.map(e=>`<li><span><b>${md(e[0])}</b> ${e[2]}</span></li>`).join('');
+const man=v=>`${(v/1e4).toFixed(v<1e5?1:0)}만`;
+function draw(){
+  const W=box.clientWidth,H=box.clientHeight,narrow=W<520;
+  const L=narrow?44:56,Rm=12,T=30,B=26,pw=W-L-Rm,ph=H-T-B;
+  const xs=(d,h)=>L+di(d,h)/span*pw, ys=v=>T+ph-v/1.15e6*ph;
+  const xj=(d,hr)=>L+(di(d,0)+(hr-9)/24)/span*pw;
+  const ticks=[0,25e4,5e5,75e4,1e6];
+  const xt=(narrow?['2026-10-28','2026-11-10','2026-11-26']:['2026-10-28','2026-11-01','2026-11-05','2026-11-10','2026-11-15','2026-11-20','2026-11-26']);
+  let s='';
+  s+=ticks.map(t=>`<line x1="${L}" x2="${W-Rm}" y1="${ys(t)}" y2="${ys(t)}" stroke="var(--rule)"/><text x="${L-6}" y="${ys(t)+4}" text-anchor="end" font-size="11" fill="var(--quiet)">${t?'$'+man(t):'$0'}</text>`).join('');
+  s+=`<line x1="${L}" x2="${W-Rm}" y1="${ys(1e6)}" y2="${ys(1e6)}" stroke="var(--quiet)" stroke-dasharray="5 4"/><text x="${L+6}" y="${ys(1e6)-6}" font-size="11" fill="var(--quiet)">${narrow?'9월 말 발표 $100만':'9월 말에 발표한 금액 $100만'}</text>`;
+  s+=`<line x1="${L}" x2="${W-Rm}" y1="${T+ph}" y2="${T+ph}" stroke="var(--edge)"/>`;
+  s+=xt.map(d=>`<text x="${xj(d,0)}" y="${T+ph+18}" text-anchor="${d===xt[0]?'start':d===xt[xt.length-1]?'end':'middle'}" font-size="11" fill="var(--quiet)">${md(d)}</text>`).join('');
+  s+=E.map((e,i)=>{const x=xj(e[0],e[1]);return `<line x1="${x}" x2="${x}" y1="${T-4}" y2="${T+ph}" stroke="var(--edge)" stroke-dasharray="2 3"/><circle cx="${x}" cy="${T-14}" r="8.5" fill="var(--tint)" stroke="var(--edge)"/><text x="${x}" y="${T-10}" text-anchor="middle" font-size="11" font-weight="700" fill="var(--ink)">${i+1}</text>`}).join('');
+  const p=R.map((r,i)=>`${i?'L':'M'}${xs(r[0],r[1]).toFixed(1)},${ys(r[2]).toFixed(1)}`).join(' ');
+  s+=`<path d="${p}" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linejoin="round"/>`;
+  const last=R[R.length-1];
+  s+=`<circle cx="${xs(last[0],last[1])}" cy="${ys(last[2])}" r="3.5" fill="var(--accent)"/><text x="${xs(last[0],last[1])}" y="${ys(last[2])-12}" text-anchor="end" font-size="12" font-weight="700" fill="var(--ink)">$${(last[2]/1e4).toFixed(1)}만</text>`;
+  box.innerHTML=`<svg viewBox="0 0 ${W} ${H}" aria-hidden="true">${s}</svg>`;
+}
+const ro=new ResizeObserver(draw); ro.observe(box);
+}
+</script>
+</main><footer class="pc-site-footer"><nav class="pc-footer-layout" aria-label="하단 메뉴"><a class="pc-footer-brand" href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/" aria-label="PROP CHECK 홈"><img src="/propcheck-ui-preview/r20261127-survive-model-enko/assets/propcheck-logo-r20261020.webp" alt="PROP CHECK"></a><div class="pc-footer-group" aria-labelledby="pc-footer-heading-1"><h2 id="pc-footer-heading-1">연락·요청</h2><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/report/">출금 거부·BAN 제보</a><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/request-listing/">미게재 업체 요청</a><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/report-error/">정보 오류 신고</a><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/contact/">문의</a></div><div class="pc-footer-group" aria-labelledby="pc-footer-heading-2"><h2 id="pc-footer-heading-2">운영과 투명성</h2><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/guides/">소개 글</a><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/methodology/">평가 방법</a><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/about/">운영자 정보</a><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/policy/">편집 방침·면책 사항</a><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/advertising/">광고·추천 링크 방침</a></div><div class="pc-footer-group" aria-labelledby="pc-footer-heading-3"><h2 id="pc-footer-heading-3">이용 조건</h2><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/terms/">이용약관</a><a href="/propcheck-ui-preview/r20261127-survive-model-enko/ko/privacy/">개인정보 처리방침</a></div></nav><p class="pc-footer-copyright">© 2026 PROP CHECK</p></footer><script defer src="/propcheck-ui-preview/r20261127-survive-model-enko/w7-header.js?perf=fe0f3f24066304eb"></script><script src="/propcheck-ui-preview/r20261127-survive-model-enko/language-menu.js?perf=8cf084e5a93ffaae" defer></script></body></html>
