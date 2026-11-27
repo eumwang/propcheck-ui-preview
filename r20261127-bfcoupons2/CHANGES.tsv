@@ -1,0 +1,9 @@
+区分	変更前（本番 6b0947e4）	変更後（確認版）	根拠
+トップ JA：RZR Funded カード「特典」	全チャレンジ 45%OFF · 11/28（土）08:59まで（日本時間）／コード GOLDRUSH	全チャレンジ 50%OFF · 11/30（月）08:59まで（日本時間）／コード BLACK1869	RZR 公式X 11/27 18:10 JST（Code: BLACK1869、Ends 29 November at 23:59 UTC）と PONCHAI 宛 RZR の DM（DECISIONS 記録）
+トップ EN：RZR Funded カード	45% off RZR Funded challenges · Until 11/27 23:59 UTC／GOLDRUSH	50% off RZR Funded challenges · Until 11/29 23:59 UTC／BLACK1869	同上
+トップ KO：RZR Funded カード	RZR Funded 챌린지 45% 할인 · 11/28(토) 08:59까지(한국 시간)／GOLDRUSH	RZR Funded 챌린지 50% 할인 · 11/30(월) 08:59까지(한국 시간)／BLACK1869	同上
+トップ JA：Propr カード	（特典欄は空。SPOOKY は11/1に終了済み）	全チャレンジ 20%OFF · 12/1（火）8:59まで（日本時間）／コード BF20	Propr 公式X・Discord（BF20 until Mon 30 Nov, 23:59 UTC）、20261127-coupons.json の Propr 項。12/1 は火曜日（依頼文の「12/1（月）」は曜日の誤り。11/30 が月曜）
+トップ EN：Propr カード	（空）	20% off all challenges · Until 11/30 23:59 UTC／BF20	同上
+トップ KO：Propr カード	（空）	전 챌린지 20% 할인 · 12/1(화) 8:59까지(한국 시간)／BF20	同上
+コード表示（9文字）	—	BLACK1869 は9文字で、パソコン幅（1280px）の狭いコード欄だと「BLACK18／69」と2行に割れるため、9文字以上のコードだけ文字を12pxにして1行に固定（JS内のインライン指定。CSSファイルは不変）。8文字以下（BF20 など）は従来どおり	目視（1024〜1920px、360〜600px で1行・横スクロールなしを計測）
+表示を戻す時刻	RZR：11/28 09:00 JST／Propr：11/1 9:00 JST（過去）	RZR：11/30 09:00 JST（＝11/29 24:00 UTC）／Propr：12/1 09:00 JST（＝11/30 24:00 UTC）。過ぎると元のカード表示に戻る	期限の書き方は既存コードと同じ（期限の翌0時で戻す）
