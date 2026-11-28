@@ -1,0 +1,38 @@
+/guides/hantec /guides/rzr-funded/ 301!
+/guides/hantec/ /guides/rzr-funded/ 301!
+/guides/hantec/index.html /guides/rzr-funded/ 301!
+/companies/hantec-fx-cfd /companies/rzr-funded/ 301!
+/companies/hantec-fx-cfd/ /companies/rzr-funded/ 301!
+/companies/hantec-fx-cfd/index.html /companies/rzr-funded/ 301!
+/en/guides/hantec /en/guides/rzr-funded/ 301!
+/en/guides/hantec/ /en/guides/rzr-funded/ 301!
+/en/guides/hantec/index.html /en/guides/rzr-funded/ 301!
+/en/companies/hantec-fx-cfd /en/companies/rzr-funded/ 301!
+/en/companies/hantec-fx-cfd/ /en/companies/rzr-funded/ 301!
+/en/companies/hantec-fx-cfd/index.html /en/companies/rzr-funded/ 301!
+/ko/guides/hantec /ko/guides/rzr-funded/ 301!
+/ko/guides/hantec/ /ko/guides/rzr-funded/ 301!
+/ko/guides/hantec/index.html /ko/guides/rzr-funded/ 301!
+/ko/companies/hantec-fx-cfd /ko/companies/rzr-funded/ 301!
+/ko/companies/hantec-fx-cfd/ /ko/companies/rzr-funded/ 301!
+/ko/companies/hantec-fx-cfd/index.html /ko/companies/rzr-funded/ 301!
+/review / 302
+/review/ / 302
+
+# Assessment page is closed for now (file kept so it can be reopened later).
+/assessment / 302!
+/assessment/ / 302!
+/assessment/* / 302!
+
+# /ja/contact/ は /contact/ に統合（PONCHAI 2026-11-28 00:28 決定。ファイルは残す）
+/ja/contact /contact/ 301!
+/ja/contact/ /contact/ 301!
+/ja/contact/index.html /contact/ 301!
+
+# /en/contact-guide/・/ko/contact-guide/ は /en/contact/・/ko/contact/（フォーム）に統合（PONCHAI 2026-11-28 20:44 質問4=B。ファイルは残す）
+/en/contact-guide /en/contact/ 301!
+/en/contact-guide/ /en/contact/ 301!
+/en/contact-guide/index.html /en/contact/ 301!
+/ko/contact-guide /ko/contact/ 301!
+/ko/contact-guide/ /ko/contact/ 301!
+/ko/contact-guide/index.html /ko/contact/ 301!

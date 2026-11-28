@@ -1,0 +1,213 @@
+/* article-kp-propcheck-launch-tangem-20261125.css
+   /articles/propcheck-launch/ 日本語版のみ。Tangem記事（2026-11-25）の見出し・目次・表カード・手順番号に合わせる。
+   色はサイトの緑 #147260。変数は main.kp-page に閉じ、ヘッダー・フッターは変えない。
+   既存の共通CSS（article-chrome 等）は編集しない。 */
+
+main.kp-page{
+  --bg:#fbfcfd; --surface:#ffffff; --ink:#16202b; --quiet:#5a6675; --edge:#b4bcc7; --rule:#dde2e9;
+  --accent:#147260; --on-accent:#ffffff; --tint:#eef1f5; --muted:#c2c7cf; --minus:#d9534f; --marker:#ffe27a;
+  --font-body:"Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+  --font-head:"Zen Kaku Gothic New","Noto Sans JP","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+  --font-mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  box-sizing:border-box;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.9;
+  padding:0 max(16px, env(safe-area-inset-right, 0px)) 72px max(16px, env(safe-area-inset-left, 0px));
+  min-width:0;
+}
+
+main.kp-page *,
+main.kp-page *::before,
+main.kp-page *::after{box-sizing:border-box}
+
+.kp-article{max-width:44rem;margin:0 auto;display:flex;flex-direction:column;gap:1.35rem;min-width:0}
+.kp-article > *{margin:0;min-width:0}
+
+.kp-article h1{
+  font-family:var(--font-head);font-weight:700;
+  font-size:clamp(1.5rem,4.4vw,2.05rem);line-height:1.45;
+  text-wrap:balance;letter-spacing:.01em
+}
+.kp-article h2{
+  font-family:var(--font-head);font-weight:700;
+  font-size:clamp(1.2rem,3.4vw,1.45rem);line-height:1.5;
+  text-wrap:balance;
+  margin-top:1.9rem;padding:0 0 .6rem;border-bottom:3px solid var(--accent);
+  display:grid;grid-template-columns:auto 1fr;column-gap:.7rem;align-items:center;
+  scroll-margin-top:5.5rem
+}
+.kp-article h2::before{
+  content:attr(data-n);
+  width:1.85rem;height:1.85rem;border-radius:50%;
+  background:var(--accent);color:var(--on-accent);
+  font-family:var(--font-body);font-weight:700;font-size:.8rem;
+  display:grid;place-items:center;line-height:1;font-variant-numeric:tabular-nums
+}
+.kp-article h3{
+  font-family:var(--font-head);font-weight:700;font-size:1.05rem;line-height:1.55;
+  margin-top:.6rem;padding:.1rem 0 .1rem .85rem;border-left:4px solid var(--accent);
+  scroll-margin-top:5.5rem
+}
+
+@media (max-width:680px){
+  .kp-article h1,.kp-article h2,.kp-article h3{text-wrap:wrap}
+}
+
+.kp-byline{
+  color:var(--quiet);font-size:.875rem;font-variant-numeric:tabular-nums;
+  display:flex;flex-wrap:wrap;gap:.4rem .7rem;align-items:center
+}
+.kp-avatar{
+  width:44px;height:44px;border-radius:50%;object-fit:cover;flex:0 0 auto
+}
+.kp-article strong{font-weight:700;background:linear-gradient(transparent 62%, var(--marker) 62%)}
+.kp-article a{color:var(--accent);text-underline-offset:.2em}
+.kp-article a:focus-visible,
+.fig-scroll:focus-visible,
+.table-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.kp-article code{
+  font-family:var(--font-mono);font-size:.9em;background:var(--tint);
+  border:1px solid var(--rule);border-radius:4px;padding:.08em .38em
+}
+
+.kp-toc{
+  border:1px solid var(--rule);
+  border-radius:10px;
+  background:var(--surface);
+  padding:1rem 1.1rem 1.05rem;
+}
+.kp-toc-title{
+  font-family:var(--font-head);
+  font-weight:700;
+  font-size:.95rem;
+  line-height:1.5;
+  margin:0 0 .35rem;
+}
+.kp-toc ol{
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  counter-reset:toc;
+}
+.kp-toc li{counter-increment:toc;min-width:0}
+.kp-toc a{
+  display:grid;
+  grid-template-columns:1.7rem 1fr;
+  gap:.65rem;
+  align-items:center;
+  text-decoration:none;
+  color:var(--ink);
+  padding:.5rem 0;
+  border-bottom:1px solid var(--rule);
+  line-height:1.55;
+  font-size:.95rem;
+}
+.kp-toc li:last-child a{border-bottom:0;padding-bottom:.15rem}
+.kp-toc a::before{
+  content:counter(toc);
+  width:1.7rem;height:1.7rem;
+  border-radius:50%;
+  background:var(--accent);
+  color:var(--on-accent);
+  font-weight:700;
+  font-size:.75rem;
+  display:grid;
+  place-items:center;
+  line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+.kp-toc a:hover{color:var(--accent)}
+.kp-toc a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+@media (max-width:720px){
+  .kp-toc{padding:.9rem 1rem 1rem}
+  .kp-toc a{padding:.62rem 0;font-size:1rem}
+}
+
+.kp-steps{list-style:none;padding:0;counter-reset:step;display:flex;flex-direction:column;gap:.7rem}
+.kp-steps li{counter-increment:step;display:grid;grid-template-columns:2rem 1fr;gap:.75rem;align-items:start}
+.kp-steps li::before{
+  content:counter(step);width:2rem;height:2rem;border-radius:50%;
+  background:transparent;color:var(--ink);
+  border:1.5px solid var(--edge);
+  font-weight:700;display:grid;place-items:center;line-height:1;font-variant-numeric:tabular-nums
+}
+.kp-steps p{margin:0;min-width:0}
+
+.kp-list{padding-left:1.3em;display:flex;flex-direction:column;gap:.3rem}
+.kp-list p{margin:0}
+.kp-article li > p{margin:0}
+
+.kp-box{
+  border:1px solid var(--rule);
+  border-radius:10px;
+  background:var(--surface);
+  padding:.9rem 1rem;
+  display:flex;
+  flex-direction:column;
+  gap:.7rem;
+  font-size:.95rem;
+  line-height:1.8
+}
+.kp-box p{margin:0}
+.kp-box .kp-box-label{
+  display:block;
+  font-weight:700;
+  margin:0 0 .15rem;
+  color:var(--ink)
+}
+
+.fig{display:flex;flex-direction:column;gap:.5rem}
+.fig-scroll{overflow-x:auto;background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:6px 0}
+.kp-img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--rule);background:var(--surface)}
+.fig figcaption,.fig figcaption span{color:var(--quiet);font-size:.8125rem;line-height:1.6}
+
+.table-scroll{overflow-x:auto}
+.kp-article table{border-collapse:collapse;width:100%;min-width:540px;font-size:.9rem;line-height:1.7;font-variant-numeric:tabular-nums}
+.kp-article th,.kp-article td{text-align:left;vertical-align:top;padding:.7rem .8rem;border-bottom:1px solid var(--rule)}
+.kp-article thead th{
+  font-weight:700;white-space:nowrap;
+  background:color-mix(in srgb, var(--accent) 14%, var(--surface));
+  color:var(--ink);border-bottom:1px solid var(--rule)
+}
+.kp-article tbody td:first-child{font-weight:600}
+
+@media (max-width:720px){
+  .table-scroll{overflow-x:visible}
+  .kp-article table{min-width:0;font-size:.95rem}
+  .kp-article thead{
+    position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+    clip:rect(0,0,0,0);white-space:nowrap;border:0
+  }
+  .kp-article table tbody tr{
+    display:block;
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:10px;
+    padding:.85rem 1rem 1rem;
+    margin:0 0 .75rem
+  }
+  .kp-article table tbody tr:last-child{margin-bottom:0}
+  .kp-article th,.kp-article td{display:block;width:auto;border:0;padding:.2rem 0}
+  .kp-article tbody td:first-child{
+    font-weight:700;font-size:1.02rem;line-height:1.5;
+    padding-bottom:.5rem;margin-bottom:.25rem;
+    border-bottom:1px solid var(--rule)
+  }
+  .kp-article tbody td[data-label]:not(:first-child)::before{
+    content:attr(data-label);
+    display:block;
+    color:var(--quiet);
+    font-weight:400;
+    font-size:.75rem;
+    line-height:1.5;
+    margin-top:.4rem
+  }
+}
+
+.kp-note{color:var(--quiet);font-size:.875rem;border-top:1px solid var(--rule);padding-top:1rem}
+.kp-cta-line{display:flex;flex-wrap:wrap;gap:.35rem .7rem;align-items:baseline}
