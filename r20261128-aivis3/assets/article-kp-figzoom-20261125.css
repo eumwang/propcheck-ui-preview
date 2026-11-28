@@ -1,0 +1,53 @@
+/* article-kp-figzoom-20261125.css  ― 記事の図（SVG）のスマホ縮小＋タップで拡大（再利用可）
+   使い方：記事の <head> に CSS、本文末か head に <script defer src="/assets/article-kp-figzoom-20261125.js"> を足すだけ。
+   対象：<figure class="fig"><div class="fig-scroll"><svg viewBox="…">…</svg></div><figcaption>…</figcaption></figure>
+   680px以下：図を画面幅に縮める（図のデザイン・文言は変えない）。JSが動かないときは縮小表示のまま。
+   JS：390pxなどで最小の文字が約9px未満になる図だけ、図のすぐ下に緑の「タップで拡大」を出し、全画面の重ね表示で元の大きさで見せる。
+   既存CSSは編集しない。 */
+
+@media (max-width: 680px) {
+  .kp-article .fig-scroll { overflow-x: hidden; }
+  .kp-article .fig-scroll svg { display: block; width: 100%; max-width: 100%; min-width: 0; height: auto; }
+}
+
+/* 「タップで拡大」案内（JSが図ごとに必要なときだけ出す） */
+.kp-article .fig.is-zoomable .fig-scroll { cursor: zoom-in; }
+.figzoom-btn {
+  align-self: flex-start;
+  appearance: none; -webkit-appearance: none;
+  background: none; border: 0; margin: 0; padding: .1rem 0;
+  font: inherit; font-size: .8125rem; font-weight: 700; line-height: 1.6;
+  color: var(--accent, #147260);
+  text-decoration: underline; text-underline-offset: .2em;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.figzoom-btn:focus-visible { outline: 2px solid var(--accent, #147260); outline-offset: 3px; border-radius: 4px; }
+
+/* 全画面の重ね表示 */
+html.figzoom-open, html.figzoom-open body { overflow: hidden; }
+.figzoom-overlay {
+  position: fixed; inset: 0; z-index: 2000;
+  background: var(--bg, #fbfcfd); color: var(--ink, #16202b);
+  display: flex; flex-direction: column;
+}
+.figzoom-bar {
+  flex: 0 0 auto; display: flex; justify-content: flex-end; align-items: center;
+  padding: .55rem max(.75rem, env(safe-area-inset-right, 0px)) .55rem max(.75rem, env(safe-area-inset-left, 0px));
+  padding-top: max(.55rem, env(safe-area-inset-top, 0px));
+  border-bottom: 1px solid var(--rule, #dde2e9); background: var(--surface, #fff);
+}
+.figzoom-close {
+  appearance: none; -webkit-appearance: none; cursor: pointer;
+  font: inherit; font-size: .9375rem; font-weight: 700; line-height: 1.4;
+  color: var(--ink, #16202b); background: var(--surface, #fff);
+  border: 1.5px solid var(--accent, #147260); border-radius: 8px; padding: .45rem .95rem;
+}
+.figzoom-close:focus-visible { outline: 2px solid var(--accent, #147260); outline-offset: 3px; }
+.figzoom-scroll {
+  flex: 1 1 auto; min-height: 0; overflow: auto; -webkit-overflow-scrolling: touch;
+  display: flex; padding: 1rem; overscroll-behavior: contain;
+}
+.figzoom-scroll:focus-visible { outline: 2px solid var(--accent, #147260); outline-offset: -4px; }
+.figzoom-inner { margin: auto; flex: 0 0 auto; background: var(--surface, #fff); border: 1px solid var(--rule, #dde2e9); border-radius: 10px; padding: 6px 0; }
+.figzoom-inner svg { display: block; max-width: none; height: auto; font-family: var(--font-body, sans-serif); }
