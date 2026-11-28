@@ -4,7 +4,7 @@
 
 - **本番には出していません。** Netlify へのデプロイ（下書きを含む）、force push、台帳の編集、フォームの送信、ファイルの削除もしていません。
 - 確認版：https://eumwang.github.io/propcheck-ui-preview/r20261128-aivis4/
-  - commit は push 後にこの節へ追記する
+  - commit 4416a34f6fd7d03aa078261dc08a016ec9af2f25（c61717a の上に通常 push。r20261128-aivis3 は上書きしていない）
   - RELEASE_SHA256.tsv の sha256：28941f83e3837a3ffed2a9e6e92030b2aa4b879e9f31084d67b19c99126d30a9（161ファイル。aivis3 と同じ161パス。sha が変わったのは次の6ファイルだけ）
     - en/guides/fundedhive/index.html
     - en/guides/hypernova/index.html
